@@ -1269,7 +1269,7 @@
       }
   
       /* ─ 반응형 ─ */
-      @media (max-width: 480px) {
+      @media (max-width: 530px) {
         #relief95 .headline { font-size: 32px; }
         #relief95 .amount { font-size: 24px; }
         #relief95 .amount small { font-size: 22px; }
