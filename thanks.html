@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="content-language" content="ko">
+  <title>서민채무조정안심센터</title>
+<!-- SEO : Description & Keywords -->
+<meta name="description" content="서민채무조정안심센터는 개인회생·파산·채무조정 등 국가지원 제도를 통해 최대 90% 빚 조정을 무료 상담으로 안내하는 서민 맞춤 빚 해결 전문 센터입니다.">
+<meta name="keywords" content="채무조정,개인회생,개인파산,빚조정,채무통합,신용회복,채권추심중단,압류해제,무료채무상담,국가지원빚조정,서민채무안심센터,빚상담,부채해결,회생상담,파산상담">
+
+<!-- Open Graph (Facebook, Kakao 등) -->
+<meta property="og:locale" content="ko_KR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="서민채무조정안심센터">
+<meta property="og:title" content="서민채무조정안심센터｜최대 90% 빚 조정 무료 상담">
+<meta property="og:description" content="국가지원 제도를 활용해 빚을 줄이고 삶을 다시 세우세요. 개인회생·파산·채무조정 전문 무료 상담을 제공합니다.">
+<meta property="og:url" content="">
+<meta property="og:image" content="./img/intro-1.jpg">
+<link rel="apple-touch-icon" href="./img/favicon.png" sizes="180x180"/>
+<link rel="icon" href="./img/favicon.png" sizes="16x16"/>
+<link rel="icon" href="./img/favicon.png" sizes="32x32"/>
+<link rel="icon" href="./img/favicon.png" sizes="192x192"/>
+<link rel="icon" href="./img/favicon.png" type="image/svg+xml"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="서민채무조정안심센터｜빚 조정∙신용회복 무료 상담">
+<meta name="twitter:description" content="개인회생·파산·채무조정 전문 센터. 국가지원 제도로 최대 90% 빚 조정을 도와드립니다.">
+<meta name="twitter:image" content="./intro/img/intro-1.jpg"/>
+<meta name="twitter:site" content="">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/common.css"/>
+  <link rel="stylesheet" href="./css/main-style.css"/>
+  <link href="./css/ionicons.min.css" rel="stylesheet" />
+  <style>
+    /* ── RESET & LAYOUT ── */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Pretendard',sans-serif;background:#111;color:#fff;overflow-x:hidden}
+    .container{display:flex}
+    #main{flex:1;position:relative;overflow:hidden}
+    #visualTransWrap{position:absolute;inset:0;pointer-events:none;z-index:5}
+
+    /* ── SWIPER & BG ── */
+    .mv_container{width:100%;height:90vh;position:relative}
+    .swiper-container,.swiper-wrapper,.swiper-slide{width:100%;height:100%}
+    .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 6s ease;filter:brightness(0.5)}
+    .swiper-slide-active .bg{transform:scale(1.12)}
+    .bg1{background-image:url('./img/intro-1.jpg')}
+    .bg2{background-image:url('./img/intro-2.jpg')}
+    .bg3{background-image:url('./img/page-3.jpg')}
+
+    /* ── TEXT & BUTTON ── */
+    .mv_txt_box{position:absolute;top:30%;left:5%;max-width:640px;z-index:2}
+    .mv_cate{font-size:18px;font-weight:600;margin-bottom:14px;color:#ffeb55;display:inline-block}
+    .mv_tit{font-size:43px;line-height:1.4;margin:0 0 12px}
+    @media screen and (max-width:620px) {
+      .mv_tit{font-size:34px !important;}
+      
+    }
+    
+    @media screen and (max-width:500px) {
+      .mv_tit{font-size:26px !important;}
+      
+    }
+    .mv_txt{font-size:18px;line-height:1.6;font-weight:300}
+    .mv_btn{
+      display:inline-block;margin-top:30px;padding:14px 36px;
+      border:2px solid #fff;border-radius:40px;
+      background:transparent;color:#fff;font-weight:600;letter-spacing:.3px;
+      opacity:0;pointer-events:none;
+      transition:opacity .6s,background .35s,box-shadow .35s,color .35s,transform .35s;
+      position:relative;overflow:hidden;text-decoration:none;
+    }
+    .swiper-slide-active .mv_btn{opacity:1;pointer-events:auto}
+    .mv_btn::after{
+      content:'';position:absolute;inset:0;background:rgba(255,255,255,.15);
+      transform:translateX(-100%);transition:transform .4s;
+    }
+    .mv_btn:hover::after{transform:translateX(0)}
+    .mv_btn:hover{
+      background:#fff;color:#111;box-shadow:0 8px 24px rgba(0,0,0,.25);
+      transform:translateY(-2px);
+    }
+
+    /* ── WAVE ANIMATION ── */
+    .wave_anim .wave{display:inline-block;opacity:0;animation:wave 1.1s ease-out forwards}
+    @keyframes wave{0%{transform:translateY(25px);opacity:0}100%{transform:translateY(0);opacity:1}}
+    .wave_anim.custom .wave:nth-child(1){animation-delay:.15s}
+    .wave_anim.custom .wave:nth-child(2){animation-delay:.3s}
+    .wave_anim.custom .wave:nth-child(3){animation-delay:.45s}
+
+    /* ── PROGRESS BAR ── */
+    .progress-container{position:absolute;bottom:120px;left:5%;right:5%;height:4px;display:flex;gap:10px;z-index:3;width:150px;}
+    .progress-segment{flex:1;background:rgba(255,255,255,.25);border-radius:2px;overflow:hidden;cursor:pointer}
+    .progress-fill{width:0;height:100%;background:#fff;display:block}
+
+    .wheel_down{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);width:24px;opacity:.7;z-index:3;  animation: wheel-bounce 2s ease-in-out infinite;}
+    /* ── wheel_down 애니메이션 추가 ── */
+
+/* @keyframes wheel-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(8px); }
+} */
+
+/* 내부 작은 막대(.wheel)에 페이드+슬라이드 애니메이션 */
+.wheel_down .wheel {
+  animation: wheel-fade 2s ease-in-out infinite;
+}
+@keyframes wheel-fade {
+  0%   { opacity: 1; transform: translateY(0); }
+  80%  { opacity: 0.2; transform: translateY(10px); }
+  100% { opacity: 0; transform: translateY(14px); }
+}
+    #sidebar{display:none}
+  </style>
+
+
+<style>
+
+  /* ──────────────────────────────────────────
+        #visual-section 전용 스타일
+     ─────────────────────────────────────────── */
+     #visual-section {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+     }
+   
+     /* 비디오 */
+     #visual-section .video_wrap {
+       position: absolute; inset: 0; z-index: 0;
+     }
+     
+     #visual-section .video_wrap video {
+       width: 100%; height: 100%; object-fit: cover; object-position: center;
+     }
+   
+     /* 오버레이 */
+     #visual-section .overlay {
+       position: absolute; inset: 0;
+       background: rgba(0,0,0,0.5);
+     }
+   
+     /* 텍스트 컨테이너 */
+     #visual-section .txt_container {
+       position: absolute; inset: 0; z-index: 2;
+       display: flex; flex-direction: column;
+       justify-content: space-evenly; align-items: center;
+       text-align: center; pointer-events: none;
+     }
+   
+     /* fadeInUp 애니메이션 정의 */
+     @keyframes fadeInUp {
+       from { opacity: 0; transform: translateY(20px); }
+       to   { opacity: 1; transform: translateY(0); }
+     }
+   
+     /* 초기 상태: 숨김 */
+     #visual-section .company,
+     #visual-section .logo,
+     #visual-section .exp {
+       opacity: 0;
+     }
+   
+     /* 스크롤 중앙 진입 시 animate 클래스가 붙으면 실행 */
+     #visual-section.animate .company {
+       color: #fff; font-size: 2.5rem; font-weight: 500;
+       margin-bottom: 0.5em;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.2s;
+     }
+     #visual-section.animate .logo {
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.7s;
+     }
+     #visual-section .logo .m_logo {
+       width: 800px; height: 130px;
+       background: url("../img/sm-logo.png") no-repeat center/contain;
+       margin-bottom: 0.5em;
+     }
+     #visual-section.animate .exp {
+       color: #fff; font-size: 1.25rem; line-height: 1.6; max-width: 80%;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 1s;
+     }
+     #visual-section .highlight {
+       color: #e6d3a3; font-weight: 600;
+     }
+   
+     /* 반응형: 모바일 영상 우측 보이기 포함 */
+     @media (max-width: 768px) {
+       #visual-section .company { font-size: 2rem; }
+       #visual-section .logo .m_logo {
+         background: url("../img/sm-font.png") no-repeat center/contain;
+         width: 400px; height: 300px;
+       }
+       #visual-section .exp { font-size: 1rem; }
+       #visual-section .video_wrap video {
+         object-position: right center;
+       }
+     }
+
+     
+ </style>
+
+        
+</head>
+<body>
+
+
+<!-- <div id="menu"></div> -->
+  
+    
+
+
+  
+<div class="container">
+  <div id="main">
+    <div id="visualTransWrap"></div>
+
+    <div class="mv_container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 : 핵심 제안 -->
+          <div class="swiper-slide">
+            <div class="bg bg1"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무조정 정부지원</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">신청이 완료되었습니다.</p>
+                <p class="wave">빚 걱정, 바로 끝낼 수 있도록</p>
+                <p class="wave">무료 상담 안내드리겠습니다.</p>
+                
+                <!-- <p class="wave"></p> -->
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">전화 부재 3회시 혜택이 사라지니, 꼭 받아주세요.</span>
+              </p>
+
+              <!-- <a href="#sm-consult" class="mv_btn">무료 상담 신청</a> -->
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Progress Bar -->
+        <!-- <div class="progress-container"></div> -->
+      </div>
+
+      <!-- Scroll Down Icon -->
+   
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const OFFSET = 0;          // 고정 헤더 높이만큼 보정하려면 숫자(px)로 입력
+  
+    // #sm-consult 로 향하는 모든 링크에 적용
+    document.querySelectorAll('a[href="#sm-consult"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();                           // 기본 점프 동작 막기
+        const target = document.querySelector('#sm-consult');
+        if (!target) return;
+  
+        const top = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+  
+        window.scrollTo({ top, behavior: 'smooth' }); // 부드럽게 이동
+      });
+    });
+  });
+  </script>
+  
+
+
+
+
+
+
+    
+ 
+    
+   
+<!-- ==================== 채무 탕감 후기 슬라이드 (최신 ver.) ==================== -->
+<style>
+  /* ────── RESET & 공통 ────── */
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
+  body{background:#0e0e0e;color:#fff;}
+
+  /* ────── 후기 영역 ────── */
+  #lawfirm-testimonials{padding:60px 5vw;overflow:hidden;}
+  #lawfirm-testimonials h2{
+    font-size:32px;font-weight:700;text-align:center;margin:80px 0;letter-spacing:-0.01em;
+  }
+
+  /* 슬라이드 래퍼 */
+  .marquee-row{display:flex;gap:24px;will-change:transform;}
+
+  .testimonial-card{
+    border:1px solid #ffffff40;flex:0 0 370px;background:#181611;border-radius:16px;
+    padding:32px 28px 24px;line-height:1.55;box-shadow:0 6px 28px rgba(0,0,0,.44);
+    display:flex;flex-direction:column;justify-content:space-between;height:250px;min-width:0;
+    transition:box-shadow .3s;
+  }
+  .testimonial-card:hover{box-shadow:0 12px 44px rgba(255,228,106,0.11),0 2px 20px rgba(220,220,0,0.03);}
+  .testimonial-card q{display:block;font-size:17px;font-weight:500;margin-bottom:10px;color:#fff;letter-spacing:-0.02em;}
+
+  /* finance bar */
+  .finance-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0 4px;}
+  .f-item{background:#222;border-radius:8px;text-align:center;padding:7px 4px;}
+  .f-label{font-size:11px;font-weight:600;color:#bfbfbf;letter-spacing:-.02em;}
+  .f-val{display:block;margin-top:2px;font-size:15px;font-weight:800;color:#ffe46a;}
+  .f-val.minus{color:#ff6c5c;}
+
+  .testimonial-meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px;width:100%;}
+  .author{font-size:15px;color:#ffe46a;font-weight:700;letter-spacing:-0.01em;}
+  .rate{
+    display:inline-block;font-size:13px;background:#ffe46a;color:#181611;font-weight:900;
+    border-radius:7px;padding:3.5px 13px;letter-spacing:0.04em;min-width:60px;text-align:center;
+    box-shadow:0 2px 10px rgba(255,228,106,0.16);
+  }
+
+  @media(max-width:1100px){
+    .testimonial-card{flex:0 0 340px;padding:26px 17px 18px;height:255px;}
+    .f-val{font-size:14px;}
+    #lawfirm-testimonials{padding:36px 2vw;}
+  }
+  .row-gap{height:28px;}
+</style>
+
+<section id="lawfirm-testimonials">
+  <h2>실제 채무조정 후기</h2>
+
+  <!-- 위쪽 행 (→) -->
+  <div class="marquee-row top">
+
+    <!-- 1 : 90% -->
+    <article class="testimonial-card">
+      <q>도박으로 망가졌던 삶이었습니다. 탕감 후에는 숨통이 트여 다시 일어설 용기가 생겼습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2,400만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2,160만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">8만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">오○○ (도박&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 2 -->
+    <article class="testimonial-card">
+      <q>생활비 때문에 카드 돌려막기를 반복했는데, 이제는 가족과 웃으며 식탁에 앉을 수 있습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">4,000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3,000만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">20만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">김○○ (생활비)</p><span class="rate">탕감율 75%</span></div>
+    </article>
+
+    <!-- 3 : 90% -->
+    <article class="testimonial-card">
+      <q>코인 폭락 후 모든 것이 끝난 줄 알았지만, 큰 틀에서 정리하고 다시 저축을 시작했습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">5,500만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-4,950만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">18만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">장○○ (코인&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 4 -->
+    <article class="testimonial-card">
+      <q>주식 빚에 눌려 숨조차 쉬기 힘들었는데, 부담이 확 줄어 마음 편히 출근하고 있습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">7,200만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-6,336만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">23만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">박○○ (주식&nbsp;빚)</p><span class="rate">탕감율 88%</span></div>
+    </article>
+
+    <!-- 5 -->
+    <article class="testimonial-card">
+      <q>은행 대출이 눈덩이처럼 불어 걱정이 컸는데, 직원들과 공장을 지킬 수 있어 감사합니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">1억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-7,000만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">50만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">이○○ (은행&nbsp;빚)</p><span class="rate">탕감율 70%</span></div>
+    </article>
+
+    <!-- 6 -->
+    <article class="testimonial-card">
+      <q>신용카드 연체 알림이 사라지니 밤잠이 달라졌습니다. 다시 삶의 리듬을 찾았어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">1억&nbsp;6000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1억&nbsp;3120만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">60만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">윤○○ (신용카드)</p><span class="rate">탕감율 82%</span></div>
+    </article>
+
+    <!-- 7 : 90% -->
+    <article class="testimonial-card">
+      <q>끝이 안 보이던 사업자금 대출이 정리되니, 숨쉬는 것부터 달라졌습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2억&nbsp;3000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2억&nbsp;700만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">65만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">최○○ (은행&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 8 -->
+    <article class="testimonial-card">
+      <q>투자 실패로 눌렸던 가슴이 탕감 이후 한결 가벼워졌습니다. 다시 도전할 힘을 얻었어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">3억&nbsp;5000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2억&nbsp;7300만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">120만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">남○○ (은행&nbsp;빚)</p><span class="rate">탕감율 78%</span></div>
+    </article>
+
+    <!-- 9 -->
+    <article class="testimonial-card">
+      <q>공장 확장 때문에 진 빚도 정리되어 이제는 매출에만 집중할 수 있습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">5억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3억&nbsp;7000만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">250만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">문○○ (은행&nbsp;빚)</p><span class="rate">탕감율 74%</span></div>
+    </article>
+
+    <!-- 10 -->
+    <article class="testimonial-card">
+      <q>보증으로 떠안은 큰 빚이 정리되자, 처음으로 미래 계획을 세우게 됐습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">7억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-5억&nbsp;8100만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">300만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">배○○ (은행&nbsp;빚)</p><span class="rate">탕감율 83%</span></div>
+    </article>
+  </div>
+
+  <div class="row-gap"></div>
+
+  <!-- 아래쪽 행 (←) -->
+  <div class="marquee-row bottom">
+
+    <!-- 11 -->
+    <article class="testimonial-card">
+      <q>생활비 대출 부담이 사라지니 매달 월급날이 기다려집니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2,600만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1,872만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">9만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">홍○○ (생활비)</p><span class="rate">탕감율 72%</span></div>
+    </article>
+
+    <!-- 12 : 90% -->
+    <article class="testimonial-card">
+      <q>도박빚 때문에 잠 못 이루던 날들이 끝났습니다. 마음껏 숨 쉬고 있어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">3,800만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3,420만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">17만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">서○○ (도박&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 13 : 90% -->
+    <article class="testimonial-card">
+      <q>주식 계좌를 볼 때마다 괴로웠는데, 큰 부분이 정리되어 마음이 한결 가볍습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">4,900만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-4,410만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">19만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">정○○ (주식&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 14 -->
+    <article class="testimonial-card">
+      <q>코인 빚이 정리되고 나니 다시 공부할 마음의 여유가 생겼어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">6,600만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-5,544만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">25만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">안○○ (코인&nbsp;빚)</p><span class="rate">탕감율 84%</span></div>
+    </article>
+
+    <!-- 15 -->
+    <article class="testimonial-card">
+      <q>가게가 힘들어졌을 때 손 내밀어 주셔서 폐업 대신 희망을 택했습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">9,000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-6,300만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">40만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">곽○○ (은행&nbsp;빚)</p><span class="rate">탕감율 70%</span></div>
+    </article>
+
+    <!-- 16 -->
+    <article class="testimonial-card">
+      <q>신용카드 연체 문자에서 해방되니 하루하루가 가벼워졌습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">1억&nbsp;4000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1억&nbsp;1900만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">55만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">임○○ (신용카드)</p><span class="rate">탕감율 85%</span></div>
+    </article>
+
+    <!-- 17 -->
+    <article class="testimonial-card">
+      <q>투자 실패로 접었던 꿈을 다시 꿉니다. 도움 주신 분들께 정말 감사합니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1억&nbsp;4600만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">90만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">류○○ (주식&nbsp;빚)</p><span class="rate">탕감율 73%</span></div>
+    </article>
+
+    <!-- 18 : 90% -->
+    <article class="testimonial-card">
+      <q>주식 신용거래로 무너진 가정에 웃음이 돌아왔습니다. 고맙습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2억&nbsp;8000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2억&nbsp;5200만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">110만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">문○○ (주식&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 19 -->
+    <article class="testimonial-card">
+      <q>도박으로 잃은 시간은 되돌릴 수 없지만, 부채 걱정 없이 다시 시작합니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">4억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3억</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">200만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">박○○ (도박&nbsp;빚)</p><span class="rate">탕감율 75%</span></div>
+    </article>
+
+    <!-- 20 -->
+    <article class="testimonial-card">
+      <q>코로나로 멈춘 매출 때문에 절망했지만, 탕감 후 회사를 지킬 수 있었습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">6억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-4억&nbsp;9200만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">270만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">고○○ (은행&nbsp;빚)</p><span class="rate">탕감율 82%</span></div>
+    </article>
+  </div>
+</section>
+
+<script>
+  /* 무한 슬라이드(마퀴) */
+  function initMarquee(row,{direction='left',speed=30}={}){
+    const originals=[...row.children];
+    originals.forEach(c=>row.appendChild(c.cloneNode(true)));
+
+    const gap=24;
+    const full=originals.reduce((w,el)=>w+el.getBoundingClientRect().width+gap,-gap);
+    const dir=direction==='left'?-1:1;
+
+    let pos=0,last=performance.now();
+    function step(now){
+      const dt=(now-last)/1000;last=now;
+      pos+=dir*speed*dt;
+      if(dir===-1&&Math.abs(pos)>=full)pos+=full;
+      if(dir=== 1&&pos>=0)       pos-=full;
+      row.style.transform=`translateX(${pos}px)`;
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  window.addEventListener('DOMContentLoaded',()=>{
+    initMarquee(document.querySelector('.marquee-row.top'),   {direction:'right',speed:30});
+    initMarquee(document.querySelector('.marquee-row.bottom'),{direction:'left', speed:30});
+  });
+</script>
+<!-- ==================== /채무 탕감 후기 슬라이드 ==================== -->
+
+
+  
+
+
+
+
+<div id="footer_template"></div>
+
+
+
+
+
+	<script src="./js/jquery-1.8.3.min.js"></script>
+
+
+
+
+<script>
+    $('.navi_btn').click(function(){
+      $(this).toggleClass('on');
+      $('.navi').stop().fadeToggle()
+    });
+  
+  
+  
+    $('.lnb h3').click(function(){
+      var naviTitle = $(this).next('ul');
+      $(this).addClass('on');
+      $('.lnb h3').not(this).removeClass('on');
+      naviTitle.stop().slideDown();
+      $('.lnb h3').next().not(naviTitle).slideUp();
+    });
+  
+    $('.right_contact .left').click(function(){
+      $('.right_contact').toggleClass('on');
+    });
+  
+    $('.bottom_contact_mob .top_thumb').click(function(){
+      $('.bottom_contact_mob').toggleClass('on');
+    });
+  
+    $('.bottom_contact_mob .bottom_con .btn_list .close_btn').click(function(){
+      $('.bottom_contact_mob').removeClass('on');
+    });	
+  </script>  
+
+
+
+  
+
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const DELAY = 5000, SPEED = 1000;
+
+    const swiper = new Swiper('.swiper-container', {
+      effect: 'fade',
+      loop: true,
+      speed: SPEED,
+      slidesPerView: 1,
+      autoplay: {
+        delay: DELAY,
+        disableOnInteraction: false,
+        waitForTransition: false
+      },
+      shortSwipes: true,
+      longSwipes: false,
+      threshold: 20,
+      slideToClickedSlide: true,
+    });
+
+    // Progress Bar 생성
+    const slides = Array.from(document.querySelectorAll('.swiper-container .swiper-slide'))
+                        .filter(s => !s.classList.contains('swiper-slide-duplicate'));
+    const bar = document.querySelector('.progress-container');
+    const fills = [];
+
+    slides.forEach((_, i) => {
+      const seg = document.createElement('div');
+      seg.className = 'progress-segment';
+      const fill = document.createElement('span');
+      fill.className = 'progress-fill';
+      seg.appendChild(fill);
+      bar.appendChild(seg);
+      fills.push(fill);
+
+      seg.addEventListener('click', () => swiper.slideToLoop(i, SPEED));
+    });
+
+    function updateProgress(idx) {
+      fills.forEach((f, j) => {
+        f.style.transition = 'none';
+        f.style.width = j < idx ? '100%' : '0';
+      });
+      const active = fills[idx];
+      void active.offsetWidth;
+      active.style.transition = `width ${DELAY}ms linear`;
+      active.style.width = '100%';
+    }
+
+    updateProgress(0);
+    swiper.on('slideChange', () => updateProgress(swiper.realIndex));
+  </script>
+  <script src="./js/jquery-1.8.3.min.js"></script>
+
+
+  <script>
+   /* 모바일 메뉴 토글 */
+   function toggleMobile(){
+      const panel   = document.getElementById('mobilePanel');
+      const burger  = document.getElementById('hamburgerBtn');
+      const nav     = document.getElementById('mainNav');
+      const logoImg = document.getElementById('logoImg');
+    
+      panel.classList.toggle('show');
+      burger.classList.toggle('open');
+      nav.classList.toggle('menu-open', panel.classList.contains('show'));
+    
+      if (window.pageYOffset === 0){
+        logoImg.src = panel.classList.contains('show')
+          ? logoImg.dataset.srcDark
+          : logoImg.dataset.srcLight;
+      }
+    }
+    
+    /* 스크롤 효과 */
+    const nav      = document.getElementById('mainNav');
+    const logoImg  = document.getElementById('logoImg');
+    let lastY      = window.pageYOffset;
+    
+    function onScroll(){
+      const y = window.pageYOffset;
+      if (y === 0){
+        nav.classList.add('transparent');
+        nav.classList.remove('solid');
+        logoImg.src = logoImg.dataset.srcLight;
+      } else {
+        nav.classList.remove('transparent');
+        nav.classList.add('solid');
+        logoImg.src = logoImg.dataset.srcDark;
+        nav.classList.remove('menu-open');
+        document.getElementById('hamburgerBtn').classList.remove('open');
+        document.getElementById('mobilePanel').classList.remove('show');
+      }
+      if (y > lastY && y > 50) nav.classList.add('hide');
+      else nav.classList.remove('hide');
+      lastY = y;
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+    
+    /* 전화 버튼 로테이션 */
+    const callData = [
+      { lines:["24시간 비밀상담 (송무)", "서울 : 02-6954-0378"], tel:"0269540378"   },
+      { lines:["24시간 비밀상담 (송무)", "대전 : 042-721-0606"], tel:"0427210606" }
+    ];
+    const swapDelay = 4000;
+    const fadeDur   = 350;
+    
+    const phoneBtns = Array.from(document.querySelectorAll(".phone-btn"));
+    const txtSpans  = phoneBtns.map(btn=>btn.querySelector(".txt"));
+    let idx = 0;
+    
+    function setContent(lines,tel){
+      txtSpans.forEach(s=>s.innerHTML=`${lines[0]}<br>${lines[1]}`);
+      phoneBtns.forEach(b=>b.href=`tel:${tel}`);
+    }
+    
+    function swapPhoneMsg(){
+      idx = (idx + 1) % callData.length;     // 먼저 다음 인덱스로
+      txtSpans.forEach(s=>s.style.opacity=0);
+      setTimeout(()=>{
+        const {lines,tel} = callData[idx];
+        setContent(lines,tel);
+        txtSpans.forEach(s=>s.style.opacity=1);
+      }, fadeDur);
+    }
+    
+    setContent(callData[0].lines, callData[0].tel);
+    setInterval(swapPhoneMsg, swapDelay);
+    </script>
+
+
+
+<!-- 카운트 애니메이션 & 카운트다운 -->
+<script>
+  (function () {
+    /* ────────── ① 숫자 애니메이션(기존) ────────── */
+    const counters = document.querySelectorAll('#reliefBanner .counter');
+    function animate(counter) {
+      const target = +counter.dataset.target,
+            duration = +counter.dataset.duration || 1500,
+            startTime = performance.now();
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1),
+              value    = Math.round(progress * target);
+        counter.textContent = value.toLocaleString();
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting) animate(el);
+        else el.textContent = '0';
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => io.observe(c));
+  
+    /* ────────── ② 매일 23:59:59 카운트다운 ────────── */
+    const cd      = document.getElementById('dailyCountdown');
+    const dayEl   = cd.querySelector('.dd');
+    const hourEl  = cd.querySelector('.hh');
+    const minEl   = cd.querySelector('.mm');
+    const secEl   = cd.querySelector('.ss');
+  
+    function getTodayDeadline() {
+      const t = new Date();
+      t.setHours(23, 59, 59, 999);          // 오늘 23:59:59.999
+      if (Date.now() > t.getTime()) {       // 이미 지났다면 내일로
+        t.setDate(t.getDate() + 1);
+      }
+      return t;
+    }
+    function updateCountdown() {
+      const now   = new Date();
+      const end   = getTodayDeadline();
+      const diff  = end - now;
+  
+      const total = Math.floor(diff / 1000);
+      const days  = Math.floor(total / 86400);
+      const hours = Math.floor((total % 86400) / 3600);
+      const mins  = Math.floor((total % 3600) / 60);
+      const secs  = total % 60;
+  
+      // dayEl.textContent  = String(days).padStart(2, '0');
+      hourEl.textContent = String(hours).padStart(2, '0');
+      minEl.textContent  = String(mins).padStart(2, '0');
+      secEl.textContent  = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  })();
+  </script>
+  <!-- ▲▲▲ 회생지원 배너 끝 ▲▲▲ -->
+
+  <script>
+    // 모든 내부 링크(<a href="#...">)에 대해 스무스 스크롤 적용
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLinks = document.querySelectorAll('a[href^="#"]');
+  
+      menuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+  
+          if (targetElement) {
+            e.preventDefault();
+  
+            // 부드럽게 스크롤
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth"
+            });
+  
+            // 모바일 메뉴가 열려 있다면 닫기
+            const mobilePanel = document.getElementById("mobilePanel");
+            if (mobilePanel.classList.contains("open")) {
+              toggleMobile(); // 이미 존재하는 함수 사용
+            }
+          }
+        });
+      });
+    });
+  </script>
+  
+
+
+  <div id="privacy">
+    <div id="privacyContent">
+        <div class="titWrap">
+            <span>개인정보취급방침</span>
+            <i style="margin-top:-20px !important" class="ion-close-circled closeBtn"></i>
+        </div>
+        <div style="line-height:1.2" class="conWrap">
+            개인정보취급방침<br><br>
+            수집하는 개인정보의 항목<br>
+            "플로스"는 적법하고 공정한 수단에 의해서만 개인정보를 수집하며, 회원가입약관 또는 개인정보의 제공, 활용 동의서의 내용에 대해 이용자의 개인정보를 수집하는 경우에 당해<br> 이용자가 동의함 또는 동의하지 않음 버튼을 클릭 하는 등의 이용자의 동의를 얻는 절차를 거칩니다.<br>
+            <br>
+          개인정보 수집 및 이용 동의(필수)
+  1. 수집항목: 이름, 사업자명, 사업자등록번호, 업종, 개업연월일, 지역, 주소, 연매출, 기존대출, 필요자금 정보
+  2. 수집 및 이용 목적: 이용자 식별, 서비스 이용 및 고객상담, 본인 여부 확인, 계약 체결 시 계약인증, 연락, 문의 회신 및 고지사항 등 전달, 서비스 품질 개선을 위한 데이터 분석, 맞춤형 콘텐츠 및 서비스 등 제공 또는 추천
+  3. 보유 및 이용 기간: 2년. 단, 서비스 이용계약 체결시는 회원탈퇴시까지 보유할 수 있으며, 기타 관련 법령의 규정에 따라 거래 관계 확인을 위해 개인정보를 일정기간 보유할 수 있습니다.
+  4. 개인정보 제공에 동의하지 않으실 수 있으며, 동의하지 않으시면 서비스 이용이 제한될 수 있습니다. 가입시 ' 개인정보 마케팅 활용 ' 에 동의한 경우에 한하여 위 수집정보를 광고 및 마케팅 목적으로 활용할 수 있습니다.그 밖의 사항은 태산홀딩수 주식회사 개인정보처리방침에 따릅니다.
+  <section id="thirdParty">
+    <h3 class="tp-heading">개인정보 제3자 제공 동의 (필수)</h3>
+    <p class="tp-note">
+      귀하는 개인정보 보호법 등 관련 법령에 따라 제3자 제공에 대한 동의를 거부할 권리가 있습니다. 다만 동의하지 않을 경우 일부 서비스 이용이 제한될 수 있습니다.
+    </p>
+  
+    <table class="tp-table">
+      <tr>
+        <th>제공하는 자</th>
+        <td>서민채무조정안심센터</td>
+      </tr>
+      <tr>
+        <th>제공받는 자</th>
+        <td>
+          <span id="toggleBtn" class="toggle-btn">서비스제공업체</span>
+          <div id="partnerList" class="partner-list">
+            
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>제공 목적</th>
+        <td>
+          채무 조정 상담·계약 체결 및 사후 관리 등 서비스 제공계약의 이행을 위한 고객 확인 및 업무 수행
+        </td>
+      </tr>
+      <tr>
+        <th>제공하는 개인정보</th>
+        <td>
+          이름, 연락처, 주소, 채무 현황, 필요자금 등 상담·계약 이행에 필요한 정보 일체
+        </td>
+      </tr>
+      <tr>
+        <th>보유·이용 기간</th>
+        <td>
+          서비스 제공 목적 달성 시까지(단, 관계 법령에 따라 보관이 필요한 경우 해당 기간 동안 보관)
+        </td>
+      </tr>
+    </table>
+  </section>
+  
+  <section id="thirdPartyPro">
+    <h3 class="tp-heading">(제공업체) 개인정보 제3자 제공 동의 (필수)</h3>
+    <p class="tp-note">
+      본 동의는 전문가와 서민채무조정안심센터 간 서비스 품질 향상을 위한 정보 제공에 관한 것입니다. 동의하지 않을 경우 전문가용 서비스 이용이 제한될 수 있습니다.
+    </p>
+  
+    <table class="tp-table">
+      <tr>
+        <th>제공하는 자</th>
+        <td>
+          <span id="proToggleBtn" class="toggle-btn">서비스제공업체</span>
+          <div id="proPartnerList" class="partner-list">
+          
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>제공받는 자</th>
+        <td>서민채무조정안심센터</td>
+      </tr>
+      <tr>
+        <th>제공 목적</th>
+        <td>
+          전문가 서비스 이용 실적 확인, 고객 만족도 조사 및 서비스 개선을 위한 분석
+        </td>
+      </tr>
+      <tr>
+        <th>제공하는 개인정보</th>
+        <td>이름, 연락처, 상담·계약 이력, 고객 의견 등 서비스 품질 개선에 필요한 정보</td>
+      </tr>
+      <tr>
+        <th>보유·이용 기간</th>
+        <td>서비스 제공 목적 달성 시 또는 법령에 따른 보존 기간 종료 시까지</td>
+      </tr>
+    </table>
+  </section>
+  <br><Br>
+  <style>
+    #thirdParty, #thirdPartyPro { font-family:"Pretendard","Apple SD Gothic Neo",sans-serif; margin-top:24px; }
+    .tp-heading  { font-size:18px; font-weight:700; margin-bottom:8px; }
+    .tp-note     { font-size:14px; margin-bottom:18px; line-height:1.4; }
+    .tp-table    { width:100%; border-collapse:collapse; font-size:14px; }
+    .tp-table th, .tp-table td { border:1px solid #444; padding:12px; vertical-align:top; line-height:1.5; }
+    .tp-table th { width:130px; background:#f7f7f7; font-weight:600; text-align:left; }
+    .toggle-btn  { color:#000; cursor:pointer; text-decoration:underline; }
+    .partner-list{ display:none; margin-top:8px; line-height:1.4; }
+    .partner-list.show{ display:block; }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const toggle = (btnId,listId)=>{
+        const btn=document.getElementById(btnId);
+        const list=document.getElementById(listId);
+        if(btn&&list){btn.addEventListener('click',()=>list.classList.toggle('show'));}
+      };
+      toggle('toggleBtn','partnerList');
+      toggle('proToggleBtn','proPartnerList');
+    });
+  </script>
+
+
+            개인정보의 보유 및 이용기간<br>
+            원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br><br>
+    
+            보존 항목 : 이름 , 휴대전화번호 , 필요시기, 직업구분, 대출신청종류 등.<br>
+            보존 근거 : 고객의요청이 있을시 즉시폐기<br>
+            보존 기간 : 3년<br><br>
+    
+            그리고 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.<br><br>
+    
+            소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래등에서의 소비자보호에 관한 법률)<br>
+            신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년 (신용정보의 이용 및 보호에 관한 법률)<br><br>
+    
+            개인정보의 파기절차 및 방법<br>
+            회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.<br><br>
+    
+            ● 파기절차<br>
+            회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다.<br><br>
+    
+            별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.<br><br>
+    
+            ● 파기방법<br>
+            - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
+            - 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br><br>
+    
+            
+            이용자 및 법정대리인의 권리와 그 행사방법<br>
+            이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.<br><br>
+    
+            이용자들의 개인정보 조회,수정을 위해서는 '개인정보변경'(또는 '회원정보수정' 등)을 가입해지(동의철회)를 위해서는 "회원탈퇴"를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.<br><br>
+    
+            혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.<br><br>
+    
+            귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.<br><br>
+    
+            회사는 이용자의 요청에 의해 해지 또는 삭제된 개인정보는 "회사가 수집하는 개인정보의 보유 및 이용기간"에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br><br>
+    
+    
+            개인정보에 관한 민원서비스<br>
+            회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다.<br>
+            <br>
+        귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.<br><br>
+    
+            기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.<br>
+            1.개인분쟁조정위원회 (https://www.1336.or.kr/1336)<br>
+            2.정보보호마크인증위원회 (https://www.eprivacy.or.kr/02-580-0533~4)<br>
+            3.대검찰청 인터넷범죄수사센터 (02-3480-3600)<br>
+            4.경찰청 사이버테러대응센터 (https://www.ctrc.go.kr/02-392-0330)<br />
+            <br />
+        </div>
+    </div>
+  </div>
+  
+
+</body>
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/menu.js" defer></script>
+<script src="./js/personal.js"></script>
+<script src="./js/validation.js"></script>
+
+
+<script src="./js/validation-float-mob.js"></script>
+
+<script src="./js/footer.js" defer></script>
+</html>
