@@ -120,108 +120,23 @@
     #sidebar{display:none}
   </style>
 
-
-<style>
-
-  /* ──────────────────────────────────────────
-        #visual-section 전용 스타일
-     ─────────────────────────────────────────── */
-     #visual-section {
-       position: relative;
-       width: 100%;
-       height: 100vh;
-       overflow: hidden;
-     }
-   
-     /* 비디오 */
-     #visual-section .video_wrap {
-       position: absolute; inset: 0; z-index: 0;
-     }
-     
-     #visual-section .video_wrap video {
-       width: 100%; height: 100%; object-fit: cover; object-position: center;
-     }
-   
-     /* 오버레이 */
-     #visual-section .overlay {
-       position: absolute; inset: 0;
-       background: rgba(0,0,0,0.5);
-     }
-   
-     /* 텍스트 컨테이너 */
-     #visual-section .txt_container {
-       position: absolute; inset: 0; z-index: 2;
-       display: flex; flex-direction: column;
-       justify-content: space-evenly; align-items: center;
-       text-align: center; pointer-events: none;
-     }
-   
-     /* fadeInUp 애니메이션 정의 */
-     @keyframes fadeInUp {
-       from { opacity: 0; transform: translateY(20px); }
-       to   { opacity: 1; transform: translateY(0); }
-     }
-   
-     /* 초기 상태: 숨김 */
-     #visual-section .company,
-     #visual-section .logo,
-     #visual-section .exp {
-       opacity: 0;
-     }
-   
-     /* 스크롤 중앙 진입 시 animate 클래스가 붙으면 실행 */
-     #visual-section.animate .company {
-       color: #fff; font-size: 2rem; font-weight: 500;
-       margin-bottom: 0.5em;
-       animation: fadeInUp 1s ease-out forwards;
-       animation-delay: 0.2s;
-     }
-
-     @media screen and (max-width:530px) {
-      
-      #visual-section.animate .company {
-       color: #fff; font-size: 1.5rem; font-weight: 500;
-     }
-
-     }
-
-     #visual-section.animate .logo {
-       animation: fadeInUp 1s ease-out forwards;
-       animation-delay: 0.7s;
-     }
-     #visual-section .logo .m_logo {
-       width: 800px; height: 130px;
-       background: url("../img/sm-logo.png") no-repeat center/contain;
-       margin-bottom: 0.5em;
-     }
-     #visual-section.animate .exp {
-       color: #fff; font-size: 1.25rem; line-height: 1.6; max-width: 80%;
-       animation: fadeInUp 1s ease-out forwards;
-       animation-delay: 1s;
-     }
-     #visual-section .highlight {
-       color: #e6d3a3; font-weight: 600;
-     }
-   
-     /* 반응형: 모바일 영상 우측 보이기 포함 */
-     @media (max-width: 768px) {
-       #visual-section .company { font-size: 2rem; }
-       #visual-section .logo .m_logo {
-         background: url("../img/sm-font.png") no-repeat center/contain;
-         width: 400px; height: 300px;
-       }
-       #visual-section .exp { font-size: 1rem; }
-       #visual-section .video_wrap video {
-         object-position: right center;
-       }
-     }
-#visual-section .video_wrap img {
-  object-fit: cover;
-  object-position: center;
-}
-     
- </style>
-
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1908867866693153');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1908867866693153&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
         
 </head>
 <body>
@@ -255,7 +170,7 @@
                 <span class="wave">채무조정정부제도를 통해<br>빠르게 압류를 풀고<br>연체 위기에 벗어날 수 있도록<br>신속하게 도와드립니다.</span>
               </p>
 
-              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+              <a href="tel:010-2107-0112" class="mv_btn">100% 비밀보장 긴급 안심콜</a>
             </div>
           </div>
 
@@ -275,7 +190,7 @@
       <span class="wave">경매 및 압류 즉시 중단 및<br>여러분의 소중한 재산을<br>지킬 수 있도록 도와드립니다.</span>
     </p>
 
-    <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+    <a href="tel:010-2107-0112" class="mv_btn">100% 비밀보장 긴급 안심콜</a>
   </div>
 </div>
 
@@ -296,7 +211,7 @@
                 <span class="wave">추심 즉각 중단하고<br>가족들이 보호받을 수 있도록<br>빠르게 법률 대응해드립니다.</span>
               </p>
 
-              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+              <a href="tel:010-2107-0112" class="mv_btn">100% 비밀보장 긴급 안심콜</a>
             </div>
           </div>
 
@@ -317,7 +232,7 @@
                 <span class="wave">견디기 힘든 빚을 줄이고<br>일상을 회복할 수 있도록<br>빠르게 도와드립니다.</span>
               </p>
 
-              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+              <a href="tel:010-2107-0112" class="mv_btn">100% 비밀보장 긴급 안심콜</a>
             </div>
           </div>
 
@@ -338,7 +253,7 @@
                 <span class="wave">예상 못한 상황에서<br>법률 조치를 취할 수 있게<br>빠르게 도와드립니다.</span>
               </p>
 
-              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+              <a href="tel:010-2107-0112" class="mv_btn">100% 비밀보장 긴급 안심콜</a>
             </div>
           </div>
 
@@ -459,111 +374,6 @@
   </div>
 
   <section id="relief95">
-    <style>
-      /* ────────── 디자인 ────────── */
-      #relief95 {
-        font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
-        text-align: center;
-        max-width: 680px;
-        margin: 0 auto;
-        color: #fff;
-      }
-      #relief95 .label {
-        font-size: 15px;
-        font-weight: 500;
-        margin-bottom: 24px;
-      }
-      #relief95 .headline {
-        line-height: 1.3;
-        margin-bottom: 40px;
-        font-weight: 800;
-        font-size: 40px;
-      }
-      #relief95 .orange {
-        color: #ff5a00 !important;
-      }
-  
-      #relief95 .red {
-        color: #ff5a00;
-      }
-      
-      /* ─ 표 형태 박스 ─ */
-      #relief95 .box {
-        border: 3px solid #ff5a00;
-        border-radius: 4px;
-        overflow: hidden;
-        margin-bottom: 36px;
-      }
-      #relief95 .box-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background: #ff5a00;
-        color: #fff;
-        font-weight: 700;
-        font-size: 18px;
-      }
-      #relief95 .box-header div {
-        padding: 12px 0;
-      }
-
-           #relief95 .box-line {
-        display: grid;
-        grid-template-columns: 1fr;
-        background: #ff5a00;
-        color: #fff;
-        font-weight: 700;
-        font-size: 18px;
-      }
-      #relief95 .box-line div {
-        padding: 12px 0;
-      }
-
-
-
-      #relief95 .box-body {
-        display: grid;
-        grid-template-columns: 1fr 1px 1fr;
-      }
-      #relief95 .box-body .cell {
-        padding: 28px 0;
-      }
-      #relief95 .box-body .divider {
-        background: #ff5a00;
-      }
-      #relief95 .monthly {
-        font-size: 16px;
-        font-weight: 600;
-        display: block;
-        margin-bottom: 4px;
-      }
-      #relief95 .amount {
-        font-size: 42px;
-        font-weight: 800;
-      }
-      #relief95 .amount small {
-        font-size: 28px;
-        font-weight: 700;
-      }
-  
-      /* ─ 하단 텍스트 ─ */
-      #relief95 .note {
-        color: #ff5a00;
-        font-weight: 700;
-        font-size: 18px;
-        margin-bottom: 6px;
-      }
-      #relief95 .disclaimer {
-        font-size: 14px;
-        font-weight: 500;
-      }
-  
-      /* ─ 반응형 ─ */
-      @media (max-width: 480px) {
-        #relief95 .headline { font-size: 32px; }
-        #relief95 .amount { font-size: 24px; }
-        #relief95 .amount small { font-size: 22px; }
-      }
-    </style>
   
     <!-- ────────── 내용 ────────── -->
   
@@ -767,56 +577,6 @@ setTimeout(()=>{
 },2000);
 </script>
 
-    
- 
-    
-   
-<!-- ==================== 채무 탕감 후기 슬라이드 (최신 ver.) ==================== -->
-<style>
-  /* ────── RESET & 공통 ────── */
-  *{margin:0;padding:0;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
-  body{background:#0e0e0e;color:#fff;}
-
-  /* ────── 후기 영역 ────── */
-  #lawfirm-testimonials{padding:60px 5vw;overflow:hidden;}
-  #lawfirm-testimonials h2{
-    font-size:32px;font-weight:700;text-align:center;margin:80px 0;letter-spacing:-0.01em;
-  }
-
-  /* 슬라이드 래퍼 */
-  .marquee-row{display:flex;gap:24px;will-change:transform;}
-
-  .testimonial-card{
-    border:1px solid #ffffff40;flex:0 0 370px;background:#181611;border-radius:16px;
-    padding:32px 28px 24px;line-height:1.55;box-shadow:0 6px 28px rgba(0,0,0,.44);
-    display:flex;flex-direction:column;justify-content:space-between;height:250px;min-width:0;
-    transition:box-shadow .3s;
-  }
-  .testimonial-card:hover{box-shadow:0 12px 44px rgba(255,228,106,0.11),0 2px 20px rgba(220,220,0,0.03);}
-  .testimonial-card q{display:block;font-size:17px;font-weight:500;margin-bottom:10px;color:#fff;letter-spacing:-0.02em;}
-
-  /* finance bar */
-  .finance-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0 4px;}
-  .f-item{background:#222;border-radius:8px;text-align:center;padding:7px 4px;}
-  .f-label{font-size:11px;font-weight:600;color:#bfbfbf;letter-spacing:-.02em;}
-  .f-val{display:block;margin-top:2px;font-size:15px;font-weight:800;color:#ffe46a;}
-  .f-val.minus{color:#ff6c5c;}
-
-  .testimonial-meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px;width:100%;}
-  .author{font-size:15px;color:#ffe46a;font-weight:700;letter-spacing:-0.01em;}
-  .rate{
-    display:inline-block;font-size:13px;background:#ffe46a;color:#181611;font-weight:900;
-    border-radius:7px;padding:3.5px 13px;letter-spacing:0.04em;min-width:60px;text-align:center;
-    box-shadow:0 2px 10px rgba(255,228,106,0.16);
-  }
-
-  @media(max-width:1100px){
-    .testimonial-card{flex:0 0 340px;padding:26px 17px 18px;height:255px;}
-    .f-val{font-size:14px;}
-    #lawfirm-testimonials{padding:36px 2vw;}
-  }
-  .row-gap{height:28px;}
-</style>
 
 <section id="lawfirm-testimonials">
   <h2>실제 채무조정 후기</h2>
@@ -1082,6 +842,105 @@ setTimeout(()=>{
 <!-- ==================== /채무 탕감 후기 슬라이드 ==================== -->
 
 
+<style>
+  /* ──────────────────────────────────────────
+        #visual-section 전용 스타일
+     ─────────────────────────────────────────── */
+     #visual-section {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+     }
+   
+     /* 비디오 */
+     #visual-section .video_wrap {
+       position: absolute; inset: 0; z-index: 0;
+     }
+     
+     #visual-section .video_wrap video {
+       width: 100%; height: 100%; object-fit: cover; object-position: center;
+     }
+   
+     /* 오버레이 */
+     #visual-section .overlay {
+       position: absolute; inset: 0;
+       background: rgba(0,0,0,0.5);
+     }
+   
+     /* 텍스트 컨테이너 */
+     #visual-section .txt_container {
+       position: absolute; inset: 0; z-index: 2;
+       display: flex; flex-direction: column;
+       justify-content: space-evenly; align-items: center;
+       text-align: center; pointer-events: none;
+     }
+   
+     /* fadeInUp 애니메이션 정의 */
+     @keyframes fadeInUp {
+       from { opacity: 0; transform: translateY(20px); }
+       to   { opacity: 1; transform: translateY(0); }
+     }
+   
+     /* 초기 상태: 숨김 */
+     #visual-section .company,
+     #visual-section .logo,
+     #visual-section .exp {
+       opacity: 0;
+     }
+   
+     /* 스크롤 중앙 진입 시 animate 클래스가 붙으면 실행 */
+     #visual-section.animate .company {
+       color: #fff; font-size: 2rem; font-weight: 500;
+       margin-bottom: 0.5em;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.2s;
+     }
+
+     @media screen and (max-width:530px) {
+      
+      #visual-section.animate .company {
+       color: #fff; font-size: 1.5rem; font-weight: 500;
+     }
+
+     }
+
+     #visual-section.animate .logo {
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.7s;
+     }
+     #visual-section .logo .m_logo {
+       width: 800px; height: 130px;
+       background: url("../img/sm-logo.png") no-repeat center/contain;
+       margin-bottom: 0.5em;
+     }
+     #visual-section.animate .exp {
+       color: #fff; font-size: 1.25rem; line-height: 1.6; max-width: 80%;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 1s;
+     }
+     #visual-section .highlight {
+       color: #e6d3a3; font-weight: 600;
+     }
+   
+     /* 반응형: 모바일 영상 우측 보이기 포함 */
+     @media (max-width: 768px) {
+       #visual-section .company { font-size: 2rem; }
+       #visual-section .logo .m_logo {
+         background: url("../img/sm-font.png") no-repeat center/contain;
+         width: 400px; height: 300px;
+       }
+       #visual-section .exp { font-size: 1rem; }
+       #visual-section .video_wrap video {
+         object-position: right center;
+       }
+     }
+#visual-section .video_wrap img {
+  object-fit: cover;
+  object-position: center;
+}
+     
+ </style>
   
 <section id="visual-section">
   <div class="video_wrap">
@@ -1121,119 +980,6 @@ setTimeout(()=>{
 
 <section id="whoCanPartner">
 
-    <style>
-
-      /* ===== Scope: #whoCanPartner only ===== */
-    #whoCanPartner{
-      /* --ink:#0b1220; */
-      --sub:#475569;
-      /* 기존 팔레트 유지 + 민트 포인트 추가 */
-      --brand:#0b4a8b;    /* 기존 블루(그대로 유지) */
-      --brand-2:#184a7d;  /* 바 배경 블루(그대로 유지) */
-      --mint:#13b5a3;     /* 🔹 톤앤매너 포인트 색 */
-      --accent:#11a292;   /* 🔹 호버/보조 */
-      --hl:#d6f7f1;       /* 🔹 하이라이트 밑줄(민트톤으로 변경) */
-      --line:#e5e7eb;
-      --card:#ffffff;
-      --thumb-bg:#fff6e8;
-      --tag-shadow:0 6px 16px rgba(19,181,163,.28);
-      font-family: Pretendard, "Noto Sans KR", "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, Apple SD Gothic Neo, sans-serif;
-      color:var(--ink);
-      /* max-width: 1080px; */
-      margin: 0 auto;
-      padding: 36px 16px 56px;
-      background:(--sub);
-    }
-
-    /* ===== 상단 배너형 헤더 ===== */
-    #whoCanPartner .hero{ text-align:center; max-width:820px; margin:0 auto 28px; }
-    
-
-   #whoCanPartner .hero .tag{display:inline-block; background:#343434; color:#e6d3a3; padding:8px 24px; border-radius:999px; font-weight:700; font-size:1.2rem; }
-
-
-
-
-    #whoCanPartner .hero .headline{
-      font-weight:900; font-size:40px; line-height:1.2; letter-spacing:-.4px;
-      color:#fff;padding-top:15px;
-    }
-
-    @media screen and (max-width:480px) {
-        #whoCanPartner .hero .headline{
-     font-size:30px; padding-top:15px;
-   
-    }
-
-    #whoCanPartner .hero .tag{font-size:.86rem; }
-
-    }
-
-    /* 하이라이트를 민트 톤으로 */
-    #whoCanPartner .hero .headline .hl{
-      display:inline-block; color:#e6d3a3;
-      background:linear-gradient(transparent 66%, #e6d3a32b 66% 100%);
-      border-radius:2px; padding:0 .04em;
-    }
-    #whoCanPartner .hero .sub{ margin-top:12px; font-size:22px; font-weight:800; color:#111827; }
-    #whoCanPartner .hero .note{ margin-top:8px; font-size:14px; color:#94a3b8; }
-
-    /* 포인트 3분할 바 (기존 색 유지) */
-    #whoCanPartner .points{
-      margin:26px auto 34px; background:var(--brand-2); color:#fff;
-      border-radius:12px; padding:22px 16px;
-      box-shadow:0 8px 18px rgba(24,74,125,.16);
-      max-width:920px;
-    }
-    #whoCanPartner .points .wrap{ display:grid; grid-template-columns:repeat(3,1fr); align-items:center; text-align:center; }
-    #whoCanPartner .points .col{ padding:6px 10px; }
-    #whoCanPartner .points .label{ font-size:16px; color:#cfe3fb; font-weight:600; }
-    #whoCanPartner .points .value{ font-size:28px; font-weight:900; letter-spacing:-.3px; }
-    #whoCanPartner .points .col:not(:last-child){ position:relative; }
-    #whoCanPartner .points .col:not(:last-child::after){
-      content:""; position:absolute; right:0; top:50%; transform:translateY(-50%);
-      width:2px; height:44px; border-radius:1px;
-      background:linear-gradient(180deg, rgba(255,255,255,.25), rgba(255,255,255,.65), rgba(255,255,255,.25));
-    }
-
-    /* 기존 타이틀/부제는 사용 안 함 */
-    #whoCanPartner .head{ display:none; }
-
-    /* ===== 카드 그리드 이하 기존 스타일 유지 ===== */
-    #whoCanPartner .grid{ display:grid; grid-template-columns: 1fr 1fr 1fr; gap:18px; }
-    @media (max-width:1200px){ #whoCanPartner .grid{ grid-template-columns:1fr 1fr; } }
-    @media (max-width:630px){ #whoCanPartner .grid{ grid-template-columns:1fr; } }
-
-    #whoCanPartner .card{
-      background:#343434; border:1px solid #626262; border-radius:18px;
-      box-shadow:0 1px 0 rgba(16,24,40,.04), 0 1px 2px rgba(16,24,40,.06);
-      overflow:hidden; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-      text-decoration:none; color:inherit; display:block;
-    }
-    /* 호버시 테두리에 민트 기운 살짝 */
-    #whoCanPartner .card:hover{ transform:translateY(-2px); border-color:rgba(19,181,163,.35); box-shadow:0 10px 24px rgba(16,24,40,.12); }
-
-    #whoCanPartner .thumb{ position:relative; background:var(--thumb-bg); aspect-ratio:5/2; overflow:hidden; }
-    #whoCanPartner .thumb img{ width:100%; height:100%; object-fit:cover; display:block; transition: transform .45s ease, filter .35s ease; }
-    #whoCanPartner .card:hover .thumb img{ transform:scale(1.03); filter:saturate(1.02); }
-
-
-    #whoCanPartner .tag.left{ left:16px; }
-    #whoCanPartner .tag.right{ right:16px; } /* 누수 방지용 범위 스코프 */
-
-    /* 카드 텍스트 포인트 컬러를 민트로 보정 */
-    #whoCanPartner .info{ text-align:center; padding:14px 12px 18px; }
-    #whoCanPartner .info .leading{ font-weight:900; color:#e6d3a3;; margin-bottom:6px; }
-    #whoCanPartner .info .desc{ font-size:17px; color:#fff; }
-
-    /* FadeIn */
-    #whoCanPartner .card.reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.65,.25,1); }
-    #whoCanPartner .card.reveal.show{ opacity:1; transform:none; }
-    #whoCanPartner .grid .card.reveal:nth-child(2n){ transition-delay:.06s; }
-    #whoCanPartner .grid .card.reveal:nth-child(3n){ transition-delay:.12s; }
-    @media (prefers-reduced-motion:reduce){ #whoCanPartner .card.reveal{ opacity:1; transform:none; } }
-
-    </style>
 
   <!-- 새 상단 헤더 -->
   <div class="hero" aria-label="만기 후 100% 환급 배너">
@@ -1353,170 +1099,6 @@ setTimeout(()=>{
 </section>
 
 <section id="doctorProfileShinHY" aria-label="이우형 변호사님 프로필">
-<style>
-/* ================= Scope: #doctorProfileShinHY only ================= */
-#doctorProfileShinHY{
-  /* Theme tokens */
-  --bg1:#333333;
-  --bg2:#6f6f6f;
-  --ink:#fff;
-  --muted:rgba(255,255,255,.75);
-  --soft:rgba(255,255,255,.6);
-  --pill:#6c7382;
-  --accent:#9bd84f;
-  --blue:#5bc0ff;
-  --orange:#ff8844;
-  --line:rgba(255,255,255,.18);
-  --radius:14px;
-  --maxW:1200px;
-
-  font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
-  color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-
-  /* Background */
-  background:
-    radial-gradient(1200px 100% at 68% 10%, rgba(255,255,255,.06), transparent 60%),
-    linear-gradient(100deg, var(--bg1) 0%, var(--bg2) 55%, #7d8190 100%);
-  position:relative;
-  overflow:hidden;
-  padding:64px 24px 40px;
-
-  /* Layout */
-  display:grid;
-  grid-template-columns:minmax(320px,770px) 1fr;
-  gap:24px;
-  align-items:end;
-  margin:0 auto;
-  box-sizing:border-box;
-}
-
-/* ===== 좌측 텍스트 블록 ===== */
-#doctorProfileShinHY .txt{
-  max-width:var(--maxW);
-  margin:0 auto;
-  padding:10px 0 20px;
-  position:relative; /* cert 기준 위치 */
-}
-#doctorProfileShinHY .dept{
-  display:inline-block;font-size:28px;font-weight:700;letter-spacing:-.02em;color:#e7e9ef;margin:6px 0 12px;
-}
-#doctorProfileShinHY .name{
-  font-size:92px;line-height:.95;font-weight:800;letter-spacing:-.035em;margin:0 0 28px;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.08);
-}
-
-/* ✅ 자격증 썸네일(클릭 확대) */
-#doctorProfileShinHY .cert{
-  position:absolute; right:-10px; top:-8px;
-  width:132px; aspect-ratio:3/4; border-radius:8px; overflow:hidden;
-  box-shadow:0 12px 30px rgba(0,0,0,.28), inset 0 -6px 12px rgba(0,0,0,.06);
-  background:rgba(255,255,255,.08);
-  -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px);
-  border:1px solid rgba(255,255,255,.18);
-  cursor:zoom-in;
-}
-#doctorProfileShinHY .cert img{display:block;width:100%;height:100%;object-fit:contain}
-
-/* ===== 칩/라벨 라인 ===== */
-#doctorProfileShinHY .chipline{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:0 0 22px;}
-#doctorProfileShinHY .chip{
-  display:inline-flex;align-items:center;gap:8px;background:var(--pill);color:#fff;font-weight:700;font-size:14px;
-  padding:7px 12px;border-radius:999px;white-space:nowrap;
-}
-#doctorProfileShinHY .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(155,216,79,.2) inset;}
-#doctorProfileShinHY .desc{font-size:15px;color:var(--muted);}
-
-/* ===== 프로필 표 ===== */
-#doctorProfileShinHY .table{width:100%;border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;margin:4px 0 18px;}
-#doctorProfileShinHY .thead, #doctorProfileShinHY .trow{display:grid;grid-template-columns:88px 1fr;}
-#doctorProfileShinHY .thead div{
-  background:rgba(255,255,255,.06);color:#e8eaf2;font-weight:700;padding:14px 16px;border-right:1px solid var(--line);text-align:center;font-size:14px;
-}
-#doctorProfileShinHY .thead div:first-child{ text-align:left; }
-#doctorProfileShinHY .trow div{
-  padding:18px 16px;border-top:1px solid var(--line);border-right:1px solid var(--line);
-  min-height:48px;display:flex;justify-content:flex-start;align-items:center;color:#f1f2f6;
-}
-#doctorProfileShinHY .trow div:first-child{color:#e8eaf2;font-weight:700;}
-#doctorProfileShinHY .note{display:flex;align-items:flex-start;gap:10px;color:var(--soft);font-size:13px;padding:6px 2px;}
-#doctorProfileShinHY .note .i{font-weight:900;opacity:.8}
-
-/* ===== 버튼 ===== */
-#doctorProfileShinHY .cta{
-  margin-top:12px;display:inline-flex;align-items:center;gap:10px;background:#6d7384;color:#fff;font-weight:800;border-radius:12px;padding:14px 18px;
-  text-decoration:none;user-select:none;box-shadow:0 10px 24px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.08);
-  transition:transform .15s ease, box-shadow .15s ease, background .2s ease;
-}
-#doctorProfileShinHY .cta:hover{transform:translateY(-1px);box-shadow:0 14px 28px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.1);background:#7b8191;}
-
-/* ===== 우측 프로필 사진 영역 ===== */
-#doctorProfileShinHY .visual{
-  position:relative;max-height:760px;
-  display:flex;align-items:flex-end;justify-content:center;isolation:isolate;
-}
-
-/* ✅ 사진 카드(로고를 카드 안쪽 상단에 배치) */
-#doctorProfileShinHY .photo{
-  position:relative;z-index:1;display:block;width:min(500px,56vw);aspect-ratio:3/4;border-radius:24px;
-  overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35), inset 0 -10px 20px rgba(0,0,0,.06);
-  background:rgba(255,255,255,.06);
-}
-#doctorProfileShinHY .photo img{
-  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;
-}
-
-/* ✅ 로고: 사진 카드 안쪽 상단(스크린샷 위치) */
-#doctorProfileShinHY .brand-in{
-  position:absolute; top:14px; left:18px; z-index:2;
-  display:block; pointer-events:none; /* 로고는 클릭 통과 */
-}
-#doctorProfileShinHY .brand-in img{
-  display:block; width:min(180px,22vw); height:auto; object-fit:contain;
-  filter:drop-shadow(0 2px 6px rgba(0,0,0,.35));
-}
-
-/* ===== 반응형 ===== */
-@media (max-width:1024px){
-  #doctorProfileShinHY{grid-template-columns:1fr;align-items:start;padding:48px 20px 32px;}
-  #doctorProfileShinHY .name{font-size:72px;}
-  #doctorProfileShinHY .visual{order:-1;}
-  #doctorProfileShinHY .cert{ right:6px; top:-6px; width:112px; }
-  #doctorProfileShinHY .brand-in img{ width:min(150px,32vw); }
-}
-@media (max-width:600px){
-  #doctorProfileShinHY .dept{font-size:22px;}
-  #doctorProfileShinHY .name{font-size:52px;}
-  #doctorProfileShinHY .cta{width:100%;justify-content:center;}
-  #doctorProfileShinHY .cert{ right:8px; top:-4px; width:90px; }
-  #doctorProfileShinHY .brand-in{ top:10px; left:12px; }
-  #doctorProfileShinHY .brand-in img{ width:min(130px,42vw); }
-}
-@media (prefers-reduced-motion:reduce){
-  #doctorProfileShinHY .cta{transition:none;}
-}
-
-/* ================== 라이트박스(전체 화면 팝업) ================== */
-#doctorProfileShinHY .lightbox{
-  position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.6);
-  display:none; align-items:center; justify-content:center; padding:24px;
-}
-#doctorProfileShinHY .lightbox[aria-hidden="false"]{ display:flex; }
-#doctorProfileShinHY .lightbox__inner{
-  position:relative; max-width:min(960px,92vw); max-height:min(92vh,1200px);
-  background:rgba(20,20,24,.9); border-radius:14px; overflow:hidden;
-  box-shadow:0 20px 80px rgba(0,0,0,.5); animation:lbIn .18s ease-out both;
-}
-#doctorProfileShinHY .lightbox__img{display:block;width:100%;height:100%;object-fit:contain;background:#111;}
-#doctorProfileShinHY .lightbox__close{
-  position:absolute; top:8px; right:8px; display:inline-flex; align-items:center; justify-content:center;
-  width:40px; height:40px; border-radius:999px; background:rgba(255,255,255,.12); color:#fff; font-size:0;
-  border:1px solid rgba(255,255,255,.18); cursor:pointer;
-}
-#doctorProfileShinHY .lightbox__close:before{content:"✕"; font-size:18px; line-height:1; filter:drop-shadow(0 1px 0 rgba(0,0,0,.4));}
-#doctorProfileShinHY .lightbox__scrim{ position:absolute; inset:0; }
-@keyframes lbIn{from{transform:translateY(4px) scale(.985);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
-</style>
 
 <!-- ===== 좌측 텍스트 영역 ===== -->
 <div class="txt">
@@ -1545,7 +1127,7 @@ setTimeout(()=>{
     <div class="trow" role="row"><div role="rowheader">드리는 말씀</div><div>채무의 어려움은 누구나 겪을 수 있습니다.<br>하지만, 더 없이 소중한 가족과 주변 사람까지 무너져서는 안됩니다.<br>저는 여러분을 포함한 가족분들의 소중한 일상을 지키기 위해 최선을 다해 도와드리겠습니다.</div></div>
   </div>
 
-  <a class="cta" href="#consultForm" aria-label="바로 전화 상담 받기">바로 전화 상담 받기</a>
+  <a class="cta" href="tel:010-2107-0112" aria-label="바로 전화 상담 받기">바로 전화 상담 받기</a>
 </div>
 
 <!-- ===== 우측 사진 영역 ===== -->
@@ -1760,279 +1342,22 @@ setTimeout(()=>{
   <!-- ▲▲▲  /스크립트  ▲▲▲ -->
   
 
-
-
-<!-- <script>
-
-const LAWYERS = {
-  lee: {
-    photo: "./img/law-lee.png",
-    caption: "개인회생",
-    name: "개인회생",
-    position: "3년 ~ 5년간 일정한 금액을 변제하면\n 나머지 채무의 면제를 받을 수 있는 국가지원제도",
-    phone: "접수 순간부터 추심·연체이자가 멈추고, 독촉 전화·압류 압박에서 해방됩니다.",
-    eduTitle: "▲ 개인회생 자격",
-    careerTitle: "▲ 개인회생 장점",
-    edu: [
-      "일정한 월 수입이 있다",
-      "전체 빚이 무담보 10 억 / 담보 15 억 이하다.",
-      "독촉·압류가 이미 진행 중이거나 곧 우려된다.",
-      "과거 개인회생 면책을 받은 적이 없거나 받은 지 5년이 지났다."
-    ],
-    career: [
-      "원금 최대 90 % 탕감 가능",
-      "모든 연체 이자·지연손해금 즉시 정지",
-      "급여·통장·자동차 압류 보호로 생활 기반 유지 가능",
-      "집 보유한 채 절차 진행 가능",
-      "전문직·공무원·자영업자도 그대로 일할 수 있습니다",
-      "신용 회복 및 금융거래 재개"
-    ]
-  },
-  kim: {
-    photo: "./img/law-kim.png",
-    caption: "개인파산",
-    name: "개인파산",
-    position: "채무자가 가진 모든 재산으로도 빚을 갚을 수 없을 때, 재산을 현금화하고 남은 채무를 법적으로 소멸시켜주는 절차",
-    phone: "새 출발할 수 있도록 모든 원금·이자 전부 소멸",
-    eduTitle: "▲ 개인파산 자격",
-    careerTitle: "▲ 개인파산 장점",
-    edu: [
-      "재산을 모두 처분해도 빚을 상환할 수 없다",
-      "지속적인 수입이 없거나 매우 불안정하다",
-      "면책불허 사유(사기·도박 등)가 없다",
-      "최근 5년 내 파산 면책을 받은 이력이 없다"
-    ],
-    career: [
-      "원금·이자 100 % 면책",
-      "추심·압류 즉시 중단",
-      "소득 없던 사람도 구제 가능",
-      "절차 6~12개월로 비교적 짧음",
-      "생활 필수 재산(기본 의복·가재도구 등) 보호",
-      "재기 지원 제도(서민금융진흥원 등) 이용 가능"
-    ]
-  }
-};
-
-
-Object.values(LAWYERS).forEach(v => new Image().src = v.photo);
-
-
-const sec        = document.getElementById('attorney-profile');
-const info       = sec.querySelector('.ap-info');
-const mainPhoto  = sec.querySelector('.main-photo');
-const cap        = sec.querySelector('.ap-caption');
-const lname      = sec.querySelector('.ap-lname');
-const pos        = sec.querySelector('.ap-position');
-const phone      = sec.querySelector('.ap-phone');
-const eduUl      = sec.querySelector('.ap-edu');
-const carUl      = sec.querySelector('.ap-career');
-const btns2      = sec.querySelectorAll('.ap-select button');
-const eduHeading = sec.querySelector('.ap-edu-heading');
-const carHeading = sec.querySelector('.ap-career-heading');
-
-
-btns2.forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (btn.classList.contains('on')) return;
-    btns2.forEach(b => b.classList.toggle('on', b === btn));
-
-    const d = LAWYERS[btn.dataset.lawyer];
-
-
-    info.classList.add('switching');
-    mainPhoto.style.opacity   = 0;
-    mainPhoto.style.transform = 'scale(1.08)';
-    mainPhoto.style.filter    = 'blur(6px)';
-
-
-    const tmp = new Image();
-    tmp.onload = () => {
-      mainPhoto.src = tmp.src;
-      requestAnimationFrame(() => {
-        mainPhoto.style.opacity   = 1;
-        mainPhoto.style.transform = 'scale(1)';
-        mainPhoto.style.filter    = 'blur(0)';
-      });
-
-
-      eduHeading.textContent = d.eduTitle;
-      carHeading.textContent = d.careerTitle;
-
-
-      cap.textContent   = d.caption;
-      lname.textContent = d.name;
-      pos.textContent   = d.position;
-      phone.textContent = d.phone;
-      phone.href        = 'tel:' + d.phone.replace(/\s/g, '');
-
-      eduUl.innerHTML = d.edu.map(v => `<li>${v}</li>`).join('');
-      carUl.innerHTML = d.career.map(v => `<li>${v}</li>`).join('');
-
-
-      setTimeout(() => info.classList.remove('switching'), 500);
-    };
-    tmp.src = d.photo;
-  });
-});
-</script> -->
-
-  
   
 
 
 <!-- ✅ 본문 히어로: 기존 섹션에서 topbar 제거, 나머지 그대로 -->
 <section id="legalDBHero" aria-label="개인회생·파산 실시간 DB 공급">
-  <style>
-    /* ================= Scope: #legalDBHero only ================= */
-    #legalDBHero {
-      --ink: #0b1220;
-      --muted: #556070;
-      --brand: #13b5a3;
-      --line: #e8ecef;
-      --bg: #f6f8fa;
-      --radius: 18px;
-      --shadow: 0 16px 40px rgba(0, 0, 0, .1);
-      --soft: 0 1px 3px rgba(19,181,163,.12), 0 1px 2px rgba(0,0,0,.04);
-      --soft-hover: 0 6px 16px rgba(19,181,163,.16), 0 2px 4px rgba(0,0,0,.05);
-      --accent: #11a292;
-      --bubble:#e9f5f3;
-      --hdr-space: 92px; /* 헤더 높이만큼 여유(스크립트에서 보정) */
 
-      font-family: Pretendard, "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background:#fff; color:var(--ink);
-      padding:60px 20px;
-      position:relative; overflow:hidden; isolation:isolate;
-    }
-    #legalDBHero .wrap { max-width:1200px; margin:0 auto; display:flex; flex-direction:column; gap:40px; }
-
-    /* 🔹 라이트 버블 */
-    #legalDBHero .bg-bubble{position:absolute; border-radius:50%; background:var(--bubble); filter:blur(.2px); opacity:.7; z-index:0;}
-    #legalDBHero .b1{width:520px; height:520px; left:-180px; top:-160px; z-index:-1;}
-    #legalDBHero .b2{width:440px; height:440px; right:-140px; bottom:20px; opacity:.55; z-index:-1;}
-    #legalDBHero .b3{width:380px; height:380px; right:20%; top:50%; translate:0 -50%; opacity:.45; z-index:-1;}
-    @media (max-width:980px){
-      #legalDBHero .b1{width:340px; height:340px; left:-120px; top:-120px;}
-      #legalDBHero .b2{width:150px; height:150px; right:-80px; bottom:10px;}
-      #legalDBHero .b3{display:none;}
-    }
-
-    /* 타이틀 (헤더 공간만큼 아래에서 시작) */
-    #legalDBHero .headline { text-align:center; margin-top:var(--hdr-space); }
-    #legalDBHero .headline .tag { display:inline-block; background:var(--bg); color:var(--brand); padding:4px 12px; font-size:.85rem; border-radius:50px; margin-bottom:14px; font-weight:600; }
-    #legalDBHero .headline h2 { font-size:clamp(1.8rem,3.2vw,2.4rem); line-height:1.4; margin:0 0 12px; font-weight:800; }
-    #legalDBHero .headline h2 b { color:var(--brand); }
-    #legalDBHero .headline p { margin:0; font-size:1rem; color:var(--muted); }
-
-    /* 본문 박스 */
-    #legalDBHero .content { display:flex; flex-wrap:wrap; gap:32px; background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); padding:40px; align-items:stretch; }
-
-    /* ========= Left: DB 스택 티커 ========= */
-    #legalDBHero .left { flex:1 1 50%; min-width:100px; position:relative; }
-    #legalDBHero .content .left { box-shadow:0 6px 16px rgba(19,181,163,.09), 0 2px 4px rgba(0,0,0,.01); border-radius:10px; }
-    #legalDBHero .left::before { content:""; position:absolute; inset:auto -10% -20% -10%; height:360px; pointer-events:none; }
-
-    #legalDBHero .dbStack { position:relative; width:min(560px,96%); height:370px; overflow:hidden; margin:0 auto; }
-    #legalDBHero .dbTrack { display:flex; flex-direction:column; gap:10px; will-change:transform; }
-    #legalDBHero .dbTrack.is-shifting { transition:transform .55s cubic-bezier(.22,.75,.16,1); }
-
-    /* 카드 */
-    #legalDBHero .db-card {
-      border:1.2px solid #00000011; border-radius:12px; box-shadow:var(--soft);
-      padding:14px 20px; display:flex; gap:14px; align-items:center; height:78px; box-sizing:border-box;
-      opacity:1; transform:translateY(0);
-    }
-    #legalDBHero .db-card.enter { opacity:0; transform:translateY(16px); }
-    #legalDBHero .db-card.enter.is-in { transition:opacity .55s ease, transform .55s ease; opacity:1; transform:translateY(0); }
-
-    /* 아바타 */
-    #legalDBHero .db-avatar {
-      flex:0 0 44px; height:44px; border:1px solid #11a29233; border-radius:50%;
-      background:#13b5a353; display:grid; place-items:center; color:#fff; font-weight:700; font-size:1.5rem;
-      box-shadow:inset 0 0 0 2px rgba(255,255,255,.7);
-    }
-    #legalDBHero .db-avatar::before { content:'👤'; font-size:20px; color:#fff; }
-
-    @media screen and (max-width:500px) {
-
-      /* 아바타 */
-    #legalDBHero .db-avatar {
-      flex:0 0 24px; height:24px; 
-    }
-    #legalDBHero .db-avatar::before { content:'👤'; font-size:10px; color:#fff; }
-
-
-    }
-
-    #legalDBHero .db-main { flex:1 1 auto; }
-    #legalDBHero .db-title { margin:0 0 4px; font-size:1.05rem; font-weight:800; letter-spacing:-.01em; }
-    #legalDBHero .db-sub { margin:0; font-size:.92rem; color:var(--muted); }
-
-    /* 말풍선 */
-    #legalDBHero .left .bubble { position:absolute; background:#fff; box-shadow:0 4px 20px rgba(0,0,0,.08); border-radius:12px; padding:8px 14px; font-size:.85rem; white-space:nowrap; font-weight:500; }
-    #legalDBHero .bubble1 { top:8px; left:8px; }
-    #legalDBHero .bubble2 { bottom:10px; left:0; }
-    #legalDBHero .bubble3 { top:28%; right:0; }
-
-    /* ========= Right ========= */
-    #legalDBHero .right { flex:1 1 45%; min-width:280px; display:flex; flex-direction:column; justify-content:space-between;     align-items: stretch;}
-    #legalDBHero .right h3 { font-size:1.25rem; font-weight:700; margin-bottom:18px; }
-    #legalDBHero .right ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0; }
-    #legalDBHero .right ul li { padding:12px 0; background:none; border-radius:0; font-size:.98rem; border-bottom:1px dashed var(--line); }
-    #legalDBHero .right ul li:last-child { border-bottom:none; }
-    #legalDBHero .right ul li:before { content:"✓"; color:var(--brand); font-weight:800; margin-right:10px; font-size:1.1em; }
-
-    /* 버튼 */
-    #legalDBHero .actions { margin-top:25px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
-    #legalDBHero .actions .btn-outline, #legalDBHero .actions .btn-fill {
-      border:none; cursor:pointer; font-size:1rem; font-weight:700; padding:12px 20px; border-radius:50px; transition:all .2s; text-decoration:none; display:inline-block; text-align:center;
-    }
-    #legalDBHero .actions .btn-outline { background:#fff; border:1.5px solid var(--brand); color:var(--brand); }
-    #legalDBHero .actions .btn-fill { background:var(--brand); color:#fff; box-shadow:0 6px 15px rgba(19,181,163,.35); }
-    #legalDBHero .actions .btn-fill:hover { background:var(--accent); }
-    .border1{display:none;}
-
-    #legalDBHero .right ul li.pulse{background:linear-gradient(90deg,rgba(19,181,163,.10),rgba(19,181,163,0));box-shadow:inset 0 0 0 2px rgba(19,181,163,.22),0 10px 26px rgba(19,181,163,.16);transition:background .35s ease,box-shadow .35s ease,transform .35s ease;transform:translateZ(0);font-weight:700;transition:1s;}
-#legalDBHero .right ul li.pulse::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--brand),transparent);animation:legalDBHeroPulseBar 2.2s linear infinite;transition:1s;}
-@keyframes legalDBHeroPulseBar{0%{opacity:.0;transform:translateX(-20%)}10%{opacity:.8}90%{opacity:.8}100%{opacity:0;transform:translateX(20%)}}
-
-    /* 반응형 */
-    @media(max-width:768px){
-      #legalDBHero { padding:40px 10px; }
-      #legalDBHero .content { flex-direction:column; padding:20px; gap:20px; }
-      #legalDBHero .left { margin-top:0; }
-      #legalDBHero .right { order:1; min-width:100%; }
-      #legalDBHero .headline h2 { font-size:1.6rem; }
-      #legalDBHero .headline p { font-size:.95rem; }
-      #legalDBHero .dbStack { width:100%; height:370px; }
-      #legalDBHero .db-card { padding:12px 16px; height:75px; }
-      #legalDBHero .db-title { font-size:1rem; }
-      #legalDBHero .db-sub { font-size:.85rem; }
-      #legalDBHero .left .bubble { display:none; }
-      #legalDBHero .right h3 { font-size:1.35rem; margin-top:10px; margin-bottom:15px; }
-      #legalDBHero .right ul li { font-size:1.1rem; padding:10px 0; }
-      #legalDBHero .actions { flex-direction:column; gap:8px; }
-      #legalDBHero .actions .btn-outline, #legalDBHero .actions .btn-fill { width:100%; max-width:300px; font-size:.95rem; }
-      .border1{display:block;}
-    }
-
-
-        /* 반응형 */
-    @media(max-width:500px){
-     
-      #legalDBHero .right ul li { font-size:0.9rem; padding:10px 0; }
-     
-    }
-  </style>
 
 
 
   <div class="wrap">
     <!-- (topbar는 별도 #stickyTopbar 섹션으로 분리됨) -->
     <div class="headline">
-      <div class="tag">100% 비밀 보장 안심상담</div>
+      <div class="tag">100% 비밀 보장 안심콜</div>
       <h2>시간이 지체되어<br>더 큰 채무로 불어나기 전에<br><br>망설이지 말고<br>빠르게 안심콜 도움 받으세요.<br>전화 즉시, 여러분 빚의 무게<br>즉각 가볍게 도와드리겠습니다.<br><br>
 
-<b>법률사무소 더엘<br>채무긴급대응 법률센터<br><br>100% 비밀보장 긴급 안심상담</b></h2>
+<b>법률사무소 더엘<br>채무긴급대응 법률센터<br><br>100% 비밀보장 긴급 안심콜</b></h2>
       
     </div>
 
@@ -2062,7 +1387,7 @@ btns2.forEach(btn => {
           <small style="color:var(--muted); display:block; margin-top:15px; font-size:.85rem;">* 모든 정보는 철저하게 100% 비밀 보장 됩니다. 안심하세요.</small>
         </div>
         <div class="actions">
-          <a class="btn-fill" href="#consultForm">100% 비밀보장 긴급 안심상담</a>
+          <a class="btn-fill" href="tel:010-2107-0112">100% 비밀보장 긴급 안심콜</a>
         </div>
       </div>
     </div>
@@ -2223,562 +1548,13 @@ btns2.forEach(btn => {
   </script>
 </section>
 
-<section id="consultFormSection">
-  <style>
-  
- 
-  #consultFormSection #consultForm {
-      font-family: 'Noto Sans KR', sans-serif;
-      padding: 2rem;
-      line-height: 1.6;
-      color: #222;
-      background-color: #fff;
-    }
-
-    #consultFormSection .gc-deco {
-      width: 60px;
-      height: 6px;
-      background: linear-gradient(90deg,#dcbe4e,#f8e18c);
-      margin: 0 auto 1rem;
-      border-radius: 3px;
-    }
-
-    #consultFormSection .gc-header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-
-    #consultFormSection .gc-header h2 {
-      font-size: 2.15rem;
-      font-weight: 800;
-    }
-
-    #consultFormSection .gc-header h2 span {
-      display: block;
-      font-size: 1.8rem;
-      color: #dcbe4e;
-    }
-
-    #consultFormSection .gc-header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-      color: #555;
-    }
-
-    #consultFormSection .gc-stepbar {
-      margin-bottom: 2rem;
-    }
-
-    #consultFormSection .gc-progress {
-      height: 4px;
-      background: #eee;
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
-    #consultFormSection .gc-progress-fill {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg,#dcbe4e,#bfa742);
-    }
-
-    #consultFormSection h2 {
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      color: #000;
-    }
-
-    #consultFormSection .form-group {
-      margin-bottom: 2rem;
-    }
-
-    #consultFormSection .form-label {
-      font-weight: bold;
-      font-size: 1rem;
-      margin-bottom: 0.8rem;
-      color: #000;
-    }
-
-    #consultFormSection .button-group {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0.5rem;
-    }
-
-    #consultFormSection .option-btn {
-      width: 100%;
-      padding: 0.5rem;
-      border: 2px solid #dadada;
-      border-radius: 8px;
-      background-color: #fff;
-      color: #000;
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    #consultFormSection .option-btn.active {
-      background-color: #c49b5a;
-      color: #fff;
-      border-color: #c49b5a;
-      font-weight: bold;
-    }
-
-    #consultFormSection .inline-fields {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    /* input / select 기본 */
-    #consultFormSection .inline-fields input,
-    #consultFormSection .inline-fields select{
-      flex:1 1 0;
-      min-width:0;
-      padding:0.8rem;
-      border:2px solid #ccc;
-      border-radius:6px;
-      background:#fff;
-      color:#000;
-      font-size:1rem;
-      height:60px;
-      /* line-height:60px; */
-      box-sizing:border-box;
-    }
-
-    #consultFormSection input::placeholder {
-      color: #aaa;
-    }
-
-    #consultFormSection .checkbox-area {
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
-      margin-top: -0.5rem;
-    }
-
-    @media screen and (max-width: 550px) {
-      #consultFormSection .checkbox-area {
-         flex-direction: column;
-      }
-    }
-/* === Select 커스텀화 ========================================== */
-    #consultFormSection select{
-      -webkit-appearance:none;
-      -moz-appearance:none;
-      appearance:none;
-    }
-    /* placeholder 느낌 방지 */
-    #consultFormSection select:invalid{color:#9e9e9e;}
-
-    /* 화살표 UI */
-    #consultFormSection .select-wrap{position:relative;flex:1 1 0;min-width:0;width:100%;}
-    #consultFormSection .select-wrap::after{
-      content:"";
-      position:absolute;
-      top:50%;right:1rem;
-      width:8px;height:8px;
-      border-right:2px solid #666;
-      border-bottom:2px solid #666;
-      transform:translateY(-50%) rotate(45deg);
-      pointer-events:none;
-    }
-    /* select 가로 100% 유지 */
-    #consultFormSection .select-wrap select{
-      display:block;
-      width:100%;
-      max-width:100%;
-    }
-
-    #consultFormSection .checkbox-area input {
-      margin-right: 0.5rem;
-    }
-
-    #consultFormSection input.submit-btn {
-      width: 100%;
-      background: #c49b5a;
-      color: #fff;
-      padding: 1rem;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    #consultFormSection input.submit-btn:hover {
-      background: #d8b56a;
-    }
-
-    @media (max-width: 1024px) {
-      #consultFormSection .button-group {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 768px) {
-      #consultFormSection .inline-fields {
-        flex-direction: column;
-      }
-
-      #consultFormSection .button-group {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  </style>
-
-  <div id="consultForm">
-     <form id="form_e11" name="frm_phonecall_web" action="" method="post" target="hidden_iframe11" onsubmit="dll(); submitted=true;"  class="gc-form" novalidate>
-    <input type="hidden" name="entry.637408694" value="본문 신청폼">  
-    <input type="hidden" name="entry.339503137" value="인스타그램">
-    <div class="gc-deco"></div>
-
-    <div class="gc-header">
-      <h2>채무긴급대응 법률센터<br><span>무료상담신청</span></h2>
-      <p>지금 신청하면 채무 걱정이 사라집니다.<br>당신의 빚, 이젠 여기서 끝내세요.</p>
-    </div>
-
-    <div class="gc-stepbar">
-      <div class="gc-progress"><div class="gc-progress-fill"></div></div>
-    </div>
-
-    <!-- 01. 직업종류 -->
-    <div class="form-group">
-      <p class="form-label">01. 직업종류</p>
-      <div class="button-group" data-type="radio" data-name="직업종류">
-        <input type="button"   class="option-btn intro_select1"  data-value="급여소득자" value="급여소득자">
-        <input type="button"   class="option-btn intro_select1"  data-value="자영업자" value="자영업자">
-        <input type="button"   class="option-btn intro_select1"  data-value="일용직/아르바이트" value="일용직/아르바이트">
-        <input type="button"   class="option-btn intro_select1"  data-value="기타" value="기타">
-      </div>
-      <input type="hidden" name="entry.966666468" id="job_style" >
-    </div>
-
-    <!-- 02. 월수입 -->
-    <div class="form-group">
-      <p class="form-label">02. 월평균 수입(실수령액)</p>
-      <div class="button-group" data-type="radio" data-name="월수입">
-        <input type="button"  class="option-btn intro_select2"  data-value="100만원 이하" value="100만원 이하">
-        <input type="button"  class="option-btn intro_select2"  data-value="100~200만원 사이" value="100~200만원 사이">
-        <input type="button"  class="option-btn intro_select2"  data-value="200~400만원 사이" value="200~400만원 사이">
-        <input type="button"  class="option-btn intro_select2"  data-value="400만원 이상" value="400만원 이상">
-      </div>
-      <input type="hidden" name="entry.820371290" id="income">
-    </div>
-
-     <!-- 03. 채무금액 -->
-    <div class="form-group">
-      <p class="form-label">03. 채무금액</p>
-      <div class="button-group" data-type="radio" data-name="채무금액">
-        <input type="button"  class="option-btn intro_select"  data-value="2000~5000만원 미만" value="2000~5000만원 미만">
-        <input type="button"  class="option-btn intro_select"  data-value="5000~8000만원 미만" value="5000~8000만원 미만">
-        <input type="button"  class="option-btn intro_select"  data-value="8000~1억원 미만" value="8000~1억원 미만">
-        <input type="button"  class="option-btn intro_select"  data-value="1-3억" value="1-3억">
-          <input type="button"  class="option-btn intro_select"  data-value="3-5억" value="3-5억">
-            <input type="button"  class="option-btn intro_select"  data-value="5억 이상" value="5억 이상">
-      </div>
-      <input type="hidden" name="entry.1263415590" id="debt">
-    </div>
-
-
-
-    <!-- 04. 부양가족수 -->
-    <div class="form-group">
-      <p class="form-label">04. 부양가족수</p>
-      <div class="button-group" class="option-btn intro_select3" data-type="radio" data-name="가족수">
-        <input type="button"  class="option-btn intro_select3"  data-value="자녀없음" value="자녀없음">
-        <input type="button"  class="option-btn intro_select3"  data-value="1명" value="1명">
-        <input type="button"  class="option-btn intro_select3"  data-value="2명" value="2명">
-        <input type="button"  class="option-btn intro_select3"  data-value="3명 이상" value="3명 이상">
-      </div>
-      <input type="hidden" name="entry.478230096" id="family">
-    </div>
-
-    <!-- 05. 최근대출유무 -->
-    <div class="form-group">
-      <p class="form-label">05. 최근대출유무</p>
-      <div class="button-group" data-type="radio" data-name="최근대출">
-        <input type="button"   class="option-btn intro_select4" data-value="최근 3개월내 대출 있음" value="최근 3개월내 대출 있음">
-        <input type="button"   class="option-btn intro_select4" data-value="최근 3개월내 대출 없음" value="최근 3개월내 대출 없음">
-      </div>
-      <input type="hidden" name="entry.277781686" id="loan_3month">
-    </div>
-
-    <!-- 06. 채무 원인 -->
-    <div class="form-group">
-      <p class="form-label">06. 채무 원인 <small>(다중선택가능)</small></p>
-      <div class="button-group" data-type="checkbox" data-name="채무원인">
-        <input type="button" class="option-btn intro_select5"  data-value="사기(전세,보이스피싱)" value="사기(전세,보이스피싱)">
-        <input type="button" class="option-btn intro_select5"  data-value="생활비로 인한 채무" value="생활비로 인한 채무">
-        <input type="button" class="option-btn intro_select5"  data-value="사업자금" value="사업자금">
-        <input type="button" class="option-btn intro_select5"  data-value="도박 및 주식" value="도박 및 주식">
-        <input type="button" class="option-btn intro_select5"  data-value="병원비" value="병원비">
-        <input type="button" class="option-btn intro_select5"  data-value="그 외" value="그 외">
-      </div>
-      <input type="hidden" name="entry.1487248962" id="reason">
-    </div>
-
-    <!-- 기본 정보 -->
-    <div class="form-group">
-      <p class="form-label">성함 / 거주지 / 연락처</p>
-      <div class="inline-fields">
-        <input type="text"  id="name" name="entry.1584470138"  placeholder="성함 입력" maxlength="4" style="min-height:60px;font-size:1rem;">
-       <div class="select-wrap">
-            <select name="entry.1911857506" id="location" required>
-              <option value="" disabled selected hidden>거주지 선택</option>
-              <option value="서울">서울</option>
-              <option value="인천">인천</option>
-              <option value="세종">세종</option>
-              <option value="대전">대전</option>
-              <option value="대구">대구</option>
-              <option value="울산">울산</option>
-              <option value="광주">광주</option>
-              <option value="부산">부산</option>
-              <option value="제주">제주</option>
-              <option value="강원도">강원도</option>
-              <option value="경기도">경기도</option>
-              <option value="충청북도">충청북도</option>
-              <option value="충청남도">충청남도</option>
-              <option value="경상북도">경상북도</option>
-              <option value="경상남도">경상남도</option>
-              <option value="전라북도">전라북도</option>
-              <option value="전라남도">전라남도</option>
-            </select>
-          </div>
-        <input type="text" id="phone" name="entry.730014522" placeholder="연락처 입력 (-없이 입력해주세요.)." maxlength="11" style="min-height:60px;font-size:1rem;">
-      </div>
-    </div>
-
-     <div class="form-group">
-      <p class="form-label">상담 내용</p>
-      <div class="inline-fields">
-         <textarea name="entry.1470467061" id="message" placeholder="상담하고 싶은 내용을 남겨주세요." style="width:100%;min-height: 150px;padding:10px;font-size:1rem;"></textarea>
-      </div>
-    </div>
-
-   
-
-    <!-- 개인정보 동의 -->
-    <div class="checkbox-area">
-      <label class="gc-consent">
-        <input type="checkbox" name="agree_r1" id="agree11" checked>
-        개인정보 수집·이용에 동의합니다.&nbsp;&nbsp;
-      </label>
-      <span class="privacyBtn" style="color:fff;font-weight:400; font-size: 13px;margin-top:0px;cursor:pointer; " onclick="privacyPopUp()">
-         [개인정보취급동의] 
-    </span>
-    <br><br>
-    </div>
-
-    <!-- 제출 버튼 -->
-     <input type="submit" id="send_message" class="submit-btn" value="무료 상담 신청하기" disabled>
-    </form>
-
-       <script type="text/javascript">var submitted = false;</script>
-            <iframe name="hidden_iframe11" id="hidden_iframe11" style="display:none;" onload=""></iframe>
-            <script type="text/javascript">var submitted2 = false;</script>
-            <iframe name="hidden_iframe12" id="hidden_iframe12" style="display:none;" onload=""></iframe>
-
-            
-<script type="text/javascript">var submitted3 = false;</script>
-<iframe name="hidden_iframe13" id="hidden_iframe13" style="display:none;" onload=""></iframe>
-  </div>
-
-  <script>
-    document.querySelectorAll('.button-group').forEach(group => {
-      const type = group.dataset.type;
-      const name = group.dataset.name;
-      const hidden = document.querySelector(`input[name="${name}"]`);
-
-      group.querySelectorAll('.option-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          if (type === 'radio') {
-            group.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            hidden.value = btn.dataset.value;
-          } else if (type === 'checkbox') {
-            btn.classList.toggle('active');
-            const selected = [...group.querySelectorAll('.option-btn.active')].map(b => b.dataset.value);
-            hidden.value = selected.join(', ');
-          }
-        });
-      });
-    });
-
-    // document.getElementById('consultForm').addEventListener('submit', function (e) {
-    //   e.preventDefault();
-    //   alert('상담 신청이 접수되었습니다!');
-    // });
-  </script>
-</section>
-
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    bindRadioToHidden(".intro_select1", "job_style");
-    bindRadioToHidden(".intro_select2", "income");
-    bindRadioToHidden(".intro_select",  "debt");
-    bindRadioToHidden(".intro_select3", "family");
-    bindRadioToHidden(".intro_select4", "loan_3month");
-
-    function bindRadioToHidden(selector, hiddenId) {
-      const buttons = document.querySelectorAll(selector);
-      const hiddenInput = document.getElementById(hiddenId);
-
-      if (!buttons.length || !hiddenInput) return;
-
-      buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          // 기존 active 제거 후 클릭된 버튼만 active
-          buttons.forEach(btn => btn.classList.remove("active"));
-          button.classList.add("active");
-
-          // 값 입력
-          hiddenInput.value = button.getAttribute("data-value");
-        });
-      });
-    }
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const checkboxes = document.querySelectorAll(".intro_select5");
-    const hiddenInput = document.getElementById("reason");
-
-    if (!checkboxes.length || !hiddenInput) return;
-
-    checkboxes.forEach(function (button) {
-      button.addEventListener("click", function () {
-        // active → selected 클래스로 토글
-        button.classList.toggle("selected");
-
-        // 선택된 버튼의 data-value 수집
-        const selectedValues = Array.from(checkboxes)
-          .filter(btn => btn.classList.contains("selected"))
-          .map(btn => btn.getAttribute("data-value"));
-
-        // hidden input에 반영
-        hiddenInput.value = selectedValues.join(", ");
-      });
-    });
-  });
-</script>
-
 <section id="NoticeS1" aria-label="안심 안내문">
-  <style>
-    /* ================= Scope: #NoticeS1 only ================= */
-    #NoticeS1 {
-      --ink:#111;
-      --muted:#777;
-      --accent:#000;
-      --bg:#fff;
-      --maxW:880px;
-      font-family:"Pretendard","Noto Sans KR",sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:var(--bg);
-      padding:60px 20px;
-    }
 
-    #NoticeS1 .wrap {
-      position:relative;
-      width:100%;
-      max-width:var(--maxW);
-      border:1px solid #e5e5e5;
-      border-radius:10px;
-      background:#fff;
-      padding:80px 90px 100px;
-      box-sizing:border-box;
-    }
-
-    /* 배경 워터마크 G */
-    #NoticeS1 .wrap::after {
-      content:"The L";
-      position:absolute;
-      right:30px;
-      bottom:10px;
-      font-size:280px;
-      font-weight:700;
-      color:rgba(0,0,0,0.04);
-      line-height:1;
-      pointer-events:none;
-      user-select:none;
-    }
-
-    /* 상단 소제목 */
-    #NoticeS1 .sub {
-      font-size:15px;
-      color:var(--muted);
-      margin-bottom:10px;
-    }
-
-    /* 메인 타이틀 */
-    #NoticeS1 .title {
-      font-size:34px;
-      font-weight:800;
-      color:var(--ink);
-      margin-bottom:60px;
-      line-height:1.4;
-    }
-
-    #NoticeS1 .title span {
-      display:block;
-      font-size:38px;
-      font-weight:900;
-    }
-
-    /* 약속 문단 */
-    #NoticeS1 .promise {
-      margin-bottom:42px;
-    }
-
-    #NoticeS1 .promise h4 {
-      font-size:15px;
-      color:#999;
-      font-weight:500;
-      margin-bottom:6px;
-    }
-
-    #NoticeS1 .promise p {
-      font-size:18px;
-      color:var(--ink);
-      font-weight:500;
-      line-height:1.8;
-    }
-
-    /* 서명 */
-    #NoticeS1 .sign {
-      text-align:right;
-      margin-top:60px;
-      font-size:17px;
-      color:var(--ink);
-      font-weight:500;
-    }
-
-    #NoticeS1 .sign span {
-      display:inline-block;
-      margin-left:8px;
-      font-family:"SangSangFlower","Pretendard",sans-serif;
-      font-size:22px;
-      font-weight:700;
-    }
-
-    /* 반응형 */
-    @media(max-width:640px){
-      #NoticeS1 .wrap{padding:50px 28px 70px;}
-      #NoticeS1 .title{font-size:26px;}
-      #NoticeS1 .title span{font-size:30px;}
-      #NoticeS1 .promise p{font-size:16px;}
-    }
-  </style>
 <div class="wrap">
   <p class="sub">채무 긴급대응 전문 법률팀</p>
   <h2 class="title">
     법률사무소 더엘<br>
-    <span>긴급 안심상담 안내문</span>
+    <span>긴급 안심콜 안내문</span>
   </h2>
 
   <div class="promise">
@@ -2810,115 +1586,6 @@ btns2.forEach(btn => {
 
 <!-- ===================== 오시는 길 섹션 (카카오맵 퍼가기 코드 적용 + 100% 너비/높이 · 모바일에서 글자(패널)가 지도 위로) ===================== -->
 <section id="RouteS1" aria-label="오시는 길 섹션 (지도 + 정보 패널)">
-  <style>
-    /* ===== Scope Reset: #RouteS1 내부만 초기화 (외부 레이아웃 간섭 방지) ===== */
-    #RouteS1{ box-sizing:border-box; }
-    #RouteS1 *, #RouteS1 *::before, #RouteS1 *::after{ box-sizing:inherit; }
-
-    /* ================= Scope: #RouteS1 only ================= */
-    #RouteS1{
-      --panel:#2b2c30;            /* 우측 패널 배경 */
-      --ink:#f4f4f5;              /* 본문 텍스트(다크 배경용) */
-      --muted:#c7c7cb;            /* 보조 텍스트 */
-      --label:#9ca3af;            /* 항목 라벨 색 */
-      --em:#d9b58a;               /* 포인트(전화번호) */
-      --line:rgba(255,255,255,.12);
-      --ring:rgba(255,255,255,.05);/* 워터마크 링 */
-      --maxW:1280px;
-      --gap:0;
-
-      font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      color:var(--ink);
-
-      /* Grid + 안전한 독립 섹션 */
-      display:grid;
-      grid-template-columns: 1fr 520px;   /* 좌: 지도 / 우: 패널 */
-      grid-template-areas: "map panel";   /* 데스크톱 기본 배치 */
-      gap:var(--gap);
-      align-items:stretch;
-
-      width:100%; max-width:var(--maxW);
-      margin:100px auto;         
-      background:#fff;
-      border-radius:18px;
-      overflow:hidden;
-      box-shadow:0 20px 60px rgba(0,0,0,.25);
-      position:relative; z-index:0;
-      contain:layout paint style;
-    }
-
-    /* 지도 영역 */
-    #RouteS1 .mapWrap{
-      grid-area:map;
-      position:relative;
-      min-height:clamp(420px, 70vh, 820px); /* 화면 높이에 자연스럽게 맞춤 */
-      background:#0e0e0f;
-      isolation:isolate;
-    }
-
-    /* kakao roughmap가 들어가는 컨테이너를 강제로 100% 채우도록 */
-    #RouteS1 #daumRoughmapContainer1761786605195.root_daum_roughmap{
-      position:absolute; inset:0;
-      width:100% !important; height:100% !important;
-    }
-    /* 내부 요소 높이 상쇄(카카오가 인라인 픽셀값을 줄 때가 있어서 강제 100%) */
-    #RouteS1 .root_daum_roughmap .wrap_map,
-    #RouteS1 .root_daum_roughmap .map_border,
-    #RouteS1 .root_daum_roughmap .map{
-      height:100% !important;
-    }
-
-    #RouteS1 .mapFallback{ /* iframe/지도 로드 실패 시 노출용 */
-      position:absolute; inset:0; display:grid; place-items:center;
-      color:#e5e7eb; background:linear-gradient(135deg,#202124,#16181d);
-      font-weight:600; letter-spacing:.05em; pointer-events:none;
-    }
-
-    /* 정보 패널 */
-    #RouteS1 .panel{
-      grid-area:panel;
-      background:
-        radial-gradient(480px 480px at 90% 20%, var(--ring) 0 60%, transparent 62%),
-        var(--panel);
-      padding:56px 48px 52px;
-      color:#f7f7f8;
-    }
-    #RouteS1 .title{
-      font-size:44px; line-height:1.15; font-weight:800; letter-spacing:-0.02em; margin:4px 0 36px;
-    }
-    #RouteS1 .rows{ display:grid; gap:22px; }
-    #RouteS1 .row{
-      display:grid; grid-template-columns: 96px 1fr; gap:18px; align-items:start;
-      padding:18px 0; border-top:1px solid var(--line);
-    }
-    #RouteS1 .row:first-child{ border-top:0; padding-top:0; }
-    #RouteS1 .label{ color:var(--label); font-size:14px; letter-spacing:.08em; font-weight:700; padding-top:2px; }
-    #RouteS1 .content{ color:var(--ink); font-size:16px; line-height:1.75; }
-    #RouteS1 .content .dim{ color:var(--muted); }
-
-    #RouteS1 .phoneBox{ padding-top:24px; margin-top:10px; }
-    #RouteS1 .phone{ font-size:42px; line-height:1.2; font-weight:800; letter-spacing:.02em; color:var(--em); white-space:nowrap; }
-
-    /* 반응형: 모바일에서 글자(패널)가 지도보다 위로 오도록 순서 전환 */
-    @media (max-width: 1100px){
-      #RouteS1{ grid-template-columns: 1fr 1fr;}
-    }
-    @media (max-width: 900px){
-      #RouteS1{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "panel"   /* 1) 패널 먼저 */
-          "map";    /* 2) 지도 다음 */
-        border-radius:0px;
-        margin:0 auto;
-      }
-      #RouteS1 .mapWrap{ min-height:60vh; }
-      #RouteS1 .panel{ padding:36px 22px 32px; }
-      #RouteS1 .title{ font-size:34px; margin-bottom:26px; }
-      #RouteS1 .row{ grid-template-columns: 1fr; gap:14px; padding:16px 20px; }
-      #RouteS1 .phone{ font-size:34px; }
-    }
-  </style>
 
   <!-- 좌측: 지도 (카카오 지도 퍼가기 - 화면 너비/높이에 맞춰 자동 확장) -->
   <div class="mapWrap">
@@ -2992,7 +1659,7 @@ btns2.forEach(btn => {
       <div class="row">
         <div class="label">상담전화</div>
         <div class="content phoneBox">
-          <div class="phone"><a href="#consultForm" style="color:#d9b58a;text-decoration:none;cursor:pointer;"><b>02-593-9191</b></a></div>
+          <div class="phone"><a href="tel:010-2107-0112" style="color:#d9b58a;text-decoration:none;cursor:pointer;"><b>010-2107-0112</b></a></div>
         </div>
       </div>
     </div>
@@ -3011,130 +1678,17 @@ btns2.forEach(btn => {
 
 <section id="floatingCallBarPro" aria-label="긴급 무료 상담 플로팅바">
   <style>
-    /* ================= Scope: #floatingCallBarPro only ================= */
-    #floatingCallBarPro{
-      position:fixed; left:50%; bottom:0;
-      transform:translateX(-50%);
-      width:clamp(320px, 94vw, 1200px);
-      z-index:9999;
-      font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      pointer-events:auto;
-    }
-
-    #floatingCallBarPro .bar{
-      display:flex; align-items:center; justify-content:space-between;
-      background:#111215;
-      color:#fff;
-      border:1px solid rgba(255,255,255,.08);
-      box-shadow:0 8px 30px rgba(0,0,0,.35);
-      border-radius:12px;
-      padding:12px 14px;
-      gap:16px;
-    }
-
-    /* 좌측 텍스트 */
-    #floatingCallBarPro .info{
-      display:flex; flex-direction:column; line-height:1.25;
-      user-select:none;
-    }
-    #floatingCallBarPro .info .tag{
-      font-size:13px; font-weight:800; letter-spacing:.02em; color:#d9b58a;
-    }
-
-
-    @media screen and (max-width:500px) {
-     
-      #floatingCallBarPro .info .tag{
-      font-size:11px;
-    }
-
-    }
-
-    #floatingCallBarPro .info .headline{
-      font-size:16px; font-weight:700; color:#fff;
-      margin-top:3px;
-    }
-
-    /* 전화 버튼 */
-    #floatingCallBarPro .callBtn{
-      position:relative;
-      display:inline-flex; align-items:center; justify-content:center;
-      min-width:180px; min-height:48px;
-      padding:10px 18px;
-      background:#c7a476;
-      color:#fff; font-weight:800; font-size:15px; letter-spacing:.02em;
-      border-radius:8px; text-decoration:none;
-      box-shadow:inset 0 0 0 1px rgba(255,255,255,.18), 0 6px 16px rgba(199,164,118,.35);
-      transition:transform .15s ease, box-shadow .15s ease;
-      white-space:nowrap;
-    }
-    #floatingCallBarPro .callBtn:focus-visible{
-      outline:2px solid #e7d2b2; outline-offset:2px;
-    }
-    #floatingCallBarPro .callBtn:hover{ transform:translateY(-1px); }
-    #floatingCallBarPro .callBtn:active{ transform:translateY(0); }
-
-    /* 손가락 이모지 느낌 */
-    #floatingCallBarPro .callBtn::after{
-      content:"";
-      margin-left:8px;
-      font-size:1rem;
-    }
-
-    /* ✨ 주기적 고급스러운 동적 효과 */
-    #floatingCallBarPro .callBtn::before{
-      content:"";
-      position:absolute; inset:-6px; border-radius:inherit;
-      border:2px solid rgba(231,210,178,0.0);
-      pointer-events:none;
-      animation:barPulse 6s ease-in-out infinite;
-    }
-    @keyframes barPulse{
-      0%,60%{ border-color:rgba(231,210,178,0); box-shadow:none; }
-      61%{ border-color:rgba(231,210,178,.45); box-shadow:0 0 0 0 rgba(231,210,178,.35); }
-      75%{ border-color:rgba(231,210,178,0); box-shadow:0 0 0 10px rgba(231,210,178,0); }
-      100%{ border-color:rgba(231,210,178,0); box-shadow:none; }
-    }
-
-    /* 버튼 위로 지나가는 하이라이트 */
-    #floatingCallBarPro .callBtn .shine{
-      position:absolute; top:-40%; left:-30%;
-      width:40%; height:180%;
-      transform:rotate(20deg);
-      background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.35) 45%, rgba(255,255,255,0) 100%);
-      filter:blur(1px);
-      animation:shineSweep 6s ease-in-out infinite 1.2s;
-      pointer-events:none;
-    }
-    @keyframes shineSweep{
-      0%,65%{ transform:translateX(0) rotate(20deg); opacity:0; }
-      70%{ opacity:.9; }
-      85%{ transform:translateX(220%) rotate(20deg); opacity:0; }
-      100%{ opacity:0; }
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      #floatingCallBarPro .callBtn::before,
-      #floatingCallBarPro .callBtn .shine{ animation:none; display:none; }
-      #floatingCallBarPro .callBtn{ transition:none; }
-    }
-
-    /* 모바일 */
-    @media (max-width:900px){
-      #floatingCallBarPro{ width:100%; left:0; transform:none; }
-      #floatingCallBarPro .bar{ border-radius:0; padding:12px 14px; }
-      #floatingCallBarPro .callBtn{ min-width:150px; }
-    }
+  
   </style>
 
-  <div class="bar" data-call="#consultForm" role="region" aria-label="긴급 무료 상담 플로팅바">
+  <div class="bar" data-call="tel:010-2107-0112" role="region" aria-label="긴급 무료 상담 플로팅바">
     <div class="info">
       <strong class="tag">채무긴급대응 법률센터</strong>
       <div class="headline">긴급 무료 상담</div>
     </div>
 
-    <a href="#consultForm" class="callBtn" aria-label="100% 비밀보장 안심상담">
-      <span>100% 비밀보장 안심상담</span>
+    <a href="tel:010-2107-0112" class="callBtn" aria-label="100% 비밀보장 안심콜">
+      <span>100% 비밀보장 안심콜</span>
       <i class="shine" aria-hidden="true"></i>
     </a>
   </div>
@@ -3294,8 +1848,8 @@ btns2.forEach(btn => {
     
     /* 전화 버튼 로테이션 */
     const callData = [
-      { lines:["24시간 비밀상담 (송무)", "서울 : 02-6954-0378"], tel:"0269540378"   },
-      { lines:["24시간 비밀상담 (송무)", "대전 : 042-721-0606"], tel:"0427210606" }
+      { lines:[""], tel:""   },
+      { lines:[""], tel:"" }
     ];
     const swapDelay = 4000;
     const fadeDur   = 350;
@@ -3641,12 +2195,36 @@ btns2.forEach(btn => {
 <script src="./js/jquery-1.8.3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/menu1.js" defer></script>
+<script src="./js/menu.js" defer></script>
 <script src="./js/personal.js"></script>
-<script src="./js/validation1.js"></script>
 
 
-<script src="./js/validation-float-mob.js"></script>
+<!-- <script src="./js/validation-float-mob.js"></script> -->
 
 <script src="./js/footer.js" defer></script>
+
+<!-- ✅ 전화 클릭 시 Purchase 이벤트 전송 코드 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // tel:02- 또는 tel:010- 으로 시작하는 전화 링크 모두 선택
+  const telLinks = document.querySelectorAll('a[href^="tel:02-"], a[href^="tel:010-"]');
+
+  telLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      if (typeof fbq !== "undefined") {
+        // 0.3초 지연 후 Purchase 이벤트 전송
+        setTimeout(() => {
+          fbq('track', 'Purchase', {
+            value: 1.00,      // 전환 금액 (필요 시 수정)
+            currency: 'KRW'   // 통화 단위
+          });
+          console.log("Meta Pixel Purchase 이벤트 전송됨 (0.3초 지연)");
+        }, 300);
+      }
+    });
+  });
+});
+</script>
+
+
 </html>
