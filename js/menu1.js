@@ -12,17 +12,17 @@
       <div class="logo-group">
         <a href="../index.html">
           <img id="logoImg"
-               src="../img/image.png"
-               data-src-light="../img/image-white.png"
-               data-src-dark="../img/image.png"
+               src="../img/logo-white.png"
+               data-src-light="../img/logo-white.png"
+               data-src-dark="../img/logo_on.png"
                >
         </a>
       </div>
     
-      <div class="menu">
+       <div class="menu">
         <a href="#lawfirm-testimonials">실제 후기</a>
         <a href="#attorney-profile">자격 조건</a>
-        <a href="#sm-consult">무료 상담</a>
+        <a href="#consultForm">긴급 무료상담</a>
         
       </div>
     
@@ -34,7 +34,7 @@
       <div id="mobilePanel" class="mobile-panel">
       <a href="#lawfirm-testimonials">실제 후기</a>
         <a href="#attorney-profile">자격 조건</a>
-      <a href="#sm-consult">무료 상담</a>
+      <a href="#consultForm">긴급 무료상담</a>
         
        
       </div>
