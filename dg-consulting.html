@@ -1,0 +1,3680 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="content-language" content="ko">
+  <title>채무긴급대응 법률센터 | 법률사무소 더엘</title>
+<!-- SEO : Description & Keywords -->
+<meta name="description" content="채무긴급대응 법률센터은 개인회생·파산·채무조정 등 국가지원 제도를 통해 최대 90% 빚 조정을 무료 상담으로 안내하는 서민 맞춤 빚 해결 전문 센터입니다.">
+<meta name="keywords" content="채무조정,개인회생,개인파산,빚조정,채무통합,신용회복,채권추심중단,압류해제,무료채무상담,국가지원빚조정,서민채무안심센터,빚상담,부채해결,회생상담,파산상담">
+
+
+<!-- Open Graph (Facebook, Kakao 등) -->
+<meta property="og:locale" content="ko_KR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="채무긴급대응 법률센터">
+<meta property="og:title" content="채무긴급대응 법률센터｜최대 90% 빚 조정 무료 상담">
+<meta property="og:description" content="국가지원 제도를 활용해 빚을 줄이고 삶을 다시 세우세요. 개인회생·파산·채무조정 전문 무료 상담을 제공합니다.">
+<meta property="og:url" content="https://lawfirm-event.site">
+<meta property="og:image" content="./img/intro-1.jpg">
+<link rel="apple-touch-icon" href="./img/favicon.png" sizes="180x180"/>
+<link rel="icon" href="./img/favicon.png" sizes="16x16"/>
+<link rel="icon" href="./img/favicon.png" sizes="32x32"/>
+<link rel="icon" href="./img/favicon.png" sizes="192x192"/>
+<link rel="icon" href="./img/favicon.png" type="image/svg+xml"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="채무긴급대응 법률센터｜빚 조정∙신용회복 무료 상담">
+<meta name="twitter:description" content="개인회생·파산·채무조정 전문 센터. 국가지원 제도로 최대 90% 빚 조정을 도와드립니다.">
+<meta name="twitter:image" content="./intro/img/intro-1.jpg"/>
+<meta name="twitter:site" content="">
+
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/common.css"/>
+  <link rel="stylesheet" href="./css/main-style.css"/>
+  <link href="./css/ionicons.min.css" rel="stylesheet" />
+  <style>
+    /* ── RESET & LAYOUT ── */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Pretendard',sans-serif;background:#111;color:#fff;overflow-x:hidden}
+    .container{display:flex}
+    #main{flex:1;position:relative;overflow:hidden}
+    #visualTransWrap{position:absolute;inset:0;pointer-events:none;z-index:5}
+
+    /* ── SWIPER & BG ── */
+    .mv_container{width:100%;height:90vh;position:relative}
+    .swiper-container,.swiper-wrapper,.swiper-slide{width:100%;height:100%}
+    .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 6s ease;filter:brightness(0.5)}
+    .swiper-slide-active .bg{transform:scale(1.12)}
+    .bg1{background-image:url('./img/i3.jpg')}
+    .bg2{background-image:url('./img/i2.jpg')}
+    .bg3{background-image:url('./img/i5.jpg')}
+    .bg4{background-image:url('./img/i4.jpg')}
+    .bg5{background-image:url('./img/i1.jpg')}
+
+    /* ── TEXT & BUTTON ── */
+    .mv_txt_box{position:absolute;top:20%;left:5%;max-width:640px;z-index:2}
+    .mv_cate{font-size:18px;font-weight:600;margin-bottom:14px;color:#ffeb55;display:inline-block}
+    .mv_tit{font-size:43px;line-height:1.4;margin:0 0 12px}
+    @media screen and (max-width:620px) {
+      .mv_tit{font-size:34px !important;}
+      
+    }
+    
+    @media screen and (max-width:500px) {
+      .mv_tit{font-size:26px !important;}
+      
+    }
+    .mv_txt{font-size:18px;line-height:1.6;font-weight:300}
+    .mv_btn{
+      display:inline-block;margin-top:30px;padding:14px 36px;
+      border:2px solid #fff;border-radius:40px;
+      background:transparent;color:#fff;font-weight:600;letter-spacing:.3px;
+      opacity:0;pointer-events:none;
+      transition:opacity .6s,background .35s,box-shadow .35s,color .35s,transform .35s;
+      position:relative;overflow:hidden;text-decoration:none;
+    }
+    .swiper-slide-active .mv_btn{opacity:1;pointer-events:auto}
+    .mv_btn::after{
+      content:'';position:absolute;inset:0;background:rgba(255,255,255,.15);
+      transform:translateX(-100%);transition:transform .4s;
+    }
+    .mv_btn:hover::after{transform:translateX(0)}
+    .mv_btn:hover{
+      background:#fff;color:#111;box-shadow:0 8px 24px rgba(0,0,0,.25);
+      transform:translateY(-2px);
+    }
+
+    /* ── WAVE ANIMATION ── */
+    .wave_anim .wave{display:inline-block;opacity:0;animation:wave 1.1s ease-out forwards}
+    @keyframes wave{0%{transform:translateY(25px);opacity:0}100%{transform:translateY(0);opacity:1}}
+    .wave_anim.custom .wave:nth-child(1){animation-delay:.15s}
+    .wave_anim.custom .wave:nth-child(2){animation-delay:.3s}
+    .wave_anim.custom .wave:nth-child(3){animation-delay:.45s}
+
+    /* ── PROGRESS BAR ── */
+    .progress-container{position:absolute;bottom:80px;left:5%;right:5%;height:4px;display:flex;gap:10px;z-index:3;width:150px;}
+    .progress-segment{flex:1;background:rgba(255,255,255,.25);border-radius:2px;overflow:hidden;cursor:pointer}
+    .progress-fill{width:0;height:100%;background:#fff;display:block}
+
+    .wheel_down{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);width:24px;opacity:.7;z-index:3;  animation: wheel-bounce 2s ease-in-out infinite;}
+    /* ── wheel_down 애니메이션 추가 ── */
+
+/* @keyframes wheel-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(8px); }
+} */
+
+/* 내부 작은 막대(.wheel)에 페이드+슬라이드 애니메이션 */
+.wheel_down .wheel {
+  animation: wheel-fade 2s ease-in-out infinite;
+}
+@keyframes wheel-fade {
+  0%   { opacity: 1; transform: translateY(0); }
+  80%  { opacity: 0.2; transform: translateY(10px); }
+  100% { opacity: 0; transform: translateY(14px); }
+}
+    #sidebar{display:none}
+  </style>
+
+
+<style>
+
+  /* ──────────────────────────────────────────
+        #visual-section 전용 스타일
+     ─────────────────────────────────────────── */
+     #visual-section {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+     }
+   
+     /* 비디오 */
+     #visual-section .video_wrap {
+       position: absolute; inset: 0; z-index: 0;
+     }
+     
+     #visual-section .video_wrap video {
+       width: 100%; height: 100%; object-fit: cover; object-position: center;
+     }
+   
+     /* 오버레이 */
+     #visual-section .overlay {
+       position: absolute; inset: 0;
+       background: rgba(0,0,0,0.5);
+     }
+   
+     /* 텍스트 컨테이너 */
+     #visual-section .txt_container {
+       position: absolute; inset: 0; z-index: 2;
+       display: flex; flex-direction: column;
+       justify-content: space-evenly; align-items: center;
+       text-align: center; pointer-events: none;
+     }
+   
+     /* fadeInUp 애니메이션 정의 */
+     @keyframes fadeInUp {
+       from { opacity: 0; transform: translateY(20px); }
+       to   { opacity: 1; transform: translateY(0); }
+     }
+   
+     /* 초기 상태: 숨김 */
+     #visual-section .company,
+     #visual-section .logo,
+     #visual-section .exp {
+       opacity: 0;
+     }
+   
+     /* 스크롤 중앙 진입 시 animate 클래스가 붙으면 실행 */
+     #visual-section.animate .company {
+       color: #fff; font-size: 2rem; font-weight: 500;
+       margin-bottom: 0.5em;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.2s;
+     }
+
+     @media screen and (max-width:530px) {
+      
+      #visual-section.animate .company {
+       color: #fff; font-size: 1.5rem; font-weight: 500;
+     }
+
+     }
+
+     #visual-section.animate .logo {
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.7s;
+     }
+     #visual-section .logo .m_logo {
+       width: 800px; height: 130px;
+       background: url("../img/sm-logo.png") no-repeat center/contain;
+       margin-bottom: 0.5em;
+     }
+     #visual-section.animate .exp {
+       color: #fff; font-size: 1.25rem; line-height: 1.6; max-width: 80%;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 1s;
+     }
+     #visual-section .highlight {
+       color: #e6d3a3; font-weight: 600;
+     }
+   
+     /* 반응형: 모바일 영상 우측 보이기 포함 */
+     @media (max-width: 768px) {
+       #visual-section .company { font-size: 2rem; }
+       #visual-section .logo .m_logo {
+         background: url("../img/sm-font.png") no-repeat center/contain;
+         width: 400px; height: 300px;
+       }
+       #visual-section .exp { font-size: 1rem; }
+       #visual-section .video_wrap video {
+         object-position: right center;
+       }
+     }
+#visual-section .video_wrap img {
+  object-fit: cover;
+  object-position: center;
+}
+     
+ </style>
+
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1908867866693153');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1908867866693153&ev=PageView&noscript=1"
+/></noscript>
+
+
+
+<!-- Danggeun Market Code -->
+<script src="https://karrot-pixel.business.daangn.com/0.4/karrot-pixel.umd.js"></script>
+<script>
+  window.karrotPixel.init('1762130784402890001');
+  window.karrotPixel.track('ViewPage');
+</script>
+<!-- End Danggeun Market Code -->
+
+
+        
+</head>
+<body>
+
+
+<div id="menu"></div>
+  
+  
+<div class="container">
+  <div id="main">
+    <div id="visualTransWrap"></div>
+
+    <div class="mv_container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 : 핵심 제안 -->
+          <div class="swiper-slide">
+            <div class="bg bg1"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무긴급대응 법률센터</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">급여·통장 압류로 인하여</p>
+                <p class="wave">월급이 막혀 카드,세금, 공과금</p>
+                <p class="wave">연체 위기에 처해있다면?</p>
+                
+                <!-- <p class="wave"></p> -->
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">채무조정정부제도를 통해<br>빠르게 압류를 풀고<br>연체 위기에 벗어날 수 있도록<br>신속하게 도와드립니다.</span>
+              </p>
+
+              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+            </div>
+          </div>
+
+        <!-- Slide 2 : 공감 + 한정 이벤트 -->
+<div class="swiper-slide">
+  <div class="bg bg2"></div>
+  <div class="mv_txt_box">
+    <span class="mv_cate wave_anim custom"><span class="wave">채무긴급대응 법률센터</span></span>
+
+    <h2 class="mv_tit wave_anim custom">
+      <p class="wave">재산 압류로 인하여</p>
+      <p class="wave">평생 쌓은 자산을 잃을</p>
+      <p class="wave">심각한 위기에 처해 있다면?</p>
+    </h2>
+
+    <p class="mv_txt wave_anim custom">
+      <span class="wave">경매 및 압류 즉시 중단 및<br>여러분의 소중한 재산을<br>지킬 수 있도록 도와드립니다.</span>
+    </p>
+
+    <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+  </div>
+</div>
+
+
+          <!-- Slide 3 : 회생 장점 -->
+          <div class="swiper-slide">
+            <div class="bg bg3"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무긴급대응 법률센터</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">채권추심(협박성 독촉)으로</strong></p>
+                <p class="wave">직장·가정까지 위협받는</strong></p>
+                <p class="wave">위기의 순간에 있다면?</p>
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">추심 즉각 중단하고<br>가족들이 보호받을 수 있도록<br>빠르게 법률 대응해드립니다.</span>
+              </p>
+
+              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+            </div>
+          </div>
+
+
+                   <!-- Slide 4 : 회생 장점 -->
+          <div class="swiper-slide">
+            <div class="bg bg4"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무긴급대응 법률센터</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">이자가 감당이 안되고</strong></p>
+                <p class="wave">연체로 신용불량 직전에</strong></p>
+                <p class="wave">견디기 힘든 압박을 느낀다면?</p>
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">견디기 힘든 빚을 줄이고<br>일상을 회복할 수 있도록<br>빠르게 도와드립니다.</span>
+              </p>
+
+              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+            </div>
+          </div>
+
+
+                      <!-- Slide 4 : 회생 장점 -->
+          <div class="swiper-slide">
+            <div class="bg bg5"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무긴급대응 법률센터</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">전세사기, 로맨스 스캠 등</strong></p>
+                <p class="wave">예상 못한 금액 피해로</strong></p>
+                <p class="wave">어려운 상황에 처해있다면?</p>
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">예상 못한 상황에서<br>법률 조치를 취할 수 있게<br>빠르게 도와드립니다.</span>
+              </p>
+
+              <a href="#consultForm" class="mv_btn">100% 비밀보장 긴급 안심상담</a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container"></div>
+      </div>
+
+      <!-- Scroll Down Icon -->
+      <span class="wheel_down">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 30">
+          <path fill="#fff" d="M10,0C4.5,0,0,4.5,0,10v10c0,5.5,4.5,10,10,10s10-4.5,10-10V10C20,4.5,15.5,0,10,0z M19,20c0,5-4,9-9,9
+                              s-9-4-9-9V10c0-5,4-9,9-9s9,4,9,9V20z"></path>
+          <path class="wheel" fill="#fff" d="M10,5L10,5c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1l0,0c-0.6,0-1-0.4-1-1V6C9,5.4,9.4,5,10,5z"></path>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+  
+
+<section id="late-response">
+  <!-- BG / 오버레이 -->
+  <div class="lr-bg" aria-hidden="true"></div>
+  <div class="lr-overlay" aria-hidden="true"></div>
+
+  <div class="lr-container">
+    <!-- 텍스트 -->
+    <div class="lr-text">
+      <h2 class="lr-title">"과도한 빚과 이자로<br>이젠 버티기 힘드신가요?"</h2>
+      <div class="lr-desc">
+        <p>카드·대출 이자가 월급보다 커지고</p>
+        <p>독촉 문자에 휴대폰이 무서울 만큼 울리고</p>
+        <p>연체가 쌓여 신용점수는 끝없이 추락…</p><br>
+        <p></p>
+        <p>삶을 짓누르는 채무의 고통을<br>이젠 혼자 고민하지 마세요.</p><br>
+        <p>과도한 채무를 조정해주는<br>정부지원제도를 통해<br>
+          여러분의 빚을 줄여드립니다.</p>
+      </div>
+    </div>
+
+    <!-- 성공 사례 -->
+    <div class="lr-status">
+      <div class="lr-status-title">성공 사례</div>
+      <div class="lr-status-number" data-target="2438">0<span class="plus">건+</span></div>
+    </div>
+    <div class="lr-status">
+      <div class="lr-status-title">총 조정 금액</div>
+      <div class="lr-status-number" data-target="4821">0<span class="plus">억+</span></div>
+    </div>
+    <div class="lr-status">
+      <div class="lr-status-title">누적 상담 수</div>
+      <div class="lr-status-number" data-target="12718">0<span class="plus">명+</span></div>
+    </div>
+
+    <!-- <div class="lr-images">
+      <div class="lr-img-item">
+        <img src="" >
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<script>
+  /* ─ 숫자 애니메이션 함수 ─ */
+  function animateCount(el) {
+    const target   = +el.dataset.target;        // 목표 값
+    const duration = +el.dataset.duration || 1800;
+    const startT   = performance.now();
+  
+    (function step(now){
+      const p   = Math.min((now - startT) / duration, 1);
+      const val = Math.round(p * target);
+      el.firstChild.nodeValue = val.toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    })(startT);
+  }
+  
+  /* ─ 인터섹션 옵저버 ─ */
+  document.addEventListener('DOMContentLoaded', () => {
+    const nums = document.querySelectorAll('#late-response .lr-status-number');
+  
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target;
+  
+        if (entry.isIntersecting) {       // 화면 안으로 들어왔을 때
+          animateCount(el);
+        } else {                          // 화면 밖으로 나갔을 때 → 리셋
+          el.firstChild.nodeValue = '0';
+        }
+      });
+    }, { threshold: 0.5 });               // 요소가 50 % 이상 보이면 트리거
+  
+    nums.forEach(el => io.observe(el));
+  });
+  </script>
+
+
+
+<section id="sm-solution">
+  <div class="intro-text">
+    <h2>감당할 수 없는 채무로<br>더 큰 일이 벌어지기 전에<br>빠른 법률 대응을 도와드립니다.</h2><br>
+    <p>코인 빚, 도박 빚, 은행 빚</p>
+    <p>전세사기, 보이스피싱 등 각종 범죄</p>
+    <p>생활비, 병원비, 사업실패</p>
+    <p>정부제도를 통해 채무를 줄여보세요.</p>
+  </div>
+
+  <div class="main-title">
+    <h2>여러분 문제 뿐만 아니라<br>소중한 가족의 평화를<br>지켜드립니다.</h2><br>
+    <h3>채무긴급대응 법률센터</h3>
+  </div>
+
+  <section id="relief95">
+    <style>
+      /* ────────── 디자인 ────────── */
+      #relief95 {
+        font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
+        text-align: center;
+        max-width: 680px;
+        margin: 0 auto;
+        color: #fff;
+      }
+      #relief95 .label {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+      #relief95 .headline {
+        line-height: 1.3;
+        margin-bottom: 40px;
+        font-weight: 800;
+        font-size: 40px;
+      }
+      #relief95 .orange {
+        color: #ff5a00 !important;
+      }
+  
+      #relief95 .red {
+        color: #ff5a00;
+      }
+      
+      /* ─ 표 형태 박스 ─ */
+      #relief95 .box {
+        border: 3px solid #ff5a00;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 36px;
+      }
+      #relief95 .box-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #ff5a00;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      #relief95 .box-header div {
+        padding: 12px 0;
+      }
+
+           #relief95 .box-line {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: #ff5a00;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      #relief95 .box-line div {
+        padding: 12px 0;
+      }
+
+
+
+      #relief95 .box-body {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+      }
+      #relief95 .box-body .cell {
+        padding: 28px 0;
+      }
+      #relief95 .box-body .divider {
+        background: #ff5a00;
+      }
+      #relief95 .monthly {
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 4px;
+      }
+      #relief95 .amount {
+        font-size: 42px;
+        font-weight: 800;
+      }
+      #relief95 .amount small {
+        font-size: 28px;
+        font-weight: 700;
+      }
+  
+      /* ─ 하단 텍스트 ─ */
+      #relief95 .note {
+        color: #ff5a00;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+      #relief95 .disclaimer {
+        font-size: 14px;
+        font-weight: 500;
+      }
+  
+      /* ─ 반응형 ─ */
+      @media (max-width: 480px) {
+        #relief95 .headline { font-size: 32px; }
+        #relief95 .amount { font-size: 24px; }
+        #relief95 .amount small { font-size: 22px; }
+      }
+    </style>
+  
+    <!-- ────────── 내용 ────────── -->
+  
+    <h2 class="headline">
+      <span class="orange">100% 비밀보장 긴급콜</span><br><br>
+      <span >현재 처한 채무 위기를</span><br>
+      <span >아무도 모르게 조용히</span><br>
+      <span >빠르게 해결해드려요!</span><br>
+      
+    </h2>
+  
+    <div class="box"  style="margin-bottom:0;">
+      <div class="box-header">
+        <div>긴급콜 상담 전</div>
+        <div>긴급콜 상담 후</div>
+      </div>
+      <div class="box-body">
+        <div class="cell">
+          <!-- <span class="monthly">월 상환금</span> -->
+          <span class="amount">월급 압류 조치</small></span>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+          <!-- <span class="monthly">월 상환금</span> -->
+          <span class="orange amount blink" data-period="1200" data-min="0.25">압류 해제</span>
+        </div>
+      </div>
+    </div>
+
+        <div class="box" style="margin-bottom:0;">
+      <!-- <div class="box-header">
+        <div>긴급콜 상담 전</div>
+        <div>긴급콜 상담 후</div>
+      </div> -->
+      <div class="box-body">
+        <div class="cell">
+          <!-- <span class="monthly">월 상환금</span> -->
+          <span class="amount">협박성 추심</small></span>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+          <!-- <span class="monthly">월 상환금</span> -->
+          <span class="orange amount blink" data-period="1200" data-min="0.25">즉각 중단</span>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="box" style="margin-bottom:50px;">
+      <!-- <div class="box-header">
+        <div>긴급콜 상담 전</div>
+        <div>긴급콜 상담 후</div>
+      </div> -->
+      <div class="box-body">
+        <div class="cell">
+          <!-- <span class="monthly">월 상환금</span> -->
+          <span class="amount">자산 경매 집행</small></span>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+          <!-- <span class="monthly">월 상환금</span> -->
+          <span class="orange amount blink" data-period="1200" data-min="0.25">집행 중지</span>
+        </div>
+      </div>
+    </div>
+
+     <h2 class="headline">
+      <span >그 뿐만 아니라</span><br>
+      <span >빚 없던 예전의 일상으로</span><br>
+      <span >최단 기간 안에</span><br>
+      <span >돌아갈 수 있도록!</span><br>
+      
+    </h2>
+
+        <div class="box" >
+      <div class="box-header">
+        <div>조정 전</div>
+        <div>조정 후</div>
+      </div>
+      <div class="box-body">
+        <div class="cell">
+          <span class="monthly">월 상환금</span>
+          <span class="amount"><span  >350</span><small> 만 원</small></span>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+          <span class="monthly">월 상환금</span>
+          <span class="amount"><span class="counter red" data-target="35">0</span><small> 만 원</small></span>
+        </div>
+      </div>
+    </div>
+
+        <div class="box">
+       <div class="box-line">
+        <div>빚 부담이 사라지는<br>개시기간 절차는 짧게!</div>
+      </div>
+      <div class="box-body">
+        <div class="cell">
+          <span class="monthly">개시 기간</span>
+          <span class="amount"><span>90</span><small> 일</small></span>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+          <span class="monthly">개시 기간</span>
+          <span class="amount"><span class="counter red" data-target="30">0</span><small> 일</small></span>
+        </div>
+      </div>
+    </div>
+
+
+         <div class="box">
+      <div class="box-line">
+        <div>신용 회복되는 기간을 줄여<br>예전 일상으로 더 빠르게!</div>
+      </div>
+      <div class="box-body">
+        <div class="cell">
+          <span class="monthly">면책 기간</span>
+          <span class="amount"><span>10</span><small> 년</small></span>
+        </div>
+        <div class="divider"></div>
+        <div class="cell">
+          <span class="monthly">면책 기간 (조건마다 다름)</span>
+          <span class="amount"><span class="counter red" data-target="3">0</span><small> 년</small></span>
+        </div>
+      </div>
+    </div>
+
+    
+<!--   
+    <p class="note">채무 3,000만 원 이상 진행 가능</p>
+    <p class="disclaimer">*비밀 절대 보장*</p><br><br> -->
+  
+    <script>
+        /* ────────── 카운트 애니메이션 ────────── */
+    (function(){
+      const counters = document.querySelectorAll('#relief95 .counter');
+
+      function animate(counter){
+        const target     = +counter.dataset.target;               // 목표 숫자
+        const duration   = +counter.dataset.duration || 1500;     // 애니메이션 총 길이(ms)
+        const startTime  = performance.now();
+
+        function update(now){
+          const elapsed  = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const value    = Math.round(progress * target);
+
+          counter.textContent = value.toLocaleString();
+
+          if(progress < 1){
+            requestAnimationFrame(update);
+          }
+        }
+        requestAnimationFrame(update);
+      }
+
+      /* IntersectionObserver:
+         - 요소가 뷰포트의 절반(50%) 이상 보이면 실행
+         - 뷰포트를 벗어나면 숫자를 0으로 리셋해 재진입 시에도 다시 애니메이션 */
+      const io = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          const el = entry.target;
+          if(entry.isIntersecting){
+            animate(el);
+          }else{
+            el.textContent = '0';  // 리셋
+          }
+        });
+      },{threshold:0.5});          // 화면 가운데쯤에서 트리거
+
+      counters.forEach(c=>io.observe(c));
+    })();
+    </script>
+
+      <h2 class="headline">
+      <span class="orange">100% 비밀보장 긴급콜</span><br><br>
+      <span >단 한번의 콜을 통해</span><br>
+      <span >이 모든 솔루션을<br>제공해드립니다.</span><br>
+      
+      
+    </h2>
+  </section>
+  <!-- ▲▲▲ 회생지원 배너 끝 ▲▲▲ -->
+
+  <div class="quote-bar">
+    <span class="stat">채무 2000만원 이상 진행가능</span>
+    <!-- <span class="quote">“비밀 절대 보장”</span> -->
+    
+  </div>
+
+
+</section>
+
+
+
+<script>
+/* 사용 예시 : 2초 뒤 배경을 조금 더 어둡게 */
+setTimeout(()=>{
+  document.getElementById('sm-solution')
+          .style.setProperty('--dim','.6');
+},2000);
+</script>
+
+    
+ 
+    
+   
+<!-- ==================== 채무 탕감 후기 슬라이드 (최신 ver.) ==================== -->
+<style>
+  /* ────── RESET & 공통 ────── */
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
+  body{background:#0e0e0e;color:#fff;}
+
+  /* ────── 후기 영역 ────── */
+  #lawfirm-testimonials{padding:60px 5vw;overflow:hidden;}
+  #lawfirm-testimonials h2{
+    font-size:32px;font-weight:700;text-align:center;margin:80px 0;letter-spacing:-0.01em;
+  }
+
+  /* 슬라이드 래퍼 */
+  .marquee-row{display:flex;gap:24px;will-change:transform;}
+
+  .testimonial-card{
+    border:1px solid #ffffff40;flex:0 0 370px;background:#181611;border-radius:16px;
+    padding:32px 28px 24px;line-height:1.55;box-shadow:0 6px 28px rgba(0,0,0,.44);
+    display:flex;flex-direction:column;justify-content:space-between;height:250px;min-width:0;
+    transition:box-shadow .3s;
+  }
+  .testimonial-card:hover{box-shadow:0 12px 44px rgba(255,228,106,0.11),0 2px 20px rgba(220,220,0,0.03);}
+  .testimonial-card q{display:block;font-size:17px;font-weight:500;margin-bottom:10px;color:#fff;letter-spacing:-0.02em;}
+
+  /* finance bar */
+  .finance-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0 4px;}
+  .f-item{background:#222;border-radius:8px;text-align:center;padding:7px 4px;}
+  .f-label{font-size:11px;font-weight:600;color:#bfbfbf;letter-spacing:-.02em;}
+  .f-val{display:block;margin-top:2px;font-size:15px;font-weight:800;color:#ffe46a;}
+  .f-val.minus{color:#ff6c5c;}
+
+  .testimonial-meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px;width:100%;}
+  .author{font-size:15px;color:#ffe46a;font-weight:700;letter-spacing:-0.01em;}
+  .rate{
+    display:inline-block;font-size:13px;background:#ffe46a;color:#181611;font-weight:900;
+    border-radius:7px;padding:3.5px 13px;letter-spacing:0.04em;min-width:60px;text-align:center;
+    box-shadow:0 2px 10px rgba(255,228,106,0.16);
+  }
+
+  @media(max-width:1100px){
+    .testimonial-card{flex:0 0 340px;padding:26px 17px 18px;height:255px;}
+    .f-val{font-size:14px;}
+    #lawfirm-testimonials{padding:36px 2vw;}
+  }
+  .row-gap{height:28px;}
+</style>
+
+<section id="lawfirm-testimonials">
+  <h2>실제 채무조정 후기</h2>
+
+  <!-- 위쪽 행 (→) -->
+  <div class="marquee-row top">
+
+    <!-- 1 : 90% -->
+    <article class="testimonial-card">
+      <q>도박으로 망가졌던 삶이었습니다. 탕감 후에는 숨통이 트여 다시 일어설 용기가 생겼습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2,400만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2,160만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">8만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">오○○ (도박&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 2 -->
+    <article class="testimonial-card">
+      <q>생활비 때문에 카드 돌려막기를 반복했는데, 이제는 가족과 웃으며 식탁에 앉을 수 있습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">4,000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3,000만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">20만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">김○○ (생활비)</p><span class="rate">탕감율 75%</span></div>
+    </article>
+
+    <!-- 3 : 90% -->
+    <article class="testimonial-card">
+      <q>코인 폭락 후 모든 것이 끝난 줄 알았지만, 큰 틀에서 정리하고 다시 저축을 시작했습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">5,500만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-4,950만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">18만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">장○○ (코인&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 4 -->
+    <article class="testimonial-card">
+      <q>주식 빚에 눌려 숨조차 쉬기 힘들었는데, 부담이 확 줄어 마음 편히 출근하고 있습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">7,200만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-6,336만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">23만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">박○○ (주식&nbsp;빚)</p><span class="rate">탕감율 88%</span></div>
+    </article>
+
+    <!-- 5 -->
+    <article class="testimonial-card">
+      <q>은행 대출이 눈덩이처럼 불어 걱정이 컸는데, 직원들과 공장을 지킬 수 있어 감사합니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">1억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-7,000만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">50만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">이○○ (은행&nbsp;빚)</p><span class="rate">탕감율 70%</span></div>
+    </article>
+
+    <!-- 6 -->
+    <article class="testimonial-card">
+      <q>신용카드 연체 알림이 사라지니 밤잠이 달라졌습니다. 다시 삶의 리듬을 찾았어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">1억&nbsp;6000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1억&nbsp;3120만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">60만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">윤○○ (신용카드)</p><span class="rate">탕감율 82%</span></div>
+    </article>
+
+    <!-- 7 : 90% -->
+    <article class="testimonial-card">
+      <q>끝이 안 보이던 사업자금 대출이 정리되니, 숨쉬는 것부터 달라졌습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2억&nbsp;3000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2억&nbsp;700만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">65만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">최○○ (은행&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 8 -->
+    <article class="testimonial-card">
+      <q>투자 실패로 눌렸던 가슴이 탕감 이후 한결 가벼워졌습니다. 다시 도전할 힘을 얻었어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">3억&nbsp;5000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2억&nbsp;7300만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">120만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">남○○ (은행&nbsp;빚)</p><span class="rate">탕감율 78%</span></div>
+    </article>
+
+    <!-- 9 -->
+    <article class="testimonial-card">
+      <q>공장 확장 때문에 진 빚도 정리되어 이제는 매출에만 집중할 수 있습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">5억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3억&nbsp;7000만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">250만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">문○○ (은행&nbsp;빚)</p><span class="rate">탕감율 74%</span></div>
+    </article>
+
+    <!-- 10 -->
+    <article class="testimonial-card">
+      <q>보증으로 떠안은 큰 빚이 정리되자, 처음으로 미래 계획을 세우게 됐습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">7억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-5억&nbsp;8100만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">300만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">배○○ (은행&nbsp;빚)</p><span class="rate">탕감율 83%</span></div>
+    </article>
+  </div>
+
+  <div class="row-gap"></div>
+
+  <!-- 아래쪽 행 (←) -->
+  <div class="marquee-row bottom">
+
+    <!-- 11 -->
+    <article class="testimonial-card">
+      <q>생활비 대출 부담이 사라지니 매달 월급날이 기다려집니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2,600만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1,872만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">9만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">홍○○ (생활비)</p><span class="rate">탕감율 72%</span></div>
+    </article>
+
+    <!-- 12 : 90% -->
+    <article class="testimonial-card">
+      <q>도박빚 때문에 잠 못 이루던 날들이 끝났습니다. 마음껏 숨 쉬고 있어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">3,800만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3,420만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">17만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">서○○ (도박&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 13 : 90% -->
+    <article class="testimonial-card">
+      <q>주식 계좌를 볼 때마다 괴로웠는데, 큰 부분이 정리되어 마음이 한결 가볍습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">4,900만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-4,410만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">19만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">정○○ (주식&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 14 -->
+    <article class="testimonial-card">
+      <q>코인 빚이 정리되고 나니 다시 공부할 마음의 여유가 생겼어요.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">6,600만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-5,544만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">25만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">안○○ (코인&nbsp;빚)</p><span class="rate">탕감율 84%</span></div>
+    </article>
+
+    <!-- 15 -->
+    <article class="testimonial-card">
+      <q>가게가 힘들어졌을 때 손 내밀어 주셔서 폐업 대신 희망을 택했습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">9,000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-6,300만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">40만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">곽○○ (은행&nbsp;빚)</p><span class="rate">탕감율 70%</span></div>
+    </article>
+
+    <!-- 16 -->
+    <article class="testimonial-card">
+      <q>신용카드 연체 문자에서 해방되니 하루하루가 가벼워졌습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">1억&nbsp;4000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1억&nbsp;1900만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">55만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">임○○ (신용카드)</p><span class="rate">탕감율 85%</span></div>
+    </article>
+
+    <!-- 17 -->
+    <article class="testimonial-card">
+      <q>투자 실패로 접었던 꿈을 다시 꿉니다. 도움 주신 분들께 정말 감사합니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-1억&nbsp;4600만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">90만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">류○○ (주식&nbsp;빚)</p><span class="rate">탕감율 73%</span></div>
+    </article>
+
+    <!-- 18 : 90% -->
+    <article class="testimonial-card">
+      <q>주식 신용거래로 무너진 가정에 웃음이 돌아왔습니다. 고맙습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">2억&nbsp;8000만</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-2억&nbsp;5200만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">110만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">문○○ (주식&nbsp;빚)</p><span class="rate">탕감율 90%</span></div>
+    </article>
+
+    <!-- 19 -->
+    <article class="testimonial-card">
+      <q>도박으로 잃은 시간은 되돌릴 수 없지만, 부채 걱정 없이 다시 시작합니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">4억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-3억</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">200만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">박○○ (도박&nbsp;빚)</p><span class="rate">탕감율 75%</span></div>
+    </article>
+
+    <!-- 20 -->
+    <article class="testimonial-card">
+      <q>코로나로 멈춘 매출 때문에 절망했지만, 탕감 후 회사를 지킬 수 있었습니다.</q>
+      <div class="finance-bar">
+        <div class="f-item"><span class="f-label">대출금</span><span class="f-val">6억</span></div>
+        <div class="f-item"><span class="f-label">탕감액</span><span class="f-val minus">-4억&nbsp;9200만</span></div>
+        <div class="f-item"><span class="f-label">월 상환액</span><span class="f-val">270만</span></div>
+      </div>
+      <div class="testimonial-meta"><p class="author">고○○ (은행&nbsp;빚)</p><span class="rate">탕감율 82%</span></div>
+    </article>
+  </div>
+</section>
+
+<script>
+  /* 무한 슬라이드(마퀴) */
+  function initMarquee(row,{direction='left',speed=30}={}){
+    const originals=[...row.children];
+    originals.forEach(c=>row.appendChild(c.cloneNode(true)));
+
+    const gap=24;
+    const full=originals.reduce((w,el)=>w+el.getBoundingClientRect().width+gap,-gap);
+    const dir=direction==='left'?-1:1;
+
+    let pos=0,last=performance.now();
+    function step(now){
+      const dt=(now-last)/1000;last=now;
+      pos+=dir*speed*dt;
+      if(dir===-1&&Math.abs(pos)>=full)pos+=full;
+      if(dir=== 1&&pos>=0)       pos-=full;
+      row.style.transform=`translateX(${pos}px)`;
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  window.addEventListener('DOMContentLoaded',()=>{
+    initMarquee(document.querySelector('.marquee-row.top'),   {direction:'right',speed:30});
+    initMarquee(document.querySelector('.marquee-row.bottom'),{direction:'left', speed:30});
+  });
+</script>
+<!-- ==================== /채무 탕감 후기 슬라이드 ==================== -->
+
+
+  
+<section id="visual-section">
+  <div class="video_wrap">
+    <img src="./img/intro-4.jpg" style="width:100%;height:100%;">
+    <!-- <video muted loop autoplay playsinline>
+      <source src="./img/video-4.mp4" type="video/mp4">
+    </video> -->
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="txt_container">
+    <div class="company">감당하기 힘든 빚으로<br>긴급한 도움이<br>필요한 분을 위한<br><br>1-STEP 긴급 솔루션</div>
+    <div class="logo"><div class="m_logo"></div></div>
+    <div class="exp">
+      혼자 힘들어하지 마시고<br>이젠 정부지원제도를 통해<br><br>견디기 어려운 빚의 압박에서<br>벗어날 수 있도록<br>도와드리겠습니다.
+    </div>
+  </div>
+</section>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const section = document.getElementById("visual-section");
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            section.classList.add("animate");
+            obs.disconnect();
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(section);
+    });
+  </script>
+  
+
+<section id="whoCanPartner">
+
+    <style>
+
+      /* ===== Scope: #whoCanPartner only ===== */
+    #whoCanPartner{
+      /* --ink:#0b1220; */
+      --sub:#475569;
+      /* 기존 팔레트 유지 + 민트 포인트 추가 */
+      --brand:#0b4a8b;    /* 기존 블루(그대로 유지) */
+      --brand-2:#184a7d;  /* 바 배경 블루(그대로 유지) */
+      --mint:#13b5a3;     /* 🔹 톤앤매너 포인트 색 */
+      --accent:#11a292;   /* 🔹 호버/보조 */
+      --hl:#d6f7f1;       /* 🔹 하이라이트 밑줄(민트톤으로 변경) */
+      --line:#e5e7eb;
+      --card:#ffffff;
+      --thumb-bg:#fff6e8;
+      --tag-shadow:0 6px 16px rgba(19,181,163,.28);
+      font-family: Pretendard, "Noto Sans KR", "Noto Sans", system-ui, -apple-system, Segoe UI, Roboto, Apple SD Gothic Neo, sans-serif;
+      color:var(--ink);
+      /* max-width: 1080px; */
+      margin: 0 auto;
+      padding: 36px 16px 56px;
+      background:(--sub);
+    }
+
+    /* ===== 상단 배너형 헤더 ===== */
+    #whoCanPartner .hero{ text-align:center; max-width:820px; margin:0 auto 28px; }
+    
+
+   #whoCanPartner .hero .tag{display:inline-block; background:#343434; color:#e6d3a3; padding:8px 24px; border-radius:999px; font-weight:700; font-size:1.2rem; }
+
+
+
+
+    #whoCanPartner .hero .headline{
+      font-weight:900; font-size:40px; line-height:1.2; letter-spacing:-.4px;
+      color:#fff;padding-top:15px;
+    }
+
+    @media screen and (max-width:480px) {
+        #whoCanPartner .hero .headline{
+     font-size:30px; padding-top:15px;
+   
+    }
+
+    #whoCanPartner .hero .tag{font-size:.86rem; }
+
+    }
+
+    /* 하이라이트를 민트 톤으로 */
+    #whoCanPartner .hero .headline .hl{
+      display:inline-block; color:#e6d3a3;
+      background:linear-gradient(transparent 66%, #e6d3a32b 66% 100%);
+      border-radius:2px; padding:0 .04em;
+    }
+    #whoCanPartner .hero .sub{ margin-top:12px; font-size:22px; font-weight:800; color:#111827; }
+    #whoCanPartner .hero .note{ margin-top:8px; font-size:14px; color:#94a3b8; }
+
+    /* 포인트 3분할 바 (기존 색 유지) */
+    #whoCanPartner .points{
+      margin:26px auto 34px; background:var(--brand-2); color:#fff;
+      border-radius:12px; padding:22px 16px;
+      box-shadow:0 8px 18px rgba(24,74,125,.16);
+      max-width:920px;
+    }
+    #whoCanPartner .points .wrap{ display:grid; grid-template-columns:repeat(3,1fr); align-items:center; text-align:center; }
+    #whoCanPartner .points .col{ padding:6px 10px; }
+    #whoCanPartner .points .label{ font-size:16px; color:#cfe3fb; font-weight:600; }
+    #whoCanPartner .points .value{ font-size:28px; font-weight:900; letter-spacing:-.3px; }
+    #whoCanPartner .points .col:not(:last-child){ position:relative; }
+    #whoCanPartner .points .col:not(:last-child::after){
+      content:""; position:absolute; right:0; top:50%; transform:translateY(-50%);
+      width:2px; height:44px; border-radius:1px;
+      background:linear-gradient(180deg, rgba(255,255,255,.25), rgba(255,255,255,.65), rgba(255,255,255,.25));
+    }
+
+    /* 기존 타이틀/부제는 사용 안 함 */
+    #whoCanPartner .head{ display:none; }
+
+    /* ===== 카드 그리드 이하 기존 스타일 유지 ===== */
+    #whoCanPartner .grid{ display:grid; grid-template-columns: 1fr 1fr 1fr; gap:18px; }
+    @media (max-width:1200px){ #whoCanPartner .grid{ grid-template-columns:1fr 1fr; } }
+    @media (max-width:630px){ #whoCanPartner .grid{ grid-template-columns:1fr; } }
+
+    #whoCanPartner .card{
+      background:#343434; border:1px solid #626262; border-radius:18px;
+      box-shadow:0 1px 0 rgba(16,24,40,.04), 0 1px 2px rgba(16,24,40,.06);
+      overflow:hidden; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      text-decoration:none; color:inherit; display:block;
+    }
+    /* 호버시 테두리에 민트 기운 살짝 */
+    #whoCanPartner .card:hover{ transform:translateY(-2px); border-color:rgba(19,181,163,.35); box-shadow:0 10px 24px rgba(16,24,40,.12); }
+
+    #whoCanPartner .thumb{ position:relative; background:var(--thumb-bg); aspect-ratio:5/2; overflow:hidden; }
+    #whoCanPartner .thumb img{ width:100%; height:100%; object-fit:cover; display:block; transition: transform .45s ease, filter .35s ease; }
+    #whoCanPartner .card:hover .thumb img{ transform:scale(1.03); filter:saturate(1.02); }
+
+
+    #whoCanPartner .tag.left{ left:16px; }
+    #whoCanPartner .tag.right{ right:16px; } /* 누수 방지용 범위 스코프 */
+
+    /* 카드 텍스트 포인트 컬러를 민트로 보정 */
+    #whoCanPartner .info{ text-align:center; padding:14px 12px 18px; }
+    #whoCanPartner .info .leading{ font-weight:900; color:#e6d3a3;; margin-bottom:6px; }
+    #whoCanPartner .info .desc{ font-size:17px; color:#fff; }
+
+    /* FadeIn */
+    #whoCanPartner .card.reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.65,.25,1); }
+    #whoCanPartner .card.reveal.show{ opacity:1; transform:none; }
+    #whoCanPartner .grid .card.reveal:nth-child(2n){ transition-delay:.06s; }
+    #whoCanPartner .grid .card.reveal:nth-child(3n){ transition-delay:.12s; }
+    @media (prefers-reduced-motion:reduce){ #whoCanPartner .card.reveal{ opacity:1; transform:none; } }
+
+    </style>
+
+  <!-- 새 상단 헤더 -->
+  <div class="hero" aria-label="만기 후 100% 환급 배너">
+    <!-- 🔹 추가된 헤드라인 태그 -->
+    <div class="tag">긴급 상황을 빠르게 해결할 수밖에 없는 이유?</div><br><br>
+
+    <h2 class="headline">더엘 법률사무소<br>채무긴급대응 법률센터만의<br><span class="hl">특별한 6가지 장점<br></span></h2><br>
+
+    <!-- <div class="note">*만기 납입 후 1개월 시점 해약시 또는 라이프서비스 사용시</div> -->
+  </div>
+
+  <!-- (기존 카드 그리드 그대로) -->
+  <div class="grid">
+
+
+  <!-- 03 -->
+  <a class="card reveal" >
+    <div class="thumb">
+      <img src="./img/insurance.jpg" alt="10항목 정밀 분류">
+      <span class="tag left"><i>PRO</i>정밀분류</span>
+    </div>
+    <div class="info">
+      <div class="leading">15년 · 2,000건 이상의 개인회생 경험</div>
+      <div class="desc">어떤 상황에도 신속한 진단과 빠른 문제 해결 가능 </div>
+    </div>
+  </a>
+
+
+    <!-- 01 -->
+     <a class="card reveal" >
+    <div class="thumb">
+      <img src="./img/page-3.jpg" alt="중복·허수 크레딧 보상 정책">
+      <span class="tag left"><i>SAFE</i>보상정책</span>
+    </div>
+    <div class="info">
+      <div class="leading">탁월한 압류·추심 즉시중단 대응 노하우</div>
+      <div class="desc">급여·통장·차량 압류위기 당일 법적 중단 체계 구축</div>
+    </div>
+  </a>
+
+
+  <!-- 04 -->
+  <a class="card reveal" >
+    <div class="thumb">
+      <img src="./img/a1.jpg" alt="브랜딩 연동 랜딩·광고 공동 제작">
+      <span class="tag right"><i>BRAND</i>공동제작</span>
+    </div>
+    <div class="info">
+      <div class="leading">최대 90% 탕감율 + 추가 생계비 탕감</div>
+      <div class="desc">기본적인 탕감 + 추가 생계비 확대로 탕감율을 더 높게!</div>
+    </div>
+  </a>
+
+  <!-- 04 -->
+  <a class="card reveal" >
+    <div class="thumb">
+      <img src="./img/a2.jpg" alt="브랜딩 연동 랜딩·광고 공동 제작">
+      <span class="tag right"><i>BRAND</i>공동제작</span>
+    </div>
+    <div class="info">
+      <div class="leading">빚에서 벗어나 일상으로 가는 시간 최소화</div>
+      <div class="desc">개시 결정 및 면책 시기 단축하는 시스템화</div>
+    </div>
+  </a>
+
+    <!-- 04 -->
+  <a class="card reveal" >
+    <div class="thumb">
+      <img src="./img/a3.jpg" alt="브랜딩 연동 랜딩·광고 공동 제작">
+      <span class="tag right"><i>BRAND</i>공동제작</span>
+    </div>
+    <div class="info">
+      <div class="leading">도산 변호사가 직접 처음부터 끝까지!</div>
+      <div class="desc">A~Z까지 직접 듣고 함께 도와드립니다.</div>
+    </div>
+  </a>
+
+    <!-- 04 -->
+  <a class="card reveal" >
+    <div class="thumb">
+      <img src="./img/a4.jpg" alt="브랜딩 연동 랜딩·광고 공동 제작">
+      <span class="tag right"><i>BRAND</i>공동제작</span>
+    </div>
+    <div class="info">
+      <div class="leading">100% 비밀보장! 가족, 직장 문제없이!</div>
+      <div class="desc">직장/가정의 영향없도록 아무도 모르게 진행합니다.</div>
+    </div>
+  </a>
+
+  
+
+  </div>
+  <!-- 새 상단 헤더 -->
+  <div class="hero" aria-label="만기 후 100% 환급 배너">
+    <!-- 🔹 추가된 헤드라인 태그 -->
+    <!-- <div class="tag">긴급 상황을 가장 빠르게 해결할 수밖에 없는 이유?</div><br><br> -->
+<br><br><br>
+    <h2 class="headline">빚 탕감율을<br>높게 받는 것만으로는<br>부족합니다.<br><br><span class="hl">여러분의 가족을 지키고<br>예전의 일상으로<br>빠르게 회복시키는 것이</span><br><span class="hl">진정한 우리의 목표입니다.</span><br></span></h2><br>
+
+    <!-- <div class="note">*만기 납입 후 1개월 시점 해약시 또는 라이프서비스 사용시</div> -->
+  </div>
+
+    <script>
+    (function(){
+      const root = document.getElementById('whoCanPartner');
+      if(!root) return;
+      const targets = root.querySelectorAll('.card.reveal');
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){ entry.target.classList.add('show'); }
+          else{ entry.target.classList.remove('show'); }
+        });
+      }, {threshold:.18, rootMargin:'0px 0px -5% 0px'});
+      targets.forEach(el=> io.observe(el));
+    })();
+  </script>
+</section>
+
+<section id="doctorProfileShinHY" aria-label="이우형 변호사님 프로필">
+<style>
+/* ================= Scope: #doctorProfileShinHY only ================= */
+#doctorProfileShinHY{
+  /* Theme tokens */
+  --bg1:#333333;
+  --bg2:#6f6f6f;
+  --ink:#fff;
+  --muted:rgba(255,255,255,.75);
+  --soft:rgba(255,255,255,.6);
+  --pill:#6c7382;
+  --accent:#9bd84f;
+  --blue:#5bc0ff;
+  --orange:#ff8844;
+  --line:rgba(255,255,255,.18);
+  --radius:14px;
+  --maxW:1200px;
+
+  font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+
+  /* Background */
+  background:
+    radial-gradient(1200px 100% at 68% 10%, rgba(255,255,255,.06), transparent 60%),
+    linear-gradient(100deg, var(--bg1) 0%, var(--bg2) 55%, #7d8190 100%);
+  position:relative;
+  overflow:hidden;
+  padding:64px 24px 40px;
+
+  /* Layout */
+  display:grid;
+  grid-template-columns:minmax(320px,770px) 1fr;
+  gap:24px;
+  align-items:end;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+
+/* ===== 좌측 텍스트 블록 ===== */
+#doctorProfileShinHY .txt{
+  max-width:var(--maxW);
+  margin:0 auto;
+  padding:10px 0 20px;
+  position:relative; /* cert 기준 위치 */
+}
+#doctorProfileShinHY .dept{
+  display:inline-block;font-size:28px;font-weight:700;letter-spacing:-.02em;color:#e7e9ef;margin:6px 0 12px;
+}
+#doctorProfileShinHY .name{
+  font-size:92px;line-height:.95;font-weight:800;letter-spacing:-.035em;margin:0 0 28px;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.08);
+}
+
+/* ✅ 자격증 썸네일(클릭 확대) */
+#doctorProfileShinHY .cert{
+  position:absolute; right:-10px; top:-8px;
+  width:132px; aspect-ratio:3/4; border-radius:8px; overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.28), inset 0 -6px 12px rgba(0,0,0,.06);
+  background:rgba(255,255,255,.08);
+  -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px);
+  border:1px solid rgba(255,255,255,.18);
+  cursor:zoom-in;
+}
+#doctorProfileShinHY .cert img{display:block;width:100%;height:100%;object-fit:contain}
+
+/* ===== 칩/라벨 라인 ===== */
+#doctorProfileShinHY .chipline{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:0 0 22px;}
+#doctorProfileShinHY .chip{
+  display:inline-flex;align-items:center;gap:8px;background:var(--pill);color:#fff;font-weight:700;font-size:14px;
+  padding:7px 12px;border-radius:999px;white-space:nowrap;
+}
+#doctorProfileShinHY .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(155,216,79,.2) inset;}
+#doctorProfileShinHY .desc{font-size:15px;color:var(--muted);}
+
+/* ===== 프로필 표 ===== */
+#doctorProfileShinHY .table{width:100%;border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;margin:4px 0 18px;}
+#doctorProfileShinHY .thead, #doctorProfileShinHY .trow{display:grid;grid-template-columns:88px 1fr;}
+#doctorProfileShinHY .thead div{
+  background:rgba(255,255,255,.06);color:#e8eaf2;font-weight:700;padding:14px 16px;border-right:1px solid var(--line);text-align:center;font-size:14px;
+}
+#doctorProfileShinHY .thead div:first-child{ text-align:left; }
+#doctorProfileShinHY .trow div{
+  padding:18px 16px;border-top:1px solid var(--line);border-right:1px solid var(--line);
+  min-height:48px;display:flex;justify-content:flex-start;align-items:center;color:#f1f2f6;
+}
+#doctorProfileShinHY .trow div:first-child{color:#e8eaf2;font-weight:700;}
+#doctorProfileShinHY .note{display:flex;align-items:flex-start;gap:10px;color:var(--soft);font-size:13px;padding:6px 2px;}
+#doctorProfileShinHY .note .i{font-weight:900;opacity:.8}
+
+/* ===== 버튼 ===== */
+#doctorProfileShinHY .cta{
+  margin-top:12px;display:inline-flex;align-items:center;gap:10px;background:#6d7384;color:#fff;font-weight:800;border-radius:12px;padding:14px 18px;
+  text-decoration:none;user-select:none;box-shadow:0 10px 24px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.08);
+  transition:transform .15s ease, box-shadow .15s ease, background .2s ease;
+}
+#doctorProfileShinHY .cta:hover{transform:translateY(-1px);box-shadow:0 14px 28px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.1);background:#7b8191;}
+
+/* ===== 우측 프로필 사진 영역 ===== */
+#doctorProfileShinHY .visual{
+  position:relative;max-height:760px;
+  display:flex;align-items:flex-end;justify-content:center;isolation:isolate;
+}
+
+/* ✅ 사진 카드(로고를 카드 안쪽 상단에 배치) */
+#doctorProfileShinHY .photo{
+  position:relative;z-index:1;display:block;width:min(500px,56vw);aspect-ratio:3/4;border-radius:24px;
+  overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35), inset 0 -10px 20px rgba(0,0,0,.06);
+  background:rgba(255,255,255,.06);
+}
+#doctorProfileShinHY .photo img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;
+}
+
+/* ✅ 로고: 사진 카드 안쪽 상단(스크린샷 위치) */
+#doctorProfileShinHY .brand-in{
+  position:absolute; top:14px; left:18px; z-index:2;
+  display:block; pointer-events:none; /* 로고는 클릭 통과 */
+}
+#doctorProfileShinHY .brand-in img{
+  display:block; width:min(180px,22vw); height:auto; object-fit:contain;
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.35));
+}
+
+/* ===== 반응형 ===== */
+@media (max-width:1024px){
+  #doctorProfileShinHY{grid-template-columns:1fr;align-items:start;padding:48px 20px 32px;}
+  #doctorProfileShinHY .name{font-size:72px;}
+  #doctorProfileShinHY .visual{order:-1;}
+  #doctorProfileShinHY .cert{ right:6px; top:-6px; width:112px; }
+  #doctorProfileShinHY .brand-in img{ width:min(150px,32vw); }
+}
+@media (max-width:600px){
+  #doctorProfileShinHY .dept{font-size:22px;}
+  #doctorProfileShinHY .name{font-size:52px;}
+  #doctorProfileShinHY .cta{width:100%;justify-content:center;}
+  #doctorProfileShinHY .cert{ right:8px; top:-4px; width:90px; }
+  #doctorProfileShinHY .brand-in{ top:10px; left:12px; }
+  #doctorProfileShinHY .brand-in img{ width:min(130px,42vw); }
+}
+@media (prefers-reduced-motion:reduce){
+  #doctorProfileShinHY .cta{transition:none;}
+}
+
+/* ================== 라이트박스(전체 화면 팝업) ================== */
+#doctorProfileShinHY .lightbox{
+  position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.6);
+  display:none; align-items:center; justify-content:center; padding:24px;
+}
+#doctorProfileShinHY .lightbox[aria-hidden="false"]{ display:flex; }
+#doctorProfileShinHY .lightbox__inner{
+  position:relative; max-width:min(960px,92vw); max-height:min(92vh,1200px);
+  background:rgba(20,20,24,.9); border-radius:14px; overflow:hidden;
+  box-shadow:0 20px 80px rgba(0,0,0,.5); animation:lbIn .18s ease-out both;
+}
+#doctorProfileShinHY .lightbox__img{display:block;width:100%;height:100%;object-fit:contain;background:#111;}
+#doctorProfileShinHY .lightbox__close{
+  position:absolute; top:8px; right:8px; display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border-radius:999px; background:rgba(255,255,255,.12); color:#fff; font-size:0;
+  border:1px solid rgba(255,255,255,.18); cursor:pointer;
+}
+#doctorProfileShinHY .lightbox__close:before{content:"✕"; font-size:18px; line-height:1; filter:drop-shadow(0 1px 0 rgba(0,0,0,.4));}
+#doctorProfileShinHY .lightbox__scrim{ position:absolute; inset:0; }
+@keyframes lbIn{from{transform:translateY(4px) scale(.985);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+</style>
+
+<!-- ===== 좌측 텍스트 영역 ===== -->
+<div class="txt">
+  <div class="dept">회생/파산 전문 변호사</div>
+  <h1 class="name">이우형</h1>
+
+  <!-- 자격증 이미지(클릭 시 확대) -->
+  <button class="cert" type="button" aria-label="전문분야 등록증 확대 보기">
+    <img src="./img/lawyer-license.png" alt="전문분야 등록증 사본" loading="lazy">
+  </button>
+
+  <div class="chipline">
+    <span class="chip"><span class="dot" aria-hidden="true"></span>전문 분야</span>
+    <span class="desc">개인 및 법인 회생/파산, 민・형사 사건</span>
+  </div>
+
+  <div class="legend">
+    <span class="chip">변호사 프로필</span>
+  </div>
+
+  <!-- 프로필 표 -->
+  <div class="table" role="table" aria-label="프로필 이력">
+    <div class="thead" role="row"><div role="columnheader">구분</div><div role="columnheader">내용</div></div>
+    <div class="trow" role="row"><div role="rowheader">학력</div><div>연세대학교 졸업<br>Northwestern University School of Law LLM</div></div>
+    <div class="trow" role="row"><div role="rowheader">경력</div><div>- 제 44회 사법시험 합격<br>- 사법연수원 34기 수료<br>- 개인회생/파산 15년간 2000건 이상 진행</div></div>
+    <div class="trow" role="row"><div role="rowheader">드리는 말씀</div><div>채무의 어려움은 누구나 겪을 수 있습니다.<br>하지만, 더 없이 소중한 가족과 주변 사람까지 무너져서는 안됩니다.<br>저는 여러분을 포함한 가족분들의 소중한 일상을 지키기 위해 최선을 다해 도와드리겠습니다.</div></div>
+  </div>
+
+  <a class="cta" href="#consultForm" aria-label="바로 전화 상담 받기">바로 전화 상담 받기</a>
+</div>
+
+<!-- ===== 우측 사진 영역 ===== -->
+<div class="visual" aria-hidden="true">
+  <figure class="photo">
+    <!-- ✅ 로고: 사진 카드 안쪽 상단 -->
+    <div class="brand-in"><img src="./img/thel.png" alt="법률사무소 로고" loading="lazy"></div>
+    <img src="./img/lawyer1.png" alt="프로필 사진" loading="lazy">
+  </figure>
+</div>
+
+<!-- ===== 라이트박스(자격증 확대) ===== -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="자격증 확대 보기">
+  <div class="lightbox__scrim" data-close="true"></div>
+  <div class="lightbox__inner">
+    <img class="lightbox__img" src="" alt="자격증 원본 이미지">
+    <button class="lightbox__close" type="button" aria-label="닫기" data-close="true"></button>
+  </div>
+</div>
+
+<script>
+/* ===== 라이트박스 스크립트 (섹션 스코프) ===== */
+(() => {
+  const root = document.getElementById('doctorProfileShinHY');
+  if (!root) return;
+
+  const certBtn = root.querySelector('.cert');
+  const certImg = certBtn?.querySelector('img');
+  const lightbox = root.querySelector('.lightbox');
+  const lbImg = root.querySelector('.lightbox__img');
+
+  if (!certBtn || !certImg || !lightbox || !lbImg) return;
+
+  const open = () => {
+    const src = certImg.getAttribute('data-fullsrc') || certImg.getAttribute('src');
+    lbImg.setAttribute('src', src);
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    lightbox.setAttribute('aria-hidden', 'true');
+    lbImg.setAttribute('src', '');
+    document.body.style.overflow = '';
+  };
+
+  certBtn.addEventListener('click', open, { passive: true });
+  lightbox.addEventListener('click', (e) => {
+    if (e.target && e.target.dataset && e.target.dataset.close === 'true') close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.getAttribute('aria-hidden') === 'false' && (e.key === 'Escape' || e.key === 'Esc')) close();
+  });
+})();
+</script>
+</section>
+
+
+  <!-- ▽▽▽  Attorney Profile Section (전체 코드, JS 동적 헤딩 포함)  ▽▽▽ -->
+<section id="attorney-profile">
+  <div class="ap-wrapper" style="display:flex;">
+    <!-- ▶ 사진 영역 -->
+    <!-- <figure class="ap-photo">
+      <img src="./img/law-lee.png" alt="개인회생" class="main-photo">
+      <figcaption class="ap-caption">개인회생</figcaption>
+    </figure> -->
+
+    <!-- ▶ 텍스트·버튼 영역 -->
+    <div class="ap-info">
+      <!-- 로고 마퀴 -->
+      <div class="ap-marquee" aria-hidden="true">
+        <div class="ap-track"><span>법률사무소&nbsp;더엘&nbsp;| 채무긴급대응 법률센터</span></div>
+      </div>
+
+      <!-- 변호사 선택 버튼 -->
+      <div class="ap-select">
+        <button type="button" data-lawyer="lee" class="on">개인회생</button>
+        <button type="button" data-lawyer="kim">개인파산</button>
+      </div>
+
+      <!-- 이름 & 포지션 -->
+      <h2 class="ap-name">
+        <span class="ap-lname">개인회생</span><br>
+        <span class="ap-position">3년 ~ 5년간 일정한 금액을 변제하면<br>나머지 채무의 면제를 받을 수 있는 국가지원제도</span>
+      </h2>
+
+      <!-- 연락처 / 안내 문구 -->
+      <div class="ap-contact">
+        <a class="ap-btn ap-phone">접수 순간부터 추심·연체이자가 멈추고, 독촉 전화·압류 압박에서 해방됩니다.</a>
+      </div>
+
+      <!-- 자격 LIST -->
+      <div class="ap-block">
+        <h3 class="ap-heading ap-edu-heading">▲ 개인회생 자격</h3>
+        <ul class="ap-list ap-edu">
+          <li>일정한 월 수입이 있다</li>
+          <li>전체 빚이 무담보 10 억 / 담보 15 억 이하다.</li>
+          <li>독촉·압류가 이미 진행 중이거나 곧 우려된다.</li>
+          <li>과거 개인회생 면책을 받은 적이 없거나 받은 지 5년이 지났다.</li>
+        </ul>
+      </div>
+
+      <!-- 장점 LIST -->
+      <div class="ap-block">
+        <h3 class="ap-heading ap-career-heading">▲ 개인회생 장점</h3>
+        <ul class="ap-list ap-career">
+          <li>원금 최대 90 % 탕감 가능</li>
+          <li>모든 연체 이자·지연손해금 즉시 정지</li>
+          <li>급여·통장·자동차 압류 보호로 생활 기반 유지 가능</li>
+          <li>집 보유한 채 절차 진행 가능</li>
+          <li>전문직·공무원·자영업자도 그대로 일할 수 있습니다</li>
+          <li>신용 회복 및 금융거래 재개</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ▼▼▼  스크립트  (사진 없는 버전) ▼▼▼ -->
+<script>
+  /* 1) 데이터 */
+  const LAWYERS = {
+    lee: {
+      name: "개인회생",
+      position: "3년 ~ 5년간 일정한 금액을 변제하면\n 나머지 채무의 면제를 받을 수 있는 국가지원제도",
+      phone: "접수 순간부터 추심·연체이자가 멈추고, 독촉 전화·압류 압박에서 해방됩니다.",
+      eduTitle: "▲ 개인회생 자격",
+      careerTitle: "▲ 개인회생 장점",
+      edu: [
+        "일정한 월 수입이 있다",
+        "전체 빚이 무담보 10 억 / 담보 15 억 이하다.",
+        "독촉·압류가 이미 진행 중이거나 곧 우려된다.",
+        "과거 개인회생 면책을 받은 적이 없거나 받은 지 5년이 지났다."
+      ],
+      career: [
+        "원금 최대 90 % 탕감 가능",
+        "모든 연체 이자·지연손해금 즉시 정지",
+        "급여·통장·자동차 압류 보호로 생활 기반 유지 가능",
+        "집 보유한 채 절차 진행 가능",
+        "전문직·공무원·자영업자도 그대로 일할 수 있습니다",
+        "신용 회복 및 금융거래 재개"
+      ]
+    },
+    kim: {
+      name: "개인파산",
+      position: "채무자가 가진 모든 재산으로도 빚을 갚을 수 없을 때, 재산을 현금화하고 남은 채무를 법적으로 소멸시켜주는 절차",
+      phone: "새 출발할 수 있도록 모든 원금·이자 전부 소멸",
+      eduTitle: "▲ 개인파산 자격",
+      careerTitle: "▲ 개인파산 장점",
+      edu: [
+        "재산을 모두 처분해도 빚을 상환할 수 없다",
+        "지속적인 수입이 없거나 매우 불안정하다",
+        "면책불허 사유(사기·도박 등)가 없다",
+        "최근 5년 내 파산 면책을 받은 이력이 없다"
+      ],
+      career: [
+        "원금·이자 100 % 면책",
+        "추심·압류 즉시 중단",
+        "소득 없던 사람도 구제 가능",
+        "절차 6~12개월로 비교적 짧음",
+        "생활 필수 재산(기본 의복·가재도구 등) 보호",
+        "재기 지원 제도(서민금융진흥원 등) 이용 가능"
+      ]
+    }
+  };
+  
+  /* 2) DOM 참조 */
+  const sec        = document.getElementById('attorney-profile');
+  const info       = sec.querySelector('.ap-info');
+  const mainPhoto  = sec.querySelector('.main-photo');   // ❗ 없으면 null
+  const cap        = sec.querySelector('.ap-caption');   // ❗ 없으면 null
+  const lname      = sec.querySelector('.ap-lname');
+  const pos        = sec.querySelector('.ap-position');
+  const phone      = sec.querySelector('.ap-phone');
+  const eduUl      = sec.querySelector('.ap-edu');
+  const carUl      = sec.querySelector('.ap-career');
+  const btns       = sec.querySelectorAll('.ap-select button');
+  const eduHeading = sec.querySelector('.ap-edu-heading');
+  const carHeading = sec.querySelector('.ap-career-heading');
+  
+  /* 3) 공통 화면 업데이트 함수 */
+  function render(view) {
+    eduHeading.textContent = view.eduTitle;
+    carHeading.textContent = view.careerTitle;
+  
+    lname.textContent = view.name;
+    pos.textContent   = view.position;
+    phone.textContent = view.phone;
+    phone.href        = 'tel:' + view.phone.replace(/\s/g, '');
+  
+    eduUl.innerHTML = view.edu.map(v => `<li>${v}</li>`).join('');
+    carUl.innerHTML = view.career.map(v => `<li>${v}</li>`).join('');
+  
+    /* 사진·캡션이 있을 때만 교체 */
+    if (mainPhoto) mainPhoto.alt = view.name;
+    if (cap)       cap.textContent = view.name;
+  }
+  
+  /* 4) 버튼 클릭 */
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('on')) return;
+      btns.forEach(b => b.classList.toggle('on', b === btn));
+      render(LAWYERS[btn.dataset.lawyer]);
+    });
+  });
+  
+  /* 5) 초기 화면 */
+  render(LAWYERS.lee);
+  </script>
+  <!-- ▲▲▲  /스크립트  ▲▲▲ -->
+  
+
+
+
+<!-- <script>
+
+const LAWYERS = {
+  lee: {
+    photo: "./img/law-lee.png",
+    caption: "개인회생",
+    name: "개인회생",
+    position: "3년 ~ 5년간 일정한 금액을 변제하면\n 나머지 채무의 면제를 받을 수 있는 국가지원제도",
+    phone: "접수 순간부터 추심·연체이자가 멈추고, 독촉 전화·압류 압박에서 해방됩니다.",
+    eduTitle: "▲ 개인회생 자격",
+    careerTitle: "▲ 개인회생 장점",
+    edu: [
+      "일정한 월 수입이 있다",
+      "전체 빚이 무담보 10 억 / 담보 15 억 이하다.",
+      "독촉·압류가 이미 진행 중이거나 곧 우려된다.",
+      "과거 개인회생 면책을 받은 적이 없거나 받은 지 5년이 지났다."
+    ],
+    career: [
+      "원금 최대 90 % 탕감 가능",
+      "모든 연체 이자·지연손해금 즉시 정지",
+      "급여·통장·자동차 압류 보호로 생활 기반 유지 가능",
+      "집 보유한 채 절차 진행 가능",
+      "전문직·공무원·자영업자도 그대로 일할 수 있습니다",
+      "신용 회복 및 금융거래 재개"
+    ]
+  },
+  kim: {
+    photo: "./img/law-kim.png",
+    caption: "개인파산",
+    name: "개인파산",
+    position: "채무자가 가진 모든 재산으로도 빚을 갚을 수 없을 때, 재산을 현금화하고 남은 채무를 법적으로 소멸시켜주는 절차",
+    phone: "새 출발할 수 있도록 모든 원금·이자 전부 소멸",
+    eduTitle: "▲ 개인파산 자격",
+    careerTitle: "▲ 개인파산 장점",
+    edu: [
+      "재산을 모두 처분해도 빚을 상환할 수 없다",
+      "지속적인 수입이 없거나 매우 불안정하다",
+      "면책불허 사유(사기·도박 등)가 없다",
+      "최근 5년 내 파산 면책을 받은 이력이 없다"
+    ],
+    career: [
+      "원금·이자 100 % 면책",
+      "추심·압류 즉시 중단",
+      "소득 없던 사람도 구제 가능",
+      "절차 6~12개월로 비교적 짧음",
+      "생활 필수 재산(기본 의복·가재도구 등) 보호",
+      "재기 지원 제도(서민금융진흥원 등) 이용 가능"
+    ]
+  }
+};
+
+
+Object.values(LAWYERS).forEach(v => new Image().src = v.photo);
+
+
+const sec        = document.getElementById('attorney-profile');
+const info       = sec.querySelector('.ap-info');
+const mainPhoto  = sec.querySelector('.main-photo');
+const cap        = sec.querySelector('.ap-caption');
+const lname      = sec.querySelector('.ap-lname');
+const pos        = sec.querySelector('.ap-position');
+const phone      = sec.querySelector('.ap-phone');
+const eduUl      = sec.querySelector('.ap-edu');
+const carUl      = sec.querySelector('.ap-career');
+const btns2      = sec.querySelectorAll('.ap-select button');
+const eduHeading = sec.querySelector('.ap-edu-heading');
+const carHeading = sec.querySelector('.ap-career-heading');
+
+
+btns2.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.classList.contains('on')) return;
+    btns2.forEach(b => b.classList.toggle('on', b === btn));
+
+    const d = LAWYERS[btn.dataset.lawyer];
+
+
+    info.classList.add('switching');
+    mainPhoto.style.opacity   = 0;
+    mainPhoto.style.transform = 'scale(1.08)';
+    mainPhoto.style.filter    = 'blur(6px)';
+
+
+    const tmp = new Image();
+    tmp.onload = () => {
+      mainPhoto.src = tmp.src;
+      requestAnimationFrame(() => {
+        mainPhoto.style.opacity   = 1;
+        mainPhoto.style.transform = 'scale(1)';
+        mainPhoto.style.filter    = 'blur(0)';
+      });
+
+
+      eduHeading.textContent = d.eduTitle;
+      carHeading.textContent = d.careerTitle;
+
+
+      cap.textContent   = d.caption;
+      lname.textContent = d.name;
+      pos.textContent   = d.position;
+      phone.textContent = d.phone;
+      phone.href        = 'tel:' + d.phone.replace(/\s/g, '');
+
+      eduUl.innerHTML = d.edu.map(v => `<li>${v}</li>`).join('');
+      carUl.innerHTML = d.career.map(v => `<li>${v}</li>`).join('');
+
+
+      setTimeout(() => info.classList.remove('switching'), 500);
+    };
+    tmp.src = d.photo;
+  });
+});
+</script> -->
+
+  
+  
+
+
+<!-- ✅ 본문 히어로: 기존 섹션에서 topbar 제거, 나머지 그대로 -->
+<section id="legalDBHero" aria-label="개인회생·파산 실시간 DB 공급">
+  <style>
+    /* ================= Scope: #legalDBHero only ================= */
+    #legalDBHero {
+      --ink: #0b1220;
+      --muted: #556070;
+      --brand: #13b5a3;
+      --line: #e8ecef;
+      --bg: #f6f8fa;
+      --radius: 18px;
+      --shadow: 0 16px 40px rgba(0, 0, 0, .1);
+      --soft: 0 1px 3px rgba(19,181,163,.12), 0 1px 2px rgba(0,0,0,.04);
+      --soft-hover: 0 6px 16px rgba(19,181,163,.16), 0 2px 4px rgba(0,0,0,.05);
+      --accent: #11a292;
+      --bubble:#e9f5f3;
+      --hdr-space: 92px; /* 헤더 높이만큼 여유(스크립트에서 보정) */
+
+      font-family: Pretendard, "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:#fff; color:var(--ink);
+      padding:60px 20px;
+      position:relative; overflow:hidden; isolation:isolate;
+    }
+    #legalDBHero .wrap { max-width:1200px; margin:0 auto; display:flex; flex-direction:column; gap:40px; }
+
+    /* 🔹 라이트 버블 */
+    #legalDBHero .bg-bubble{position:absolute; border-radius:50%; background:var(--bubble); filter:blur(.2px); opacity:.7; z-index:0;}
+    #legalDBHero .b1{width:520px; height:520px; left:-180px; top:-160px; z-index:-1;}
+    #legalDBHero .b2{width:440px; height:440px; right:-140px; bottom:20px; opacity:.55; z-index:-1;}
+    #legalDBHero .b3{width:380px; height:380px; right:20%; top:50%; translate:0 -50%; opacity:.45; z-index:-1;}
+    @media (max-width:980px){
+      #legalDBHero .b1{width:340px; height:340px; left:-120px; top:-120px;}
+      #legalDBHero .b2{width:150px; height:150px; right:-80px; bottom:10px;}
+      #legalDBHero .b3{display:none;}
+    }
+
+    /* 타이틀 (헤더 공간만큼 아래에서 시작) */
+    #legalDBHero .headline { text-align:center; margin-top:var(--hdr-space); }
+    #legalDBHero .headline .tag { display:inline-block; background:var(--bg); color:var(--brand); padding:4px 12px; font-size:.85rem; border-radius:50px; margin-bottom:14px; font-weight:600; }
+    #legalDBHero .headline h2 { font-size:clamp(1.8rem,3.2vw,2.4rem); line-height:1.4; margin:0 0 12px; font-weight:800; }
+    #legalDBHero .headline h2 b { color:var(--brand); }
+    #legalDBHero .headline p { margin:0; font-size:1rem; color:var(--muted); }
+
+    /* 본문 박스 */
+    #legalDBHero .content { display:flex; flex-wrap:wrap; gap:32px; background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); padding:40px; align-items:stretch; }
+
+    /* ========= Left: DB 스택 티커 ========= */
+    #legalDBHero .left { flex:1 1 50%; min-width:100px; position:relative; }
+    #legalDBHero .content .left { box-shadow:0 6px 16px rgba(19,181,163,.09), 0 2px 4px rgba(0,0,0,.01); border-radius:10px; }
+    #legalDBHero .left::before { content:""; position:absolute; inset:auto -10% -20% -10%; height:360px; pointer-events:none; }
+
+    #legalDBHero .dbStack { position:relative; width:min(560px,96%); height:370px; overflow:hidden; margin:0 auto; }
+    #legalDBHero .dbTrack { display:flex; flex-direction:column; gap:10px; will-change:transform; }
+    #legalDBHero .dbTrack.is-shifting { transition:transform .55s cubic-bezier(.22,.75,.16,1); }
+
+    /* 카드 */
+    #legalDBHero .db-card {
+      border:1.2px solid #00000011; border-radius:12px; box-shadow:var(--soft);
+      padding:14px 20px; display:flex; gap:14px; align-items:center; height:78px; box-sizing:border-box;
+      opacity:1; transform:translateY(0);
+    }
+    #legalDBHero .db-card.enter { opacity:0; transform:translateY(16px); }
+    #legalDBHero .db-card.enter.is-in { transition:opacity .55s ease, transform .55s ease; opacity:1; transform:translateY(0); }
+
+    /* 아바타 */
+    #legalDBHero .db-avatar {
+      flex:0 0 44px; height:44px; border:1px solid #11a29233; border-radius:50%;
+      background:#13b5a353; display:grid; place-items:center; color:#fff; font-weight:700; font-size:1.5rem;
+      box-shadow:inset 0 0 0 2px rgba(255,255,255,.7);
+    }
+    #legalDBHero .db-avatar::before { content:'👤'; font-size:20px; color:#fff; }
+
+    @media screen and (max-width:500px) {
+
+      /* 아바타 */
+    #legalDBHero .db-avatar {
+      flex:0 0 24px; height:24px; 
+    }
+    #legalDBHero .db-avatar::before { content:'👤'; font-size:10px; color:#fff; }
+
+
+    }
+
+    #legalDBHero .db-main { flex:1 1 auto; }
+    #legalDBHero .db-title { margin:0 0 4px; font-size:1.05rem; font-weight:800; letter-spacing:-.01em; }
+    #legalDBHero .db-sub { margin:0; font-size:.92rem; color:var(--muted); }
+
+    /* 말풍선 */
+    #legalDBHero .left .bubble { position:absolute; background:#fff; box-shadow:0 4px 20px rgba(0,0,0,.08); border-radius:12px; padding:8px 14px; font-size:.85rem; white-space:nowrap; font-weight:500; }
+    #legalDBHero .bubble1 { top:8px; left:8px; }
+    #legalDBHero .bubble2 { bottom:10px; left:0; }
+    #legalDBHero .bubble3 { top:28%; right:0; }
+
+    /* ========= Right ========= */
+    #legalDBHero .right { flex:1 1 45%; min-width:280px; display:flex; flex-direction:column; justify-content:space-between;     align-items: stretch;}
+    #legalDBHero .right h3 { font-size:1.25rem; font-weight:700; margin-bottom:18px; }
+    #legalDBHero .right ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0; }
+    #legalDBHero .right ul li { padding:12px 0; background:none; border-radius:0; font-size:.98rem; border-bottom:1px dashed var(--line); }
+    #legalDBHero .right ul li:last-child { border-bottom:none; }
+    #legalDBHero .right ul li:before { content:"✓"; color:var(--brand); font-weight:800; margin-right:10px; font-size:1.1em; }
+
+    /* 버튼 */
+    #legalDBHero .actions { margin-top:25px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    #legalDBHero .actions .btn-outline, #legalDBHero .actions .btn-fill {
+      border:none; cursor:pointer; font-size:1rem; font-weight:700; padding:12px 20px; border-radius:50px; transition:all .2s; text-decoration:none; display:inline-block; text-align:center;
+    }
+    #legalDBHero .actions .btn-outline { background:#fff; border:1.5px solid var(--brand); color:var(--brand); }
+    #legalDBHero .actions .btn-fill { background:var(--brand); color:#fff; box-shadow:0 6px 15px rgba(19,181,163,.35); }
+    #legalDBHero .actions .btn-fill:hover { background:var(--accent); }
+    .border1{display:none;}
+
+    #legalDBHero .right ul li.pulse{background:linear-gradient(90deg,rgba(19,181,163,.10),rgba(19,181,163,0));box-shadow:inset 0 0 0 2px rgba(19,181,163,.22),0 10px 26px rgba(19,181,163,.16);transition:background .35s ease,box-shadow .35s ease,transform .35s ease;transform:translateZ(0);font-weight:700;transition:1s;}
+#legalDBHero .right ul li.pulse::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--brand),transparent);animation:legalDBHeroPulseBar 2.2s linear infinite;transition:1s;}
+@keyframes legalDBHeroPulseBar{0%{opacity:.0;transform:translateX(-20%)}10%{opacity:.8}90%{opacity:.8}100%{opacity:0;transform:translateX(20%)}}
+
+    /* 반응형 */
+    @media(max-width:768px){
+      #legalDBHero { padding:40px 10px; }
+      #legalDBHero .content { flex-direction:column; padding:20px; gap:20px; }
+      #legalDBHero .left { margin-top:0; }
+      #legalDBHero .right { order:1; min-width:100%; }
+      #legalDBHero .headline h2 { font-size:1.6rem; }
+      #legalDBHero .headline p { font-size:.95rem; }
+      #legalDBHero .dbStack { width:100%; height:370px; }
+      #legalDBHero .db-card { padding:12px 16px; height:75px; }
+      #legalDBHero .db-title { font-size:1rem; }
+      #legalDBHero .db-sub { font-size:.85rem; }
+      #legalDBHero .left .bubble { display:none; }
+      #legalDBHero .right h3 { font-size:1.35rem; margin-top:10px; margin-bottom:15px; }
+      #legalDBHero .right ul li { font-size:1.1rem; padding:10px 0; }
+      #legalDBHero .actions { flex-direction:column; gap:8px; }
+      #legalDBHero .actions .btn-outline, #legalDBHero .actions .btn-fill { width:100%; max-width:300px; font-size:.95rem; }
+      .border1{display:block;}
+    }
+
+
+        /* 반응형 */
+    @media(max-width:500px){
+     
+      #legalDBHero .right ul li { font-size:0.9rem; padding:10px 0; }
+     
+    }
+  </style>
+
+
+
+  <div class="wrap">
+    <!-- (topbar는 별도 #stickyTopbar 섹션으로 분리됨) -->
+    <div class="headline">
+      <div class="tag">100% 비밀 보장 안심상담</div>
+      <h2>시간이 지체되어<br>더 큰 채무로 불어나기 전에<br><br>망설이지 말고<br>빠르게 안심콜 도움 받으세요.<br>전화 즉시, 여러분 빚의 무게<br>즉각 가볍게 도와드리겠습니다.<br><br>
+
+<b>법률사무소 더엘<br>채무긴급대응 법률센터<br><br>100% 비밀보장 긴급 안심상담</b></h2>
+      
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <div class="dbStack" aria-live="polite">
+          <div class="dbTrack"></div>
+        </div>
+        <!-- <div class="bubble bubble1">실시간 유입</div>
+        <div class="bubble bubble2">중복 제거</div>
+        <div class="bubble bubble3">전환율 상위</div> -->
+      </div>
+
+      <div class="right">
+        <div>
+          <hr class="border1" style="width:100%;border:1px solid #00000012;margin:20px 0;">
+          <h3>상담 신청 자격</h3>
+          <ul>
+            <li>채무로 인한 월급, 통장 압류에 처하신 분</li>
+            <li>강제적인 경매 집행 절차에 처하신 분</li>
+            <li>연체로 인한 신용하락의 위기에 처하신 분</li>
+            <li>채무가 재산보다 많아야 합니다.</li>
+            <li>정기적 수익이 있는 분 (알바, 프리랜서 가능)</li>
+            <li>총 채무 2000만원 이상인 분</li>
+            
+          </ul>
+          <small style="color:var(--muted); display:block; margin-top:15px; font-size:.85rem;">* 모든 정보는 철저하게 100% 비밀 보장 됩니다. 안심하세요.</small>
+        </div>
+        <div class="actions">
+          <a class="btn-fill" href="#consultForm">100% 비밀보장 긴급 안심상담</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const root = document.querySelector('#legalDBHero');
+      const track = root.querySelector('.dbTrack');
+      const stack = root.querySelector('.dbStack');
+
+      const VISIBLE = 5, GAP = 10, INTERVAL = 2600;
+
+      const DB_LIST = [
+        { city:'서울', age:34, overdue:'즉시 경매 집행 중단', debt:'채무 ***만원', memo:'긴급 안심콜', time:'' },
+        { city:'부산', age:41, overdue:'월급 압류 해제', debt:'채무 ***만원', memo:'긴급 안심콜', time:'' },
+        { city:'대구', age:29, overdue:'아파트 경매 집행 중지', debt:'채무 ***만원', memo:'긴급 안심콜', time:'' },
+        { city:'수원', age:38, overdue:'채무 83% 탕감', debt:'월 상환액 150만원 감소', memo:'긴급 안심콜', time:'' },
+        { city:'인천', age:33, overdue:'추심 즉각 중단', debt:'채무 ***만원', memo:'긴급 안심콜', time:'' },
+        { city:'대전', age:36, overdue:'채무 79% 탕감', debt:'월 상환액 210만원 감소', memo:'긴급 안심콜', time:'' },
+        { city:'창원', age:45, overdue:'추심 즉각 중단', debt:'채무 ***만원', memo:'긴급 안심콜', time:'' }
+      ];
+
+      function createCard(data){
+        const el = document.createElement('div');
+        el.className = 'db-card enter';
+        el.innerHTML = `
+          <div class="db-avatar"></div>
+          <div class="db-main">
+            <p class="db-title">${data.city} · ${data.age}세 · ${data.overdue}</p>
+            <p class="db-sub">${data.debt} · ${data.memo} <span style="color:var(--muted);font-size:.9em">${data.time}</span></p>
+          </div>`;
+        requestAnimationFrame(()=> el.classList.add('is-in'));
+        return el;
+      }
+
+      function shiftUp(by){
+        track.classList.add('is-shifting');
+        track.style.transform = `translateY(-${by}px)`;
+        return new Promise(res=>{
+          const onEnd = ()=>{ track.removeEventListener('transitionend', onEnd); res(); };
+          track.addEventListener('transitionend', onEnd, {once:true});
+        }).then(()=>{
+          track.classList.remove('is-shifting');
+          track.style.transform = 'translateY(0)';
+        });
+      }
+
+      let idx = 0, paused = false, timer = null, cardHeight = 78;
+
+      function prime(){
+        const init = Math.min(VISIBLE, DB_LIST.length);
+        for(let i=0;i<init;i++) pushNext();
+        if(track.children.length) cardHeight = track.children[0].getBoundingClientRect().height;
+      }
+
+      function pushNext(){
+        const data = DB_LIST[idx % DB_LIST.length]; idx++;
+        const card = createCard(data);
+        track.appendChild(card);
+
+        const cards = track.children;
+        if(cards.length > VISIBLE){
+          const first = cards[0];
+          shiftUp(cardHeight + GAP).then(()=> first.remove());
+        }
+      }
+
+      function schedule(){
+        clearInterval(timer);
+        timer = setInterval(()=>{ if(!paused) pushNext(); }, INTERVAL);
+      }
+
+      stack.addEventListener('mouseenter',()=> paused = true);
+      stack.addEventListener('mouseleave',()=> paused = false);
+
+      const io = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting) schedule();
+          else clearInterval(timer);
+        });
+      },{threshold:.2});
+      io.observe(stack);
+
+      prime();
+    })();
+
+    /* ▼▼▼ li 하이라이트 (디자인 개선: 체크마크 보존, 부드러운 바 애니메이션, 뷰포트 재진입 재시작) ▼▼▼ */
+  </script>
+
+  <!-- ▼▼▼ 추가 스타일: li 하이라이트 애니메이션 (업그레이드 / 체크 마크 보존) ▼▼▼ -->
+  <style>
+    #legalDBHero .right ul li { position: relative; overflow: hidden; }
+    /* 체크마크 가독성 강화 (원본 규칙 유지 + 레이어만 부여) */
+    #legalDBHero .right ul li::before { position: relative; z-index: 2; display:inline-block; width:1.2em; text-align:center; margin-right:10px; }
+
+    /* 선택된 항목 */
+    #legalDBHero .right ul li.pulse {
+      background: linear-gradient(90deg, rgba(19,181,163,.12) 0%, rgba(19,181,163,.06) 55%, rgba(19,181,163,0) 100%);
+      box-shadow: inset 0 0 0 1px rgba(19,181,163,.22), 0 10px 26px rgba(19,181,163,.14);
+      transform: translateZ(0);
+      border-radius:10px;
+      /* padding:5px; */
+      transition: background .35s ease, box-shadow .35s ease;
+    }
+
+    /* 진행 바: 아래쪽에서 좌->우로 차오르는 얇은 라인 */
+    #legalDBHero .right ul li.pulse::after{
+      content:""; position:absolute; left:0; bottom:0; height:2px; width:100%;
+      background: linear-gradient(90deg, var(--brand), rgba(19,181,163,.0));
+      transform-origin:left center; transform:scaleX(0);
+      animation: legalDBHeroBarGrow 2.4s ease forwards;
+      z-index:1; /* 텍스트/체크(2) 아래, 배경(0) 위 */
+    }
+
+    @keyframes legalDBHeroBarGrow {
+      0%   { transform:scaleX(0); opacity:.7 }
+      85%  { transform:scaleX(1); opacity:.9 }
+      100% { transform:scaleX(1); opacity:.0 }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const root=document.querySelector('#legalDBHero');
+      if(!root)return;
+      const list=root.querySelector('.right ul');
+      if(!list)return;
+      const items=Array.from(list.querySelectorAll('li'));
+      if(!items.length)return;
+
+      let idx=0; let timer=null; let playing=false;
+      const STEP=3000; // 항목당 유지 시간 (ms)
+
+      function tick(){
+        items.forEach(li=>li.classList.remove('pulse'));
+        items[idx].classList.add('pulse');
+        idx=(idx+1)%items.length;
+      }
+      function start(){
+        if(playing) return; playing=true; tick();
+        timer=setInterval(tick, STEP);
+      }
+      function stop(){
+        if(!playing) return; playing=false;
+        clearInterval(timer); timer=null;
+      }
+
+      // 스크롤로 섹션이 화면을 벗어나면 일시정지, 다시 들어오면 재개 (모바일/PC 모두)
+      const io=new IntersectionObserver((ents)=>{
+        ents.forEach(e=>{ if(e.isIntersecting) start(); else stop(); });
+      },{threshold:.15});
+      io.observe(list);
+
+      // 초기 1회 시도 (뷰포트 안에 있을 경우 바로 시작)
+      start();
+    })();
+  </script>
+</section>
+
+<section id="consultFormSection">
+  <style>
+  
+ 
+  #consultFormSection #consultForm {
+      font-family: 'Noto Sans KR', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+
+    #consultFormSection .gc-deco {
+      width: 60px;
+      height: 6px;
+      background: linear-gradient(90deg,#dcbe4e,#f8e18c);
+      margin: 0 auto 1rem;
+      border-radius: 3px;
+    }
+
+    #consultFormSection .gc-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    #consultFormSection .gc-header h2 {
+      font-size: 2.15rem;
+      font-weight: 800;
+    }
+
+    #consultFormSection .gc-header h2 span {
+      display: block;
+      font-size: 1.8rem;
+      color: #dcbe4e;
+    }
+
+    #consultFormSection .gc-header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    #consultFormSection .gc-stepbar {
+      margin-bottom: 2rem;
+    }
+
+    #consultFormSection .gc-progress {
+      height: 4px;
+      background: #eee;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    #consultFormSection .gc-progress-fill {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,#dcbe4e,#bfa742);
+    }
+
+    #consultFormSection h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #000;
+    }
+
+    #consultFormSection .form-group {
+      margin-bottom: 2rem;
+    }
+
+    #consultFormSection .form-label {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      color: #000;
+    }
+
+    #consultFormSection .button-group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+    }
+
+    #consultFormSection .option-btn {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid #dadada;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    #consultFormSection .option-btn.active {
+      background-color: #c49b5a;
+      color: #fff;
+      border-color: #c49b5a;
+      font-weight: bold;
+    }
+
+    #consultFormSection .inline-fields {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* input / select 기본 */
+    #consultFormSection .inline-fields input,
+    #consultFormSection .inline-fields select{
+      flex:1 1 0;
+      min-width:0;
+      padding:0.8rem;
+      border:2px solid #ccc;
+      border-radius:6px;
+      background:#fff;
+      color:#000;
+      font-size:1rem;
+      height:60px;
+      /* line-height:60px; */
+      box-sizing:border-box;
+    }
+
+    #consultFormSection input::placeholder {
+      color: #aaa;
+    }
+
+    #consultFormSection .checkbox-area {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-top: -0.5rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      #consultFormSection .checkbox-area {
+         flex-direction: column;
+      }
+    }
+/* === Select 커스텀화 ========================================== */
+    #consultFormSection select{
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+    }
+    /* placeholder 느낌 방지 */
+    #consultFormSection select:invalid{color:#9e9e9e;}
+
+    /* 화살표 UI */
+    #consultFormSection .select-wrap{position:relative;flex:1 1 0;min-width:0;width:100%;}
+    #consultFormSection .select-wrap::after{
+      content:"";
+      position:absolute;
+      top:50%;right:1rem;
+      width:8px;height:8px;
+      border-right:2px solid #666;
+      border-bottom:2px solid #666;
+      transform:translateY(-50%) rotate(45deg);
+      pointer-events:none;
+    }
+    /* select 가로 100% 유지 */
+    #consultFormSection .select-wrap select{
+      display:block;
+      width:100%;
+      max-width:100%;
+    }
+
+    #consultFormSection .checkbox-area input {
+      margin-right: 0.5rem;
+    }
+
+    #consultFormSection input.submit-btn {
+      width: 100%;
+      background: #c49b5a;
+      color: #fff;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    #consultFormSection input.submit-btn:hover {
+      background: #d8b56a;
+    }
+
+    @media (max-width: 1024px) {
+      #consultFormSection .button-group {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      #consultFormSection .inline-fields {
+        flex-direction: column;
+      }
+
+      #consultFormSection .button-group {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+  <div id="consultForm">
+     <form id="form_e11" name="frm_phonecall_web" action="" method="post" target="hidden_iframe11" onsubmit="dll(); submitted=true;"  class="gc-form" novalidate>
+    <input type="hidden" name="entry.637408694" value="본문 신청폼">  
+    <input type="hidden" name="entry.339503137" value="당근-더엘">
+    <div class="gc-deco"></div>
+
+    <div class="gc-header">
+      <h2>채무긴급대응 법률센터<br><span>무료상담신청</span></h2>
+      <p>지금 신청하면 채무 걱정이 사라집니다.<br>당신의 빚, 이젠 여기서 끝내세요.</p>
+    </div>
+
+    <div class="gc-stepbar">
+      <div class="gc-progress"><div class="gc-progress-fill"></div></div>
+    </div>
+
+    <!-- 01. 직업종류 -->
+    <div class="form-group">
+      <p class="form-label">01. 직업종류</p>
+      <div class="button-group" data-type="radio" data-name="직업종류">
+        <input type="button"   class="option-btn intro_select1"  data-value="급여소득자" value="급여소득자">
+        <input type="button"   class="option-btn intro_select1"  data-value="자영업자" value="자영업자">
+        <input type="button"   class="option-btn intro_select1"  data-value="일용직/아르바이트" value="일용직/아르바이트">
+        <input type="button"   class="option-btn intro_select1"  data-value="기타" value="기타">
+      </div>
+      <input type="hidden" name="entry.966666468" id="job_style" >
+    </div>
+
+    <!-- 02. 월수입 -->
+    <div class="form-group">
+      <p class="form-label">02. 월평균 수입(실수령액)</p>
+      <div class="button-group" data-type="radio" data-name="월수입">
+        <input type="button"  class="option-btn intro_select2"  data-value="100만원 이하" value="100만원 이하">
+        <input type="button"  class="option-btn intro_select2"  data-value="100~200만원 사이" value="100~200만원 사이">
+        <input type="button"  class="option-btn intro_select2"  data-value="200~400만원 사이" value="200~400만원 사이">
+        <input type="button"  class="option-btn intro_select2"  data-value="400만원 이상" value="400만원 이상">
+      </div>
+      <input type="hidden" name="entry.820371290" id="income">
+    </div>
+
+     <!-- 03. 채무금액 -->
+    <div class="form-group">
+      <p class="form-label">03. 채무금액</p>
+      <div class="button-group" data-type="radio" data-name="채무금액">
+        <input type="button"  class="option-btn intro_select"  data-value="2000~5000만원 미만" value="2000~5000만원 미만">
+        <input type="button"  class="option-btn intro_select"  data-value="5000~8000만원 미만" value="5000~8000만원 미만">
+        <input type="button"  class="option-btn intro_select"  data-value="8000~1억원 미만" value="8000~1억원 미만">
+        <input type="button"  class="option-btn intro_select"  data-value="1-3억" value="1-3억">
+          <input type="button"  class="option-btn intro_select"  data-value="3-5억" value="3-5억">
+            <input type="button"  class="option-btn intro_select"  data-value="5억 이상" value="5억 이상">
+      </div>
+      <input type="hidden" name="entry.1263415590" id="debt">
+    </div>
+
+
+
+    <!-- 04. 부양가족수 -->
+    <div class="form-group">
+      <p class="form-label">04. 부양가족수</p>
+      <div class="button-group" class="option-btn intro_select3" data-type="radio" data-name="가족수">
+        <input type="button"  class="option-btn intro_select3"  data-value="자녀없음" value="자녀없음">
+        <input type="button"  class="option-btn intro_select3"  data-value="1명" value="1명">
+        <input type="button"  class="option-btn intro_select3"  data-value="2명" value="2명">
+        <input type="button"  class="option-btn intro_select3"  data-value="3명 이상" value="3명 이상">
+      </div>
+      <input type="hidden" name="entry.478230096" id="family">
+    </div>
+
+    <!-- 05. 최근대출유무 -->
+    <div class="form-group">
+      <p class="form-label">05. 최근대출유무</p>
+      <div class="button-group" data-type="radio" data-name="최근대출">
+        <input type="button"   class="option-btn intro_select4" data-value="최근 3개월내 대출 있음" value="최근 3개월내 대출 있음">
+        <input type="button"   class="option-btn intro_select4" data-value="최근 3개월내 대출 없음" value="최근 3개월내 대출 없음">
+      </div>
+      <input type="hidden" name="entry.277781686" id="loan_3month">
+    </div>
+
+    <!-- 06. 채무 원인 -->
+    <div class="form-group">
+      <p class="form-label">06. 채무 원인 <small>(다중선택가능)</small></p>
+      <div class="button-group" data-type="checkbox" data-name="채무원인">
+        <input type="button" class="option-btn intro_select5"  data-value="사기(전세,보이스피싱)" value="사기(전세,보이스피싱)">
+        <input type="button" class="option-btn intro_select5"  data-value="생활비로 인한 채무" value="생활비로 인한 채무">
+        <input type="button" class="option-btn intro_select5"  data-value="사업자금" value="사업자금">
+        <input type="button" class="option-btn intro_select5"  data-value="도박 및 주식" value="도박 및 주식">
+        <input type="button" class="option-btn intro_select5"  data-value="병원비" value="병원비">
+        <input type="button" class="option-btn intro_select5"  data-value="그 외" value="그 외">
+      </div>
+      <input type="hidden" name="entry.1487248962" id="reason">
+    </div>
+
+    <!-- 기본 정보 -->
+    <div class="form-group">
+      <p class="form-label">성함 / 거주지 / 연락처</p>
+      <div class="inline-fields">
+        <input type="text"  id="name" name="entry.1584470138"  placeholder="성함 입력" maxlength="4" style="min-height:60px;font-size:1rem;">
+       <div class="select-wrap">
+            <select name="entry.1911857506" id="location" required>
+              <option value="" disabled selected hidden>거주지 선택</option>
+              <option value="서울">서울</option>
+              <option value="인천">인천</option>
+              <option value="세종">세종</option>
+              <option value="대전">대전</option>
+              <option value="대구">대구</option>
+              <option value="울산">울산</option>
+              <option value="광주">광주</option>
+              <option value="부산">부산</option>
+              <option value="제주">제주</option>
+              <option value="강원도">강원도</option>
+              <option value="경기도">경기도</option>
+              <option value="충청북도">충청북도</option>
+              <option value="충청남도">충청남도</option>
+              <option value="경상북도">경상북도</option>
+              <option value="경상남도">경상남도</option>
+              <option value="전라북도">전라북도</option>
+              <option value="전라남도">전라남도</option>
+            </select>
+          </div>
+        <input type="text" id="phone" name="entry.730014522" placeholder="연락처 입력 (-없이 입력해주세요.)." maxlength="11" style="min-height:60px;font-size:1rem;">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <p class="form-label">상담 내용</p>
+      <div class="inline-fields">
+         <textarea name="entry.1470467061" id="message" placeholder="상담하고 싶은 내용을 남겨주세요." style="width:100%;min-height: 150px;padding:10px;font-size:1rem;"></textarea>
+      </div>
+    </div>
+
+   
+
+    <!-- 개인정보 동의 -->
+    <div class="checkbox-area">
+      <label class="gc-consent">
+        <input type="checkbox" name="agree_r1" id="agree11" checked>
+        개인정보 수집·이용에 동의합니다.&nbsp;&nbsp;
+      </label>
+      <span class="privacyBtn" style="color:fff;font-weight:400; font-size: 13px;margin-top:0px;cursor:pointer; " onclick="privacyPopUp()">
+         [개인정보취급동의] 
+    </span>
+    <br><br>
+    </div>
+
+    <!-- 제출 버튼 -->
+     <input type="submit" id="send_message" class="submit-btn" value="무료 상담 신청하기" disabled>
+    </form>
+
+       <script type="text/javascript">var submitted = false;</script>
+            <iframe name="hidden_iframe11" id="hidden_iframe11" style="display:none;" onload=""></iframe>
+            <script type="text/javascript">var submitted2 = false;</script>
+            <iframe name="hidden_iframe12" id="hidden_iframe12" style="display:none;" onload=""></iframe>
+
+            
+<script type="text/javascript">var submitted3 = false;</script>
+<iframe name="hidden_iframe13" id="hidden_iframe13" style="display:none;" onload=""></iframe>
+  </div>
+
+  <script>
+    document.querySelectorAll('.button-group').forEach(group => {
+      const type = group.dataset.type;
+      const name = group.dataset.name;
+      const hidden = document.querySelector(`input[name="${name}"]`);
+
+      group.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (type === 'radio') {
+            group.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            hidden.value = btn.dataset.value;
+          } else if (type === 'checkbox') {
+            btn.classList.toggle('active');
+            const selected = [...group.querySelectorAll('.option-btn.active')].map(b => b.dataset.value);
+            hidden.value = selected.join(', ');
+          }
+        });
+      });
+    });
+
+    // document.getElementById('consultForm').addEventListener('submit', function (e) {
+    //   e.preventDefault();
+    //   alert('상담 신청이 접수되었습니다!');
+    // });
+  </script>
+</section>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    bindRadioToHidden(".intro_select1", "job_style");
+    bindRadioToHidden(".intro_select2", "income");
+    bindRadioToHidden(".intro_select",  "debt");
+    bindRadioToHidden(".intro_select3", "family");
+    bindRadioToHidden(".intro_select4", "loan_3month");
+
+    function bindRadioToHidden(selector, hiddenId) {
+      const buttons = document.querySelectorAll(selector);
+      const hiddenInput = document.getElementById(hiddenId);
+
+      if (!buttons.length || !hiddenInput) return;
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          // 기존 active 제거 후 클릭된 버튼만 active
+          buttons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          // 값 입력
+          hiddenInput.value = button.getAttribute("data-value");
+        });
+      });
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll(".intro_select5");
+    const hiddenInput = document.getElementById("reason");
+
+    if (!checkboxes.length || !hiddenInput) return;
+
+    checkboxes.forEach(function (button) {
+      button.addEventListener("click", function () {
+        // active → selected 클래스로 토글
+        button.classList.toggle("selected");
+
+        // 선택된 버튼의 data-value 수집
+        const selectedValues = Array.from(checkboxes)
+          .filter(btn => btn.classList.contains("selected"))
+          .map(btn => btn.getAttribute("data-value"));
+
+        // hidden input에 반영
+        hiddenInput.value = selectedValues.join(", ");
+      });
+    });
+  });
+</script>
+
+<section id="NoticeS1" aria-label="안심 안내문">
+  <style>
+    /* ================= Scope: #NoticeS1 only ================= */
+    #NoticeS1 {
+      --ink:#111;
+      --muted:#777;
+      --accent:#000;
+      --bg:#fff;
+      --maxW:880px;
+      font-family:"Pretendard","Noto Sans KR",sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:var(--bg);
+      padding:60px 20px;
+    }
+
+    #NoticeS1 .wrap {
+      position:relative;
+      width:100%;
+      max-width:var(--maxW);
+      border:1px solid #e5e5e5;
+      border-radius:10px;
+      background:#fff;
+      padding:80px 90px 100px;
+      box-sizing:border-box;
+    }
+
+    /* 배경 워터마크 G */
+    #NoticeS1 .wrap::after {
+      content:"The L";
+      position:absolute;
+      right:30px;
+      bottom:10px;
+      font-size:280px;
+      font-weight:700;
+      color:rgba(0,0,0,0.04);
+      line-height:1;
+      pointer-events:none;
+      user-select:none;
+    }
+
+    /* 상단 소제목 */
+    #NoticeS1 .sub {
+      font-size:15px;
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+
+    /* 메인 타이틀 */
+    #NoticeS1 .title {
+      font-size:34px;
+      font-weight:800;
+      color:var(--ink);
+      margin-bottom:60px;
+      line-height:1.4;
+    }
+
+    #NoticeS1 .title span {
+      display:block;
+      font-size:38px;
+      font-weight:900;
+    }
+
+    /* 약속 문단 */
+    #NoticeS1 .promise {
+      margin-bottom:42px;
+    }
+
+    #NoticeS1 .promise h4 {
+      font-size:15px;
+      color:#999;
+      font-weight:500;
+      margin-bottom:6px;
+    }
+
+    #NoticeS1 .promise p {
+      font-size:18px;
+      color:var(--ink);
+      font-weight:500;
+      line-height:1.8;
+    }
+
+    /* 서명 */
+    #NoticeS1 .sign {
+      text-align:right;
+      margin-top:60px;
+      font-size:17px;
+      color:var(--ink);
+      font-weight:500;
+    }
+
+    #NoticeS1 .sign span {
+      display:inline-block;
+      margin-left:8px;
+      font-family:"SangSangFlower","Pretendard",sans-serif;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    /* 반응형 */
+    @media(max-width:640px){
+      #NoticeS1 .wrap{padding:50px 28px 70px;}
+      #NoticeS1 .title{font-size:26px;}
+      #NoticeS1 .title span{font-size:30px;}
+      #NoticeS1 .promise p{font-size:16px;}
+    }
+  </style>
+<div class="wrap">
+  <p class="sub">채무 긴급대응 전문 법률팀</p>
+  <h2 class="title">
+    법률사무소 더엘<br>
+    <span>긴급 안심상담 안내문</span>
+  </h2>
+
+  <div class="promise">
+    <h4>첫 번째 약속,</h4>
+    <p>가족이라면 권하고 싶은 법률조력만 제공합니다. 불필요한 절차나 비용을 권하지 않겠습니다.</p>
+  </div>
+
+  <div class="promise">
+    <h4>두 번째 약속,</h4>
+    <p>상담을 진행한 변호사가 직접 사건을 검토하고 대응하여 결과의 책임을 끝까지 지겠습니다.</p>
+  </div>
+
+  <div class="promise">
+    <h4>세 번째 약속,</h4>
+    <p>긴급상황 이후에도 불안이 남지 않도록 지속적인 사후관리와 법률지원을 약속드립니다.</p>
+  </div>
+
+  <div class="promise">
+    <h4>네 번째 약속,</h4>
+    <p>모든 내용은 100% 비밀로 아무에게도 알리지 않고 처리해드릴 것을 약속드립니다.</p>
+  </div>
+
+  <div class="sign">
+    대표 변호사 <span>이우형</span>
+  </div>
+</div>
+
+</section>
+
+<!-- ===================== 오시는 길 섹션 (카카오맵 퍼가기 코드 적용 + 100% 너비/높이 · 모바일에서 글자(패널)가 지도 위로) ===================== -->
+<section id="RouteS1" aria-label="오시는 길 섹션 (지도 + 정보 패널)">
+  <style>
+    /* ===== Scope Reset: #RouteS1 내부만 초기화 (외부 레이아웃 간섭 방지) ===== */
+    #RouteS1{ box-sizing:border-box; }
+    #RouteS1 *, #RouteS1 *::before, #RouteS1 *::after{ box-sizing:inherit; }
+
+    /* ================= Scope: #RouteS1 only ================= */
+    #RouteS1{
+      --panel:#2b2c30;            /* 우측 패널 배경 */
+      --ink:#f4f4f5;              /* 본문 텍스트(다크 배경용) */
+      --muted:#c7c7cb;            /* 보조 텍스트 */
+      --label:#9ca3af;            /* 항목 라벨 색 */
+      --em:#d9b58a;               /* 포인트(전화번호) */
+      --line:rgba(255,255,255,.12);
+      --ring:rgba(255,255,255,.05);/* 워터마크 링 */
+      --maxW:1280px;
+      --gap:0;
+
+      font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      color:var(--ink);
+
+      /* Grid + 안전한 독립 섹션 */
+      display:grid;
+      grid-template-columns: 1fr 520px;   /* 좌: 지도 / 우: 패널 */
+      grid-template-areas: "map panel";   /* 데스크톱 기본 배치 */
+      gap:var(--gap);
+      align-items:stretch;
+
+      width:100%; max-width:var(--maxW);
+      margin:100px auto;         
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 20px 60px rgba(0,0,0,.25);
+      position:relative; z-index:0;
+      contain:layout paint style;
+    }
+
+    /* 지도 영역 */
+    #RouteS1 .mapWrap{
+      grid-area:map;
+      position:relative;
+      min-height:clamp(420px, 70vh, 820px); /* 화면 높이에 자연스럽게 맞춤 */
+      background:#0e0e0f;
+      isolation:isolate;
+    }
+
+    /* kakao roughmap가 들어가는 컨테이너를 강제로 100% 채우도록 */
+    #RouteS1 #daumRoughmapContainer1761786605195.root_daum_roughmap{
+      position:absolute; inset:0;
+      width:100% !important; height:100% !important;
+    }
+    /* 내부 요소 높이 상쇄(카카오가 인라인 픽셀값을 줄 때가 있어서 강제 100%) */
+    #RouteS1 .root_daum_roughmap .wrap_map,
+    #RouteS1 .root_daum_roughmap .map_border,
+    #RouteS1 .root_daum_roughmap .map{
+      height:100% !important;
+    }
+
+    #RouteS1 .mapFallback{ /* iframe/지도 로드 실패 시 노출용 */
+      position:absolute; inset:0; display:grid; place-items:center;
+      color:#e5e7eb; background:linear-gradient(135deg,#202124,#16181d);
+      font-weight:600; letter-spacing:.05em; pointer-events:none;
+    }
+
+    /* 정보 패널 */
+    #RouteS1 .panel{
+      grid-area:panel;
+      background:
+        radial-gradient(480px 480px at 90% 20%, var(--ring) 0 60%, transparent 62%),
+        var(--panel);
+      padding:56px 48px 52px;
+      color:#f7f7f8;
+    }
+    #RouteS1 .title{
+      font-size:44px; line-height:1.15; font-weight:800; letter-spacing:-0.02em; margin:4px 0 36px;
+    }
+    #RouteS1 .rows{ display:grid; gap:22px; }
+    #RouteS1 .row{
+      display:grid; grid-template-columns: 96px 1fr; gap:18px; align-items:start;
+      padding:18px 0; border-top:1px solid var(--line);
+    }
+    #RouteS1 .row:first-child{ border-top:0; padding-top:0; }
+    #RouteS1 .label{ color:var(--label); font-size:14px; letter-spacing:.08em; font-weight:700; padding-top:2px; }
+    #RouteS1 .content{ color:var(--ink); font-size:16px; line-height:1.75; }
+    #RouteS1 .content .dim{ color:var(--muted); }
+
+    #RouteS1 .phoneBox{ padding-top:24px; margin-top:10px; }
+    #RouteS1 .phone{ font-size:42px; line-height:1.2; font-weight:800; letter-spacing:.02em; color:var(--em); white-space:nowrap; }
+
+    /* 반응형: 모바일에서 글자(패널)가 지도보다 위로 오도록 순서 전환 */
+    @media (max-width: 1100px){
+      #RouteS1{ grid-template-columns: 1fr 1fr;}
+    }
+    @media (max-width: 900px){
+      #RouteS1{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "panel"   /* 1) 패널 먼저 */
+          "map";    /* 2) 지도 다음 */
+        border-radius:0px;
+        margin:0 auto;
+      }
+      #RouteS1 .mapWrap{ min-height:60vh; }
+      #RouteS1 .panel{ padding:36px 22px 32px; }
+      #RouteS1 .title{ font-size:34px; margin-bottom:26px; }
+      #RouteS1 .row{ grid-template-columns: 1fr; gap:14px; padding:16px 20px; }
+      #RouteS1 .phone{ font-size:34px; }
+    }
+  </style>
+
+  <!-- 좌측: 지도 (카카오 지도 퍼가기 - 화면 너비/높이에 맞춰 자동 확장) -->
+  <div class="mapWrap">
+    <!-- 1) 지도 노드 (요청하신 퍼가기 코드의 컨테이너/타임스탬프 적용) -->
+    <div id="daumRoughmapContainer1761786605195" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+    <!-- 2) 설치 스크립트 (여러 지도를 쓸 경우, 페이지 전체에 1회만 포함하십시오) -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- 3) 실행 스크립트 : 폭/높이를 100%로 세팅하여 섹션에 완전 맞춤 -->
+    <script charset="UTF-8">
+      (function(){
+        /* 카카오 퍼가기 실행 (요청하신 key/timestamp로 교체) */
+        new daum.roughmap.Lander({
+          "timestamp" : "1761786605195",
+          "key"       : "bou7qoc5pk8",
+          "mapWidth"  : "100%",
+          "mapHeight" : "100%"
+        }).render();
+
+        /* 렌더 후에도 100% 유지 (일부 환경에서 인라인 px 강제되는 경우 보정) */
+        function fitKakaoMap(){
+          var sec  = document.getElementById('RouteS1');
+          if(!sec) return;
+          var wrap = sec.querySelector('.mapWrap');
+          var box  = sec.querySelector('#daumRoughmapContainer1761786605195');
+          if(wrap && box){
+            box.style.width  = '100%';
+            box.style.height = wrap.clientHeight + 'px';
+          }
+        }
+        window.addEventListener('resize', fitKakaoMap, {passive:true});
+        /* 초기/비동기 렌더링 대비 다회 호출 */
+        setTimeout(fitKakaoMap, 200);
+        setTimeout(fitKakaoMap, 800);
+        setTimeout(fitKakaoMap, 1600);
+      })();
+    </script>
+
+    <div class="mapFallback" aria-hidden="true">MAP PREVIEW</div>
+  </div>
+
+  <!-- 우측: 정보 패널 -->
+  <aside class="panel">
+    <h2 class="title">법률사무소 더엘</h2>
+    <div class="rows">
+      <div class="row">
+        <div class="label">주소</div>
+        <div class="content">
+          서울 서초구 서초대로60길 27 4층<br>
+          <span class="dim">교대역 1번출구로 나와 600m</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">운영시간</div>
+        <div class="content">
+          월 <strong>오전 9시 ~ 오후 6시까지</strong> <!-- <span class="dim">(점심 오후 1:00 ~ 오후 2:00)</span> --> <br>
+         
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">주차이용</div>
+        <div class="content">
+          <strong>무료 주차 가능</strong> <!-- <span class="dim">(점심 오후 1:00 ~ 오후 2:00)</span> --> <br>
+         
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">상담전화</div>
+        <div class="content phoneBox">
+          <div class="phone"><a href="#consultForm" style="color:#d9b58a;text-decoration:none;cursor:pointer;"><b>02-593-9191</b></a></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+
+
+<div id="footer_template"></div>
+
+
+
+
+
+	<script src="./js/jquery-1.8.3.min.js"></script>
+
+<section id="floatingCallBarPro" aria-label="긴급 무료 상담 플로팅바">
+  <style>
+    /* ================= Scope: #floatingCallBarPro only ================= */
+    #floatingCallBarPro{
+      position:fixed; left:50%; bottom:0;
+      transform:translateX(-50%);
+      width:clamp(320px, 94vw, 1200px);
+      z-index:9999;
+      font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      pointer-events:auto;
+    }
+
+    #floatingCallBarPro .bar{
+      display:flex; align-items:center; justify-content:space-between;
+      background:#111215;
+      color:#fff;
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:0 8px 30px rgba(0,0,0,.35);
+      border-radius:12px;
+      padding:12px 14px;
+      gap:16px;
+    }
+
+    /* 좌측 텍스트 */
+    #floatingCallBarPro .info{
+      display:flex; flex-direction:column; line-height:1.25;
+      user-select:none;
+    }
+    #floatingCallBarPro .info .tag{
+      font-size:13px; font-weight:800; letter-spacing:.02em; color:#d9b58a;
+    }
+
+
+    @media screen and (max-width:500px) {
+     
+      #floatingCallBarPro .info .tag{
+      font-size:11px;
+    }
+
+    }
+
+    #floatingCallBarPro .info .headline{
+      font-size:16px; font-weight:700; color:#fff;
+      margin-top:3px;
+    }
+
+    /* 전화 버튼 */
+    #floatingCallBarPro .callBtn{
+      position:relative;
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:180px; min-height:48px;
+      padding:10px 18px;
+      background:#c7a476;
+      color:#fff; font-weight:800; font-size:15px; letter-spacing:.02em;
+      border-radius:8px; text-decoration:none;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.18), 0 6px 16px rgba(199,164,118,.35);
+      transition:transform .15s ease, box-shadow .15s ease;
+      white-space:nowrap;
+    }
+    #floatingCallBarPro .callBtn:focus-visible{
+      outline:2px solid #e7d2b2; outline-offset:2px;
+    }
+    #floatingCallBarPro .callBtn:hover{ transform:translateY(-1px); }
+    #floatingCallBarPro .callBtn:active{ transform:translateY(0); }
+
+    /* 손가락 이모지 느낌 */
+    #floatingCallBarPro .callBtn::after{
+      content:"";
+      margin-left:8px;
+      font-size:1rem;
+    }
+
+    /* ✨ 주기적 고급스러운 동적 효과 */
+    #floatingCallBarPro .callBtn::before{
+      content:"";
+      position:absolute; inset:-6px; border-radius:inherit;
+      border:2px solid rgba(231,210,178,0.0);
+      pointer-events:none;
+      animation:barPulse 6s ease-in-out infinite;
+    }
+    @keyframes barPulse{
+      0%,60%{ border-color:rgba(231,210,178,0); box-shadow:none; }
+      61%{ border-color:rgba(231,210,178,.45); box-shadow:0 0 0 0 rgba(231,210,178,.35); }
+      75%{ border-color:rgba(231,210,178,0); box-shadow:0 0 0 10px rgba(231,210,178,0); }
+      100%{ border-color:rgba(231,210,178,0); box-shadow:none; }
+    }
+
+    /* 버튼 위로 지나가는 하이라이트 */
+    #floatingCallBarPro .callBtn .shine{
+      position:absolute; top:-40%; left:-30%;
+      width:40%; height:180%;
+      transform:rotate(20deg);
+      background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.35) 45%, rgba(255,255,255,0) 100%);
+      filter:blur(1px);
+      animation:shineSweep 6s ease-in-out infinite 1.2s;
+      pointer-events:none;
+    }
+    @keyframes shineSweep{
+      0%,65%{ transform:translateX(0) rotate(20deg); opacity:0; }
+      70%{ opacity:.9; }
+      85%{ transform:translateX(220%) rotate(20deg); opacity:0; }
+      100%{ opacity:0; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      #floatingCallBarPro .callBtn::before,
+      #floatingCallBarPro .callBtn .shine{ animation:none; display:none; }
+      #floatingCallBarPro .callBtn{ transition:none; }
+    }
+
+    /* 모바일 */
+    @media (max-width:900px){
+      #floatingCallBarPro{ width:100%; left:0; transform:none; }
+      #floatingCallBarPro .bar{ border-radius:0; padding:12px 14px; }
+      #floatingCallBarPro .callBtn{ min-width:150px; }
+    }
+  </style>
+
+  <div class="bar" data-call="#consultForm" role="region" aria-label="긴급 무료 상담 플로팅바">
+    <div class="info">
+      <strong class="tag">채무긴급대응 법률센터</strong>
+      <div class="headline">긴급 무료 상담</div>
+    </div>
+
+    <a href="#consultForm" class="callBtn" aria-label="100% 비밀보장 안심상담">
+      <span>100% 비밀보장 안심상담</span>
+      <i class="shine" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <script>
+    (function(){
+      const bar = document.querySelector('#floatingCallBarPro .bar');
+      if(bar){
+        // 바 전체를 눌러도 전화가 걸리게 (버튼 외 영역 클릭 시)
+        bar.addEventListener('click', function(e){
+          const isBtn = e.target.closest('.callBtn');
+          if(!isBtn){
+            const href = bar.getAttribute('data-call');
+            if(href) window.location.href = href;
+          }
+        });
+      }
+    })();
+  </script>
+</section>
+
+
+
+
+<script>
+    $('.navi_btn').click(function(){
+      $(this).toggleClass('on');
+      $('.navi').stop().fadeToggle()
+    });
+  
+  
+  
+    $('.lnb h3').click(function(){
+      var naviTitle = $(this).next('ul');
+      $(this).addClass('on');
+      $('.lnb h3').not(this).removeClass('on');
+      naviTitle.stop().slideDown();
+      $('.lnb h3').next().not(naviTitle).slideUp();
+    });
+  
+    $('.right_contact .left').click(function(){
+      $('.right_contact').toggleClass('on');
+    });
+  
+    $('.bottom_contact_mob .top_thumb').click(function(){
+      $('.bottom_contact_mob').toggleClass('on');
+    });
+  
+    $('.bottom_contact_mob .bottom_con .btn_list .close_btn').click(function(){
+      $('.bottom_contact_mob').removeClass('on');
+    });	
+  </script>  
+
+
+
+  
+
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const DELAY = 5000, SPEED = 1000;
+
+    const swiper = new Swiper('.swiper-container', {
+      effect: 'fade',
+      loop: true,
+      speed: SPEED,
+      slidesPerView: 1,
+      autoplay: {
+        delay: DELAY,
+        disableOnInteraction: false,
+        waitForTransition: false
+      },
+      shortSwipes: true,
+      longSwipes: false,
+      threshold: 20,
+      slideToClickedSlide: true,
+    });
+
+    // Progress Bar 생성
+    const slides = Array.from(document.querySelectorAll('.swiper-container .swiper-slide'))
+                        .filter(s => !s.classList.contains('swiper-slide-duplicate'));
+    const bar = document.querySelector('.progress-container');
+    const fills = [];
+
+    slides.forEach((_, i) => {
+      const seg = document.createElement('div');
+      seg.className = 'progress-segment';
+      const fill = document.createElement('span');
+      fill.className = 'progress-fill';
+      seg.appendChild(fill);
+      bar.appendChild(seg);
+      fills.push(fill);
+
+      seg.addEventListener('click', () => swiper.slideToLoop(i, SPEED));
+    });
+
+    function updateProgress(idx) {
+      fills.forEach((f, j) => {
+        f.style.transition = 'none';
+        f.style.width = j < idx ? '100%' : '0';
+      });
+      const active = fills[idx];
+      void active.offsetWidth;
+      active.style.transition = `width ${DELAY}ms linear`;
+      active.style.width = '100%';
+    }
+
+    updateProgress(0);
+    swiper.on('slideChange', () => updateProgress(swiper.realIndex));
+  </script>
+  <script src="./js/jquery-1.8.3.min.js"></script>
+
+
+  <script>
+   /* 모바일 메뉴 토글 */
+   function toggleMobile(){
+      const panel   = document.getElementById('mobilePanel');
+      const burger  = document.getElementById('hamburgerBtn');
+      const nav     = document.getElementById('mainNav');
+      const logoImg = document.getElementById('logoImg');
+    
+      panel.classList.toggle('show');
+      burger.classList.toggle('open');
+      nav.classList.toggle('menu-open', panel.classList.contains('show'));
+    
+      if (window.pageYOffset === 0){
+        logoImg.src = panel.classList.contains('show')
+          ? logoImg.dataset.srcDark
+          : logoImg.dataset.srcLight;
+      }
+    }
+    
+    /* 스크롤 효과 */
+    const nav      = document.getElementById('mainNav');
+    const logoImg  = document.getElementById('logoImg');
+    let lastY      = window.pageYOffset;
+    
+    function onScroll(){
+      const y = window.pageYOffset;
+      if (y === 0){
+        nav.classList.add('transparent');
+        nav.classList.remove('solid');
+        logoImg.src = logoImg.dataset.srcLight;
+      } else {
+        nav.classList.remove('transparent');
+        nav.classList.add('solid');
+        logoImg.src = logoImg.dataset.srcDark;
+        nav.classList.remove('menu-open');
+        document.getElementById('hamburgerBtn').classList.remove('open');
+        document.getElementById('mobilePanel').classList.remove('show');
+      }
+      if (y > lastY && y > 50) nav.classList.add('hide');
+      else nav.classList.remove('hide');
+      lastY = y;
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+    
+    /* 전화 버튼 로테이션 */
+    const callData = [
+      { lines:["24시간 비밀상담 (송무)", "서울 : 02-6954-0378"], tel:"0269540378"   },
+      { lines:["24시간 비밀상담 (송무)", "대전 : 042-721-0606"], tel:"0427210606" }
+    ];
+    const swapDelay = 4000;
+    const fadeDur   = 350;
+    
+    const phoneBtns = Array.from(document.querySelectorAll(".phone-btn"));
+    const txtSpans  = phoneBtns.map(btn=>btn.querySelector(".txt"));
+    let idx = 0;
+    
+    function setContent(lines,tel){
+      txtSpans.forEach(s=>s.innerHTML=`${lines[0]}<br>${lines[1]}`);
+      phoneBtns.forEach(b=>b.href=`tel:${tel}`);
+    }
+    
+    function swapPhoneMsg(){
+      idx = (idx + 1) % callData.length;     // 먼저 다음 인덱스로
+      txtSpans.forEach(s=>s.style.opacity=0);
+      setTimeout(()=>{
+        const {lines,tel} = callData[idx];
+        setContent(lines,tel);
+        txtSpans.forEach(s=>s.style.opacity=1);
+      }, fadeDur);
+    }
+    
+    setContent(callData[0].lines, callData[0].tel);
+    setInterval(swapPhoneMsg, swapDelay);
+    </script>
+
+
+
+<!-- 카운트 애니메이션 & 카운트다운 -->
+<script>
+  (function () {
+    /* ────────── ① 숫자 애니메이션(기존) ────────── */
+    const counters = document.querySelectorAll('#reliefBanner .counter');
+    function animate(counter) {
+      const target = +counter.dataset.target,
+            duration = +counter.dataset.duration || 1500,
+            startTime = performance.now();
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1),
+              value    = Math.round(progress * target);
+        counter.textContent = value.toLocaleString();
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting) animate(el);
+        else el.textContent = '0';
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => io.observe(c));
+  
+    /* ────────── ② 매일 23:59:59 카운트다운 ────────── */
+    const cd      = document.getElementById('dailyCountdown');
+    const dayEl   = cd.querySelector('.dd');
+    const hourEl  = cd.querySelector('.hh');
+    const minEl   = cd.querySelector('.mm');
+    const secEl   = cd.querySelector('.ss');
+  
+    function getTodayDeadline() {
+      const t = new Date();
+      t.setHours(23, 59, 59, 999);          // 오늘 23:59:59.999
+      if (Date.now() > t.getTime()) {       // 이미 지났다면 내일로
+        t.setDate(t.getDate() + 1);
+      }
+      return t;
+    }
+    function updateCountdown() {
+      const now   = new Date();
+      const end   = getTodayDeadline();
+      const diff  = end - now;
+  
+      const total = Math.floor(diff / 1000);
+      const days  = Math.floor(total / 86400);
+      const hours = Math.floor((total % 86400) / 3600);
+      const mins  = Math.floor((total % 3600) / 60);
+      const secs  = total % 60;
+  
+      // dayEl.textContent  = String(days).padStart(2, '0');
+      hourEl.textContent = String(hours).padStart(2, '0');
+      minEl.textContent  = String(mins).padStart(2, '0');
+      secEl.textContent  = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  })();
+  </script>
+  <!-- ▲▲▲ 회생지원 배너 끝 ▲▲▲ -->
+
+  <script>
+    // 모든 내부 링크(<a href="#...">)에 대해 스무스 스크롤 적용
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLinks = document.querySelectorAll('a[href^="#"]');
+  
+      menuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+  
+          if (targetElement) {
+            e.preventDefault();
+  
+            // 부드럽게 스크롤
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth"
+            });
+  
+            // 모바일 메뉴가 열려 있다면 닫기
+            const mobilePanel = document.getElementById("mobilePanel");
+            if (mobilePanel.classList.contains("open")) {
+              toggleMobile(); // 이미 존재하는 함수 사용
+            }
+          }
+        });
+      });
+    });
+  </script>
+  
+
+
+  <div id="privacy">
+    <div id="privacyContent">
+        <div class="titWrap">
+            <span>개인정보취급방침</span>
+            <i style="margin-top:-20px !important" class="ion-close-circled closeBtn"></i>
+        </div>
+        <div style="line-height:1.2" class="conWrap">
+            개인정보취급방침<br><br>
+            수집하는 개인정보의 항목<br>
+            "플로스"는 적법하고 공정한 수단에 의해서만 개인정보를 수집하며, 회원가입약관 또는 개인정보의 제공, 활용 동의서의 내용에 대해 이용자의 개인정보를 수집하는 경우에 당해<br> 이용자가 동의함 또는 동의하지 않음 버튼을 클릭 하는 등의 이용자의 동의를 얻는 절차를 거칩니다.<br>
+            <br>
+          개인정보 수집 및 이용 동의(필수)
+  1. 수집항목: 이름, 사업자명, 사업자등록번호, 업종, 개업연월일, 지역, 주소, 연매출, 기존대출, 필요자금 정보
+  2. 수집 및 이용 목적: 이용자 식별, 서비스 이용 및 고객상담, 본인 여부 확인, 계약 체결 시 계약인증, 연락, 문의 회신 및 고지사항 등 전달, 서비스 품질 개선을 위한 데이터 분석, 맞춤형 콘텐츠 및 서비스 등 제공 또는 추천
+  3. 보유 및 이용 기간: 2년. 단, 서비스 이용계약 체결시는 회원탈퇴시까지 보유할 수 있으며, 기타 관련 법령의 규정에 따라 거래 관계 확인을 위해 개인정보를 일정기간 보유할 수 있습니다.
+  4. 개인정보 제공에 동의하지 않으실 수 있으며, 동의하지 않으시면 서비스 이용이 제한될 수 있습니다. 가입시 ' 개인정보 마케팅 활용 ' 에 동의한 경우에 한하여 위 수집정보를 광고 및 마케팅 목적으로 활용할 수 있습니다.그 밖의 사항은 태산홀딩수 주식회사 개인정보처리방침에 따릅니다.
+  <section id="thirdParty">
+    <h3 class="tp-heading">개인정보 제3자 제공 동의 (필수)</h3>
+    <p class="tp-note">
+      귀하는 개인정보 보호법 등 관련 법령에 따라 제3자 제공에 대한 동의를 거부할 권리가 있습니다. 다만 동의하지 않을 경우 일부 서비스 이용이 제한될 수 있습니다.
+    </p>
+  
+    <table class="tp-table">
+      <tr>
+        <th>제공하는 자</th>
+        <td>채무긴급대응 법률센터</td>
+      </tr>
+      <tr>
+        <th>제공받는 자</th>
+        <td>
+          <span id="toggleBtn" class="toggle-btn">서비스제공업체</span>
+          <div id="partnerList" class="partner-list">
+            
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>제공 목적</th>
+        <td>
+          채무 조정 상담·계약 체결 및 사후 관리 등 서비스 제공계약의 이행을 위한 고객 확인 및 업무 수행
+        </td>
+      </tr>
+      <tr>
+        <th>제공하는 개인정보</th>
+        <td>
+          이름, 연락처, 주소, 채무 현황, 필요자금 등 상담·계약 이행에 필요한 정보 일체
+        </td>
+      </tr>
+      <tr>
+        <th>보유·이용 기간</th>
+        <td>
+          서비스 제공 목적 달성 시까지(단, 관계 법령에 따라 보관이 필요한 경우 해당 기간 동안 보관)
+        </td>
+      </tr>
+    </table>
+  </section>
+  
+  <section id="thirdPartyPro">
+    <h3 class="tp-heading">(제공업체) 개인정보 제3자 제공 동의 (필수)</h3>
+    <p class="tp-note">
+      본 동의는 전문가와 채무긴급대응 법률센터 간 서비스 품질 향상을 위한 정보 제공에 관한 것입니다. 동의하지 않을 경우 전문가용 서비스 이용이 제한될 수 있습니다.
+    </p>
+  
+    <table class="tp-table">
+      <tr>
+        <th>제공하는 자</th>
+        <td>
+          <span id="proToggleBtn" class="toggle-btn">서비스제공업체</span>
+          <div id="proPartnerList" class="partner-list">
+          
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>제공받는 자</th>
+        <td>채무긴급대응 법률센터</td>
+      </tr>
+      <tr>
+        <th>제공 목적</th>
+        <td>
+          전문가 서비스 이용 실적 확인, 고객 만족도 조사 및 서비스 개선을 위한 분석
+        </td>
+      </tr>
+      <tr>
+        <th>제공하는 개인정보</th>
+        <td>이름, 연락처, 상담·계약 이력, 고객 의견 등 서비스 품질 개선에 필요한 정보</td>
+      </tr>
+      <tr>
+        <th>보유·이용 기간</th>
+        <td>서비스 제공 목적 달성 시 또는 법령에 따른 보존 기간 종료 시까지</td>
+      </tr>
+    </table>
+  </section>
+  <br><Br>
+  <style>
+    #thirdParty, #thirdPartyPro { font-family:"Pretendard","Apple SD Gothic Neo",sans-serif; margin-top:24px; }
+    .tp-heading  { font-size:18px; font-weight:700; margin-bottom:8px; }
+    .tp-note     { font-size:14px; margin-bottom:18px; line-height:1.4; }
+    .tp-table    { width:100%; border-collapse:collapse; font-size:14px; }
+    .tp-table th, .tp-table td { border:1px solid #444; padding:12px; vertical-align:top; line-height:1.5; }
+    .tp-table th { width:130px; background:#f7f7f7; font-weight:600; text-align:left; }
+    .toggle-btn  { color:#000; cursor:pointer; text-decoration:underline; }
+    .partner-list{ display:none; margin-top:8px; line-height:1.4; }
+    .partner-list.show{ display:block; }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const toggle = (btnId,listId)=>{
+        const btn=document.getElementById(btnId);
+        const list=document.getElementById(listId);
+        if(btn&&list){btn.addEventListener('click',()=>list.classList.toggle('show'));}
+      };
+      toggle('toggleBtn','partnerList');
+      toggle('proToggleBtn','proPartnerList');
+    });
+  </script>
+
+
+            개인정보의 보유 및 이용기간<br>
+            원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br><br>
+    
+            보존 항목 : 이름 , 휴대전화번호 , 필요시기, 직업구분, 대출신청종류 등.<br>
+            보존 근거 : 고객의요청이 있을시 즉시폐기<br>
+            보존 기간 : 3년<br><br>
+    
+            그리고 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.<br><br>
+    
+            소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래등에서의 소비자보호에 관한 법률)<br>
+            신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년 (신용정보의 이용 및 보호에 관한 법률)<br><br>
+    
+            개인정보의 파기절차 및 방법<br>
+            회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.<br><br>
+    
+            ● 파기절차<br>
+            회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다.<br><br>
+    
+            별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.<br><br>
+    
+            ● 파기방법<br>
+            - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
+            - 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br><br>
+    
+            
+            이용자 및 법정대리인의 권리와 그 행사방법<br>
+            이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.<br><br>
+    
+            이용자들의 개인정보 조회,수정을 위해서는 '개인정보변경'(또는 '회원정보수정' 등)을 가입해지(동의철회)를 위해서는 "회원탈퇴"를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.<br><br>
+    
+            혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.<br><br>
+    
+            귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.<br><br>
+    
+            회사는 이용자의 요청에 의해 해지 또는 삭제된 개인정보는 "회사가 수집하는 개인정보의 보유 및 이용기간"에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br><br>
+    
+    
+            개인정보에 관한 민원서비스<br>
+            회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다.<br>
+            <br>
+        귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.<br><br>
+    
+            기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.<br>
+            1.개인분쟁조정위원회 (https://www.1336.or.kr/1336)<br>
+            2.정보보호마크인증위원회 (https://www.eprivacy.or.kr/02-580-0533~4)<br>
+            3.대검찰청 인터넷범죄수사센터 (02-3480-3600)<br>
+            4.경찰청 사이버테러대응센터 (https://www.ctrc.go.kr/02-392-0330)<br />
+            <br />
+        </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // .blink 부드럽게 무한 깜박이기 (즉각 중단 전용)
+(function(){
+  // prefers-reduced-motion 고려 (접근성)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function clamp(n, min, max, fb){
+    if(Number.isNaN(n)) return fb;
+    return Math.min(max, Math.max(min, n));
+  }
+
+  function opacityAt(t, period, minOpacity){
+    const amp = 1 - minOpacity;
+    const phase = (t % period) / period;
+    const wave = Math.sin(phase * Math.PI * 2); // -1~1
+    return minOpacity + amp * (0.5 + 0.5 * wave);
+  }
+
+  function startBlink(el){
+    const period = clamp(parseInt(el.getAttribute('data-period'),10), 400, 5000, 1200);
+    const min = clamp(parseFloat(el.getAttribute('data-min')), 0, 0.95, 0.2);
+    const effectivePeriod = prefersReduced ? period * 1.6 : period;
+    const effectiveMin = prefersReduced ? Math.min(min + 0.15, 0.8) : min;
+    const t0 = performance.now();
+
+    function tick(now){
+      const op = opacityAt(now - t0, effectivePeriod, effectiveMin);
+      el.style.opacity = op.toFixed(3);
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // DOM 준비 후 실행
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelectorAll('.blink').forEach(startBlink);
+    });
+  }else{
+    document.querySelectorAll('.blink').forEach(startBlink);
+  }
+})();
+
+  </script>
+
+</body>
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/menu1.js" defer></script>
+<script src="./js/personal.js"></script>
+<script src="./js/validation1.js"></script>
+
+
+<script src="./js/validation-float-mob.js"></script>
+
+<script src="./js/footer.js" defer></script>
+</html>
