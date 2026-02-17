@@ -2,6 +2,10 @@
 <html lang="ko">
 <head>
 
+
+  <script async src="https://cdn.onetag.co.kr/0/tcs.js?eid=1k22s7eys4qpe1k22s7eys"></script>
+
+  
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11366347541"></script>
 <script>
@@ -18,7 +22,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="robots" content="index,follow" />
   <meta name="content-language" content="ko">
-  <title>채무긴급대응 법률센터 | 법률사무소 더엘</title>
+  <title>채무긴급대응 법률센터</title>
 <!-- SEO : Description & Keywords -->
 <meta name="description" content="채무긴급대응 법률센터은 개인회생·파산·채무조정 등 국가지원 제도를 통해 최대 90% 빚 조정을 무료 상담으로 안내하는 서민 맞춤 빚 해결 전문 센터입니다.">
 <meta name="keywords" content="채무조정,개인회생,개인파산,빚조정,채무통합,신용회복,채권추심중단,압류해제,무료채무상담,국가지원빚조정,서민채무안심센터,빚상담,부채해결,회생상담,파산상담">
@@ -39,7 +43,7 @@
 <link rel="icon" href="./img/favicon.png" type="image/svg+xml"/>
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="채무긴급대응 법률센터｜빚 조정∙신용회복 무료 상담">
+<meta name="twitter:title" content="채무긴급대응 법률센터">
 <meta name="twitter:description" content="개인회생·파산·채무조정 전문 센터. 국가지원 제도로 최대 90% 빚 조정을 도와드립니다.">
 <meta name="twitter:image" content="./intro/img/intro-1.jpg"/>
 <meta name="twitter:site" content="">
@@ -133,106 +137,6 @@
   </style>
 
 
-<style>
-
-  /* ──────────────────────────────────────────
-        #visual-section 전용 스타일
-     ─────────────────────────────────────────── */
-     #visual-section {
-       position: relative;
-       width: 100%;
-       height: 100vh;
-       overflow: hidden;
-     }
-   
-     /* 비디오 */
-     #visual-section .video_wrap {
-       position: absolute; inset: 0; z-index: 0;
-     }
-     
-     #visual-section .video_wrap video {
-       width: 100%; height: 100%; object-fit: cover; object-position: center;
-     }
-   
-     /* 오버레이 */
-     #visual-section .overlay {
-       position: absolute; inset: 0;
-       background: rgba(0,0,0,0.5);
-     }
-   
-     /* 텍스트 컨테이너 */
-     #visual-section .txt_container {
-       position: absolute; inset: 0; z-index: 2;
-       display: flex; flex-direction: column;
-       justify-content: space-evenly; align-items: center;
-       text-align: center; pointer-events: none;
-     }
-   
-     /* fadeInUp 애니메이션 정의 */
-     @keyframes fadeInUp {
-       from { opacity: 0; transform: translateY(20px); }
-       to   { opacity: 1; transform: translateY(0); }
-     }
-   
-     /* 초기 상태: 숨김 */
-     #visual-section .company,
-     #visual-section .logo,
-     #visual-section .exp {
-       opacity: 0;
-     }
-   
-     /* 스크롤 중앙 진입 시 animate 클래스가 붙으면 실행 */
-     #visual-section.animate .company {
-       color: #fff; font-size: 2rem; font-weight: 500;
-       margin-bottom: 0.5em;
-       animation: fadeInUp 1s ease-out forwards;
-       animation-delay: 0.2s;
-     }
-
-     @media screen and (max-width:530px) {
-      
-      #visual-section.animate .company {
-       color: #fff; font-size: 1.5rem; font-weight: 500;
-     }
-
-     }
-
-     #visual-section.animate .logo {
-       animation: fadeInUp 1s ease-out forwards;
-       animation-delay: 0.7s;
-     }
-     #visual-section .logo .m_logo {
-       width: 800px; height: 130px;
-       background: url("../img/sm-logo.png") no-repeat center/contain;
-       margin-bottom: 0.5em;
-     }
-     #visual-section.animate .exp {
-       color: #fff; font-size: 1.25rem; line-height: 1.6; max-width: 80%;
-       animation: fadeInUp 1s ease-out forwards;
-       animation-delay: 1s;
-     }
-     #visual-section .highlight {
-       color: #e6d3a3; font-weight: 600;
-     }
-   
-     /* 반응형: 모바일 영상 우측 보이기 포함 */
-     @media (max-width: 768px) {
-       #visual-section .company { font-size: 2rem; }
-       #visual-section .logo .m_logo {
-         background: url("../img/sm-font.png") no-repeat center/contain;
-         width: 400px; height: 300px;
-       }
-       #visual-section .exp { font-size: 1rem; }
-       #visual-section .video_wrap video {
-         object-position: right center;
-       }
-     }
-#visual-section .video_wrap img {
-  object-fit: cover;
-  object-position: center;
-}
-     
- </style>
 
 
 <script>
@@ -1123,8 +1027,181 @@ setTimeout(()=>{
 
   
 <section id="visual-section">
+
+<style>
+  /* ──────────────────────────────────────────
+        #visual-section 전용 스타일 (모바일 <br> 활성화)
+     ─────────────────────────────────────────── */
+  #visual-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    isolation:isolate;
+    font-family: Pretendard, "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+
+  #visual-section .video_wrap { position:absolute; inset:0; z-index:0; pointer-events:none; }
+  #visual-section .video_wrap video{
+    width:100%; height:100%;
+    object-fit:cover; object-position:center;
+    display:block;
+  }
+  #visual-section .video_wrap img{
+    width:100%; height:100%;
+    object-fit:cover; object-position:center;
+    display:block;
+    transform:scale(1.02);
+  }
+
+  #visual-section .overlay{
+    position:absolute; inset:0;
+    background: rgba(0,0,0,0.50);
+    z-index:1;
+    pointer-events:none;
+  }
+
+  #visual-section .txt_container{
+    position:absolute; inset:0; z-index:2;
+    display:flex; flex-direction:column;
+    justify-content:space-evenly; align-items:center;
+    text-align:center;
+    pointer-events:none;
+    padding: clamp(18px, 4.5vw, 56px) clamp(14px, 4.5vw, 64px);
+    gap: clamp(10px, 2vh, 18px);
+  }
+
+  @keyframes fadeInUp{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  #visual-section .company,
+  #visual-section .logo,
+  #visual-section .exp{ opacity:0; }
+
+  #visual-section.animate .company{
+    color:#fff;
+    font-weight:800;
+    letter-spacing:-0.4px;
+    line-height:1.34;
+    font-size: clamp(20px, 4.4vw, 34px);
+    margin-bottom:0.55em;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay:0.2s;
+    text-shadow: 0 10px 28px rgba(0,0,0,.35);
+  }
+
+  #visual-section.animate .logo{
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay:0.7s;
+  }
+
+  #visual-section .logo .m_logo{
+    width:800px;
+    height:130px;
+    background:none !important;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:0.5em;
+
+    text-align:center;
+
+    /* ✅ PC에서는 한 줄로 고정 */
+    white-space:nowrap;
+  }
+
+  #visual-section .logo .m_logo .firm{
+    color: rgba(255,255,255,.82);
+    font-weight:700;
+    letter-spacing:-0.2px;
+    font-size: clamp(14px, 1.6vw, 18px);
+    margin-bottom:10px;
+    text-shadow: 0 10px 26px rgba(0,0,0,.32);
+  }
+
+  #visual-section .logo .m_logo .title{
+    color:#fff;
+    font-weight:900;
+    letter-spacing:-0.95px;
+    line-height:1.06;
+    font-size: clamp(38px, 4.8vw, 62px);
+    text-shadow: 0 12px 34px rgba(0,0,0,.42);
+    margin:0;
+
+    /* ✅ PC 기본은 한 줄 고정 */
+    white-space:nowrap;
+  }
+
+  #visual-section .logo .m_logo .accent{
+    width: clamp(90px, 14vw, 150px);
+    height:2px;
+    margin-top:14px;
+    border-radius:999px;
+    background: linear-gradient(90deg, transparent, rgba(230,211,163,.95), transparent);
+    opacity:.9;
+  }
+
+  #visual-section.animate .exp{
+    color: rgba(255,255,255,.84);
+    font-weight:650;
+    letter-spacing:-0.25px;
+    line-height:1.75;
+    max-width:80%;
+    font-size: clamp(17px, 3.2vw, 22px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay:1s;
+    text-shadow: 0 10px 26px rgba(0,0,0,.34);
+  }
+
+  #visual-section .highlight{ color:#e6d3a3; font-weight:800; }
+
+  /* ✅ 모바일에서만 줄바꿈 허용 + <br> 보이게 */
+  #visual-section .mbr{ display:none; }
+
+  @media (max-width:768px){
+    #visual-section .txt_container{
+      /* justify-content:space-between; */
+      padding-top: clamp(26px, 6.2vh, 56px);
+      padding-bottom: clamp(22px, 6.0vh, 56px);
+    }
+
+    #visual-section .logo .m_logo{
+      width: min(92vw, 520px);
+      height:auto;
+
+      /* ✅ 모바일에서 줄바꿈 허용 */
+      white-space:normal;
+    }
+
+    #visual-section .logo .m_logo .title{
+      /* ✅ 모바일에서 <br> 줄바꿈 적용되게 */
+      white-space:normal;
+      word-break:keep-all;
+      line-height:1.05;
+      font-size: clamp(40px, 8.2vw, 56px);
+    }
+
+    /* ✅ 모바일에서만 <br> 활성 */
+    #visual-section .mbr{ display:inline; }
+
+    #visual-section .exp{ max-width:92%; }
+    #visual-section .video_wrap video{ object-position:right center; }
+  }
+
+  @media (max-width:420px){
+    #visual-section .logo .m_logo .title{ font-size:46px; }
+    #visual-section.animate .company{ font-size:22px; }
+    #visual-section.animate .exp{ font-size:18px; }
+  }
+</style>
+
   <div class="video_wrap">
-    <img src="./img/intro-4.jpg" style="width:100%;height:100%;">
+    <img src="./img/intro-4.jpg" alt="">
     <!-- <video muted loop autoplay playsinline>
       <source src="./img/video-4.mp4" type="video/mp4">
     </video> -->
@@ -1134,14 +1211,25 @@ setTimeout(()=>{
 
   <div class="txt_container">
     <div class="company">감당하기 힘든 빚으로<br>긴급한 도움이<br>필요한 분을 위한<br><br>1-STEP 긴급 솔루션</div>
-    <div class="logo"><div class="m_logo"></div></div>
+
+    <div class="logo">
+      <div class="m_logo" aria-label="채무긴급대응 법률 솔루션">
+        <div class="firm">정부지원제도</div>
+
+        <!-- ✅ 모바일에서만 줄바꿈 되도록 class="mbr" 사용 -->
+        <div class="title">
+          채무긴급대응 <br class="mbr">법률 솔루션
+        </div>
+
+        <div class="accent" aria-hidden="true"></div>
+      </div>
+    </div>
+
     <div class="exp">
-      혼자 힘들어하지 마시고<br>이젠 정부지원제도를 통해<br><br>견디기 어려운 빚의 압박에서<br>벗어날 수 있도록<br>도와드리겠습니다.
+      혼자 힘들어하지 마시고<br>이젠 <span class="highlight">정부지원제도</span>를 통해<br><br>견디기 어려운 빚의 압박에서<br>벗어날 수 있도록<br>도와드리겠습니다.
     </div>
   </div>
-</section>
 
-  
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const section = document.getElementById("visual-section");
@@ -1156,6 +1244,12 @@ setTimeout(()=>{
       observer.observe(section);
     });
   </script>
+
+</section>
+
+
+  
+
   
 
 <section id="whoCanPartner">
@@ -1279,7 +1373,7 @@ setTimeout(()=>{
     <!-- 🔹 추가된 헤드라인 태그 -->
     <div class="tag">긴급 상황을 빠르게 해결할 수밖에 없는 이유?</div><br><br>
 
-    <h2 class="headline">더엘 법률사무소<br>채무긴급대응 법률센터만의<br><span class="hl">특별한 6가지 장점<br></span></h2><br>
+    <h2 class="headline">채무긴급대응 법률센터만의<br><span class="hl">특별한 6가지 장점<br></span></h2><br>
 
     <!-- <div class="note">*만기 납입 후 1개월 시점 해약시 또는 라이프서비스 사용시</div> -->
   </div>
@@ -1295,7 +1389,7 @@ setTimeout(()=>{
       <span class="tag left"><i>PRO</i>정밀분류</span>
     </div>
     <div class="info">
-      <div class="leading">15년 · 2,000건 이상의 개인회생 경험</div>
+      <div class="leading">3,000건 이상 채무 조정 성공 사례</div>
       <div class="desc">어떤 상황에도 신속한 진단과 빠른 문제 해결 가능 </div>
     </div>
   </a>
@@ -1345,7 +1439,7 @@ setTimeout(()=>{
       <span class="tag right"><i>BRAND</i>공동제작</span>
     </div>
     <div class="info">
-      <div class="leading">도산 변호사가 직접 처음부터 끝까지!</div>
+      <div class="leading">채무 조정 직접 처음부터 끝까지!</div>
       <div class="desc">A~Z까지 직접 듣고 함께 도와드립니다.</div>
     </div>
   </a>
@@ -1391,255 +1485,6 @@ setTimeout(()=>{
   </script>
 </section>
 
-<section id="doctorProfileShinHY" aria-label="이우형 변호사님 프로필">
-<style>
-/* ================= Scope: #doctorProfileShinHY only ================= */
-#doctorProfileShinHY{
-  /* Theme tokens */
-  --bg1:#333333;
-  --bg2:#6f6f6f;
-  --ink:#fff;
-  --muted:rgba(255,255,255,.75);
-  --soft:rgba(255,255,255,.6);
-  --pill:#6c7382;
-  --accent:#9bd84f;
-  --blue:#5bc0ff;
-  --orange:#ff8844;
-  --line:rgba(255,255,255,.18);
-  --radius:14px;
-  --maxW:1200px;
-
-  font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
-  color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-
-  /* Background */
-  background:
-    radial-gradient(1200px 100% at 68% 10%, rgba(255,255,255,.06), transparent 60%),
-    linear-gradient(100deg, var(--bg1) 0%, var(--bg2) 55%, #7d8190 100%);
-  position:relative;
-  overflow:hidden;
-  padding:64px 24px 40px;
-
-  /* Layout */
-  display:grid;
-  grid-template-columns:minmax(320px,770px) 1fr;
-  gap:24px;
-  align-items:end;
-  margin:0 auto;
-  box-sizing:border-box;
-}
-
-/* ===== 좌측 텍스트 블록 ===== */
-#doctorProfileShinHY .txt{
-  max-width:var(--maxW);
-  margin:0 auto;
-  padding:10px 0 20px;
-  position:relative; /* cert 기준 위치 */
-}
-#doctorProfileShinHY .dept{
-  display:inline-block;font-size:28px;font-weight:700;letter-spacing:-.02em;color:#e7e9ef;margin:6px 0 12px;
-}
-#doctorProfileShinHY .name{
-  font-size:92px;line-height:.95;font-weight:800;letter-spacing:-.035em;margin:0 0 28px;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.08);
-}
-
-/* ✅ 자격증 썸네일(클릭 확대) */
-#doctorProfileShinHY .cert{
-  position:absolute; right:-10px; top:-8px;
-  width:132px; aspect-ratio:3/4; border-radius:8px; overflow:hidden;
-  box-shadow:0 12px 30px rgba(0,0,0,.28), inset 0 -6px 12px rgba(0,0,0,.06);
-  background:rgba(255,255,255,.08);
-  -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px);
-  border:1px solid rgba(255,255,255,.18);
-  cursor:zoom-in;
-}
-#doctorProfileShinHY .cert img{display:block;width:100%;height:100%;object-fit:contain}
-
-/* ===== 칩/라벨 라인 ===== */
-#doctorProfileShinHY .chipline{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:0 0 22px;}
-#doctorProfileShinHY .chip{
-  display:inline-flex;align-items:center;gap:8px;background:var(--pill);color:#fff;font-weight:700;font-size:14px;
-  padding:7px 12px;border-radius:999px;white-space:nowrap;
-}
-#doctorProfileShinHY .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(155,216,79,.2) inset;}
-#doctorProfileShinHY .desc{font-size:15px;color:var(--muted);}
-
-/* ===== 프로필 표 ===== */
-#doctorProfileShinHY .table{width:100%;border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;margin:4px 0 18px;}
-#doctorProfileShinHY .thead, #doctorProfileShinHY .trow{display:grid;grid-template-columns:88px 1fr;}
-#doctorProfileShinHY .thead div{
-  background:rgba(255,255,255,.06);color:#e8eaf2;font-weight:700;padding:14px 16px;border-right:1px solid var(--line);text-align:center;font-size:14px;
-}
-#doctorProfileShinHY .thead div:first-child{ text-align:left; }
-#doctorProfileShinHY .trow div{
-  padding:18px 16px;border-top:1px solid var(--line);border-right:1px solid var(--line);
-  min-height:48px;display:flex;justify-content:flex-start;align-items:center;color:#f1f2f6;
-}
-#doctorProfileShinHY .trow div:first-child{color:#e8eaf2;font-weight:700;}
-#doctorProfileShinHY .note{display:flex;align-items:flex-start;gap:10px;color:var(--soft);font-size:13px;padding:6px 2px;}
-#doctorProfileShinHY .note .i{font-weight:900;opacity:.8}
-
-/* ===== 버튼 ===== */
-#doctorProfileShinHY .cta{
-  margin-top:12px;display:inline-flex;align-items:center;gap:10px;background:#6d7384;color:#fff;font-weight:800;border-radius:12px;padding:14px 18px;
-  text-decoration:none;user-select:none;box-shadow:0 10px 24px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.08);
-  transition:transform .15s ease, box-shadow .15s ease, background .2s ease;
-}
-#doctorProfileShinHY .cta:hover{transform:translateY(-1px);box-shadow:0 14px 28px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.1);background:#7b8191;}
-
-/* ===== 우측 프로필 사진 영역 ===== */
-#doctorProfileShinHY .visual{
-  position:relative;max-height:760px;
-  display:flex;align-items:flex-end;justify-content:center;isolation:isolate;
-}
-
-/* ✅ 사진 카드(로고를 카드 안쪽 상단에 배치) */
-#doctorProfileShinHY .photo{
-  position:relative;z-index:1;display:block;width:min(500px,56vw);aspect-ratio:3/4;border-radius:24px;
-  overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35), inset 0 -10px 20px rgba(0,0,0,.06);
-  background:rgba(255,255,255,.06);
-}
-#doctorProfileShinHY .photo img{
-  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;
-}
-
-/* ✅ 로고: 사진 카드 안쪽 상단(스크린샷 위치) */
-#doctorProfileShinHY .brand-in{
-  position:absolute; top:14px; left:18px; z-index:2;
-  display:block; pointer-events:none; /* 로고는 클릭 통과 */
-}
-#doctorProfileShinHY .brand-in img{
-  display:block; width:min(180px,22vw); height:auto; object-fit:contain;
-  filter:drop-shadow(0 2px 6px rgba(0,0,0,.35));
-}
-
-/* ===== 반응형 ===== */
-@media (max-width:1024px){
-  #doctorProfileShinHY{grid-template-columns:1fr;align-items:start;padding:48px 20px 32px;}
-  #doctorProfileShinHY .name{font-size:72px;}
-  #doctorProfileShinHY .visual{order:-1;}
-  #doctorProfileShinHY .cert{ right:6px; top:-6px; width:112px; }
-  #doctorProfileShinHY .brand-in img{ width:min(150px,32vw); }
-}
-@media (max-width:600px){
-  #doctorProfileShinHY .dept{font-size:22px;}
-  #doctorProfileShinHY .name{font-size:52px;}
-  #doctorProfileShinHY .cta{width:100%;justify-content:center;}
-  #doctorProfileShinHY .cert{ right:8px; top:-4px; width:90px; }
-  #doctorProfileShinHY .brand-in{ top:10px; left:12px; }
-  #doctorProfileShinHY .brand-in img{ width:min(130px,42vw); }
-}
-@media (prefers-reduced-motion:reduce){
-  #doctorProfileShinHY .cta{transition:none;}
-}
-
-/* ================== 라이트박스(전체 화면 팝업) ================== */
-#doctorProfileShinHY .lightbox{
-  position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.6);
-  display:none; align-items:center; justify-content:center; padding:24px;
-}
-#doctorProfileShinHY .lightbox[aria-hidden="false"]{ display:flex; }
-#doctorProfileShinHY .lightbox__inner{
-  position:relative; max-width:min(960px,92vw); max-height:min(92vh,1200px);
-  background:rgba(20,20,24,.9); border-radius:14px; overflow:hidden;
-  box-shadow:0 20px 80px rgba(0,0,0,.5); animation:lbIn .18s ease-out both;
-}
-#doctorProfileShinHY .lightbox__img{display:block;width:100%;height:100%;object-fit:contain;background:#111;}
-#doctorProfileShinHY .lightbox__close{
-  position:absolute; top:8px; right:8px; display:inline-flex; align-items:center; justify-content:center;
-  width:40px; height:40px; border-radius:999px; background:rgba(255,255,255,.12); color:#fff; font-size:0;
-  border:1px solid rgba(255,255,255,.18); cursor:pointer;
-}
-#doctorProfileShinHY .lightbox__close:before{content:"✕"; font-size:18px; line-height:1; filter:drop-shadow(0 1px 0 rgba(0,0,0,.4));}
-#doctorProfileShinHY .lightbox__scrim{ position:absolute; inset:0; }
-@keyframes lbIn{from{transform:translateY(4px) scale(.985);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
-</style>
-
-<!-- ===== 좌측 텍스트 영역 ===== -->
-<div class="txt">
-  <div class="dept">회생/파산 전문 변호사</div>
-  <h1 class="name">이우형</h1>
-
-  <!-- 자격증 이미지(클릭 시 확대) -->
-  <button class="cert" type="button" aria-label="전문분야 등록증 확대 보기">
-    <img src="./img/lawyer-license.png" alt="전문분야 등록증 사본" loading="lazy">
-  </button>
-
-  <div class="chipline">
-    <span class="chip"><span class="dot" aria-hidden="true"></span>전문 분야</span>
-    <span class="desc">개인 및 법인 회생/파산, 민・형사 사건</span>
-  </div>
-
-  <div class="legend">
-    <span class="chip">변호사 프로필</span>
-  </div>
-
-  <!-- 프로필 표 -->
-  <div class="table" role="table" aria-label="프로필 이력">
-    <div class="thead" role="row"><div role="columnheader">구분</div><div role="columnheader">내용</div></div>
-    <div class="trow" role="row"><div role="rowheader">학력</div><div>연세대학교 졸업<br>Northwestern University School of Law LLM</div></div>
-    <div class="trow" role="row"><div role="rowheader">경력</div><div>- 제 44회 사법시험 합격<br>- 사법연수원 34기 수료<br>- 개인회생/파산 15년간 2000건 이상 진행</div></div>
-    <div class="trow" role="row"><div role="rowheader">드리는 말씀</div><div>채무의 어려움은 누구나 겪을 수 있습니다.<br>하지만, 더 없이 소중한 가족과 주변 사람까지 무너져서는 안됩니다.<br>저는 여러분을 포함한 가족분들의 소중한 일상을 지키기 위해 최선을 다해 도와드리겠습니다.</div></div>
-  </div>
-
-  <a class="cta" href="#consultForm" aria-label="바로 전화 상담 받기">바로 전화 상담 받기</a>
-</div>
-
-<!-- ===== 우측 사진 영역 ===== -->
-<div class="visual" aria-hidden="true">
-  <figure class="photo">
-    <!-- ✅ 로고: 사진 카드 안쪽 상단 -->
-    <div class="brand-in"><img src="./img/thel.png" alt="법률사무소 로고" loading="lazy"></div>
-    <img src="./img/lawyer1.png" alt="프로필 사진" loading="lazy">
-  </figure>
-</div>
-
-<!-- ===== 라이트박스(자격증 확대) ===== -->
-<div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="자격증 확대 보기">
-  <div class="lightbox__scrim" data-close="true"></div>
-  <div class="lightbox__inner">
-    <img class="lightbox__img" src="" alt="자격증 원본 이미지">
-    <button class="lightbox__close" type="button" aria-label="닫기" data-close="true"></button>
-  </div>
-</div>
-
-<script>
-/* ===== 라이트박스 스크립트 (섹션 스코프) ===== */
-(() => {
-  const root = document.getElementById('doctorProfileShinHY');
-  if (!root) return;
-
-  const certBtn = root.querySelector('.cert');
-  const certImg = certBtn?.querySelector('img');
-  const lightbox = root.querySelector('.lightbox');
-  const lbImg = root.querySelector('.lightbox__img');
-
-  if (!certBtn || !certImg || !lightbox || !lbImg) return;
-
-  const open = () => {
-    const src = certImg.getAttribute('data-fullsrc') || certImg.getAttribute('src');
-    lbImg.setAttribute('src', src);
-    lightbox.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  };
-  const close = () => {
-    lightbox.setAttribute('aria-hidden', 'true');
-    lbImg.setAttribute('src', '');
-    document.body.style.overflow = '';
-  };
-
-  certBtn.addEventListener('click', open, { passive: true });
-  lightbox.addEventListener('click', (e) => {
-    if (e.target && e.target.dataset && e.target.dataset.close === 'true') close();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (lightbox.getAttribute('aria-hidden') === 'false' && (e.key === 'Escape' || e.key === 'Esc')) close();
-  });
-})();
-</script>
-</section>
 
 
   <!-- ▽▽▽  Attorney Profile Section (전체 코드, JS 동적 헤딩 포함)  ▽▽▽ -->
@@ -1655,7 +1500,7 @@ setTimeout(()=>{
     <div class="ap-info">
       <!-- 로고 마퀴 -->
       <div class="ap-marquee" aria-hidden="true">
-        <div class="ap-track"><span>법률사무소&nbsp;더엘&nbsp;| 채무긴급대응 법률센터</span></div>
+        <div class="ap-track"><span>채무긴급대응 법률센터</span></div>
       </div>
 
       <!-- 변호사 선택 버튼 -->
@@ -2069,9 +1914,9 @@ btns2.forEach(btn => {
     <!-- (topbar는 별도 #stickyTopbar 섹션으로 분리됨) -->
     <div class="headline">
       <div class="tag">100% 비밀 보장 안심상담</div>
-      <h2>시간이 지체되어<br>더 큰 채무로 불어나기 전에<br><br>망설이지 말고<br>빠르게 안심콜 도움 받으세요.<br>전화 즉시, 여러분 빚의 무게<br>즉각 가볍게 도와드리겠습니다.<br><br>
+      <h2>시간이 지체되어<br>더 큰 채무로 불어나기 전에<br><br>빠르게 도움 받으세요<br>신청 즉시, 여러분 빚의 무게<br>즉각 가볍게 도와드리겠습니다.<br><br>
 
-<b>법률사무소 더엘<br>채무긴급대응 법률센터<br><br>100% 비밀보장 긴급 안심상담</b></h2>
+100% 비밀보장 긴급 안심상담</b></h2>
       
     </div>
 
@@ -2470,7 +2315,7 @@ btns2.forEach(btn => {
   <div id="consultForm">
      <form id="form_e11" name="frm_phonecall_web" action="" method="post" target="hidden_iframe11" onsubmit="dll(); submitted=true;"  class="gc-form" novalidate>
     <input type="hidden" name="entry.637408694" value="본문 신청폼">  
-    <input type="hidden" name="entry.339503137" value="인스타그램 - 이미지 - 긴급 - 더엘">
+    <input type="hidden" name="entry.339503137" value="모비온">
     <div class="gc-deco"></div>
 
     <div class="gc-header">
@@ -2557,6 +2402,15 @@ btns2.forEach(btn => {
       </div>
       <input type="hidden" name="entry.1487248962" id="reason">
     </div>
+
+    <div class="form-group">
+        <p class="form-label">07. 부동산 유무 <small>(배우자 명의 포함)</small></p>
+        <div class="button-group" data-type="radio" data-name="부동산유무">
+          <input type="button" class="option-btn intro_select6" data-value="있음" value="있음">
+          <input type="button" class="option-btn intro_select6" data-value="없음" value="없음">
+        </div>
+        <input type="hidden" name="entry.2018620676" id="realstate">
+      </div>
 
     <!-- 기본 정보 -->
     <div class="form-group">
@@ -2660,6 +2514,7 @@ btns2.forEach(btn => {
     bindRadioToHidden(".intro_select",  "debt");
     bindRadioToHidden(".intro_select3", "family");
     bindRadioToHidden(".intro_select4", "loan_3month");
+    bindRadioToHidden(".intro_select6", "realstate");
 
     function bindRadioToHidden(selector, hiddenId) {
       const buttons = document.querySelectorAll(selector);
@@ -2705,338 +2560,9 @@ btns2.forEach(btn => {
   });
 </script>
 
-<section id="NoticeS1" aria-label="안심 안내문">
-  <style>
-    /* ================= Scope: #NoticeS1 only ================= */
-    #NoticeS1 {
-      --ink:#111;
-      --muted:#777;
-      --accent:#000;
-      --bg:#fff;
-      --maxW:880px;
-      font-family:"Pretendard","Noto Sans KR",sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:var(--bg);
-      padding:60px 20px;
-    }
 
-    #NoticeS1 .wrap {
-      position:relative;
-      width:100%;
-      max-width:var(--maxW);
-      border:1px solid #e5e5e5;
-      border-radius:10px;
-      background:#fff;
-      padding:80px 90px 100px;
-      box-sizing:border-box;
-    }
 
-    /* 배경 워터마크 G */
-    #NoticeS1 .wrap::after {
-      content:"The L";
-      position:absolute;
-      right:30px;
-      bottom:10px;
-      font-size:280px;
-      font-weight:700;
-      color:rgba(0,0,0,0.04);
-      line-height:1;
-      pointer-events:none;
-      user-select:none;
-    }
 
-    /* 상단 소제목 */
-    #NoticeS1 .sub {
-      font-size:15px;
-      color:var(--muted);
-      margin-bottom:10px;
-    }
-
-    /* 메인 타이틀 */
-    #NoticeS1 .title {
-      font-size:34px;
-      font-weight:800;
-      color:var(--ink);
-      margin-bottom:60px;
-      line-height:1.4;
-    }
-
-    #NoticeS1 .title span {
-      display:block;
-      font-size:38px;
-      font-weight:900;
-    }
-
-    /* 약속 문단 */
-    #NoticeS1 .promise {
-      margin-bottom:42px;
-    }
-
-    #NoticeS1 .promise h4 {
-      font-size:15px;
-      color:#999;
-      font-weight:500;
-      margin-bottom:6px;
-    }
-
-    #NoticeS1 .promise p {
-      font-size:18px;
-      color:var(--ink);
-      font-weight:500;
-      line-height:1.8;
-    }
-
-    /* 서명 */
-    #NoticeS1 .sign {
-      text-align:right;
-      margin-top:60px;
-      font-size:17px;
-      color:var(--ink);
-      font-weight:500;
-    }
-
-    #NoticeS1 .sign span {
-      display:inline-block;
-      margin-left:8px;
-      font-family:"SangSangFlower","Pretendard",sans-serif;
-      font-size:22px;
-      font-weight:700;
-    }
-
-    /* 반응형 */
-    @media(max-width:640px){
-      #NoticeS1 .wrap{padding:50px 28px 70px;}
-      #NoticeS1 .title{font-size:26px;}
-      #NoticeS1 .title span{font-size:30px;}
-      #NoticeS1 .promise p{font-size:16px;}
-    }
-  </style>
-<div class="wrap">
-  <p class="sub">채무 긴급대응 전문 법률팀</p>
-  <h2 class="title">
-    법률사무소 더엘<br>
-    <span>긴급 안심상담 안내문</span>
-  </h2>
-
-  <div class="promise">
-    <h4>첫 번째 약속,</h4>
-    <p>가족이라면 권하고 싶은 법률조력만 제공합니다. 불필요한 절차나 비용을 권하지 않겠습니다.</p>
-  </div>
-
-  <div class="promise">
-    <h4>두 번째 약속,</h4>
-    <p>상담을 진행한 변호사가 직접 사건을 검토하고 대응하여 결과의 책임을 끝까지 지겠습니다.</p>
-  </div>
-
-  <div class="promise">
-    <h4>세 번째 약속,</h4>
-    <p>긴급상황 이후에도 불안이 남지 않도록 지속적인 사후관리와 법률지원을 약속드립니다.</p>
-  </div>
-
-  <div class="promise">
-    <h4>네 번째 약속,</h4>
-    <p>모든 내용은 100% 비밀로 아무에게도 알리지 않고 처리해드릴 것을 약속드립니다.</p>
-  </div>
-
-  <div class="sign">
-    대표 변호사 <span>이우형</span>
-  </div>
-</div>
-
-</section>
-
-<!-- ===================== 오시는 길 섹션 (카카오맵 퍼가기 코드 적용 + 100% 너비/높이 · 모바일에서 글자(패널)가 지도 위로) ===================== -->
-<section id="RouteS1" aria-label="오시는 길 섹션 (지도 + 정보 패널)">
-  <style>
-    /* ===== Scope Reset: #RouteS1 내부만 초기화 (외부 레이아웃 간섭 방지) ===== */
-    #RouteS1{ box-sizing:border-box; }
-    #RouteS1 *, #RouteS1 *::before, #RouteS1 *::after{ box-sizing:inherit; }
-
-    /* ================= Scope: #RouteS1 only ================= */
-    #RouteS1{
-      --panel:#2b2c30;            /* 우측 패널 배경 */
-      --ink:#f4f4f5;              /* 본문 텍스트(다크 배경용) */
-      --muted:#c7c7cb;            /* 보조 텍스트 */
-      --label:#9ca3af;            /* 항목 라벨 색 */
-      --em:#d9b58a;               /* 포인트(전화번호) */
-      --line:rgba(255,255,255,.12);
-      --ring:rgba(255,255,255,.05);/* 워터마크 링 */
-      --maxW:1280px;
-      --gap:0;
-
-      font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      color:var(--ink);
-
-      /* Grid + 안전한 독립 섹션 */
-      display:grid;
-      grid-template-columns: 1fr 520px;   /* 좌: 지도 / 우: 패널 */
-      grid-template-areas: "map panel";   /* 데스크톱 기본 배치 */
-      gap:var(--gap);
-      align-items:stretch;
-
-      width:100%; max-width:var(--maxW);
-      margin:100px auto;         
-      background:#fff;
-      border-radius:18px;
-      overflow:hidden;
-      box-shadow:0 20px 60px rgba(0,0,0,.25);
-      position:relative; z-index:0;
-      contain:layout paint style;
-    }
-
-    /* 지도 영역 */
-    #RouteS1 .mapWrap{
-      grid-area:map;
-      position:relative;
-      min-height:clamp(420px, 70vh, 820px); /* 화면 높이에 자연스럽게 맞춤 */
-      background:#0e0e0f;
-      isolation:isolate;
-    }
-
-    /* kakao roughmap가 들어가는 컨테이너를 강제로 100% 채우도록 */
-    #RouteS1 #daumRoughmapContainer1761786605195.root_daum_roughmap{
-      position:absolute; inset:0;
-      width:100% !important; height:100% !important;
-    }
-    /* 내부 요소 높이 상쇄(카카오가 인라인 픽셀값을 줄 때가 있어서 강제 100%) */
-    #RouteS1 .root_daum_roughmap .wrap_map,
-    #RouteS1 .root_daum_roughmap .map_border,
-    #RouteS1 .root_daum_roughmap .map{
-      height:100% !important;
-    }
-
-    #RouteS1 .mapFallback{ /* iframe/지도 로드 실패 시 노출용 */
-      position:absolute; inset:0; display:grid; place-items:center;
-      color:#e5e7eb; background:linear-gradient(135deg,#202124,#16181d);
-      font-weight:600; letter-spacing:.05em; pointer-events:none;
-    }
-
-    /* 정보 패널 */
-    #RouteS1 .panel{
-      grid-area:panel;
-      background:
-        radial-gradient(480px 480px at 90% 20%, var(--ring) 0 60%, transparent 62%),
-        var(--panel);
-      padding:56px 48px 52px;
-      color:#f7f7f8;
-    }
-    #RouteS1 .title{
-      font-size:44px; line-height:1.15; font-weight:800; letter-spacing:-0.02em; margin:4px 0 36px;
-    }
-    #RouteS1 .rows{ display:grid; gap:22px; }
-    #RouteS1 .row{
-      display:grid; grid-template-columns: 96px 1fr; gap:18px; align-items:start;
-      padding:18px 0; border-top:1px solid var(--line);
-    }
-    #RouteS1 .row:first-child{ border-top:0; padding-top:0; }
-    #RouteS1 .label{ color:var(--label); font-size:14px; letter-spacing:.08em; font-weight:700; padding-top:2px; }
-    #RouteS1 .content{ color:var(--ink); font-size:16px; line-height:1.75; }
-    #RouteS1 .content .dim{ color:var(--muted); }
-
-    #RouteS1 .phoneBox{ padding-top:24px; margin-top:10px; }
-    #RouteS1 .phone{ font-size:42px; line-height:1.2; font-weight:800; letter-spacing:.02em; color:var(--em); white-space:nowrap; }
-
-    /* 반응형: 모바일에서 글자(패널)가 지도보다 위로 오도록 순서 전환 */
-    @media (max-width: 1100px){
-      #RouteS1{ grid-template-columns: 1fr 1fr;}
-    }
-    @media (max-width: 900px){
-      #RouteS1{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "panel"   /* 1) 패널 먼저 */
-          "map";    /* 2) 지도 다음 */
-        border-radius:0px;
-        margin:0 auto;
-      }
-      #RouteS1 .mapWrap{ min-height:60vh; }
-      #RouteS1 .panel{ padding:36px 22px 32px; }
-      #RouteS1 .title{ font-size:34px; margin-bottom:26px; }
-      #RouteS1 .row{ grid-template-columns: 1fr; gap:14px; padding:16px 20px; }
-      #RouteS1 .phone{ font-size:34px; }
-    }
-  </style>
-
-  <!-- 좌측: 지도 (카카오 지도 퍼가기 - 화면 너비/높이에 맞춰 자동 확장) -->
-  <div class="mapWrap">
-    <!-- 1) 지도 노드 (요청하신 퍼가기 코드의 컨테이너/타임스탬프 적용) -->
-    <div id="daumRoughmapContainer1761786605195" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-    <!-- 2) 설치 스크립트 (여러 지도를 쓸 경우, 페이지 전체에 1회만 포함하십시오) -->
-    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-    <!-- 3) 실행 스크립트 : 폭/높이를 100%로 세팅하여 섹션에 완전 맞춤 -->
-    <script charset="UTF-8">
-      (function(){
-        /* 카카오 퍼가기 실행 (요청하신 key/timestamp로 교체) */
-        new daum.roughmap.Lander({
-          "timestamp" : "1761786605195",
-          "key"       : "bou7qoc5pk8",
-          "mapWidth"  : "100%",
-          "mapHeight" : "100%"
-        }).render();
-
-        /* 렌더 후에도 100% 유지 (일부 환경에서 인라인 px 강제되는 경우 보정) */
-        function fitKakaoMap(){
-          var sec  = document.getElementById('RouteS1');
-          if(!sec) return;
-          var wrap = sec.querySelector('.mapWrap');
-          var box  = sec.querySelector('#daumRoughmapContainer1761786605195');
-          if(wrap && box){
-            box.style.width  = '100%';
-            box.style.height = wrap.clientHeight + 'px';
-          }
-        }
-        window.addEventListener('resize', fitKakaoMap, {passive:true});
-        /* 초기/비동기 렌더링 대비 다회 호출 */
-        setTimeout(fitKakaoMap, 200);
-        setTimeout(fitKakaoMap, 800);
-        setTimeout(fitKakaoMap, 1600);
-      })();
-    </script>
-
-    <div class="mapFallback" aria-hidden="true">MAP PREVIEW</div>
-  </div>
-
-  <!-- 우측: 정보 패널 -->
-  <aside class="panel">
-    <h2 class="title">법률사무소 더엘</h2>
-    <div class="rows">
-      <div class="row">
-        <div class="label">주소</div>
-        <div class="content">
-          서울 서초구 서초대로60길 27 4층<br>
-          <span class="dim">교대역 1번출구로 나와 600m</span>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="label">운영시간</div>
-        <div class="content">
-          월 <strong>오전 9시 ~ 오후 6시까지</strong> <!-- <span class="dim">(점심 오후 1:00 ~ 오후 2:00)</span> --> <br>
-         
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="label">주차이용</div>
-        <div class="content">
-          <strong>무료 주차 가능</strong> <!-- <span class="dim">(점심 오후 1:00 ~ 오후 2:00)</span> --> <br>
-         
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="label">상담전화</div>
-        <div class="content phoneBox">
-          <div class="phone"><a href="#consultForm" style="color:#d9b58a;text-decoration:none;cursor:pointer;"><b>02-593-9191</b></a></div>
-        </div>
-      </div>
-    </div>
-  </aside>
-</section>
 
 
 
@@ -3484,7 +3010,7 @@ btns2.forEach(btn => {
     <table class="tp-table">
       <tr>
         <th>제공하는 자</th>
-        <td>채무긴급대응 법률센터</td>
+        <td>서민채무조정안심센터</td>
       </tr>
       <tr>
         <th>제공받는 자</th>
@@ -3519,7 +3045,7 @@ btns2.forEach(btn => {
   <section id="thirdPartyPro">
     <h3 class="tp-heading">(제공업체) 개인정보 제3자 제공 동의 (필수)</h3>
     <p class="tp-note">
-      본 동의는 전문가와 채무긴급대응 법률센터 간 서비스 품질 향상을 위한 정보 제공에 관한 것입니다. 동의하지 않을 경우 전문가용 서비스 이용이 제한될 수 있습니다.
+      본 동의는 전문가와 서민채무조정안심센터 간 서비스 품질 향상을 위한 정보 제공에 관한 것입니다. 동의하지 않을 경우 전문가용 서비스 이용이 제한될 수 있습니다.
     </p>
   
     <table class="tp-table">
@@ -3534,7 +3060,7 @@ btns2.forEach(btn => {
       </tr>
       <tr>
         <th>제공받는 자</th>
-        <td>채무긴급대응 법률센터</td>
+        <td>서민채무조정안심센터</td>
       </tr>
       <tr>
         <th>제공 목적</th>
@@ -3687,5 +3213,5 @@ btns2.forEach(btn => {
 
 <script src="./js/validation-float-mob.js"></script>
 
-<script src="./js/footer.js" defer></script>
+<script src="./js/footer-platform.js" defer></script>
 </html>

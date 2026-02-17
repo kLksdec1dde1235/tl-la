@@ -1,0 +1,2715 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDCSD8F6SD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NDCSD8F6SD');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="content-language" content="ko">
+  <title>서민채무조정안심센터</title>
+<!-- SEO : Description & Keywords -->
+<meta name="description" content="서민채무조정안심센터는 개인회생·파산·채무조정 등 국가지원 제도를 통해 최대 90% 빚 조정을 무료 상담으로 안내하는 서민 맞춤 빚 해결 전문 센터입니다.">
+<meta name="keywords" content="채무조정,개인회생,개인파산,빚조정,채무통합,신용회복,채권추심중단,압류해제,무료채무상담,국가지원빚조정,서민채무안심센터,빚상담,부채해결,회생상담,파산상담">
+
+<!-- Open Graph (Facebook, Kakao 등) -->
+<meta property="og:locale" content="ko_KR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="서민채무조정안심센터">
+<meta property="og:title" content="서민채무조정안심센터｜최대 90% 빚 조정 무료 상담">
+<meta property="og:description" content="국가지원 제도를 활용해 빚을 줄이고 삶을 다시 세우세요. 개인회생·파산·채무조정 전문 무료 상담을 제공합니다.">
+<meta property="og:url" content="">
+<meta property="og:image" content="./img/intro-1.jpg">
+<link rel="apple-touch-icon" href="../img/favicon.png" sizes="180x180"/>
+<link rel="icon" href="../img/favicon.png" sizes="16x16"/>
+<link rel="icon" href="../img/favicon.png" sizes="32x32"/>
+<link rel="icon" href="../img/favicon.png" sizes="192x192"/>
+<link rel="icon" href="../img/favicon.png" type="image/svg+xml"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="서민채무조정안심센터｜빚 조정∙신용회복 무료 상담">
+<meta name="twitter:description" content="개인회생·파산·채무조정 전문 센터. 국가지원 제도로 최대 90% 빚 조정을 도와드립니다.">
+<meta name="twitter:image" content="./intro/img/intro-1.jpg"/>
+<meta name="twitter:site" content="">
+
+  <!-- (선택) 외부 리소스: FontAwesome, Google Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/main-style.css"/>
+  <link href="../css/ionicons.min.css" rel="stylesheet" />
+  <style>
+    /* ── RESET & LAYOUT ── */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Pretendard',sans-serif;background:#111;color:#fff;overflow-x:hidden}
+    .container{display:flex}
+    #main{flex:1;position:relative;overflow:hidden}
+    #visualTransWrap{position:absolute;inset:0;pointer-events:none;z-index:5}
+
+    /* ── SWIPER & BG ── */
+    .mv_container{width:100%;height:90vh;position:relative}
+    .swiper-container,.swiper-wrapper,.swiper-slide{width:100%;height:100%}
+    .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 6s ease;filter:brightness(0.5)}
+    .swiper-slide-active .bg{transform:scale(1.12)}
+    .bg1{background-image:url('https://d216kn0te1eemj.cloudfront.net/post/1743220105231_75293862-27f5-4f4b-8ec4-cc9a9c5838ae')}
+    .bg2{background-image:url('https://dimg.donga.com/wps/NEWS/IMAGE/2022/02/25/112039458.1.jpg')}
+    .bg3{background-image:url('https://image.chosun.com/sitedata/image/202401/02/2024010200627_0.jpg')}
+
+    /* ── TEXT & BUTTON ── */
+    .mv_txt_box{position:absolute;top:30%;left:5%;max-width:640px;z-index:2}
+    .mv_cate{font-size:18px;font-weight:600;margin-bottom:14px;color:#ffeb55;display:inline-block}
+    .mv_tit{font-size:43px;line-height:1.4;margin:0 0 12px}
+    @media screen and (max-width:620px) {
+      .mv_tit{font-size:34px !important;}
+      
+    }
+    
+    @media screen and (max-width:500px) {
+      .mv_tit{font-size:26px !important;}
+      
+    }
+    .mv_txt{font-size:18px;line-height:1.6;font-weight:300}
+    .mv_btn{
+      display:inline-block;margin-top:30px;padding:14px 36px;
+      border:2px solid #fff;border-radius:40px;
+      background:transparent;color:#fff;font-weight:600;letter-spacing:.3px;
+      opacity:0;pointer-events:none;
+      transition:opacity .6s,background .35s,box-shadow .35s,color .35s,transform .35s;
+      position:relative;overflow:hidden;text-decoration:none;
+    }
+    .swiper-slide-active .mv_btn{opacity:1;pointer-events:auto}
+    .mv_btn::after{
+      content:'';position:absolute;inset:0;background:rgba(255,255,255,.15);
+      transform:translateX(-100%);transition:transform .4s;
+    }
+    .mv_btn:hover::after{transform:translateX(0)}
+    .mv_btn:hover{
+      background:#fff;color:#111;box-shadow:0 8px 24px rgba(0,0,0,.25);
+      transform:translateY(-2px);
+    }
+
+    /* ── WAVE ANIMATION ── */
+    .wave_anim .wave{display:inline-block;opacity:0;animation:wave 1.1s ease-out forwards}
+    @keyframes wave{0%{transform:translateY(25px);opacity:0}100%{transform:translateY(0);opacity:1}}
+    .wave_anim.custom .wave:nth-child(1){animation-delay:.15s}
+    .wave_anim.custom .wave:nth-child(2){animation-delay:.3s}
+    .wave_anim.custom .wave:nth-child(3){animation-delay:.45s}
+
+    /* ── PROGRESS BAR ── */
+    .progress-container{position:absolute;bottom:80px;left:5%;right:5%;height:4px;display:flex;gap:10px;z-index:3;width:150px;}
+    .progress-segment{flex:1;background:rgba(255,255,255,.25);border-radius:2px;overflow:hidden;cursor:pointer}
+    .progress-fill{width:0;height:100%;background:#fff;display:block}
+
+    .wheel_down{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);width:24px;opacity:.7;z-index:3;  animation: wheel-bounce 2s ease-in-out infinite;}
+    /* ── wheel_down 애니메이션 추가 ── */
+
+/* @keyframes wheel-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(8px); }
+} */
+
+/* 내부 작은 막대(.wheel)에 페이드+슬라이드 애니메이션 */
+.wheel_down .wheel {
+  animation: wheel-fade 2s ease-in-out infinite;
+}
+@keyframes wheel-fade {
+  0%   { opacity: 1; transform: translateY(0); }
+  80%  { opacity: 0.2; transform: translateY(10px); }
+  100% { opacity: 0; transform: translateY(14px); }
+}
+    #sidebar{display:none}
+  </style>
+
+
+<style>
+
+  /* ──────────────────────────────────────────
+        #visual-section 전용 스타일
+     ─────────────────────────────────────────── */
+     #visual-section {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+     }
+   
+     /* 비디오 */
+     #visual-section .video_wrap {
+       position: absolute; inset: 0; z-index: 0;
+     }
+     
+     #visual-section .video_wrap video {
+       width: 100%; height: 100%; object-fit: cover; object-position: center;
+     }
+   
+     /* 오버레이 */
+     #visual-section .overlay {
+       position: absolute; inset: 0;
+       background: rgba(0,0,0,0.5);
+     }
+   
+     /* 텍스트 컨테이너 */
+     #visual-section .txt_container {
+       position: absolute; inset: 0; z-index: 2;
+       display: flex; flex-direction: column;
+       justify-content: space-evenly; align-items: center;
+       text-align: center; pointer-events: none;
+     }
+   
+     /* fadeInUp 애니메이션 정의 */
+     @keyframes fadeInUp {
+       from { opacity: 0; transform: translateY(20px); }
+       to   { opacity: 1; transform: translateY(0); }
+     }
+   
+     /* 초기 상태: 숨김 */
+     #visual-section .company,
+     #visual-section .logo,
+     #visual-section .exp {
+       opacity: 0;
+     }
+   
+     /* 스크롤 중앙 진입 시 animate 클래스가 붙으면 실행 */
+     #visual-section.animate .company {
+       color: #fff; font-size: 2.5rem; font-weight: 500;
+       margin-bottom: 0.5em;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.2s;
+     }
+     #visual-section.animate .logo {
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 0.7s;
+     }
+     #visual-section .logo .m_logo {
+       width: 800px; height: 130px;
+       background: url("../img/sm-logo.png") no-repeat center/contain;
+       margin-bottom: 0.5em;
+     }
+     #visual-section.animate .exp {
+       color: #fff; font-size: 1.25rem; line-height: 1.6; max-width: 80%;
+       animation: fadeInUp 1s ease-out forwards;
+       animation-delay: 1s;
+     }
+     #visual-section .highlight {
+       color: #e6d3a3; font-weight: 600;
+     }
+   
+     /* 반응형: 모바일 영상 우측 보이기 포함 */
+     @media (max-width: 768px) {
+       #visual-section .company { font-size: 2rem; }
+       #visual-section .logo .m_logo {
+         background: url("../img/sm-font.png") no-repeat center/contain;
+         width: 400px; height: 300px;
+       }
+       #visual-section .exp { font-size: 1rem; }
+       #visual-section .video_wrap video {
+         object-position: right center;
+       }
+     }
+
+     
+ </style>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1940338950059663');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1940338950059663&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Danggeun Market Code -->
+<script src="https://karrot-pixel.business.daangn.com/0.4/karrot-pixel.umd.js"></script>
+<script>
+  window.karrotPixel.init('1751879846249200001');
+  window.karrotPixel.track('ViewPage');
+</script>
+<!-- End Danggeun Market Code -->
+        
+</head>
+<body>
+
+
+<div id="menu"></div>
+  
+    
+
+
+  
+<div class="container">
+  <div id="main">
+    <div id="visualTransWrap"></div>
+
+    <div class="mv_container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 : 핵심 제안 -->
+          <div class="swiper-slide">
+            <div class="bg bg1"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무조정 정부지원</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">개인회생/파산은</p>
+                <p class="wave">어떻게 다를까요?</p>
+                <!-- <p class="wave">빚 걱정, 오늘 끝내세요</p> -->
+                
+                <!-- <p class="wave"></p> -->
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">빚 해결, 두 가지 길의 차이를 쉽게 풀어드립니다</span>
+              </p>
+
+              <a href="./column1-1.html" class="mv_btn">더 알아보기 > </a>
+            </div>
+          </div>
+
+        <!-- Slide 2 : 공감 + 한정 이벤트 -->
+<div class="swiper-slide">
+  <div class="bg bg2"></div>
+  <div class="mv_txt_box">
+    <span class="mv_cate wave_anim custom"><span class="wave">채무조정 정부지원</span></span>
+
+    <h2 class="mv_tit wave_anim custom">
+      <p class="wave">주식・코인 빚도 개인회생으로</p>
+      <p class="wave">탕감받을 수 있을까?</p>
+      <!-- <p class="wave">이자 100% 원금 90% 조정 가능</p> -->
+    </h2>
+
+    <p class="mv_txt wave_anim custom">
+      <span class="wave">주식이나 코인으로 생긴 빚도 금융채무로 인정되면<br>탕감받을 수 있습니다.</span>
+    </p>
+
+    <a href="https://naver.com" class="mv_btn">더 알아보기 ></a>
+  </div>
+</div>
+
+
+          <!-- Slide 3 : 회생 장점 -->
+          <div class="swiper-slide">
+            <div class="bg bg3"></div>
+            <div class="mv_txt_box">
+              <span class="mv_cate wave_anim custom"><span class="wave">채무조정 정부지원</span></span>
+
+              <h2 class="mv_tit wave_anim custom">
+                <p class="wave">탕감율 90% 받았습니다.</strong></p>
+                <p class="wave">경매 직전이던 상황에서 벗어났어요</strong></p>
+                <!-- <p class="wave">체크카드·금융거래 유지</p> -->
+              </h2>
+
+              <p class="mv_txt wave_anim custom">
+                <span class="wave">회생 개시로 강제집행 중단, 실거주 유지</span>
+              </p>
+
+              <a href="#consultFormSection" class="mv_btn">더 알아보기</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container"></div>
+      </div>
+
+      <!-- Scroll Down Icon -->
+      <span class="wheel_down">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 30">
+          <path fill="#fff" d="M10,0C4.5,0,0,4.5,0,10v10c0,5.5,4.5,10,10,10s10-4.5,10-10V10C20,4.5,15.5,0,10,0z M19,20c0,5-4,9-9,9
+                              s-9-4-9-9V10c0-5,4-9,9-9s9,4,9,9V20z"></path>
+          <path class="wheel" fill="#fff" d="M10,5L10,5c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1l0,0c-0.6,0-1-0.4-1-1V6C9,5.4,9.4,5,10,5z"></path>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ✅ 완전 독립 섹션: 다른 코드와 100% 분리 (루트 id="nb1", 모든 클래스 nb1- 접두사) -->
+<section id="nb1" aria-label="NB1 Product Slider Section">
+  <style>
+    /* ================= Scope: #nb1 only (절대 전역 충돌 없음) ================= */
+    #nb1{ background:#f3f4f6; font-family:'Noto Sans KR',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+    #nb1 *{ box-sizing:border-box; }
+
+    /* === 유틸리티 (nb1- 접두사) === */
+    #nb1 .nb1-container{max-width:1300px;margin:0 auto;padding:0 1.5rem;}
+    #nb1 .nb1-wrap{padding:5rem 0}
+    #nb1 .nb1-text-center{text-align:center}
+
+    /* Spacing */
+    #nb1 .nb1-mb-16{margin-bottom:4rem}
+    #nb1 .nb1-mt-8{margin-top:2rem}
+    #nb1 .nb1-gap-4{gap:1rem}
+    #nb1 .nb1-gap-2{gap:.5rem}
+    #nb1 .nb1-p-6{padding:1.5rem}
+    #nb1 .nb1-mb-2{margin-bottom:.5rem}
+    #nb1 .nb1-mb-3{margin-bottom:.75rem}
+    #nb1 .nb1-mb-4{margin-bottom:1rem}
+
+    /* Typography & colors */
+    #nb1 .nb1-text-4xl{font-size:2.25rem;line-height:2.5rem}
+    @media(min-width:768px){#nb1 .nb1-text-4xl{font-size:3rem;line-height:1.2}}
+    #nb1 .nb1-text-xl{font-size:1.25rem;line-height:1.75rem}
+    #nb1 .nb1-text-sm{font-size:.875rem}
+
+    #nb1 .nb1-font-light{font-weight:300}
+    #nb1 .nb1-font-bold{font-weight:700}
+
+    #nb1 .nb1-gray-800{color:#1f2937}
+    #nb1 .nb1-gray-700{color:#374151}
+    #nb1 .nb1-gray-600{color:#4b5563}
+    #nb1 .nb1-gray-500{color:#6b7280}
+
+    /* Fade-in */
+    #nb1 .nb1-fade-in{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    #nb1 .nb1-fade-in.nb1-visible{opacity:1;transform:translateY(0)}
+
+    /* Section head */
+    #nb1 .nb1-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+
+
+    #nb1 .nb1-title{font-size:2.25rem;line-height:2.5rem;font-weight:bold;color:#1f2937}
+    @media(min-width:768px){#nb1 .nb1-title{font-size:2rem;margin-bottom:30px;line-height:1.4;}}
+    #nb1 .nb1-nav-group{display:flex;gap:.5rem}
+
+    /* 버튼 */
+    #nb1 .nb1-btn{background:#1f2937;color:#fff;border-radius:9999px;transition:background .3s;width:40px;height:40px;padding:0;display:grid;place-items:center;border:none;cursor:pointer}
+    #nb1 .nb1-btn:hover{background:#374151}
+    @media(min-width:768px){#nb1 .nb1-btn{width:44px;height:44px}}
+
+    /* 슬라이더 컨테이너 (transform 기반) */
+    #nb1 .nb1-slider{display:flex;overflow:hidden;padding-bottom:1.5rem;padding-left:1.5rem;padding-right:1.5rem;touch-action:pan-x;cursor:grab;-webkit-user-drag:none;will-change:transform}
+    #nb1 .nb1-slider.dragging{cursor:grabbing;user-select:none;-webkit-user-select:none}
+    #nb1 .nb1-slider.animating .nb1-track{transition:transform .6s cubic-bezier(0.25,0.46,0.45,0.94)}
+    #nb1 .nb1-track{display:flex;gap:1.5rem;transition:transform .1s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform}
+
+    /* 카드 */
+    #nb1 .nb1-card{transform:translateX(20px);opacity:0;transition:all .6s ease}
+    #nb1 .nb1-card.nb1-visible{transform:translateX(0);opacity:1}
+
+    #nb1 .nb1-slide{
+      display:block;min-width:350px;background:#fff;border-radius:.75rem;
+      box-shadow:0 4px 6px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.06);
+      overflow:hidden;color:inherit;text-decoration:none;
+      transition:transform .35s ease, box-shadow .35s ease;
+      -webkit-tap-highlight-color:transparent;touch-action:pan-x;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;
+      will-change:transform;
+    }
+    #nb1 .nb1-slide *{touch-action:pan-x;user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+
+    @media(max-width:768px){#nb1 .nb1-slide{min-width:280px}}
+
+    /* Hover 확대 (드래그 중 비활성) */
+    #nb1 .nb1-media{transition:transform .5s ease;will-change:transform}
+    #nb1 .nb1-content{transition:transform .35s ease,opacity .35s ease;will-change:transform}
+    #nb1 .nb1-slide:hover,
+    #nb1 .nb1-slide:focus-visible{box-shadow:0 10px 22px rgba(0,0,0,.16),0 3px 8px rgba(0,0,0,.08);transform:translateY(-2px)}
+    #nb1 .nb1-slide:hover .nb1-media,
+    #nb1 .nb1-slide:focus-visible .nb1-media{transform:scale(1.06)}
+    #nb1 .nb1-slide:hover .nb1-content,
+    #nb1 .nb1-slide:focus-visible .nb1-content{transform:scale(1.02)}
+    #nb1 .nb1-slider.dragging .nb1-slide:hover,
+    #nb1 .nb1-slider.dragging .nb1-slide:focus-visible{transform:none;box-shadow:0 4px 6px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.06)}
+    #nb1 .nb1-slider.dragging .nb1-slide:hover .nb1-media,
+    #nb1 .nb1-slider.dragging .nb1-slide:focus-visible .nb1-media{transform:none}
+    #nb1 .nb1-slider.dragging .nb1-slide:hover .nb1-content,
+    #nb1 .nb1-slider.dragging .nb1-slide:focus-visible .nb1-content{transform:none}
+
+    /* 이미지 영역 */
+    #nb1 .nb1-h-64{height:16rem}
+    #nb1 .nb1-bg-cover{background-size:cover}
+    #nb1 .nb1-bg-center{background-position:center}
+
+    /* 핀 넘버 */
+    #nb1 .nb1-pin{color:#000;position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);padding:.25rem .75rem;border-radius:9999px;font-size:.875rem;font-weight:600}
+
+    /* 태그 */
+    #nb1 .nb1-tag{background:rgba(0,0,0,.7);color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;display:inline-block}
+  </style>
+
+  <!-- (선택) 폰트 로드: 섹션 안에서만 사용되며 전역 스타일을 변경하지 않음 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<div class="nb1-wrap">
+  <div class="nb1-container">
+    <div class="nb1-head nb1-fade-in">
+      <h2 class="nb1-title">개인회생/파산이란?</h2>
+      <div class="nb1-nav-group" role="group" aria-label="Slider controls">
+        <button id="nb1Prev" class="nb1-btn" aria-label="Previous" type="button">
+          <!-- inline SVG (외부 아이콘 의존 제거) -->
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="nb1Next" class="nb1-btn" aria-label="Next" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div id="nb1Slider" class="nb1-slider" aria-label="칼럼 프리뷰 슬라이더">
+      <div class="nb1-track">
+        <!-- Card 1 -->
+        <a href="./column1-1.html" class="nb1-slide nb1-card"  rel="noopener" draggable="false">
+          <div class="nb1-media" style="position:relative;" draggable="false">
+            <div class="nb1-h-64 nb1-bg-cover nb1-bg-center" style="background-image:url('https://d216kn0te1eemj.cloudfront.net/post/1743220105231_75293862-27f5-4f4b-8ec4-cc9a9c5838ae');" draggable="false"></div>
+            <div class="nb1-pin"><span>01</span> <span class="nb1-gray-500">/ 05</span></div>
+          </div>
+          <div class="nb1-p-6 nb1-content">
+            <h3 class="nb1-text-xl nb1-font-bold nb1-mb-2 nb1-gray-800">개인회생과 파산, 어떻게 다를까?</h3>
+            <p class="nb1-text-sm nb1-gray-600 nb1-mb-3">빚 해결, 두 가지 길의 차이를 쉽게 풀어드립니다</p>
+            <p class="nb1-gray-700 nb1-mb-4" style="line-height:1.7;">
+              개인회생은 일정 소득이 있는 사람이 일부 빚을 변제하고 탕감받는 제도, 
+              파산은 상환 능력이 전혀 없을 때 면책을 받는 제도입니다. 
+              내 상황에 어떤 제도가 유리할지 비교해보세요.
+            </p>
+            <div class="nb1-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb1-tag">#개인회생</span>
+              <span class="nb1-tag">#개인파산</span>
+              <span class="nb1-tag">#빚해결</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a class="nb1-slide nb1-card" href="./column1-2.html"  rel="noopener" draggable="false">
+          <div class="nb1-media" style="position:relative;" draggable="false">
+            <div class="nb1-h-64 nb1-bg-cover nb1-bg-center" style="background-image:url('data:image/jpeg;base64,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');" draggable="false"></div>
+            <div class="nb1-pin"><span>02</span> <span class="nb1-gray-500">/ 05</span></div>
+          </div>
+          <div class="nb1-p-6 nb1-content">
+            <h3 class="nb1-text-xl nb1-font-bold nb1-mb-2 nb1-gray-800">개인회생은 언제 신청할 수 있을까?</h3>
+            <p class="nb1-text-sm nb1-gray-600 nb1-mb-3">자격 요건만 알아도 가능성이 보입니다</p>
+            <p class="nb1-gray-700 nb1-mb-4" style="line-height:1.7;">
+              개인회생은 채무 총액, 소득, 부양가족 등 일정 조건을 충족해야 신청할 수 있습니다. 
+              내 상황이 해당되는지 확인하는 것만으로도 새로운 시작이 가능합니다.
+            </p>
+            <div class="nb1-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb1-tag">#개인회생자격</span>
+              <span class="nb1-tag">#채무조정</span>
+              <span class="nb1-tag">#정부지원</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a class="nb1-slide nb1-card" href="./column1-3.html"  rel="noopener" draggable="false">
+          <div class="nb1-media" style="position:relative;" draggable="false">
+            <div class="nb1-h-64 nb1-bg-cover nb1-bg-center" style="background-image:url('data:image/jpeg;base64,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');" draggable="false"></div>
+            <div class="nb1-pin"><span>03</span> <span class="nb1-gray-500">/ 05</span></div>
+          </div>
+          <div class="nb1-p-6 nb1-content">
+            <h3 class="nb1-text-xl nb1-font-bold nb1-mb-2 nb1-gray-800">개인파산, 정말 모든 빚이 탕감될까?</h3>
+            <p class="nb1-text-sm nb1-gray-600 nb1-mb-3">파산에 대한 오해와 진실을 알려드립니다</p>
+            <p class="nb1-gray-700 nb1-mb-4" style="line-height:1.7;">
+              개인파산은 채무 전액 면책이 가능하지만, 자격 요건과 법원의 판단이 필요합니다. 
+              모든 경우가 해당되지는 않으니 전문가 상담으로 정확히 확인하세요.
+            </p>
+            <div class="nb1-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb1-tag">#개인파산</span>
+              <span class="nb1-tag">#빚탕감</span>
+              <span class="nb1-tag">#면책</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a class="nb1-slide nb1-card" href="https://naver.com"  rel="noopener" draggable="false">
+          <div class="nb1-media" style="position:relative;" draggable="false">
+            <div class="nb1-h-64 nb1-bg-cover nb1-bg-center" style="background-image:url('https://img6.yna.co.kr/mpic/YH/2022/03/01/MYH20220301011100641_P4.jpg');" draggable="false"></div>
+            <div class="nb1-pin"><span>04</span> <span class="nb1-gray-500">/ 05</span></div>
+          </div>
+          <div class="nb1-p-6 nb1-content">
+            <h3 class="nb1-text-xl nb1-font-bold nb1-mb-2 nb1-gray-800">개인회생 절차는 어떻게 진행될까?</h3>
+            <p class="nb1-text-sm nb1-gray-600 nb1-mb-3">처음부터 끝까지 한눈에 보는 로드맵</p>
+            <p class="nb1-gray-700 nb1-mb-4" style="line-height:1.7;">
+              개인회생은 신청 → 개시 → 변제계획 인가 → 변제 완료까지 단계적으로 진행됩니다. 
+              절차를 알면 막연한 두려움 없이 준비할 수 있습니다.
+            </p>
+            <div class="nb1-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb1-tag">#개인회생절차</span>
+              <span class="nb1-tag">#개시결정</span>
+              <span class="nb1-tag">#변제계획</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a class="nb1-slide nb1-card" href="https://naver.com"  rel="noopener" draggable="false">
+          <div class="nb1-media" style="position:relative;" draggable="false">
+            <div class="nb1-h-64 nb1-bg-cover nb1-bg-center" style="background-image:url('https://cdn.kongnews.net/news/photo/201510/1842_4167_030.jpg');" draggable="false"></div>
+            <div class="nb1-pin"><span>05</span> <span class="nb1-gray-500">/ 05</span></div>
+          </div>
+          <div class="nb1-p-6 nb1-content">
+            <h3 class="nb1-text-xl nb1-font-bold nb1-mb-2 nb1-gray-800">개인회생/파산 신청 시 꼭 알아야 할 장단점</h3>
+            <p class="nb1-text-sm nb1-gray-600 nb1-mb-3">선택 전, 장점과 주의점을 함께 확인하세요</p>
+            <p class="nb1-gray-700 nb1-mb-4" style="line-height:1.7;">
+              개인회생은 신용 회복에 유리하지만 변제가 필요하고, 
+              파산은 탕감 폭이 크지만 요건이 더 까다롭습니다. 
+              두 제도를 비교해 올바른 결정을 내려보세요.
+            </p>
+            <div class="nb1-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb1-tag">#개인회생장단점</span>
+              <span class="nb1-tag">#파산장단점</span>
+              <span class="nb1-tag">#채무해결</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <script>
+    (function(){
+      const root = document.getElementById('nb1');
+      if(!root) return;
+
+      const slider = root.querySelector('#nb1Slider');
+      const track = slider.querySelector('.nb1-track');
+      const prevBtn = root.querySelector('#nb1Prev');
+      const nextBtn = root.querySelector('#nb1Next');
+
+      /* Fade-in observer (섹션 내부 전용 클래스 타깃) */
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting) entry.target.classList.add('nb1-visible');
+        });
+      },{threshold:0.3});
+      root.querySelectorAll('.nb1-fade-in, .nb1-card').forEach(el=>io.observe(el));
+
+      /* ===== 상태값/유틸 ===== */
+      let currentIndex = 0;
+      let maxIndex = 0;
+      let cardWidth = 0;
+      let gap = 0;
+
+      function updateDimensions() {
+        const cards = slider.querySelectorAll('.nb1-slide');
+        const containerWidth = slider.clientWidth;
+
+        if (cards.length > 0) {
+          const first = cards[0];
+          cardWidth = first.getBoundingClientRect().width;
+          gap = parseFloat(getComputedStyle(track).gap) || 24; // 1.5rem
+
+          // 보여지는 카드 수 추정 (좌우 패딩 48)
+          const visible = Math.max(1, Math.floor((containerWidth - 48 + gap) / (cardWidth + gap)));
+          maxIndex = Math.max(0, cards.length - visible);
+        }
+      }
+
+      function setTransform(index, animate=true){
+        const tx = -index * (cardWidth + gap);
+        if(animate){
+          slider.classList.add('animating');
+          track.style.transform = `translateX(${tx}px)`;
+          setTimeout(()=>slider.classList.remove('animating'), 600);
+        }else{
+          track.style.transform = `translateX(${tx}px)`;
+        }
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+      }
+
+      function moveTo(index){ setTransform(Math.max(0, Math.min(index, maxIndex)), true); }
+
+      /* ===== 버튼 ===== */
+      prevBtn.addEventListener('click', ()=>{ pauseAuto(); moveTo(currentIndex-1); resumeAutoLater(); });
+      nextBtn.addEventListener('click', ()=>{ pauseAuto(); moveTo(currentIndex+1); resumeAutoLater(); });
+
+      /* ===== 드래그/스와이프 ===== */
+      let isDragging=false, started=false;
+      let startX=0, startTX=0, curTX=0, lastX=0, lastT=0, v=0, raf=null;
+
+      const TH=8, FRICTION=0.95, MIN_V=0.8;
+
+      function getTX(){
+        const m = track.style.transform.match(/translateX\((-?\d+(?:\.\d+)?)px\)/);
+        return m ? parseFloat(m[1]) : 0;
+      }
+
+      function onStart(e){
+        if(e.type==='mousedown' && e.button!==0) return;
+        isDragging=true; started=false;
+        startX = e.touches? e.touches[0].clientX : e.clientX;
+        startTX = getTX(); curTX=startTX;
+        lastX=startX; lastT=performance.now(); v=0;
+        slider.classList.add('dragging'); slider.classList.remove('animating');
+        pauseAuto();
+        if(raf){ cancelAnimationFrame(raf); raf=null; }
+        e.preventDefault();
+      }
+
+      function onMove(e){
+        if(!isDragging) return;
+        const now = performance.now();
+        const x = e.touches? e.touches[0].clientX : e.clientX;
+        const dx = x - lastX;
+        const dt = Math.max(1, now - lastT);
+
+        if(!started && Math.abs(x - startX) > TH) started = true;
+
+        if(started){
+          let next = startTX + (x - startX);
+          const minT = -(maxIndex * (cardWidth + gap));
+          const maxT = 0;
+          if(next > maxT) next = maxT + (next - maxT)*0.3;
+          else if(next < minT) next = minT + (next - minT)*0.3;
+
+          curTX = next;
+          track.style.transform = `translateX(${next}px)`;
+
+          const iv = dx / dt;
+          v = v*0.8 + iv*0.2;
+        }
+
+        lastX=x; lastT=now;
+        e.preventDefault();
+      }
+
+      function snap(){
+        const step = cardWidth + gap;
+        const idx = Math.round(-curTX / step);
+        const clamp = Math.max(0, Math.min(idx, maxIndex));
+        currentIndex = clamp;
+        setTransform(clamp, true);
+      }
+
+      function momentum(){
+        if(raf) return;
+        function frame(){
+          if(Math.abs(v) < MIN_V){ snap(); raf=null; return; }
+          curTX += v*16; // ~60fps
+          const minT = -(maxIndex * (cardWidth + gap));
+          const maxT = 0;
+          if(curTX > maxT || curTX < minT){
+            v *= -0.3;
+            curTX = Math.max(minT, Math.min(maxT, curTX));
+          }
+          track.style.transform = `translateX(${curTX}px)`;
+          v *= FRICTION;
+          raf = requestAnimationFrame(frame);
+        }
+        frame();
+      }
+
+      function onEnd(e){
+        if(!isDragging) return;
+        isDragging=false;
+        slider.classList.remove('dragging');
+        if(started){
+          if(Math.abs(v) > MIN_V) momentum();
+          else snap();
+          resumeAutoLater();
+        }else{
+          resumeAutoLater();
+        }
+        e.preventDefault();
+      }
+
+      slider.addEventListener('mousedown', onStart, {passive:false});
+      document.addEventListener('mousemove', onMove, {passive:false});
+      document.addEventListener('mouseup', onEnd, {passive:false});
+
+      slider.addEventListener('touchstart', onStart, {passive:false});
+      slider.addEventListener('touchmove', onMove, {passive:false});
+      slider.addEventListener('touchend', onEnd, {passive:false});
+      slider.addEventListener('touchcancel', onEnd, {passive:false});
+
+      // 드래그 후 클릭 방지
+      slider.addEventListener('click', (e)=>{
+        if(started){ e.preventDefault(); e.stopPropagation(); started=false; }
+      }, true);
+
+      slider.addEventListener('dragstart', e=>e.preventDefault());
+
+      /* ===== 자동 롤링 ===== */
+      const INTERVAL = 4000;
+      let auto=null, resume=null;
+
+      function step(){
+        const next = currentIndex >= maxIndex ? 0 : currentIndex+1;
+        moveTo(next);
+      }
+      function startAuto(){ stopAuto(); auto=setInterval(step, INTERVAL); }
+      function stopAuto(){ if(auto){ clearInterval(auto); auto=null; } }
+      function pauseAuto(){ stopAuto(); if(resume){ clearTimeout(resume); resume=null; } }
+      function resumeAutoLater(delay=6000){ if(resume) clearTimeout(resume); resume=setTimeout(()=>startAuto(), delay); }
+
+      /* ===== 초기화 & 리사이즈 ===== */
+      function init(){ updateDimensions(); setTransform(0,false); startAuto(); }
+      let rTimer=null;
+      window.addEventListener('resize', ()=>{
+        pauseAuto(); clearTimeout(rTimer);
+        rTimer=setTimeout(()=>{
+          updateDimensions();
+          setTransform(Math.min(currentIndex, maxIndex), false);
+          resumeAutoLater();
+        },200);
+      });
+
+      document.addEventListener('visibilitychange', ()=>{
+        if(document.hidden) pauseAuto(); else resumeAutoLater(2000);
+      });
+
+      init();
+    })();
+  </script>
+</section>
+
+<!-- ✅ 완전 독립 섹션: 다른 코드와 100% 분리 (루트 id="nb2", 모든 클래스 nb2- 접두사) -->
+<section id="nb2" aria-label="NB2 Product Slider Section">
+  <style>
+    /* ================= Scope: #nb2 only (전역 충돌 0%) ================= */
+    #nb2{ background:#f7fafc; font-family:'Noto Sans KR',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+    #nb2 *{ box-sizing:border-box; }
+
+    /* === 유틸리티 (nb2- 접두사) === */
+    #nb2 .nb2-container{max-width:1300px;margin:0 auto;padding:0 1.5rem;}
+    #nb2 .nb2-wrap{padding:5rem 0}
+    #nb2 .nb2-text-center{text-align:center}
+
+    /* Spacing */
+    #nb2 .nb2-mb-16{margin-bottom:4rem}
+    #nb2 .nb2-mt-8{margin-top:2rem}
+    #nb2 .nb2-gap-4{gap:1rem}
+    #nb2 .nb2-gap-2{gap:.5rem}
+    #nb2 .nb2-p-6{padding:1.5rem}
+    #nb2 .nb2-mb-2{margin-bottom:.5rem}
+    #nb2 .nb2-mb-3{margin-bottom:.75rem}
+    #nb2 .nb2-mb-4{margin-bottom:1rem}
+
+    /* Typography & colors */
+    #nb2 .nb2-text-4xl{font-size:2.25rem;line-height:2.5rem}
+    @media(min-width:768px){#nb2 .nb2-text-4xl{font-size:3rem;line-height:1.2}}
+    #nb2 .nb2-text-xl{font-size:1.25rem;line-height:1.75rem}
+    #nb2 .nb2-text-sm{font-size:.875rem}
+
+    #nb2 .nb2-font-light{font-weight:300}
+    #nb2 .nb2-font-bold{font-weight:700}
+
+    #nb2 .nb2-gray-900{color:#111827}
+    #nb2 .nb2-gray-800{color:#1f2937}
+    #nb2 .nb2-gray-700{color:#374151}
+    #nb2 .nb2-gray-600{color:#4b5563}
+    #nb2 .nb2-gray-500{color:#6b7280}
+
+    /* Fade-in (뷰포트 재진입 시에도 다시 적용) */
+    #nb2 .nb2-fade-in{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    #nb2 .nb2-fade-in.nb2-visible{opacity:1;transform:translateY(0)}
+
+    /* Head */
+    #nb2 .nb2-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+
+    #nb2 .nb2-title{font-size:2.25rem;line-height:2.5rem;font-weight:bold;color:#1f2937}
+    @media(min-width:768px){#nb2 .nb2-title{font-size:2rem;margin-bottom:30px;line-height:1.4;}}
+    #nb2 .nb2-nav-group{display:flex;gap:.5rem}
+
+    /* 버튼 */
+    #nb2 .nb2-btn{background:#111827;color:#fff;border-radius:9999px;transition:background .3s;width:40px;height:40px;padding:0;display:grid;place-items:center;border:none;cursor:pointer}
+    #nb2 .nb2-btn:hover{background:#374151}
+    @media(min-width:768px){#nb2 .nb2-btn{width:44px;height:44px}}
+
+    /* 슬라이더 (transform 기반) */
+    #nb2 .nb2-slider{display:flex;overflow:hidden;padding-bottom:1.5rem;padding-left:1.5rem;padding-right:1.5rem;touch-action:pan-x;cursor:grab;-webkit-user-drag:none;will-change:transform}
+    #nb2 .nb2-slider.dragging{cursor:grabbing;user-select:none;-webkit-user-select:none}
+    #nb2 .nb2-slider.animating .nb2-track{transition:transform .6s cubic-bezier(0.25,0.46,0.45,0.94)}
+    #nb2 .nb2-track{display:flex;gap:1.5rem;transition:transform .1s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform}
+
+    /* 카드 */
+    #nb2 .nb2-card{transform:translateX(20px);opacity:0;transition:all .6s ease}
+    #nb2 .nb2-card.nb2-visible{transform:translateX(0);opacity:1}
+
+    #nb2 .nb2-slide{
+      display:block;min-width:350px;background:#fff;border-radius:.75rem;
+      box-shadow:0 4px 6px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.06);
+      overflow:hidden;color:inherit;text-decoration:none;
+      transition:transform .35s ease, box-shadow .35s ease;
+      -webkit-tap-highlight-color:transparent;touch-action:pan-x;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;
+      will-change:transform;
+    }
+    #nb2 .nb2-slide *{touch-action:pan-x;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;color:#000;}
+
+    @media(max-width:768px){#nb2 .nb2-slide{min-width:280px}}
+
+    /* Hover 확대 (드래그 중 비활성) */
+    #nb2 .nb2-media{transition:transform .5s ease;will-change:transform}
+    #nb2 .nb2-content{transition:transform .35s ease,opacity .35s ease;will-change:transform}
+    #nb2 .nb2-slide:hover,
+    #nb2 .nb2-slide:focus-visible{box-shadow:0 10px 22px rgba(0,0,0,.16),0 3px 8px rgba(0,0,0,.08);transform:translateY(-2px)}
+    #nb2 .nb2-slide:hover .nb2-media,
+    #nb2 .nb2-slide:focus-visible .nb2-media{transform:scale(1.06)}
+    #nb2 .nb2-slide:hover .nb2-content,
+    #nb2 .nb2-slide:focus-visible .nb2-content{transform:scale(1.02)}
+    #nb2 .nb2-slider.dragging .nb2-slide:hover,
+    #nb2 .nb2-slider.dragging .nb2-slide:focus-visible{transform:none;box-shadow:0 4px 6px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.06)}
+    #nb2 .nb2-slider.dragging .nb2-slide:hover .nb2-media,
+    #nb2 .nb2-slider.dragging .nb2-slide:focus-visible .nb2-media{transform:none}
+    #nb2 .nb2-slider.dragging .nb2-slide:hover .nb2-content,
+    #nb2 .nb2-slider.dragging .nb2-slide:focus-visible .nb2-content{transform:none}
+
+    /* 이미지 영역 */
+    #nb2 .nb2-h-64{height:16rem}
+    #nb2 .nb2-bg-cover{background-size:cover}
+    #nb2 .nb2-bg-center{background-position:center}
+
+    /* 핀 넘버 */
+    #nb2 .nb2-pin{position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);padding:.25rem .75rem;border-radius:9999px;font-size:.875rem;font-weight:600}
+
+    /* 태그 */
+    #nb2 .nb2-tag{background:rgba(0,0,0,.75);color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;display:inline-block}
+  </style>
+
+  <!-- (선택) 폰트 로드: 섹션 안에서만 사용되며 전역 스타일을 변경하지 않음 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<div class="nb2-wrap">
+  <div class="nb2-container">
+    <div class="nb2-head nb2-fade-in">
+      <h2 class="nb2-title">탕감율을 높이려면?</h2>
+      <div class="nb2-nav-group" role="group" aria-label="Slider controls">
+        <button id="nb2Prev" class="nb2-btn" aria-label="Previous" type="button">
+          <!-- inline SVG (외부 아이콘 의존 제거) -->
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button id="nb2Next" class="nb2-btn" aria-label="Next" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div id="nb2Slider" class="nb2-slider" aria-label="Product slider">
+      <div class="nb2-track">
+        <!-- Card 1 -->
+        <a class="nb2-slide nb2-card" href="https://naver.com" rel="noopener" draggable="false">
+          <div class="nb2-media" style="position:relative;" draggable="false">
+            <div class="nb2-h-64 nb2-bg-cover nb2-bg-center" 
+                 style="background-image:url('https://dimg.donga.com/wps/NEWS/IMAGE/2022/02/25/112039458.1.jpg');" 
+                 draggable="false"></div>
+            <div class="nb2-pin"><span>01</span> <span class="nb2-gray-500">/ 04</span></div>
+          </div>
+          <div class="nb2-p-6 nb2-content">
+            <h3 class="nb2-text-xl nb2-font-bold nb2-mb-2 nb2-gray-800">주식·코인 빚도 개인회생으로 탕감받을 수 있을까?</h3>
+            <p class="nb2-text-sm nb2-gray-600 nb2-mb-3">투자 실패도 채무로 인정될 수 있습니다</p>
+            <p class="nb2-gray-700 nb2-mb-4" style="line-height:1.7;">
+              주식이나 코인으로 생긴 빚도 금융채무로 인정되면 개인회생으로 조정 가능합니다. 
+              다만 사행성으로 판단되는 경우 제한이 있을 수 있어 자료 준비가 핵심입니다.
+            </p>
+            <div class="nb2-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb2-tag">#주식빚</span>
+              <span class="nb2-tag">#코인빚</span>
+              <span class="nb2-tag">#개인회생</span>
+              <span class="nb2-tag">#채무조정</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a class="nb2-slide nb2-card" href="https://naver.com" rel="noopener" draggable="false">
+          <div class="nb2-media" style="position:relative;" draggable="false">
+            <div class="nb2-h-64 nb2-bg-cover nb2-bg-center" 
+                 style="background-image:url('https://image.kmib.co.kr/online_image/2019/0423/201904230402_11150924074233_1.jpg');"></div>
+            <div class="nb2-pin"><span>02</span> <span class="nb2-gray-500">/ 04</span></div>
+          </div>
+          <div class="nb2-p-6 nb2-content">
+            <h3 class="nb2-text-xl nb2-font-bold nb2-mb-2 nb2-gray-800">소득이 적을수록 탕감율이 높아진다, 사실일까?</h3>
+            <p class="nb2-text-sm nb2-gray-600 nb2-mb-3">탕감율은 소득과 지출 구조에 따라 달라집니다</p>
+            <p class="nb2-gray-700 nb2-mb-4" style="line-height:1.7;">
+              개인회생은 최소 생계비를 제외한 가용소득을 얼마나 변제할 수 있느냐로 결정됩니다. 
+              소득이 적으면 변제액도 줄어 탕감율이 상대적으로 높아질 수 있습니다.
+            </p>
+            <div class="nb2-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb2-tag">#탕감율</span>
+              <span class="nb2-tag">#소득조건</span>
+              <span class="nb2-tag">#개인회생자격</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a class="nb2-slide nb2-card" href="https://naver.com" target="_blank" rel="noopener" draggable="false">
+          <div class="nb2-media" style="position:relative;" draggable="false">
+            <div class="nb2-h-64 nb2-bg-cover nb2-bg-center" 
+                 style="background-image:url('https://www.bizbang.net/gnu/data/cheditor4/2507/20250715104538_5db3465f31815324ff0a4c0a2545b176_kvhb.jpg');"></div>
+            <div class="nb2-pin"><span>03</span> <span class="nb2-gray-500">/ 04</span></div>
+          </div>
+          <div class="nb2-p-6 nb2-content">
+            <h3 class="nb2-text-xl nb2-font-bold nb2-mb-2 nb2-gray-800">사업 실패 후, 빚을 줄이는 결정적 자료는?</h3>
+            <p class="nb2-text-sm nb2-gray-600 nb2-mb-3">사업자의 매출·지출 증빙이 핵심입니다</p>
+            <p class="nb2-gray-700 nb2-mb-4" style="line-height:1.7;">
+              세금 신고 내역, 장부, 거래 증빙이 회생 과정에서 매우 중요합니다. 
+              사업이 일시적 어려움인지 구조적 한계인지에 따라 법원 판단이 달라집니다.
+            </p>
+            <div class="nb2-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb2-tag">#사업실패</span>
+              <span class="nb2-tag">#자영업</span>
+              <span class="nb2-tag">#세금증빙</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 (원본 반복 1) -->
+        <a class="nb2-slide nb2-card" href="https://naver.com" rel="noopener" draggable="false">
+          <div class="nb2-media" style="position:relative;" draggable="false">
+            <div class="nb2-h-64 nb2-bg-cover nb2-bg-center" 
+                 style="background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80&auto=format&fit=crop');"></div>
+            <div class="nb2-pin"><span>04</span> <span class="nb2-gray-500">/ 04</span></div>
+          </div>
+          <div class="nb2-p-6 nb2-content">
+            <h3 class="nb2-text-xl nb2-font-bold nb2-mb-2 nb2-gray-800">사업 실패 후, 빚을 줄이는 결정적 자료는?</h3>
+            <p class="nb2-text-sm nb2-gray-600 nb2-mb-3">사업자의 매출·지출 증빙이 핵심입니다</p>
+            <p class="nb2-gray-700 nb2-mb-4" style="line-height:1.7;">
+              세금 신고 내역, 장부, 거래 증빙이 회생 과정에서 매우 중요합니다. 
+              사업이 일시적 어려움인지 구조적 한계인지에 따라 법원 판단이 달라집니다.
+            </p>
+            <div class="nb2-gap-2" style="display:flex;flex-wrap:wrap;">
+              <span class="nb2-tag">#사업실패</span>
+              <span class="nb2-tag">#자영업</span>
+              <span class="nb2-tag">#세금증빙</span>
+            </div>
+          </div>
+        </a>
+
+      
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <script>
+    (function(){
+      const root = document.getElementById('nb2');
+      if(!root) return;
+
+      const slider = root.querySelector('#nb2Slider');
+      const track = slider.querySelector('.nb2-track');
+      const prevBtn = root.querySelector('#nb2Prev');
+      const nextBtn = root.querySelector('#nb2Next');
+
+      /* Fade-in observer (뷰포트 나갔다가 다시 들어오면 재적용) */
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('nb2-visible');
+          }else{
+            entry.target.classList.remove('nb2-visible'); // 재진입 시 다시 애니메이션
+          }
+        });
+      },{threshold:0.25});
+      root.querySelectorAll('.nb2-fade-in, .nb2-card').forEach(el=>io.observe(el));
+
+      /* ===== 상태값/유틸 ===== */
+      let currentIndex = 0;
+      let maxIndex = 0;
+      let cardWidth = 0;
+      let gap = 0;
+
+      function updateDimensions() {
+        const cards = slider.querySelectorAll('.nb2-slide');
+        const containerWidth = slider.clientWidth;
+
+        if (cards.length > 0) {
+          const first = cards[0];
+          cardWidth = first.getBoundingClientRect().width;
+          gap = parseFloat(getComputedStyle(track).gap) || 24; // 1.5rem
+
+          // 보여지는 카드 수 추정 (좌우 패딩 48 고려)
+          const visible = Math.max(1, Math.floor((containerWidth - 48 + gap) / (cardWidth + gap)));
+          maxIndex = Math.max(0, cards.length - visible);
+        }
+      }
+
+      function setTransform(index, animate=true){
+        const tx = -index * (cardWidth + gap);
+        if(animate){
+          slider.classList.add('animating');
+          track.style.transform = `translateX(${tx}px)`;
+          setTimeout(()=>slider.classList.remove('animating'), 600);
+        }else{
+          track.style.transform = `translateX(${tx}px)`;
+        }
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+      }
+
+      function moveTo(index){ setTransform(Math.max(0, Math.min(index, maxIndex)), true); }
+
+      /* ===== 버튼 ===== */
+      prevBtn.addEventListener('click', ()=>{ pauseAuto(); moveTo(currentIndex-1); resumeAutoLater(); });
+      nextBtn.addEventListener('click', ()=>{ pauseAuto(); moveTo(currentIndex+1); resumeAutoLater(); });
+
+      /* ===== 드래그/스와이프 ===== */
+      let isDragging=false, started=false;
+      let startX=0, startTX=0, curTX=0, lastX=0, lastT=0, v=0, raf=null;
+
+      const TH=8, FRICTION=0.95, MIN_V=0.8;
+
+      function getTX(){
+        const m = track.style.transform.match(/translateX\((-?\d+(?:\.\d+)?)px\)/);
+        return m ? parseFloat(m[1]) : 0;
+      }
+
+      function onStart(e){
+        if(e.type==='mousedown' && e.button!==0) return;
+        isDragging=true; started=false;
+        startX = e.touches? e.touches[0].clientX : e.clientX;
+        startTX = getTX(); curTX=startTX;
+        lastX=startX; lastT=performance.now(); v=0;
+        slider.classList.add('dragging'); slider.classList.remove('animating');
+        pauseAuto();
+        if(raf){ cancelAnimationFrame(raf); raf=null; }
+        e.preventDefault();
+      }
+
+      function onMove(e){
+        if(!isDragging) return;
+        const now = performance.now();
+        const x = e.touches? e.touches[0].clientX : e.clientX;
+        const dx = x - lastX;
+        const dt = Math.max(1, now - lastT);
+
+        if(!started && Math.abs(x - startX) > TH) started = true;
+
+        if(started){
+          let next = startTX + (x - startX);
+          const minT = -(maxIndex * (cardWidth + gap));
+          const maxT = 0;
+          if(next > maxT) next = maxT + (next - maxT)*0.3;
+          else if(next < minT) next = minT + (next - minT)*0.3;
+
+          curTX = next;
+          track.style.transform = `translateX(${next}px)`;
+
+          const iv = dx / dt;
+          v = v*0.8 + iv*0.2;
+        }
+
+        lastX=x; lastT=now;
+        e.preventDefault();
+      }
+
+      function snap(){
+        const step = cardWidth + gap;
+        const idx = Math.round(-curTX / step);
+        const clamp = Math.max(0, Math.min(idx, maxIndex));
+        currentIndex = clamp;
+        setTransform(clamp, true);
+      }
+
+      function momentum(){
+        if(raf) return;
+        function frame(){
+          if(Math.abs(v) < MIN_V){ snap(); raf=null; return; }
+          curTX += v*16; // ~60fps
+          const minT = -(maxIndex * (cardWidth + gap));
+          const maxT = 0;
+          if(curTX > maxT || curTX < minT){
+            v *= -0.3;
+            curTX = Math.max(minT, Math.min(maxT, curTX));
+          }
+          track.style.transform = `translateX(${curTX}px)`;
+          v *= FRICTION;
+          raf = requestAnimationFrame(frame);
+        }
+        frame();
+      }
+
+      function onEnd(e){
+        if(!isDragging) return;
+        isDragging=false;
+        slider.classList.remove('dragging');
+        if(started){
+          if(Math.abs(v) > MIN_V) momentum();
+          else snap();
+          resumeAutoLater();
+        }else{
+          resumeAutoLater();
+        }
+        e.preventDefault();
+      }
+
+      slider.addEventListener('mousedown', onStart, {passive:false});
+      document.addEventListener('mousemove', onMove, {passive:false});
+      document.addEventListener('mouseup', onEnd, {passive:false});
+
+      slider.addEventListener('touchstart', onStart, {passive:false});
+      slider.addEventListener('touchmove', onMove, {passive:false});
+      slider.addEventListener('touchend', onEnd, {passive:false});
+      slider.addEventListener('touchcancel', onEnd, {passive:false});
+
+      // 드래그 후 클릭 방지
+      slider.addEventListener('click', (e)=>{
+        if(started){ e.preventDefault(); e.stopPropagation(); started=false; }
+      }, true);
+
+      slider.addEventListener('dragstart', e=>e.preventDefault());
+
+      /* ===== 자동 롤링 ===== */
+      const INTERVAL = 4200;
+      let auto=null, resume=null;
+
+      function step(){
+        const next = currentIndex >= maxIndex ? 0 : currentIndex+1;
+        moveTo(next);
+      }
+      function startAuto(){ stopAuto(); auto=setInterval(step, INTERVAL); }
+      function stopAuto(){ if(auto){ clearInterval(auto); auto=null; } }
+      function pauseAuto(){ stopAuto(); if(resume){ clearTimeout(resume); resume=null; } }
+      function resumeAutoLater(delay=6200){ if(resume) clearTimeout(resume); resume=setTimeout(()=>startAuto(), delay); }
+
+      /* ===== 초기화 & 리사이즈 ===== */
+      function init(){ updateDimensions(); setTransform(0,false); startAuto(); }
+      let rTimer=null;
+      window.addEventListener('resize', ()=>{
+        pauseAuto(); clearTimeout(rTimer);
+        rTimer=setTimeout(()=>{
+          updateDimensions();
+          setTransform(Math.min(currentIndex, maxIndex), false);
+          resumeAutoLater();
+        },200);
+      });
+
+      document.addEventListener('visibilitychange', ()=>{
+        if(document.hidden) pauseAuto(); else resumeAutoLater(1800);
+      });
+
+      init();
+    })();
+  </script>
+</section>
+
+  
+<!-- ✅ 섹션 id를 nb3로 변경 · 디자인 유지 · nb1/nb2와 동일한 JS 패턴 적용 -->
+<section id="nb3">
+  <style>
+    #nb3{background:#f6f8fb;font-family:'Noto Sans KR',sans-serif;padding:5rem 0;}
+    #nb3 *{box-sizing:border-box}
+    #nb3 .nb3-container{max-width:1300px;margin:0 auto;padding:0 1.5rem;}
+    #nb3 .nb3-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+    #nb3 .nb3-title{font-size:2.25rem;line-height:2.5rem;font-weight:bold;color:#1f2937;}
+    @media(min-width:768px){#nb3 .nb3-title{font-size:2rem;line-height:1.4}}
+    #nb3 .nb3-nav-group{display:flex;gap:.5rem}
+    #nb3 .nb3-btn{width:40px;height:40px;border:none;border-radius:9999px;background:#0f172a;color:#fff;cursor:pointer}
+    #nb3 .nb3-slider-container{display:flex;overflow:hidden;padding-bottom:1.5rem;}
+    #nb3 .nb3-slider-wrapper{display:flex;gap:1.5rem;transition:transform .1s ease;will-change:transform;}
+    #nb3 .nb3-product-slide{
+      display:block;
+      min-width:350px;
+      background:#fff;
+      border-radius:.75rem;
+      box-shadow:0 4px 6px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.06);
+      overflow:hidden;
+      text-decoration:none;
+      color:inherit;
+      transition:transform .35s ease, box-shadow .35s ease;
+      will-change:transform;
+    }
+    @media(max-width:768px){#nb3 .nb3-product-slide{min-width:280px}}
+    #nb3 .case-media{position:relative;width:100%;overflow:hidden;background:#eef2f7;height:190px}
+    @media(max-width:640px){#nb3 .case-media{height:160px}}
+    #nb3 .case-img{width:100%;height:100%;object-fit:cover;object-position:center;}
+    #nb3 .media-pin{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.95);backdrop-filter:saturate(1.2) blur(6px);border:1px solid #e2e8f0;border-radius:999px;padding:.35rem .6rem;font-size:12px;font-weight:800;color:#334155}
+    #nb3 .case-card{display:flex;flex-direction:column;gap:14px;padding:16px}
+    #nb3 .case-top{display:flex;align-items:center;justify-content:space-between}
+    #nb3 .case-pin{font-weight:800;font-size:12px;color:#475569;background:#fff;border:1px solid #e2e8f0;border-radius:999px;padding:4px 10px}
+    #nb3 .kpi-band{display:grid;grid-template-columns:1fr auto;gap:14px;padding:12px;background:#f9fafb;border:1px solid #eef2f7;border-radius:12px}
+    #nb3 .kpi-stack{display:flex;flex-direction:column;gap:10px}
+    #nb3 .kpi-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+    #nb3 .kpi-label{font-size:12px;color:#64748b;font-weight:800}
+    #nb3 .kpi-value{font-weight:900;color:#0f172a;font-size:clamp(18px,2.4vw,21px)}
+    #nb3 .rate-ring{--p:0;width:124px;height:124px;border-radius:9999px;background:conic-gradient(#16a34a calc(var(--p)*1%), #e5e7eb 0);border:8px solid #fff;display:grid;place-items:center}
+    #nb3 .ring-inner{width:94px;height:94px;border-radius:9999px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    #nb3 .ring-label{font-size:11px;color:#64748b;margin-bottom:4px;font-weight:700}
+    #nb3 .ring-val{font-weight:900;font-size:22px;color:#065f46}
+    #nb3 .badges{display:flex;flex-wrap:wrap;gap:8px}
+    #nb3 .badge{background:#eef2ff;border:1px solid #e0e7ff;color:#3730a3;padding:.42rem .66rem;border-radius:999px;font-size:12px;font-weight:800}
+    #nb3 .case-title{margin:6px 0 4px;font-weight:900;color:#0f172a;font-size:1.125rem;line-height:1.4}
+    #nb3 .case-desc{margin:0;color:#334155;line-height:1.6;font-size:14px}
+    #nb3 .progress{display:none;width:100%;height:12px;border-radius:9999px;background:#e2e8f0;overflow:hidden;margin-top:6px}
+    #nb3 .progress>span{display:block;height:100%;background:linear-gradient(90deg,#22c55e,#16a34a)}
+  </style>
+
+  <div class="nb3-container">
+    <div class="nb3-head">
+      <h2 class="nb3-title">실제 후기 · 탕감 결과</h2>
+      <div class="nb3-nav-group">
+        <button id="nb3Prev" class="nb3-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="nb3Next" class="nb3-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div id="nb3Slider" class="nb3-slider-container">
+      <div class="nb3-slider-wrapper">
+
+        <!-- 카드 1 -->
+        <a class="nb3-product-slide" href="page1.html">
+          <div class="case-media">
+            <img class="case-img" src="https://image.chosun.com/sitedata/image/202401/02/2024010200627_0.jpg" alt="주거담보 사례 썸네일">
+            <span class="media-pin">01 / 03</span>
+          </div>
+          <article class="case-card">
+            <div class="case-top"><span class="case-pin">경매 직전</span></div>
+            <div class="kpi-band">
+              <div class="kpi-stack">
+                <div class="kpi-box"><span class="kpi-label">총 대출</span><span class="kpi-value">₩210,000,000</span></div>
+                <div class="kpi-box"><span class="kpi-label">월 변제금</span><span class="kpi-value">₩950,000</span></div>
+              </div>
+              <div class="rate-ring" data-rate="60"><div class="ring-inner"><div class="ring-label">탕감율</div><div class="ring-val">0%</div></div></div>
+            </div>
+            <div class="badges"><span class="badge">주택담보</span><span class="badge">카드빚</span></div>
+            <h3 class="case-title">회생개시로 강제집행 중단, 실거주 유지</h3>
+            <p class="case-desc">급박한 상황에서 신속히 개시 결정을 받아 경매를 멈추고 실거주를 지켰습니다.</p>
+          </article>
+        </a>
+
+        <!-- 카드 2 -->
+        <a class="nb3-product-slide" href="page2.html">
+          <div class="case-media">
+            <img class="case-img" src="https://farm8.staticflickr.com/7357/12418143535_2db858170c_o.jpg" alt="투자손실 사례 썸네일">
+            <span class="media-pin">02 / 03</span>
+          </div>
+          <article class="case-card">
+            <div class="case-top"><span class="case-pin">투자손실</span></div>
+            <div class="kpi-band">
+              <div class="kpi-stack">
+                <div class="kpi-box"><span class="kpi-label">총 대출</span><span class="kpi-value">₩65,000,000</span></div>
+                <div class="kpi-box"><span class="kpi-label">월 변제금</span><span class="kpi-value">₩210,000</span></div>
+              </div>
+              <div class="rate-ring" data-rate="83"><div class="ring-inner"><div class="ring-label">탕감율</div><div class="ring-val">0%</div></div></div>
+            </div>
+            <div class="badges"><span class="badge">코인빚</span><span class="badge">현금서비스</span></div>
+            <h3 class="case-title">투자 경위 소명 + 부양가족 고려로 83% 인가</h3>
+            <p class="case-desc">손실 자료와 필수 지출을 반영해 가용소득을 정확히 산정, 대폭 감면을 받았습니다.</p>
+          </article>
+        </a>
+
+        <!-- 카드 3 -->
+        <a class="nb3-product-slide" href="page3.html">
+          <div class="case-media">
+            <img class="case-img" src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202409/18/34acbf17-8629-4976-b83e-80ca5e3888c3.jpg" alt="자영업 사례 썸네일">
+            <span class="media-pin">03 / 03</span>
+          </div>
+          <article class="case-card">
+            <div class="case-top"><span class="case-pin">자영업</span></div>
+            <div class="kpi-band">
+              <div class="kpi-stack">
+                <div class="kpi-box"><span class="kpi-label">총 대출</span><span class="kpi-value">₩98,000,000</span></div>
+                <div class="kpi-box"><span class="kpi-label">월 변제금</span><span class="kpi-value">₩380,000</span></div>
+              </div>
+              <div class="rate-ring" data-rate="78"><div class="ring-inner"><div class="ring-label">탕감율</div><div class="ring-val">0%</div></div></div>
+            </div>
+            <div class="badges"><span class="badge">사업운영자금</span><span class="badge">신용대출</span></div>
+            <h3 class="case-title">매출 하락을 장부/세금신고로 입증, 78% 탕감</h3>
+            <p class="case-desc">구조적 매출 감소와 고정비를 증빙하여 불가피성을 인정받았습니다.</p>
+          </article>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ▶ 탕감율 애니메이션: 디자인/동작 유지, 루트만 nb3로 스코프 -->
+  <script>
+    (() => {
+      const root = document.getElementById('nb3');
+      if (!root) return;
+      const EASE = (t) => 1 - Math.pow(1 - t, 3);
+      const DURATION = 900;
+
+      function animateRing(el) {
+        const target = Math.max(0, Math.min(100, Number(el.getAttribute('data-rate') || 0)));
+        const valEl = el.querySelector('.ring-val');
+        let start = null;
+        el.style.setProperty('--p', 0);
+        if (valEl) valEl.textContent = '0%';
+        function step(ts) {
+          if (!start) start = ts;
+          const t = Math.min(1, (ts - start) / DURATION);
+          const eased = EASE(t);
+          const cur = Math.round(target * eased);
+          el.style.setProperty('--p', cur);
+          if (valEl) valEl.textContent = cur + '%';
+          if (t < 1) el._raf = requestAnimationFrame(step);
+          else el._raf = null;
+        }
+        if (el._raf) cancelAnimationFrame(el._raf);
+        el._raf = requestAnimationFrame(step);
+      }
+
+      function resetRing(el) {
+        if (el._raf) cancelAnimationFrame(el._raf);
+        el._raf = null;
+        el.style.setProperty('--p', 0);
+        const valEl = el.querySelector('.ring-val');
+        if (valEl) valEl.textContent = '0%';
+      }
+
+      const rings = Array.from(root.querySelectorAll('.rate-ring[data-rate]'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target;
+          if (entry.isIntersecting) animateRing(el);
+          else resetRing(el);
+        });
+      }, { threshold: 0.35 });
+
+      rings.forEach((el) => io.observe(el));
+    })();
+  </script>
+</section>
+
+<!-- ▼ nb1/nb2와 동일 패턴의 슬라이더 제어 스크립트 (디자인/스크롤 영향 없음) -->
+<script>
+  (function(){
+    const root = document.getElementById('nb3');
+    if(!root) return;
+
+    const slider = root.querySelector('#nb3Slider');
+    const track  = slider.querySelector('.nb3-slider-wrapper');
+    const prevBtn = root.querySelector('#nb3Prev');
+    const nextBtn = root.querySelector('#nb3Next');
+
+    /* ===== 상태값/유틸 ===== */
+    let currentIndex = 0;
+    let maxIndex = 0;
+    let cardWidth = 0;
+    let gap = 0;
+
+    function updateDimensions() {
+      const cards = slider.querySelectorAll('.nb3-product-slide');
+      const containerWidth = slider.clientWidth;
+      if (cards.length > 0) {
+        const first = cards[0];
+        cardWidth = first.getBoundingClientRect().width;
+        gap = parseFloat(getComputedStyle(track).gap) || 24; // 1.5rem
+        // 보여지는 카드 수 추정 (좌우 패딩 변화 없음)
+        const visible = Math.max(1, Math.floor((containerWidth - 0 + gap) / (cardWidth + gap)));
+        maxIndex = Math.max(0, cards.length - visible);
+      }
+    }
+
+    function setTransform(index, animate=true){
+      const tx = -index * (cardWidth + gap);
+      if(animate){
+        slider.classList.add('animating');
+        track.style.transition = 'transform .6s cubic-bezier(0.25,0.46,0.45,0.94)';
+        track.style.transform = `translateX(${tx}px)`;
+        setTimeout(()=>{
+          slider.classList.remove('animating');
+          track.style.transition = 'transform .1s ease';
+        }, 600);
+      }else{
+        track.style.transition = 'transform .1s ease';
+        track.style.transform = `translateX(${tx}px)`;
+      }
+      currentIndex = Math.max(0, Math.min(index, maxIndex));
+    }
+
+    function moveTo(index){ setTransform(Math.max(0, Math.min(index, maxIndex)), true); }
+
+    /* ===== 버튼 ===== */
+    if (prevBtn) prevBtn.addEventListener('click', ()=>{ pauseAuto(); moveTo(currentIndex-1); resumeAutoLater(); });
+    if (nextBtn) nextBtn.addEventListener('click', ()=>{ pauseAuto(); moveTo(currentIndex+1); resumeAutoLater(); });
+
+    /* ===== 드래그/스와이프 (디자인/스크롤 영향 없음) ===== */
+    let isDragging=false, started=false;
+    let startX=0, startTX=0, curTX=0, lastX=0, lastT=0, v=0, raf=null;
+
+    const TH=8, FRICTION=0.95, MIN_V=0.8;
+
+    function getTX(){
+      const m = track.style.transform.match(/translateX\((-?\d+(?:\.\d+)?)px\)/);
+      return m ? parseFloat(m[1]) : 0;
+    }
+
+    function onStart(e){
+      if(e.type==='mousedown' && e.button!==0) return;
+      isDragging=true; started=false;
+      startX = e.touches? e.touches[0].clientX : e.clientX;
+      startTX = getTX(); curTX=startTX;
+      lastX=startX; lastT=performance.now(); v=0;
+      slider.classList.add('dragging');
+      if(raf){ cancelAnimationFrame(raf); raf=null; }
+      pauseAuto();
+      e.preventDefault();
+    }
+
+    function onMove(e){
+      if(!isDragging) return;
+      const now = performance.now();
+      const x = e.touches? e.touches[0].clientX : e.clientX;
+      const dx = x - lastX;
+      const dt = Math.max(1, now - lastT);
+
+      if(!started && Math.abs(x - startX) > TH) started = true;
+
+      if(started){
+        let next = startTX + (x - startX);
+        const minT = -(maxIndex * (cardWidth + gap));
+        const maxT = 0;
+        if(next > maxT) next = maxT + (next - maxT)*0.3;
+        else if(next < minT) next = minT + (next - minT)*0.3;
+
+        curTX = next;
+        track.style.transform = `translateX(${next}px)`;
+
+        const iv = dx / dt;
+        v = v*0.8 + iv*0.2;
+      }
+
+      lastX=x; lastT=now;
+      e.preventDefault();
+    }
+
+    function snap(){
+      const step = cardWidth + gap;
+      const idx = Math.round(-curTX / step);
+      const clamp = Math.max(0, Math.min(idx, maxIndex));
+      currentIndex = clamp;
+      setTransform(clamp, true);
+    }
+
+    function momentum(){
+      if(raf) return;
+      function frame(){
+        if(Math.abs(v) < MIN_V){ snap(); raf=null; return; }
+        curTX += v*16; // ~60fps
+        const minT = -(maxIndex * (cardWidth + gap));
+        const maxT = 0;
+        if(curTX > maxT || curTX < minT){
+          v *= -0.3;
+          curTX = Math.max(minT, Math.min(maxT, curTX));
+        }
+        track.style.transform = `translateX(${curTX}px)`;
+        v *= FRICTION;
+        raf = requestAnimationFrame(frame);
+      }
+      frame();
+    }
+
+    function onEnd(e){
+      if(!isDragging) return;
+      isDragging=false;
+      slider.classList.remove('dragging');
+      if(started){
+        if(Math.abs(v) > MIN_V) momentum();
+        else snap();
+        resumeAutoLater();
+      }else{
+        resumeAutoLater();
+      }
+      e.preventDefault();
+    }
+
+    slider.addEventListener('mousedown', onStart, {passive:false});
+    document.addEventListener('mousemove', onMove, {passive:false});
+    document.addEventListener('mouseup', onEnd, {passive:false});
+
+    slider.addEventListener('touchstart', onStart, {passive:false});
+    slider.addEventListener('touchmove', onMove, {passive:false});
+    slider.addEventListener('touchend', onEnd, {passive:false});
+    slider.addEventListener('touchcancel', onEnd, {passive:false});
+
+    // 드래그 후 클릭 방지
+    slider.addEventListener('click', (e)=>{
+      if(started){ e.preventDefault(); e.stopPropagation(); started=false; }
+    }, true);
+
+    slider.addEventListener('dragstart', e=>e.preventDefault());
+
+    /* ===== 자동 롤링 (디자인 영향 없음) ===== */
+    const INTERVAL = 4200;
+    let auto=null, resume=null;
+
+    function step(){
+      const next = currentIndex >= maxIndex ? 0 : currentIndex+1;
+      moveTo(next);
+    }
+    function startAuto(){ stopAuto(); auto=setInterval(step, INTERVAL); }
+    function stopAuto(){ if(auto){ clearInterval(auto); auto=null; } }
+    function pauseAuto(){ stopAuto(); if(resume){ clearTimeout(resume); resume=null; } }
+    function resumeAutoLater(delay=6200){ if(resume) clearTimeout(resume); resume=setTimeout(()=>startAuto(), delay); }
+
+    /* ===== 초기화 & 리사이즈 ===== */
+    function init(){ updateDimensions(); setTransform(0,false); startAuto(); }
+    let rTimer=null;
+    window.addEventListener('resize', ()=>{
+      pauseAuto(); clearTimeout(rTimer);
+      rTimer=setTimeout(()=>{
+        updateDimensions();
+        setTransform(Math.min(currentIndex, maxIndex), false);
+        resumeAutoLater();
+      },200);
+    });
+
+    document.addEventListener('visibilitychange', ()=>{
+      if(document.hidden) pauseAuto(); else resumeAutoLater(1800);
+    });
+
+    init();
+  })();
+</script>
+
+
+
+
+
+  
+<section id="consultFormSection">
+  <style>
+  
+ 
+  #consultFormSection #consultForm {
+      font-family: 'Noto Sans KR', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+
+    #consultFormSection .gc-deco {
+      width: 60px;
+      height: 6px;
+      background: linear-gradient(90deg,#dcbe4e,#f8e18c);
+      margin: 0 auto 1rem;
+      border-radius: 3px;
+    }
+
+    #consultFormSection .gc-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    #consultFormSection .gc-header h2 {
+      font-size: 2.15rem;
+      font-weight: 800;
+    }
+
+    #consultFormSection .gc-header h2 span {
+      display: block;
+      font-size: 1.8rem;
+      color: #dcbe4e;
+    }
+
+    #consultFormSection .gc-header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    #consultFormSection .gc-stepbar {
+      margin-bottom: 2rem;
+    }
+
+    #consultFormSection .gc-progress {
+      height: 4px;
+      background: #eee;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    #consultFormSection .gc-progress-fill {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,#dcbe4e,#bfa742);
+    }
+
+    #consultFormSection h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #000;
+    }
+
+    #consultFormSection .form-group {
+      margin-bottom: 2rem;
+    }
+
+    #consultFormSection .form-label {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      color: #000;
+    }
+
+    #consultFormSection .button-group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+    }
+
+    #consultFormSection .option-btn {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid #dadada;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    #consultFormSection .option-btn.active {
+      background-color: #c49b5a;
+      color: #fff;
+      border-color: #c49b5a;
+      font-weight: bold;
+    }
+
+    #consultFormSection .inline-fields {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* input / select 기본 */
+    #consultFormSection .inline-fields input,
+    #consultFormSection .inline-fields select{
+      flex:1 1 0;
+      min-width:0;
+      padding:0.8rem;
+      border:2px solid #ccc;
+      border-radius:6px;
+      background:#fff;
+      color:#000;
+      font-size:1rem;
+      height:60px;
+      /* line-height:60px; */
+      box-sizing:border-box;
+    }
+
+    #consultFormSection input::placeholder {
+      color: #aaa;
+    }
+
+    #consultFormSection .checkbox-area {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-top: -0.5rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      #consultFormSection .checkbox-area {
+         flex-direction: column;
+      }
+    }
+/* === Select 커스텀화 ========================================== */
+    #consultFormSection select{
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+    }
+    /* placeholder 느낌 방지 */
+    #consultFormSection select:invalid{color:#9e9e9e;}
+
+    /* 화살표 UI */
+    #consultFormSection .select-wrap{position:relative;flex:1 1 0;min-width:0;width:100%;}
+    #consultFormSection .select-wrap::after{
+      content:"";
+      position:absolute;
+      top:50%;right:1rem;
+      width:8px;height:8px;
+      border-right:2px solid #666;
+      border-bottom:2px solid #666;
+      transform:translateY(-50%) rotate(45deg);
+      pointer-events:none;
+    }
+    /* select 가로 100% 유지 */
+    #consultFormSection .select-wrap select{
+      display:block;
+      width:100%;
+      max-width:100%;
+    }
+
+    #consultFormSection .checkbox-area input {
+      margin-right: 0.5rem;
+    }
+
+    #consultFormSection input.submit-btn {
+      width: 100%;
+      background: #c49b5a;
+      color: #fff;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    #consultFormSection input.submit-btn:hover {
+      background: #d8b56a;
+    }
+
+    @media (max-width: 1024px) {
+      #consultFormSection .button-group {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      #consultFormSection .inline-fields {
+        flex-direction: column;
+      }
+
+      #consultFormSection .button-group {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+  <div id="consultForm">
+     <form id="form_e11" name="frm_phonecall_web" action="" method="post" target="hidden_iframe11" onsubmit="dll(); submitted=true;"  class="gc-form" novalidate>
+    <input type="hidden" name="entry.637408694" value="본문 신청폼">  
+    <input type="hidden" name="entry.339503137" value="당근">
+    <div class="gc-deco"></div>
+
+    <div class="gc-header">
+      <h2>서민채무조정안심센터<br><span>무료상담신청</span></h2>
+      <p>지금 신청하면 채무 걱정이 사라집니다.<br>당신의 빚, 이젠 여기서 끝내세요.</p>
+    </div>
+
+    <div class="gc-stepbar">
+      <div class="gc-progress"><div class="gc-progress-fill"></div></div>
+    </div>
+
+    <!-- 01. 직업종류 -->
+    <div class="form-group">
+      <p class="form-label">01. 직업종류</p>
+      <div class="button-group" data-type="radio" data-name="직업종류">
+        <input type="button"   class="option-btn intro_select1"  data-value="급여소득자" value="급여소득자">
+        <input type="button"   class="option-btn intro_select1"  data-value="자영업자" value="자영업자">
+        <input type="button"   class="option-btn intro_select1"  data-value="일용직/아르바이트" value="일용직/아르바이트">
+        <input type="button"   class="option-btn intro_select1"  data-value="기타" value="기타">
+      </div>
+      <input type="hidden" name="entry.966666468" id="job_style" >
+    </div>
+
+    <!-- 02. 월수입 -->
+    <div class="form-group">
+      <p class="form-label">02. 월평균 수입(실수령액)</p>
+      <div class="button-group" data-type="radio" data-name="월수입">
+        <input type="button"  class="option-btn intro_select2"  data-value="100만원 이하" value="100만원 이하">
+        <input type="button"  class="option-btn intro_select2"  data-value="100~200만원 사이" value="100~200만원 사이">
+        <input type="button"  class="option-btn intro_select2"  data-value="200~400만원 사이" value="200~400만원 사이">
+        <input type="button"  class="option-btn intro_select2"  data-value="400만원 이상" value="400만원 이상">
+      </div>
+      <input type="hidden" name="entry.820371290" id="income">
+    </div>
+
+     <!-- 03. 채무금액 -->
+    <div class="form-group">
+      <p class="form-label">03. 채무금액</p>
+      <div class="button-group" data-type="radio" data-name="채무금액">
+        <input type="button"  class="option-btn intro_select"  data-value="2000~5000만원 미만" value="2000~5000만원 미만">
+        <input type="button"  class="option-btn intro_select"  data-value="5000~8000만원 미만" value="5000~8000만원 미만">
+        <input type="button"  class="option-btn intro_select"  data-value="8000~1억원 미만" value="8000~1억원 미만">
+        <input type="button"  class="option-btn intro_select"  data-value="1-3억" value="1-3억">
+          <input type="button"  class="option-btn intro_select"  data-value="3-5억" value="3-5억">
+            <input type="button"  class="option-btn intro_select"  data-value="5억 이상" value="5억 이상">
+      </div>
+      <input type="hidden" name="entry.1263415590" id="debt">
+    </div>
+
+
+
+    <!-- 04. 부양가족수 -->
+    <div class="form-group">
+      <p class="form-label">04. 부양가족수</p>
+      <div class="button-group" class="option-btn intro_select3" data-type="radio" data-name="가족수">
+        <input type="button"  class="option-btn intro_select3"  data-value="자녀없음" value="자녀없음">
+        <input type="button"  class="option-btn intro_select3"  data-value="1명" value="1명">
+        <input type="button"  class="option-btn intro_select3"  data-value="2명" value="2명">
+        <input type="button"  class="option-btn intro_select3"  data-value="3명 이상" value="3명 이상">
+      </div>
+      <input type="hidden" name="entry.478230096" id="family">
+    </div>
+
+    <!-- 05. 최근대출유무 -->
+    <div class="form-group">
+      <p class="form-label">05. 최근대출유무</p>
+      <div class="button-group" data-type="radio" data-name="최근대출">
+        <input type="button"   class="option-btn intro_select4" data-value="최근 3개월내 대출 있음" value="최근 3개월내 대출 있음">
+        <input type="button"   class="option-btn intro_select4" data-value="최근 3개월내 대출 없음" value="최근 3개월내 대출 없음">
+      </div>
+      <input type="hidden" name="entry.277781686" id="loan_3month">
+    </div>
+
+    <!-- 06. 채무 원인 -->
+    <div class="form-group">
+      <p class="form-label">06. 채무 원인 <small>(다중선택가능)</small></p>
+      <div class="button-group" data-type="checkbox" data-name="채무원인">
+        <input type="button" class="option-btn intro_select5"  data-value="사기(전세,보이스피싱)" value="사기(전세,보이스피싱)">
+        <input type="button" class="option-btn intro_select5"  data-value="생활비로 인한 채무" value="생활비로 인한 채무">
+        <input type="button" class="option-btn intro_select5"  data-value="사업자금" value="사업자금">
+        <input type="button" class="option-btn intro_select5"  data-value="도박 및 주식" value="도박 및 주식">
+        <input type="button" class="option-btn intro_select5"  data-value="병원비" value="병원비">
+        <input type="button" class="option-btn intro_select5"  data-value="그 외" value="그 외">
+      </div>
+      <input type="hidden" name="entry.1487248962" id="reason">
+    </div>
+
+    <!-- 기본 정보 -->
+    <div class="form-group">
+      <p class="form-label">성함 / 거주지 / 연락처</p>
+      <div class="inline-fields">
+        <input type="text"  id="name" name="entry.1584470138"  placeholder="성함 입력" maxlength="4" style="min-height:60px;font-size:1rem;">
+       <div class="select-wrap">
+            <select name="entry.1911857506" id="location" required>
+              <option value="" disabled selected hidden>거주지 선택</option>
+              <option value="서울">서울</option>
+              <option value="인천">인천</option>
+              <option value="세종">세종</option>
+              <option value="대전">대전</option>
+              <option value="대구">대구</option>
+              <option value="울산">울산</option>
+              <option value="광주">광주</option>
+              <option value="부산">부산</option>
+              <option value="제주">제주</option>
+              <option value="강원도">강원도</option>
+              <option value="경기도">경기도</option>
+              <option value="충청북도">충청북도</option>
+              <option value="충청남도">충청남도</option>
+              <option value="경상북도">경상북도</option>
+              <option value="경상남도">경상남도</option>
+              <option value="전라북도">전라북도</option>
+              <option value="전라남도">전라남도</option>
+            </select>
+          </div>
+        <input type="text" id="phone" name="entry.730014522" placeholder="연락처 입력 (-없이 입력해주세요.)." maxlength="11" style="min-height:60px;font-size:1rem;">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <p class="form-label">상담 내용</p>
+      <div class="inline-fields">
+         <textarea name="entry.1470467061" id="message" placeholder="상담하고 싶은 내용을 남겨주세요." style="width:100%;min-height: 150px;padding:10px;font-size:1rem;"></textarea>
+      </div>
+    </div>
+
+   
+
+    <!-- 개인정보 동의 -->
+    <div class="checkbox-area">
+      <label class="gc-consent">
+        <input type="checkbox" name="agree_r1" id="agree11" checked>
+        개인정보 수집·이용에 동의합니다.&nbsp;&nbsp;
+      </label>
+      <span class="privacyBtn" style="color:fff;font-weight:400; font-size: 13px;margin-top:0px;cursor:pointer; " onclick="privacyPopUp()">
+         [개인정보취급동의] 
+    </span>
+    <br><br>
+    </div>
+
+    <!-- 제출 버튼 -->
+     <input type="submit" id="send_message" class="submit-btn" value="무료 상담 신청하기" disabled>
+    </form>
+
+       <script type="text/javascript">var submitted = false;</script>
+            <iframe name="hidden_iframe11" id="hidden_iframe11" style="display:none;" onload=""></iframe>
+            <script type="text/javascript">var submitted2 = false;</script>
+            <iframe name="hidden_iframe12" id="hidden_iframe12" style="display:none;" onload=""></iframe>
+
+            
+<script type="text/javascript">var submitted3 = false;</script>
+<iframe name="hidden_iframe13" id="hidden_iframe13" style="display:none;" onload=""></iframe>
+  </div>
+
+  <script>
+    document.querySelectorAll('.button-group').forEach(group => {
+      const type = group.dataset.type;
+      const name = group.dataset.name;
+      const hidden = document.querySelector(`input[name="${name}"]`);
+
+      group.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (type === 'radio') {
+            group.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            hidden.value = btn.dataset.value;
+          } else if (type === 'checkbox') {
+            btn.classList.toggle('active');
+            const selected = [...group.querySelectorAll('.option-btn.active')].map(b => b.dataset.value);
+            hidden.value = selected.join(', ');
+          }
+        });
+      });
+    });
+
+    // document.getElementById('consultForm').addEventListener('submit', function (e) {
+    //   e.preventDefault();
+    //   alert('상담 신청이 접수되었습니다!');
+    // });
+  </script>
+</section>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    bindRadioToHidden(".intro_select1", "job_style");
+    bindRadioToHidden(".intro_select2", "income");
+    bindRadioToHidden(".intro_select",  "debt");
+    bindRadioToHidden(".intro_select3", "family");
+    bindRadioToHidden(".intro_select4", "loan_3month");
+
+    function bindRadioToHidden(selector, hiddenId) {
+      const buttons = document.querySelectorAll(selector);
+      const hiddenInput = document.getElementById(hiddenId);
+
+      if (!buttons.length || !hiddenInput) return;
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          // 기존 active 제거 후 클릭된 버튼만 active
+          buttons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          // 값 입력
+          hiddenInput.value = button.getAttribute("data-value");
+        });
+      });
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll(".intro_select5");
+    const hiddenInput = document.getElementById("reason");
+
+    if (!checkboxes.length || !hiddenInput) return;
+
+    checkboxes.forEach(function (button) {
+      button.addEventListener("click", function () {
+        // active → selected 클래스로 토글
+        button.classList.toggle("selected");
+
+        // 선택된 버튼의 data-value 수집
+        const selectedValues = Array.from(checkboxes)
+          .filter(btn => btn.classList.contains("selected"))
+          .map(btn => btn.getAttribute("data-value"));
+
+        // hidden input에 반영
+        hiddenInput.value = selectedValues.join(", ");
+      });
+    });
+  });
+</script>
+
+
+
+
+<div id="footer_template"></div>
+
+
+
+
+
+	<script src="../js/jquery-1.8.3.min.js"></script>
+
+<section id="floating-menu">
+<div class="bottom_contact pc_img">
+    <div class="inner clfix">
+        <div class="title">
+          <a > 
+<span class="tit">서민채무조정안심센터</span></a>
+            <span class="tel"><a>무료 상담 신청</a>
+              <!-- <img src="./img/click_icon.png" alt="" class="click_img"> -->
+</span>
+        </div>
+        <div class="input_wrap">
+            <!-- <form id="form_e12" name="frm_phonecall_web" action="" method="post" target="hidden_iframe12" onsubmit="dll2(); submitted2=true;">
+                <input type="hidden" name="entry.706813848"  value="pc 플로팅 메뉴 신청"> -->
+
+                <!-- <ul class="clfix">
+                    <li>
+                        <span>성명</span>
+                        <input type="text" id="pc_name" name="entry.112176011" >
+                    </li>
+                    <li>
+                        <span>연락처</span>
+                        <input type="text"  id="pc_phone" name="entry.1513806965" maxlength="11">
+                    </li>
+                    <li>
+        <select name="entry.1413572286" id="pc_select" class="select2">
+                                <option selected disabled>상담 분야</option>
+                                <option value="성범죄">성범죄</option>
+                                <option value="5인 미만 법인">재산범죄</option>
+                                <option value="교통범죄">교통범죄</option>
+                                <option value="마약범죄">마약범죄</option>
+                                <option value="보이스피싱">보이스피싱</option>
+                                <option value="피해자">피해자</option>
+                                                                
+            
+        </select>
+                    </li>
+
+                    
+                </ul> -->
+    <div class="b_check check_bar">
+      <!-- <input type="checkbox" checked name="policy_agree" value="1" id="agree12" style="display:inline;appearance: auto;margin-left: 40px;">
+      <span style="color:#fff;">개인정보 수집 및 이용 동의</span> <span id="pc_alert" style="margin-left:40px;color:#fff;font-size:13px;"></span> -->
+    </div>
+           
+        </div>
+        <div class="go_btn">
+            <button id="pc_btn" href="#consultFormSection">무료 상담 신청</button>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("pc_btn").addEventListener("click", function () {
+      const target = document.getElementById("consultFormSection");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" }); // 부드럽게 스크롤
+      }
+    });
+  });
+</script>
+        </div>
+    </div>
+</div>
+<!-- </form> -->
+
+<div class="bottom_contact_mob mob_img">
+    <div class="top_thumb">
+<div class="title">
+  <a ></a>
+  <a  style="display:contents;width:100%;max-width:300px;"> <img src="./img/click_icon.png" alt="" class="click_img">
+  <span class="tit">채무조정 정부지원제도</span>
+  <span class="tel">무료 상담 신청</span></a>
+</div><!-- // title -->
+<div class="btn">
+  <a href="#consultFormSection" style="font-size:0.9rem;border-radius:10px;">즉시 상담신청</a>
+</div><!-- // btn -->
+    </div><!-- // top_thumb -->
+
+</div><!-- // bottom_contact_mob -->
+</section>
+
+
+
+<script>
+    $('.navi_btn').click(function(){
+      $(this).toggleClass('on');
+      $('.navi').stop().fadeToggle()
+    });
+  
+  
+  
+    $('.lnb h3').click(function(){
+      var naviTitle = $(this).next('ul');
+      $(this).addClass('on');
+      $('.lnb h3').not(this).removeClass('on');
+      naviTitle.stop().slideDown();
+      $('.lnb h3').next().not(naviTitle).slideUp();
+    });
+  
+    $('.right_contact .left').click(function(){
+      $('.right_contact').toggleClass('on');
+    });
+  
+    // $('.bottom_contact_mob .top_thumb').click(function(){
+    //   $('.bottom_contact_mob').toggleClass('on');
+    // });
+  
+    // $('.bottom_contact_mob .bottom_con .btn_list .close_btn').click(function(){
+    //   $('.bottom_contact_mob').removeClass('on');
+    // });	
+  </script>  
+
+
+  <script src="../js/jquery-1.8.3.min.js"></script>
+
+
+  <script>
+   /* 모바일 메뉴 토글 */
+   function toggleMobile(){
+      const panel   = document.getElementById('mobilePanel');
+      const burger  = document.getElementById('hamburgerBtn');
+      const nav     = document.getElementById('mainNav');
+      const logoImg = document.getElementById('logoImg');
+    
+      panel.classList.toggle('show');
+      burger.classList.toggle('open');
+      nav.classList.toggle('menu-open', panel.classList.contains('show'));
+    
+      if (window.pageYOffset === 0){
+        logoImg.src = panel.classList.contains('show')
+          ? logoImg.dataset.srcDark
+          : logoImg.dataset.srcLight;
+      }
+    }
+    
+    /* 스크롤 효과 */
+    const nav      = document.getElementById('mainNav');
+    const logoImg  = document.getElementById('logoImg');
+    let lastY      = window.pageYOffset;
+    
+    function onScroll(){
+      const y = window.pageYOffset;
+      if (y === 0){
+        nav.classList.add('transparent');
+        nav.classList.remove('solid');
+        logoImg.src = logoImg.dataset.srcLight;
+      } else {
+        nav.classList.remove('transparent');
+        nav.classList.add('solid');
+        logoImg.src = logoImg.dataset.srcDark;
+        nav.classList.remove('menu-open');
+        document.getElementById('hamburgerBtn').classList.remove('open');
+        document.getElementById('mobilePanel').classList.remove('show');
+      }
+      if (y > lastY && y > 50) nav.classList.add('hide');
+      else nav.classList.remove('hide');
+      lastY = y;
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+    
+    /* 전화 버튼 로테이션 */
+    const callData = [
+      { lines:["24시간 비밀상담 (송무)", "서울 : 02-6954-0378"], tel:"0269540378"   },
+      { lines:["24시간 비밀상담 (송무)", "대전 : 042-721-0606"], tel:"0427210606" }
+    ];
+    const swapDelay = 4000;
+    const fadeDur   = 350;
+    
+    const phoneBtns = Array.from(document.querySelectorAll(".phone-btn"));
+    const txtSpans  = phoneBtns.map(btn=>btn.querySelector(".txt"));
+    let idx = 0;
+    
+    function setContent(lines,tel){
+      txtSpans.forEach(s=>s.innerHTML=`${lines[0]}<br>${lines[1]}`);
+      phoneBtns.forEach(b=>b.href=`tel:${tel}`);
+    }
+    
+    function swapPhoneMsg(){
+      idx = (idx + 1) % callData.length;     // 먼저 다음 인덱스로
+      txtSpans.forEach(s=>s.style.opacity=0);
+      setTimeout(()=>{
+        const {lines,tel} = callData[idx];
+        setContent(lines,tel);
+        txtSpans.forEach(s=>s.style.opacity=1);
+      }, fadeDur);
+    }
+    
+    setContent(callData[0].lines, callData[0].tel);
+    setInterval(swapPhoneMsg, swapDelay);
+    </script>
+
+
+
+<!-- 카운트 애니메이션 & 카운트다운 -->
+<script>
+  (function () {
+    /* ────────── ① 숫자 애니메이션(기존) ────────── */
+    const counters = document.querySelectorAll('#reliefBanner .counter');
+    function animate(counter) {
+      const target = +counter.dataset.target,
+            duration = +counter.dataset.duration || 1500,
+            startTime = performance.now();
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1),
+              value    = Math.round(progress * target);
+        counter.textContent = value.toLocaleString();
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting) animate(el);
+        else el.textContent = '0';
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => io.observe(c));
+  
+    /* ────────── ② 매일 23:59:59 카운트다운 ────────── */
+    const cd      = document.getElementById('dailyCountdown');
+    const dayEl   = cd.querySelector('.dd');
+    const hourEl  = cd.querySelector('.hh');
+    const minEl   = cd.querySelector('.mm');
+    const secEl   = cd.querySelector('.ss');
+  
+    function getTodayDeadline() {
+      const t = new Date();
+      t.setHours(23, 59, 59, 999);          // 오늘 23:59:59.999
+      if (Date.now() > t.getTime()) {       // 이미 지났다면 내일로
+        t.setDate(t.getDate() + 1);
+      }
+      return t;
+    }
+    function updateCountdown() {
+      const now   = new Date();
+      const end   = getTodayDeadline();
+      const diff  = end - now;
+  
+      const total = Math.floor(diff / 1000);
+      const days  = Math.floor(total / 86400);
+      const hours = Math.floor((total % 86400) / 3600);
+      const mins  = Math.floor((total % 3600) / 60);
+      const secs  = total % 60;
+  
+      // dayEl.textContent  = String(days).padStart(2, '0');
+      hourEl.textContent = String(hours).padStart(2, '0');
+      minEl.textContent  = String(mins).padStart(2, '0');
+      secEl.textContent  = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  })();
+  </script>
+  <!-- ▲▲▲ 회생지원 배너 끝 ▲▲▲ -->
+
+  <script>
+    // 모든 내부 링크(<a href="#...">)에 대해 스무스 스크롤 적용
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLinks = document.querySelectorAll('a[href^="#"]');
+  
+      menuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+  
+          if (targetElement) {
+            e.preventDefault();
+  
+            // 부드럽게 스크롤
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth"
+            });
+  
+            // 모바일 메뉴가 열려 있다면 닫기
+            const mobilePanel = document.getElementById("mobilePanel");
+            if (mobilePanel.classList.contains("open")) {
+              toggleMobile(); // 이미 존재하는 함수 사용
+            }
+          }
+        });
+      });
+    });
+  </script>
+  
+
+
+  <div id="privacy">
+    <div id="privacyContent">
+        <div class="titWrap">
+            <span>개인정보취급방침</span>
+            <i style="margin-top:-20px !important" class="ion-close-circled closeBtn"></i>
+        </div>
+        <div style="line-height:1.2" class="conWrap">
+            개인정보취급방침<br><br>
+            수집하는 개인정보의 항목<br>
+            "플로스"는 적법하고 공정한 수단에 의해서만 개인정보를 수집하며, 회원가입약관 또는 개인정보의 제공, 활용 동의서의 내용에 대해 이용자의 개인정보를 수집하는 경우에 당해<br> 이용자가 동의함 또는 동의하지 않음 버튼을 클릭 하는 등의 이용자의 동의를 얻는 절차를 거칩니다.<br>
+            <br>
+          개인정보 수집 및 이용 동의(필수)
+  1. 수집항목: 이름, 사업자명, 사업자등록번호, 업종, 개업연월일, 지역, 주소, 연매출, 기존대출, 필요자금 정보
+  2. 수집 및 이용 목적: 이용자 식별, 서비스 이용 및 고객상담, 본인 여부 확인, 계약 체결 시 계약인증, 연락, 문의 회신 및 고지사항 등 전달, 서비스 품질 개선을 위한 데이터 분석, 맞춤형 콘텐츠 및 서비스 등 제공 또는 추천
+  3. 보유 및 이용 기간: 2년. 단, 서비스 이용계약 체결시는 회원탈퇴시까지 보유할 수 있으며, 기타 관련 법령의 규정에 따라 거래 관계 확인을 위해 개인정보를 일정기간 보유할 수 있습니다.
+  4. 개인정보 제공에 동의하지 않으실 수 있으며, 동의하지 않으시면 서비스 이용이 제한될 수 있습니다. 가입시 ' 개인정보 마케팅 활용 ' 에 동의한 경우에 한하여 위 수집정보를 광고 및 마케팅 목적으로 활용할 수 있습니다.
+  <section id="thirdParty">
+    <h3 class="tp-heading">개인정보 제3자 제공 동의 (필수)</h3>
+    <p class="tp-note">
+      귀하는 개인정보 보호법 등 관련 법령에 따라 제3자 제공에 대한 동의를 거부할 권리가 있습니다. 다만 동의하지 않을 경우 일부 서비스 이용이 제한될 수 있습니다.
+    </p>
+  
+    <table class="tp-table">
+      <tr>
+        <th>제공하는 자</th>
+        <td>서민채무조정안심센터</td>
+      </tr>
+      <tr>
+        <th>제공받는 자</th>
+        <td>
+          <span id="toggleBtn" class="toggle-btn">서비스제공업체</span>
+          <div id="partnerList" class="partner-list">
+            
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>제공 목적</th>
+        <td>
+          채무 조정 상담·계약 체결 및 사후 관리 등 서비스 제공계약의 이행을 위한 고객 확인 및 업무 수행
+        </td>
+      </tr>
+      <tr>
+        <th>제공하는 개인정보</th>
+        <td>
+          이름, 연락처, 주소, 채무 현황, 필요자금 등 상담·계약 이행에 필요한 정보 일체
+        </td>
+      </tr>
+      <tr>
+        <th>보유·이용 기간</th>
+        <td>
+          서비스 제공 목적 달성 시까지(단, 관계 법령에 따라 보관이 필요한 경우 해당 기간 동안 보관)
+        </td>
+      </tr>
+    </table>
+  </section>
+  
+  <section id="thirdPartyPro">
+    <h3 class="tp-heading">(제공업체) 개인정보 제3자 제공 동의 (필수)</h3>
+    <p class="tp-note">
+      본 동의는 전문가와 서민채무조정안심센터 간 서비스 품질 향상을 위한 정보 제공에 관한 것입니다. 동의하지 않을 경우 전문가용 서비스 이용이 제한될 수 있습니다.
+    </p>
+  
+    <table class="tp-table">
+      <tr>
+        <th>제공하는 자</th>
+        <td>
+          <span id="proToggleBtn" class="toggle-btn">서비스제공업체</span>
+          <div id="proPartnerList" class="partner-list">
+          
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>제공받는 자</th>
+        <td>서민채무조정안심센터</td>
+      </tr>
+      <tr>
+        <th>제공 목적</th>
+        <td>
+          전문가 서비스 이용 실적 확인, 고객 만족도 조사 및 서비스 개선을 위한 분석
+        </td>
+      </tr>
+      <tr>
+        <th>제공하는 개인정보</th>
+        <td>이름, 연락처, 상담·계약 이력, 고객 의견 등 서비스 품질 개선에 필요한 정보</td>
+      </tr>
+      <tr>
+        <th>보유·이용 기간</th>
+        <td>서비스 제공 목적 달성 시 또는 법령에 따른 보존 기간 종료 시까지</td>
+      </tr>
+    </table>
+  </section>
+  <br><Br>
+  <style>
+    #thirdParty, #thirdPartyPro { font-family:"Pretendard","Apple SD Gothic Neo",sans-serif; margin-top:24px; }
+    .tp-heading  { font-size:18px; font-weight:700; margin-bottom:8px; }
+    .tp-note     { font-size:14px; margin-bottom:18px; line-height:1.4; }
+    .tp-table    { width:100%; border-collapse:collapse; font-size:14px; }
+    .tp-table th, .tp-table td { border:1px solid #444; padding:12px; vertical-align:top; line-height:1.5; }
+    .tp-table th { width:130px; background:#f7f7f7; font-weight:600; text-align:left; }
+    .toggle-btn  { color:#000; cursor:pointer; text-decoration:underline; }
+    .partner-list{ display:none; margin-top:8px; line-height:1.4; }
+    .partner-list.show{ display:block; }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const toggle = (btnId,listId)=>{
+        const btn=document.getElementById(btnId);
+        const list=document.getElementById(listId);
+        if(btn&&list){btn.addEventListener('click',()=>list.classList.toggle('show'));}
+      };
+      toggle('toggleBtn','partnerList');
+      toggle('proToggleBtn','proPartnerList');
+    });
+  </script>
+
+
+            개인정보의 보유 및 이용기간<br>
+            원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br><br>
+    
+            보존 항목 : 이름 , 휴대전화번호 , 필요시기, 직업구분, 대출신청종류 등.<br>
+            보존 근거 : 고객의요청이 있을시 즉시폐기<br>
+            보존 기간 : 3년<br><br>
+    
+            그리고 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.<br><br>
+    
+            소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래등에서의 소비자보호에 관한 법률)<br>
+            신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년 (신용정보의 이용 및 보호에 관한 법률)<br><br>
+    
+            개인정보의 파기절차 및 방법<br>
+            회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.<br><br>
+    
+            ● 파기절차<br>
+            회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다.<br><br>
+    
+            별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.<br><br>
+    
+            ● 파기방법<br>
+            - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
+            - 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br><br>
+    
+            
+            이용자 및 법정대리인의 권리와 그 행사방법<br>
+            이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.<br><br>
+    
+            이용자들의 개인정보 조회,수정을 위해서는 '개인정보변경'(또는 '회원정보수정' 등)을 가입해지(동의철회)를 위해서는 "회원탈퇴"를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.<br><br>
+    
+            혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.<br><br>
+    
+            귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.<br><br>
+    
+            회사는 이용자의 요청에 의해 해지 또는 삭제된 개인정보는 "회사가 수집하는 개인정보의 보유 및 이용기간"에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br><br>
+    
+    
+            개인정보에 관한 민원서비스<br>
+            회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다.<br>
+            <br>
+        귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.<br><br>
+    
+            기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.<br>
+            1.개인분쟁조정위원회 (https://www.1336.or.kr/1336)<br>
+            2.정보보호마크인증위원회 (https://www.eprivacy.or.kr/02-580-0533~4)<br>
+            3.대검찰청 인터넷범죄수사센터 (02-3480-3600)<br>
+            4.경찰청 사이버테러대응센터 (https://www.ctrc.go.kr/02-392-0330)<br />
+            <br />
+        </div>
+    </div>
+  </div>
+  
+
+
+
+<script>
+  /* ─ 숫자 애니메이션 함수 ─ */
+  function animateCount(el) {
+    const target   = +el.dataset.target;        // 목표 값
+    const duration = +el.dataset.duration || 1800;
+    const startT   = performance.now();
+  
+    (function step(now){
+      const p   = Math.min((now - startT) / duration, 1);
+      const val = Math.round(p * target);
+      el.firstChild.nodeValue = val.toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    })(startT);
+  }
+  
+  /* ─ 인터섹션 옵저버 ─ */
+  document.addEventListener('DOMContentLoaded', () => {
+    const nums = document.querySelectorAll('#late-response .lr-status-number');
+  
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target;
+  
+        if (entry.isIntersecting) {       // 화면 안으로 들어왔을 때
+          animateCount(el);
+        } else {                          // 화면 밖으로 나갔을 때 → 리셋
+          el.firstChild.nodeValue = '0';
+        }
+      });
+    }, { threshold: 0.5 });               // 요소가 50 % 이상 보이면 트리거
+  
+    nums.forEach(el => io.observe(el));
+  });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const OFFSET = 0;          // 고정 헤더 높이만큼 보정하려면 숫자(px)로 입력
+  
+    // #sm-consult 로 향하는 모든 링크에 적용
+    document.querySelectorAll('a[href="#consultFormSection"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();                           // 기본 점프 동작 막기
+        const target = document.querySelector('#sm-consult');
+        if (!target) return;
+  
+        const top = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+  
+        window.scrollTo({ top, behavior: 'smooth' }); // 부드럽게 이동
+      });
+    });
+  });
+  </script>
+  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn    = document.getElementById('pc_btn');
+      const target = document.getElementById('sm-consult');
+    
+      btn.addEventListener('click', () => {
+        if (!target) return;
+        /* 부드러운 스크롤 */
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
+        /* 선택 ─ 시각적 강조(1.5초) */
+        target.classList.add('pulse');
+        setTimeout(() => target.classList.remove('pulse'), 1500);
+      });
+    });
+    </script>
+
+
+
+<script>
+  (function () {
+    /* ── A. 숫자 애니메이션 함수(변경 없음) ── */
+    function animate(el) {
+      const target   = +el.dataset.target,
+            duration = +el.dataset.duration || 1500,
+            start    = +el.textContent.replace(/,/g, '') || 0,
+            t0       = performance.now();
+  
+      function step(now) {
+        const p   = Math.min((now - t0) / duration, 1),
+              val = Math.round(start + (target - start) * p);
+        el.textContent = val.toLocaleString();
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+  
+    /* ── B. 채무 조정 가능액 롤링 ── */
+    const figures = [7000, 3200, 8000, 13000];   // 단위: 만 원
+    const counter = document.getElementById('rollingCounter');
+    let idx = 0;
+  
+    function rollNext() {
+      counter.dataset.target = figures[idx];
+      animate(counter);                 // 1.5 초 카운팅
+      idx = (idx + 1) % figures.length;
+      setTimeout(rollNext, 4500);       // 1.5 초 + 3 초 머무름
+    }
+    rollNext();                         // 페이지 로드 후 즉시 시작
+  
+    /* ── C. 매일 23:59:59 카운트다운(기존) ── */
+    const cd      = document.getElementById('dailyCountdown');
+    const dayEl   = cd.querySelector('.dd');
+    const hourEl  = cd.querySelector('.hh');
+    const minEl   = cd.querySelector('.mm');
+    const secEl   = cd.querySelector('.ss');
+  
+    function todayDeadline() {
+      const d = new Date();
+      d.setHours(23, 59, 59, 999);
+      if (Date.now() > d) d.setDate(d.getDate() + 1);
+      return d;
+    }
+    function tick() {
+      const diff  = todayDeadline() - Date.now();
+      const s = Math.max(0, Math.floor(diff / 1000));
+  
+      const days  = Math.floor(s / 86400);
+      const hours = Math.floor((s % 86400) / 3600);
+      const mins  = Math.floor((s % 3600) / 60);
+      const secs  = s % 60;
+  
+      dayEl.textContent  = String(days).padStart(2, '0');
+      hourEl.textContent = String(hours).padStart(2, '0');
+      minEl.textContent  = String(mins).padStart(2, '0');
+      secEl.textContent  = String(secs).padStart(2, '0');
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+  </script>
+  
+
+
+  
+
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const DELAY = 5000, SPEED = 1000;
+
+    const swiper = new Swiper('.swiper-container', {
+      effect: 'fade',
+      loop: true,
+      speed: SPEED,
+      slidesPerView: 1,
+      autoplay: {
+        delay: DELAY,
+        disableOnInteraction: false,
+        waitForTransition: false
+      },
+      shortSwipes: true,
+      longSwipes: false,
+      threshold: 20,
+      slideToClickedSlide: true,
+    });
+
+    // Progress Bar 생성
+    const slides = Array.from(document.querySelectorAll('.swiper-container .swiper-slide'))
+                        .filter(s => !s.classList.contains('swiper-slide-duplicate'));
+    const bar = document.querySelector('.progress-container');
+    const fills = [];
+
+    slides.forEach((_, i) => {
+      const seg = document.createElement('div');
+      seg.className = 'progress-segment';
+      const fill = document.createElement('span');
+      fill.className = 'progress-fill';
+      seg.appendChild(fill);
+      bar.appendChild(seg);
+      fills.push(fill);
+
+      seg.addEventListener('click', () => swiper.slideToLoop(i, SPEED));
+    });
+
+    function updateProgress(idx) {
+      fills.forEach((f, j) => {
+        f.style.transition = 'none';
+        f.style.width = j < idx ? '100%' : '0';
+      });
+      const active = fills[idx];
+      void active.offsetWidth;
+      active.style.transition = `width ${DELAY}ms linear`;
+      active.style.width = '100%';
+    }
+
+    updateProgress(0);
+    swiper.on('slideChange', () => updateProgress(swiper.realIndex));
+  </script>
+
+
+</body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/menu-blog.js" defer></script>
+<script src="../js/personal.js"></script>
+<script src="../js/validation3.js"></script>
+<!-- ✅ 슬라이더 스크립트 (주신 JS) -->
+<script src="../js/main-carousel.js"></script>
+
+
+<!-- <script src="../js/validation-float-mob.js"></script> -->
+
+<script src="../js/footer.js" defer></script>
+</html>
