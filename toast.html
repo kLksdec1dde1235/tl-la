@@ -1,0 +1,298 @@
+<section id="legalDebtAdjustToastSection" aria-label="채무 조정 확정 알림 토스트 섹션">
+  <div class="ldats-toast" aria-live="polite" aria-atomic="true">
+    <div class="ldats-card" role="status">
+      <div class="ldats-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="7" y="2.75" width="10" height="18.5" rx="2.4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M10 5.75h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="12" cy="18.1" r="0.9" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <div class="ldats-texts">
+        <strong class="ldats-title">실시간 진행 안내</strong>
+        <p class="ldats-desc">정OO님 채무 85% 조정 확정되었습니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #legalDebtAdjustToastSection {
+      position: static;
+    }
+
+    #legalDebtAdjustToastSection .ldats-toast {
+      --ldats-bg: rgba(255, 255, 255, 0.78);
+      --ldats-border: rgba(255, 255, 255, 0.38);
+      --ldats-shadow: 0 18px 45px rgba(0, 0, 0, 0.10), 0 3px 12px rgba(0, 0, 0, 0.05);
+      --ldats-text: #141414;
+      --ldats-sub: #4a4a4a;
+      --ldats-icon-bg: rgba(255, 255, 255, 0.5);
+      --ldats-radius: 28px;
+
+      position: fixed;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0;
+      visibility: hidden;
+      will-change: transform, opacity;
+      transition:
+        opacity 0.55s ease,
+        transform 0.55s cubic-bezier(.22, .61, .36, 1),
+        visibility 0s linear 0.55s;
+    }
+
+    #legalDebtAdjustToastSection .ldats-toast.is-show {
+      opacity: 1;
+      visibility: visible;
+      transition:
+        opacity 0.55s ease,
+        transform 0.55s cubic-bezier(.22, .61, .36, 1),
+        visibility 0s linear 0s;
+    }
+
+    #legalDebtAdjustToastSection .ldats-card {
+      width: min(460px, calc(100vw - 24px));
+      background: var(--ldats-bg);
+      border: 1px solid var(--ldats-border);
+      border-radius: var(--ldats-radius);
+      box-shadow: var(--ldats-shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      box-sizing: border-box;
+    }
+
+    #legalDebtAdjustToastSection .ldats-icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      border-radius: 14px;
+      background: var(--ldats-icon-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111111;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+      flex-shrink: 0;
+    }
+
+    #legalDebtAdjustToastSection .ldats-icon svg {
+      width: 27px;
+      height: 27px;
+      display: block;
+    }
+
+    #legalDebtAdjustToastSection .ldats-texts {
+      min-width: 0;
+      flex: 1;
+    }
+
+    #legalDebtAdjustToastSection .ldats-title {
+      display: block;
+      margin: 0 0 4px;
+      color: var(--ldats-text);
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    #legalDebtAdjustToastSection .ldats-desc {
+      margin: 0;
+      color: var(--ldats-sub);
+      font-size: 15px;
+      line-height: 1.45;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+    }
+
+    @media (min-width: 768px) {
+      #legalDebtAdjustToastSection .ldats-toast {
+        top: 28px;
+        right: 28px;
+        left: auto;
+        transform: translate3d(0, -12px, 0) scale(0.985);
+      }
+
+      #legalDebtAdjustToastSection .ldats-toast.is-show {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+    }
+
+    @media (max-width: 767px) {
+      #legalDebtAdjustToastSection .ldats-toast {
+        top: calc(env(safe-area-inset-top, 0px) + 8px);
+        left: 50%;
+        right: auto;
+        transform: translate3d(-50%, -12px, 0) scale(0.985);
+      }
+
+      #legalDebtAdjustToastSection .ldats-toast.is-show {
+        transform: translate3d(-50%, 0, 0) scale(1);
+      }
+
+      #legalDebtAdjustToastSection .ldats-card {
+        width: min(92vw, 460px);
+        padding: 14px 16px;
+        border-radius: 22px;
+        gap: 12px;
+      }
+
+      #legalDebtAdjustToastSection .ldats-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+      }
+
+      #legalDebtAdjustToastSection .ldats-icon svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      #legalDebtAdjustToastSection .ldats-title {
+        font-size: 15px;
+      }
+
+      #legalDebtAdjustToastSection .ldats-desc {
+        font-size: 13.5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #legalDebtAdjustToastSection .ldats-toast,
+      #legalDebtAdjustToastSection .ldats-toast.is-show {
+        transform: none !important;
+        transition:
+          opacity 0.2s ease,
+          visibility 0s linear 0.2s;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      const section = document.getElementById('legalDebtAdjustToastSection');
+      if (!section) return;
+
+      const toast = section.querySelector('.ldats-toast');
+      const desc = section.querySelector('.ldats-desc');
+
+      if (!toast || !desc) return;
+
+      const messages = [
+        '정OO님 채무 85% 조정 확정되었습니다.',
+        '윤OO님 채무 78% 조정 확정되었습니다.',
+        '최OO님 채무 83% 조정 확정되었습니다.',
+        '양OO님 채무 81% 조정 확정되었습니다.',
+        '김OO님 채무 76% 조정 확정되었습니다.',
+        '박OO님 채무 88% 조정 확정되었습니다.',
+        '이OO님 채무 79% 조정 확정되었습니다.',
+        '송OO님 채무 84% 조정 확정되었습니다.',
+        '임OO님 채무 87% 조정 확정되었습니다.',
+        '오OO님 채무 82% 조정 확정되었습니다.',
+        '강OO님 채무 90% 조정 확정되었습니다.',
+        '조OO님 채무 86% 조정 확정되었습니다.',
+        '신OO님 채무 80% 조정 확정되었습니다.',
+        '서OO님 채무 89% 조정 확정되었습니다.',
+        '권OO님 채무 75% 조정 확정되었습니다.',
+        '류OO님 채무 85% 조정 확정되었습니다.',
+        '남OO님 채무 81% 조정 확정되었습니다.',
+        '문OO님 채무 79% 조정 확정되었습니다.',
+        '고OO님 채무 88% 조정 확정되었습니다.',
+        '백OO님 채무 83% 조정 확정되었습니다.',
+        '노OO님 채무 87% 조정 확정되었습니다.',
+        '유OO님 채무 86% 조정 확정되었습니다.',
+        '심OO님 채무 80% 조정 확정되었습니다.',
+        '민OO님 채무 78% 조정 확정되었습니다.',
+        '진OO님 채무 84% 조정 확정되었습니다.',
+        '채OO님 채무 90% 조정 확정되었습니다.',
+        '주OO님 채무 87% 조정 확정되었습니다.',
+        '손OO님 채무 76% 조정 확정되었습니다.',
+        '배OO님 채무 89% 조정 확정되었습니다.',
+        '허OO님 채무 81% 조정 확정되었습니다.',
+        '구OO님 채무 85% 조정 확정되었습니다.',
+        '나OO님 채무 73% 조정 확정되었습니다.',
+        '최OO님 채무 82% 조정 확정되었습니다.',
+        '김OO님 채무 90% 조정 확정되었습니다.',
+        '윤OO님 채무 88% 조정 확정되었습니다.',
+        '장OO님 채무 79% 조정 확정되었습니다.',
+        '한OO님 채무 84% 조정 확정되었습니다.',
+        '도OO님 채무 80% 조정 확정되었습니다.',
+        '양OO님 채무 86% 조정 확정되었습니다.',
+        '조OO님 채무 87% 조정 확정되었습니다.',
+        '주OO님 채무 83% 조정 확정되었습니다.',
+        '윤OO님 채무 89% 조정 확정되었습니다.',
+        '문OO님 채무 90% 조정 확정되었습니다.',
+        '성OO님 모든 채무 전액 면책 확정되었습니다.',
+        '황OO님 모든 채무 전액 면책 확정되었습니다.',
+        '안OO님 모든 채무 전액 면책 확정되었습니다.',
+        '전OO님 모든 채무 전액 면책 확정되었습니다.',
+        '제갈OO님 모든 채무 전액 면책 확정되었습니다.',
+        '변OO님 모든 채무 전액 면책 확정되었습니다.',
+        '천OO님 모든 채무 전액 면책 확정되었습니다.'
+      ];
+
+      const minDelay = 5000;
+      const maxDelay = 8000;
+      const visibleDuration = 4200;
+
+      let showTimer = null;
+      let nextTimer = null;
+      let lastIndex = -1;
+
+      function getRandomDelay() {
+        return Math.floor(Math.random() * (maxDelay - minDelay + 1)) + minDelay;
+      }
+
+      function getNextMessage() {
+        let nextIndex = Math.floor(Math.random() * messages.length);
+        if (messages.length > 1) {
+          while (nextIndex === lastIndex) {
+            nextIndex = Math.floor(Math.random() * messages.length);
+          }
+        }
+        lastIndex = nextIndex;
+        return messages[nextIndex];
+      }
+
+      function hideToast() {
+        toast.classList.remove('is-show');
+      }
+
+      function scheduleNext() {
+        clearTimeout(nextTimer);
+        nextTimer = setTimeout(showToast, getRandomDelay());
+      }
+
+      function showToast() {
+        desc.textContent = getNextMessage();
+        toast.classList.add('is-show');
+
+        clearTimeout(showTimer);
+        showTimer = setTimeout(function () {
+          hideToast();
+          scheduleNext();
+        }, visibleDuration);
+      }
+
+      scheduleNext();
+
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          clearTimeout(showTimer);
+          clearTimeout(nextTimer);
+          hideToast();
+        } else {
+          scheduleNext();
+        }
+      });
+    })();
+  </script>
+</section>

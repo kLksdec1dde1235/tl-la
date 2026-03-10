@@ -19,10 +19,11 @@
         </a>
       </div>
     
-       <div class="menu">
-        <a href="#lawfirm-testimonials">실제 후기</a>
-        <a href="#attorney-profile">자격 조건</a>
-        <a href="#consultForm">긴급 무료상담</a>
+      <div class="menu">
+        <a href="#nb1">개인회생/파산이란?</a>
+        <a href="#nb2">탕감율을 높이려면?</a>
+        <a href="#nb3">실제 후기</a>
+        <a href="https://gov-debtsupport.co.kr">무료 상담</a>
         
       </div>
     
@@ -32,9 +33,10 @@
       </button>
     
       <div id="mobilePanel" class="mobile-panel">
-      <a href="#lawfirm-testimonials">실제 후기</a>
-        <a href="#attorney-profile">자격 조건</a>
-      <a href="#consultForm">긴급 무료상담</a>
+      <a href="#nb1">개인회생/파산이란?</a>
+        <a href="#nb2">탕감율을 높이려면?</a>
+      <a href="#nb3">실제 후기</a>
+           <a href="https://gov-debtsupport.co.kr">무료 상담</a>
         
        
       </div>

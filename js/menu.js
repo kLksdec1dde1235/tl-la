@@ -22,7 +22,8 @@
       <div class="menu">
         <a href="#lawfirm-testimonials">실제 후기</a>
         <a href="#attorney-profile">자격 조건</a>
-        <a href="tel:010-2107-0112">긴급 안심콜</a>
+        <!-- <a href="../blog/blog-index.html">도움되는 칼럼</a> -->
+        <a href="#consultFormSection">무료 상담</a>
         
       </div>
     
@@ -34,7 +35,8 @@
       <div id="mobilePanel" class="mobile-panel">
       <a href="#lawfirm-testimonials">실제 후기</a>
         <a href="#attorney-profile">자격 조건</a>
-      <a href="tel:010-2107-0112">긴급 안심콜</a>
+       <!-- <a href="../blog/blog-index.html">도움되는 칼럼</a> -->
+      <a href="#consultFormSection">무료 상담</a>
         
        
       </div>

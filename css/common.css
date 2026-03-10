@@ -178,7 +178,7 @@ animation: wheel-fade 2s ease-in-out infinite;
      #floating-menu .bottom_contact_mob .top_thumb{background:#111;border-top:3px solid #A38A6D;height:80px;padding:0 30px;position:relative;}
      #floating-menu .bottom_contact_mob .top_thumb .title{padding-left:17px;line-height:40px;margin-top:19px;position:relative;}
      #floating-menu .bottom_contact_mob .top_thumb .title .tel_img{position:absolute;left:0;top:5px;width:30px;animation:bell 0.7s infinite;animation-timing-function:linear;}
-     #floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;top:15px;width:30px;animation:finger 1s infinite;animation-timing-function:linear;}
+     #floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;left:370px;top:15px;width:30px;animation:finger 1s infinite;animation-timing-function:linear;}
      #floating-menu .bottom_contact_mob .top_thumb .title span{display:inline-block;}
      #floating-menu .bottom_contact_mob .top_thumb .title .tit{color:#b69d81;font-size:20px;margin-right:10px;font-weight:bold;}
      #floating-menu .bottom_contact_mob .top_thumb .title .tel{color:#fff;font-size:25px;font-weight:bold;}
@@ -243,7 +243,7 @@ animation: wheel-fade 2s ease-in-out infinite;
  #floating-menu .bottom_contact_mob .top_thumb .title span{display:block;}
  #floating-menu .bottom_contact_mob .top_thumb .title .tit{font-size:15px;margin-right:0;font-weight:bold;}
  #floating-menu .bottom_contact_mob .top_thumb .title .tel{font-size:16px;font-weight:bold;margin-top:4px;width:60%;}
- #floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;top:13px;width:32px;z-index:10;}
+ #floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;left:158px;top:13px;width:32px;z-index:10;}
  
  #floating-menu .bottom_contact_mob .top_thumb .btn{width:90px;right:3%;font-size:14px;}
  #floating-menu .bottom_contact_mob .top_thumb .btn a{display:block;width:100%;height:100%;font-size:12px;}
@@ -396,10 +396,8 @@ animation: wheel-fade 2s ease-in-out infinite;
      .hamburger{display:block}
      .mobile-panel.show{display:flex}
    }
-
-
-     /* container & animation */
-  #sm-consult {
+   /* container & animation */
+   #sm-consult {
     max-width: 920px;
     margin: 5rem auto;
     padding: 3rem;
@@ -503,6 +501,7 @@ animation: wheel-fade 2s ease-in-out infinite;
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
+    color: #222;
   }
   #sm-consult input:focus,
   #sm-consult select:focus,
@@ -516,9 +515,28 @@ animation: wheel-fade 2s ease-in-out infinite;
     resize: vertical;
   }
 
-  /* inline date */
-  #sm-consult .gc-inline {
-    max-width: 240px;
+  /* iOS select 제거 + 커스텀화살표 + 색상 통일 */
+  #sm-consult select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 10px 6px;
+    padding-right: 2.5rem;
+    color: #222;
+  }
+  #sm-consult select:invalid {
+    color: #999;
+  }
+  #sm-consult select option {
+    color: #222;
+    background-color: #fff;
+  }
+  #sm-consult select::-ms-expand {
+    display: none;
   }
 
   /* footer */
@@ -537,7 +555,6 @@ animation: wheel-fade 2s ease-in-out infinite;
     font-size: 0.9rem;
     cursor: pointer;
     flex-direction: row;
-    
   }
   #sm-consult .gc-button {
     background: linear-gradient(90deg,#dcbe4e,#bfa742);
@@ -556,7 +573,6 @@ animation: wheel-fade 2s ease-in-out infinite;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   }
 
-  /* responsive */
   @media (max-width: 768px) {
     #sm-consult .gc-row {
       flex-direction: column;
@@ -566,7 +582,6 @@ animation: wheel-fade 2s ease-in-out infinite;
       gap: 1rem;
     }
   }
-
 
   /*──────────────────────────────────────
     #glory-office 네임스페이스 전용 스타일
@@ -1080,7 +1095,7 @@ z-index: 10;
     #floating-menu .bottom_contact_mob .top_thumb{background:#111;border-top:3px solid #A38A6D;height:80px;padding:0 30px;position:relative;}
     #floating-menu .bottom_contact_mob .top_thumb .title{padding-left:17px;line-height:40px;margin-top:19px;position:relative;}
     #floating-menu .bottom_contact_mob .top_thumb .title .tel_img{position:absolute;left:0;top:5px;width:30px;animation:bell 0.7s infinite;animation-timing-function:linear;}
-    #floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;top:15px;width:30px;animation:finger 1s infinite;animation-timing-function:linear;}
+    #floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;left:370px;top:15px;width:30px;animation:finger 1s infinite;animation-timing-function:linear;}
     #floating-menu .bottom_contact_mob .top_thumb .title span{display:inline-block;}
     #floating-menu .bottom_contact_mob .top_thumb .title .tit{color:#b69d81;font-size:20px;margin-right:10px;font-weight:bold;}
     #floating-menu .bottom_contact_mob .top_thumb .title .tel{color:#fff;font-size:25px;font-weight:bold;}
@@ -1172,9 +1187,9 @@ z-index: 10;
 #floating-menu .bottom_contact_mob .top_thumb .title span{display:block;}
 #floating-menu .bottom_contact_mob .top_thumb .title .tit{font-size:15px;margin-right:0;font-weight:bold;}
 #floating-menu .bottom_contact_mob .top_thumb .title .tel{font-size:16px;font-weight:bold;margin-top:4px;width:60%;}
-#floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;right:0px;top:13px;width:32px;z-index:10;}
+#floating-menu .bottom_contact_mob .top_thumb .title .click_img{position:absolute;left:158px;top:13px;width:32px;z-index:10;}
 
-#floating-menu .bottom_contact_mob .top_thumb .btn{width:140px;right:3%;font-size:14px;}
+#floating-menu .bottom_contact_mob .top_thumb .btn{width:90px;right:3%;font-size:14px;}
 #floating-menu .bottom_contact_mob .top_thumb .btn a{display:block;width:100%;height:100%;font-size:12px;}
 
 #floating-menu .bottom_contact_mob .bottom_con{height:355px;}
@@ -1206,3 +1221,202 @@ z-index: 10;
 /*  < 모든 원본 규칙 보존 완료 > */
 
  
+  #consultFormSection #consultForm {
+      font-family: 'Noto Sans KR', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+
+    #consultFormSection .gc-deco {
+      width: 60px;
+      height: 6px;
+      background: linear-gradient(90deg,#dcbe4e,#f8e18c);
+      margin: 0 auto 1rem;
+      border-radius: 3px;
+    }
+
+    #consultFormSection .gc-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    #consultFormSection .gc-header h2 {
+      font-size: 2.15rem;
+      font-weight: 800;
+    }
+
+    #consultFormSection .gc-header h2 span {
+      display: block;
+      font-size: 1.8rem;
+      color: #dcbe4e;
+    }
+
+    #consultFormSection .gc-header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    #consultFormSection .gc-stepbar {
+      margin-bottom: 2rem;
+    }
+
+    #consultFormSection .gc-progress {
+      height: 4px;
+      background: #eee;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    #consultFormSection .gc-progress-fill {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,#dcbe4e,#bfa742);
+    }
+
+    #consultFormSection h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #000;
+    }
+
+    #consultFormSection .form-group {
+      margin-bottom: 2rem;
+    }
+
+    #consultFormSection .form-label {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      color: #000;
+    }
+
+    #consultFormSection .button-group {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+    }
+
+    #consultFormSection .option-btn {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid #dadada;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    #consultFormSection .option-btn.active {
+      background-color: #c49b5a;
+      color: #fff;
+      border-color: #c49b5a;
+      font-weight: bold;
+    }
+
+    #consultFormSection .inline-fields {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* input / select 기본 */
+    #consultFormSection .inline-fields input,
+    #consultFormSection .inline-fields select{
+      flex:1 1 0;
+      min-width:0;
+      padding:0.8rem;
+      border:2px solid #ccc;
+      border-radius:6px;
+      background:#fff;
+      color:#000;
+      font-size:1rem;
+      height:60px;
+      /* line-height:60px; */
+      box-sizing:border-box;
+    }
+
+    #consultFormSection input::placeholder {
+      color: #aaa;
+    }
+
+    #consultFormSection .checkbox-area {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-top: -0.5rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      #consultFormSection .checkbox-area {
+         flex-direction: column;
+      }
+    }
+/* === Select 커스텀화 ========================================== */
+    #consultFormSection select{
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+    }
+    /* placeholder 느낌 방지 */
+    #consultFormSection select:invalid{color:#9e9e9e;}
+
+    /* 화살표 UI */
+    #consultFormSection .select-wrap{position:relative;flex:1 1 0;min-width:0;width:100%;}
+    #consultFormSection .select-wrap::after{
+      content:"";
+      position:absolute;
+      top:50%;right:1rem;
+      width:8px;height:8px;
+      border-right:2px solid #666;
+      border-bottom:2px solid #666;
+      transform:translateY(-50%) rotate(45deg);
+      pointer-events:none;
+    }
+    /* select 가로 100% 유지 */
+    #consultFormSection .select-wrap select{
+      display:block;
+      width:100%;
+      max-width:100%;
+    }
+
+    #consultFormSection .checkbox-area input {
+      margin-right: 0.5rem;
+    }
+
+    #consultFormSection input.submit-btn {
+      width: 100%;
+      background: #c49b5a;
+      color: #fff;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    #consultFormSection input.submit-btn:hover {
+      background: #d8b56a;
+    }
+
+    @media (max-width: 1024px) {
+      #consultFormSection .button-group {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      #consultFormSection .inline-fields {
+        flex-direction: column;
+      }
+
+      #consultFormSection .button-group {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }

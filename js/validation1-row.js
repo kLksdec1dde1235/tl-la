@@ -17,7 +17,7 @@ $(document).ready(function(){
   
   
          // Form field validation
-         $('#form_e11').prop("action", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctL9J9H6K0cgaTNqF0lPXS4DfxXR8sqM0uFN64OiOpzNa7Ew/formResponse");
+         $('#form_e11').prop("action", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeUyoiTCEs1--wJ9l0WOnfMc1U-4lyRccyEKDCX3DRnfn1Mng/formResponse");
          $('#send_message').attr({'disabled' : 'true', 'value' : '잠시만 기다려주세요' });
         const messages = ['정보를 확인 중입니다', '전송 준비 중입니다', '곧 신청이 완료됩니다.'];
         let msgIndex = 0;
@@ -94,7 +94,6 @@ function form_c() {
   var position3 = getSelectedValue('intro_select3');
   var position4 = getSelectedValue('intro_select4');
   var position5 = getSelectedValue('intro_select5');
-  var position6 = getSelectedValue('intro_select6');
 
   var location = $('#location').val();
   var name = $('#name').val();
@@ -117,10 +116,9 @@ function form_c() {
   if (!position3) return disableButton("부양가족 선택을 확인하세요");
   if (!position4) return disableButton("대출유무 선택을 확인하세요");
   if (!position5) return disableButton("채무원인 선택을 확인하세요");
-  if (!position6) return disableButton("부동산 유무 선택을 확인하세요");
 
   if (!regex1.test(name) || name.length <= 1) return disableButton("성함 입력을 확인하세요");
-  if (!location) return disableButton("지역 선택을 확인하세요");
+    if (location.length <= 1) return disableButton("소속 입력을 확인하세요");
   if (!(phone.substr(0, 3) == "010" && phone.length == 11 && regex.test(phone))) return disableButton("전화번호 입력을 확인하세요");
   if (!agree) return disableButton("개인 정보 동의를 확인하세요");
 
@@ -135,7 +133,7 @@ function form_c() {
   
   
   $(function(){
-  $('#name,#phone, .intro_select, .intro_select1,.intro_select2, .intro_select3, .intro_select4,.intro_select5,.intro_select6,#location,  #message,#agree11').bind("keyup click change",form_c);
+  $('#name,#phone, .intro_select, .intro_select1,.intro_select2, .intro_select3, .intro_select4,.intro_select5,#location,  #message,#agree11').bind("keyup click change",form_c);
   //  $('#name,#phone,#intro_select,#car_type,#car,#message,#agree11,#now-wg,#hope-wg,#height').bind("keyup click change",form_check1);
   //  $('#license').bind("keyup click change",lic_pick);
   })
