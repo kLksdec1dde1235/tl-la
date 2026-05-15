@@ -51,7 +51,11 @@ function submitRecoveryToSupabase() {
     debt_amount:  getSelectedValue('intro_select') || '',
     family_count: getSelectedValue('intro_select3') || '',
     recent_loan:  getSelectedValue('intro_select4') || '',
+<<<<<<< HEAD
     debt_reason:  getSelectedValues('intro_select5') || null,
+=======
+    debt_reason:  getSelectedValue('intro_select5') || null,
+>>>>>>> 2f9c41a57ac86a392bbacc7131a0a0918fa16432
     name:         $.trim($('#name').val() || ''),
     location:     $('#location').val() || '',
     phone:        String($('#phone').val() || '').replace(/[^0-9]/g, ''),
@@ -91,15 +95,21 @@ function submitRecoveryToSupabase() {
 }
 
 // ================================================================
+<<<<<<< HEAD
 //  선택값 가져오기
 // ================================================================
 
 // 단일 선택용 (radio)
+=======
+//  유효성 검사 (기존 로직 그대로)
+// ================================================================
+>>>>>>> 2f9c41a57ac86a392bbacc7131a0a0918fa16432
 function getSelectedValue(className) {
   var selected = $('.' + className + '.active').data('value');
   return selected || null;
 }
 
+<<<<<<< HEAD
 // 다중 선택용 (checkbox) — 채무원인
 function getSelectedValues(className) {
   var values = [];
@@ -112,6 +122,8 @@ function getSelectedValues(className) {
 // ================================================================
 //  유효성 검사
 // ================================================================
+=======
+>>>>>>> 2f9c41a57ac86a392bbacc7131a0a0918fa16432
 function form_c() {
   const regex1 = /^[가-힣]+$/;
   const regex = /^[0-9]+$/;
@@ -154,7 +166,11 @@ function form_c() {
 }
 
 // ================================================================
+<<<<<<< HEAD
 //  전역 유틸
+=======
+//  전역 유틸 (기존 로직 그대로)
+>>>>>>> 2f9c41a57ac86a392bbacc7131a0a0918fa16432
 // ================================================================
 function dll() {}
 
